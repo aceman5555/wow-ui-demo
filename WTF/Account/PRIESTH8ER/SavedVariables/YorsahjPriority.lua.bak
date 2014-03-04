@@ -1,0 +1,42 @@
+
+YorsahjPriorityDB = {
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Git - Azuremyst",
+	},
+	["global"] = {
+		["enabled"] = true,
+		["announces"] = {
+			["privateChatMessage"] = false,
+			["privateRaidWarning"] = false,
+			["raidWarning"] = true,
+			["raid"] = false,
+			["yell"] = true,
+		},
+		["priorities"] = {
+			["normal"] = {
+				["246"] = "Purple",
+				["135"] = "Green",
+				["126"] = "Yellow",
+				["145"] = "Purple",
+				["234"] = "Purple",
+				["356"] = "Green",
+			},
+			["lfr"] = {
+				["246"] = "Purple",
+				["135"] = "Green",
+				["126"] = "Yellow",
+				["145"] = "Purple",
+				["234"] = "Purple",
+				["356"] = "Green",
+			},
+			["heroic"] = {
+				["1234"] = "Green",
+				["1456"] = "Purple",
+				["1246"] = "Yellow",
+				["1235"] = "Green",
+				["1356"] = "Green",
+				["2346"] = "Yellow",
+			},
+		},
+	},
+}

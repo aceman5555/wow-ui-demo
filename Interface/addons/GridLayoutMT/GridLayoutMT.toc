@@ -1,0 +1,8 @@
+## Interface: 40000
+## Title: GridLayoutMT
+## Notes: Adds oRA2 or Blizzard MT's to Grid
+## Author: Szandos, based on GridoRA2Layouts by SquishemHard (aka LiquidEnforcer) and GridStatusMTs by Kunda
+## Version: 1.4
+## Dependencies: Grid
+
+GridLayoutMT.lua

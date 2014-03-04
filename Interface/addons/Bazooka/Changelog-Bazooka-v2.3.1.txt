@@ -1,0 +1,31 @@
+------------------------------------------------------------------------
+r256 | mitch0 | 2014-01-29 12:26:02 +0000 (Wed, 29 Jan 2014) | 1 line
+Changed paths:
+   A /tags/v2.3.1 (from /trunk:255)
+
+Tagging as v2.3.1
+------------------------------------------------------------------------
+r255 | mitch0 | 2014-01-29 11:33:35 +0000 (Wed, 29 Jan 2014) | 1 line
+Changed paths:
+   M /trunk/Bazooka.lua
+
+fix bar right-click open-config
+------------------------------------------------------------------------
+r254 | mitch0 | 2014-01-29 10:48:44 +0000 (Wed, 29 Jan 2014) | 1 line
+Changed paths:
+   M /trunk/Bazooka.lua
+
+fix options panel autoload
+------------------------------------------------------------------------
+r253 | mitch0 | 2014-01-29 09:59:34 +0000 (Wed, 29 Jan 2014) | 1 line
+Changed paths:
+   M /trunk/Bazooka_Options/Options.lua
+
+fix maxTextWidth option value display
+------------------------------------------------------------------------
+r252 | mitch0 | 2014-01-29 08:48:33 +0000 (Wed, 29 Jan 2014) | 1 line
+Changed paths:
+   M /trunk/Bazooka.lua
+
+fix plugin updates after pet battle if fade-out-of-combat is set
+------------------------------------------------------------------------

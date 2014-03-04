@@ -1,0 +1,29 @@
+First, I would like to start with a brief explanation on how the defense skill works currently in patch 1.6: 
+
+
+Increases the chance of being missed by an attack. 
+Each point of defense will increase the chance of being missed by an attack from an even con NPC by .04% 
+
+Increases the chance to dodge, parry, and block an attack. 
+Each point of defense will increase the chance you will dodge, parry, or block an attack by .04% for each category 
+
+Decreases the chance of being affected by a critical hit. 
+Each point of defense will decrease the chance of being affected by a critical hit by .04% 
+
+Decreases the chance of being affected by a Crushing Blow. 
+Each point of defense will decrease the chance of being affected by a Crushing Blow by 2%. The benefit defense will have on a Crushing Blow is limited by your level. In other words, increasing your defense will only reduce the chance of being struck by a crushing blow if your current defense value is below your level¡¦s maximum unbuffed value. 
+
+Second, an explanation on how Crushing Blows works in patch 1.6: 
+
+
+A Crushing Blow is an attack made by an NPC on a PC that is 150% of the damage caused by a normal successful attack. 
+Players cannot perform a Crushing Blow 
+
+Crushing Blows will only occur when the attacker is 3 or more levels above its target. 
+There is a 15% minimum chance of being struck by a Crushing Blow 
+
+With that in mind, there is no reason increasing your defense will inadvertently increase the chance of being struck by a Crushing Blow. Looking at the statistics you provided, I can only say that the results are inconclusive. Some values appear to be off by as much as 3% of what they should be. In addition, all of the Crushing Blow values are far below the rate they should be occurring at. 
+
+Our internal testing shows us that attack result percentages are well within the parameters we find acceptable. I hope the information here provides the answers you are looking for. 
+
+-Hortus 

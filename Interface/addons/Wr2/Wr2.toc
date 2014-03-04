@@ -1,0 +1,5 @@
+## Interface: 30000
+## Title: WowReader UI Plugin
+## Notes: WowReader UI Plugin
+## SavedVariables: akz_creatures2, akz_fishing, akz_profile2, akz_uploaded, akz_objects, akz_prices, akz_merchant2, akz_quests
+Wr2.xml

@@ -1,0 +1,22 @@
+﻿## Interface: 40300
+## Title: Fonter
+## Notes-deDE: Addon für UI-Fonts Customization.
+## Notes-enUS: Addon for UI Fonts Customization.
+## Notes-esES: Addon para personalización de fuentes de IU.
+## Notes-frFR: Addon pour la personnalisation des polices d'assurance-chômage.
+## Notes-KoKR: 글꼴 UI를 사용자 정의에 대한 Addon
+## Notes-ruRU: Аддон для настройки пользовательского интерфейса шрифты.
+## Notes-zhCH: 插件定制用户界面字体
+## Notes-zhTW: Addon สำหรับการปรับแต่งแบบอักษร UI
+## Author: Ferather Draenor EU
+## SavedVariables: FonterDB
+## X-Email: fonteraddon@gmail.com
+## X-Curse-Packaged-Version: 1.6.8.6
+## X-Curse-Project-Name: Fonter
+## X-Curse-Project-ID: Fonter
+
+Embeds.xml
+Locales.xml
+Fonts.lua
+Fonter.lua
+Options.lua

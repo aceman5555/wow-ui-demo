@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r17 | tridus | 2011-03-24 00:54:43 +0000 (Thu, 24 Mar 2011) | 1 line
+Changed paths:
+   A /tags/1.0.1 (from /trunk:16)
+
+Tagging as 1.0.1
+------------------------------------------------------------------------
+r16 | tridus | 2011-03-24 00:53:29 +0000 (Thu, 24 Mar 2011) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+   M /trunk/GuildBankRepairToggle.toc
+
+Added /repairtoggle toggle option
+------------------------------------------------------------------------

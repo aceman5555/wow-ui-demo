@@ -1,0 +1,149 @@
+http://forums.elitistjerks.com/viewtopic.php?id=9486
+______________________________________________________________
+
+This is a repost by Whiteknight@ejforums of Kenco's work on threat (with his permission).
+Edits in red, where the document deviates from Kenco's original work. These are typically more recent updates in the way the game works.
+
+1) Definitions: Threat vs Aggro, Threat Scale
+We define "aggro" to be who the mob is attacking. A player has aggro, or pulls aggro, when the mob is attacking them. We define "threat" to be a numeric value that each mob has towards each player. Note that the target who has aggro is not necessarily the player with the highest threat.
+
+To set a scale for threat, let 1 point of damage from a normal attack cause 1 point of threat, where the sense of normal will be clarified later. The threat values of some abilities are listed in the MPQs, and this 1:1 scale matches those abilities (e.g. feint, distracting shot, fade).
+
+2) The Threat List
+Imagine every mob as keeping a list of players and their threat values. If the mob is unaware of a player, that player will not be on the threat list. As soon as the mob becomes aware of a player, in the ways described below, they are put on the list with 0 threat. Knowing which players are on a mobs threat list and which mobs have a certain player on their threat lists is crucial in predicting a mobs behaviour.
+
+A player can get on a mobs threat list in the following ways:
+
+Body Pulling, i.e. getting close enough to a mob that is out of combat. 
+Body Pulling linked mobs. When you body pull a mob, youll also get onto the threat lists of all mobs that are linked to it. Note that after the pull they become unlinked; a second person attacking one of the mobs will only get on that mobs threat list after the pull. 
+Buffing a player that is on the mobs threat list. That is, casting a healing spell or other buff spell. 
+Direct damage or casting a debuff on the mob. Some debuffs, notably mind vision and hunters mark, wont put you on the mobs threat list. 
+Bosses in-combat pulse. For most high level instance bosses, every tick (2 seconds) every player in the instance is added to the boss threat list when the boss is in combat. 
+In combat proximity. Many mobs with secondary targeting or AOE abilities will add nearby players to their threat lists. For other mobs, as long as they are in combat you can stand on top of them and not get added to their threat list.
+
+3) Aggro Transfer, Threat Decay
+To prevent mobs rapidly swapping targets when many players have similar threat, a mob will stay on its current target unless another player has significantly higher threat. Suppose a mob has aggro on a certain player X. Then to pull aggro while in melee range, another player needs 110% of Xs threat. If the other player is outside melee range, they need 130% of Xs threat to pull aggro. This means than in general, once you have aggro it is easy to keep it, and once you lose aggro it is hard to regain it. It also stops two players attacking a mob from range and constantly swapping aggro between them, because as their threat increases, the 30% margin will be harder and harder to overcome.
+
+Note that the 10% effect is determined only by your range, not the ability used. If you are generating threat from healing or a range ability such as Frostbolt, you will still pull aggro at 110% if you are within melee range of the mob.
+
+In the normal course of events, threat does not decay. Once you are on a mobs threat list, youre there until its dead or you are, and your threat does not decay over time. There are of course mobs with specific abilities that reduce threat, and player abilities also, which do decrease your threat.
+
+4) AOE Threat: Healing, Buffing, Power Gain
+Each point of healing causes 0.5 threat, forgetting threat modifiers. Overhealing doesnt cause threat. Most buff spells cast on friendly players generate a small amount of threat. Gaining Power (Mana / Energy / Rage) also causes threat in most cases, for example taking a healing potion, or gaining rage from Bloodrage, or Energy from Thistle Tea. Certain spells are exempt, for example mana from Blessing of Wisdom or a Mana Spring totem doesnt cause threat, and there is no threat from the healing gained from Siphon Life. For normal abilities, each point of Mana is 0.5 threat, Rage is 5 threat, and Energy is unknown, probably 5. In the scheme of things, threat from power gain is usually irrelevant, unless you have consistent or burst values, such as taking a mana potion or having Fel Energy running.
+
+These forms of buffs all have infinite range; they will cause threat to all mobs on whose threat list you are on. Furthermore, the threat caused is split equally among all the affected mobs. If you are on one mobs threat list, a 1000 point heal will cause 500 threat to that mob. If 5 mobs are aware of you, the same heal will cause 100 threat on each mob.
+
+Note that threat caused from Power Gain is not affected by threat modifiers. Gaining 1 point of Rage will give 5 threat whether you are in Battle Stance or Defensive Stance.
+
+5) Threat Modifiers: Common Modifiers, Interaction
+Here are some of the more common threat modifiers and their values, assuming you have the maximum number of talent points in the talents mentioned:
+
+Warrior in Defensive Stance / Druid in Bear Stance: x1.3
+Warriors 5/5 Defiance / Druidss 5/5 Feral Instinct: x1.15 (in above stances only)
+Warrior in Battle or Berserker Stance: x0.8
+Rogue (passive, always on): x0.8
+Blessing of Salvation: x0.7
+Tranquil Air Totem: x0.8
+Priests 5/5 Silent Resolve: x0.8 (spells)
+Mages 3/3 Frost Channelling: x0.7 (frost spells)
+Mages 2/2 Arcane Subtlety: x0.6 (arcane spells)
+
+As of 1.12, all threat modifiers are multiplicative, which makes them independent. Blessing of Salvation "reduces your threat by 30%", which is implemented as "multiplies your threat by 70%". Two different modifiers just multiply on each other, so Blessing of Salvation + Arcanist 8/8 + Frost Channeling would be 0.7 x 0.85 x 0.7 = 41.65% threat. The primary effect of the 1.12 change is to stop several threat modifiers combining too powerfully; for example it was possible to achieve 0% threat generation using the Fetish of the Sand Reaver.
+
+It is useful to consider the inverse multiplier, which is the increase in damage or healing potential as a result of a threat modifier. Suppose you have Blessing of Salvation on, for a 0.7 threat modifier. Then to get 1 point of threat, you can now do 1 / 0.7 = 1.43 points of damage. In other words, the Blessing of Salvation buff allows you to do 43% more damage for the same threat. Similarly, the Rogue passive modifier allows you to do 25% more damage for 1 threat. To combine them, just multiply 1.43 * 1.25 = 79% more damage for 1 point of threat, compared to a player with no threat modifiers.
+
+6) Class Abilities and Talents in Detail
+
+(A) Warrior
+Most warrior abilities add a fixed amount of threat when they land successfully. The following table gives the raw values, i.e. before the modifiers from battle stance or defensive stance, and ignores the damage done by the abilities.
+
+Sunder Armor............260
+Heroic Strike 8.........145
+Heroic Strike 9 (AQ)....173 (the original doc listed 175, but this has been updated to 173 - source = 17.23 KTM_Data.lua
+Revenge 5...............315
+Revenge 6 (AQ)..........355
+Shield Bash.............180
+Shield Slam (1.11)......250
+Thunder Clap............130
+Demoralizing Shout.......43
+Battle Shout.................55
+Cleave.......................100   
+Execute...................x1.25    (17.23 KTM_Data.lua)
+Devastate..................~50
+(The threat value for Devastate is approximate and the result of preliminary testing at lvl 60 on the PTR. Source and relevant discussion at http://forums.elitistjerks.com/viewtopi ¡K 1&p=28 post #676 and onward. Unless it's currently bugged on the PTR it seems that the innate threat commponent of Devastate does *not* depend on the current size of the sunder stack - although the damage output does.)
+
+Battle Shout generates 55 threat for each player that is buffed; up to 5 people in your party and their pets, as long as they are on the relevant mob's threat list. For example if you buff a player that is out of combat, no threat is generated. Therefore in a tightly packed group, Battle Shout can rival Sunder Armor for threat, but as a buff the threat is split amongst all the mobs that are aware of you. On the other hand, Demoralizing Shout gives 43 threat to each affected mob. As long as there are 6 or more mobs affected, it will hold aggro as well or better than Sunder Armor.
+(from the 2.0 PTR patch notes: "Fixed an issue where Warrior "Battle Shout" was causing too much threat." - it is expected that "battleshout tanking" will no longer be effective and that the threat value of the shout is significantly reduced)
+
+Recently (1.11.x), the behaviour of Taunt has been buffed slightly. It now does three things:
+
+Taunt debuff. The mob is forced to attack you for 3 seconds. Later taunts by other players override this. 
+You are given threat equal to the mob's previous aggro target, permanently. Importantly, you won't necessarily get as much threat as the highest person on the mob's list, only as much as whoever is currently tanking it. 
+You gain complete aggro on the mob at the instant you taunt. Usually you would need 10% more threat to gain aggro (see section 3), but a taunt now gives you instant aggro on the mob. Of course if other people are generating significant threat on the mob, they could exceed your threat by more than 10% before the taunt debuff wears off, and will gain aggro as soon as it does. There is no limit to the amount of threat you can gain from Taunt. 
+While Challenging Shout and Mocking Blow have a similar forced attack debuff to Taunt, they do not give the caster threat in the same way as Taunt, just fixed amounts.
+
+(B) Druid (credit to Chibi of Shadow Moon)
+The threat modifiers for Bear tanks are the same as Warriors: 130% for Bear Form and Defensive Stance, or 149.5% if you have 5/5 Defiance or Feral Instinct. However, the primary bear tanking abilities dont add threat like warriors', they multiply. Each point of damage done by Maul and Swipe does an additional 0.75 threat, before the bear stance modifier. E.g. Maul does 200 damage, so it does 200 * 1.75 = 350 threat raw, or 350 * 1.3 * 1.15 = 523 threat counting the bear stance + feral instinct modifiers.
+
+In Cat Form, there is -29% passive threat modifier.  (1.12 patch notes)
+The Subtlety Talent is multiplicative, for 0.8 at max rank.
+Growl has exactly the same behaviour as Taunt for Warriors.
+
+(C) Rogue
+Rogues have a passive -29% threat modifier, so all damage done causes 0.71 threat by default, or 0.71 * 0.7 = 0.497 threat with Blessing of Salvation. (1.12 the passive threat modifier went from -20% to -29%)
+
+Feint does -600 threat, or -800 threat with rank 5, from the AQ book. Note that it is affected by your threat modifiers, so that the rank 5 ability reduces only 800 * 0.71 = 568 threat by default, or 800 * 0.497 = 397.6 threat with blessing of salvation. However, in every case it reduces the threat of 800 points of damage. Note that you can't feint below 0 threat.
+
+Vanish removes you from all mobs threat lists, but if you are fighting a boss you will get back on due to the in-combat pulse every tick. However, if you are the last person alive, a vanish will cause the boss to go out of combat, so youll survive if you can achieve that feat.
+
+(D) Paladin
+Paladins receive 50% threat from healing compared to other healers. This is designed to stop them tanking instances by healing everything in sight. As a side affect, this gives them a decent advantage over other healers where healing threat is an issue.
+
+When the Righteous Fury buff is active, Holy damage causes 1.6 threat, or 1.9 threat if you have 3/3 Improved Righteous Fury.
+Holy Shield damage gives another 1.2 multiplier, for 1.9 * 1.2 = 2.28 threat per damage with talented Righteous Fury.
+
+(E) Priest
+The Silent Resolve talent gives a 0.8 multiplier to threat from spells. Shadow Affinity multiplies threat from shadow spells by 0.75. For example, with Silent Resolve and Shadow Affinity and Blessing of Salvation, your threat from shadow spells is 0.8 * 0.7 * 0.75 = 42% of normal.
+
+Mind Blast generates 2 threat per damage, all ranks.
+
+Fade reduces your threat temporarily by a fixed amount - 820 at max rank, and is not affected by threat modifiers, such as Silent Resolve. This is a good thing since a priest would only have negative threat modifiers on. When the buff ends, you get the same threat back, so there is no net gain from spamming Fade you should leave it as a panic button instead. Note that you cant fade to below 0 threat.
+
+(F) Warlock
+The healing from Life Tap, Siphon Life, and Drain Life doesnt cause threat, but the application of the Siphon Life debuff causes a small amount of threat, and the damage from Drain Life counts. Most curses cause non-zero threat.
+
+Searing pain is 2 threat per damage, all ranks.
+
+Fel Stamina and Fel Energy do generate threat.
+
+(G) Shaman
+The talent Healing Grace is a multiplier, 0.85 at max level, which would give you 68% threat from heals with a Tranquil Air totem.
+
+Earth Shock is 2 threat per damage, all ranks.
+
+Each rank of Rockbiter Weapon triggers a weapon proc that is designed to give a fixed threat per second. At max rank, Rockbiter gives 72 threat per second on successful hits. If you had a 3.0 speed weapon, each successful hit (not a miss, dodge or parry) would add 3 * 72 = 216 threat.
+
+(H) Mage
+The mage talents Frost Channeling, Burning Soul and Arcane Subtlety give 0.7, 0.7 and 0.6 threat multipliers to Frost, Fire and Arcane spells respectively.
+
+(I) Hunter
+Feign Death is a complete threat wipe, as long as it isnt resisted.
+Distracting shot is a flat 600 threat at max rank.
+
+Items
+(source 17.23 KTM_Data.lua)
+Blackamnesty......-540
+Thunderfury.........241 (attack speed debuff = 92, nature resistance debuff = 149)
+- This is the source for the TF hate numbers http://forums.elitistjerks.com/viewtopic.php?id=7138 . Note, the hate figures cited in the reference thread include warrior defiance and def stance modifiers from back when these were additive (i.e. 1.45), while this document removes the modifiers - meaning the numbers will be quoted differently. The above number (241) used by KTM includes the hate contribution from both the debuffs - the nature debuff and the slowing debuff - as it is generally the direct aggro target hate that is the most interesting. Additionally, KTM only tracks single target hate, so combining the two procs makes sense. The 300 nature damage proc is additional hate computed separately
+
+7) And One Other Thing...
+Crits dont give you any extra threat just for being crits.
+
+Overwriting a buff doesnt affect the threat caused. E.g. Sunder Armor causes as much threat when there are 5 debuffs as none, and player buffs cause just as much threat if the player already had one up.
+
+Last edited by Whiteknight (December 4th, 2006 at 9:45PM)
+
+Links and References
+
+http://evilempireguild.org/guides/kenco2.php - Kenco's thesis, 21 July 2006. This is the source I reposted above, prior to relevant updates.
+http://wow.curse-gaming.com/en/files/de ¡K reatmeter/ KLHThreatmeter - the latest version of the mod.

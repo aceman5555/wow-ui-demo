@@ -1,0 +1,70 @@
+
+BossNotesPersonalNotesDB = {
+	["char"] = {
+		["Gitt - Cho'gall"] = {
+			["playerClass"] = "WARRIOR",
+			["notes"] = {
+				["encounter:56173"] = {
+					[""] = {
+						["clientVersion"] = "4.3.4",
+						["time"] = 1337908717,
+						["content"] = "Group 3: Stack on {Diamond}\nGroup 4: Stack on {Triangle}\nGroup 5: Stack on {Square}",
+					},
+				},
+				["encounter:55308"] = {
+					[""] = {
+						["clientVersion"] = "4.3.4",
+						["time"] = 1337909523,
+						["content"] = ".\n---Bump Phases---\nNeed 2 Solo Bumpers\n.\nFirst Time: 7 Bumps\nSecond Time: 7 Bumps\nThird Time: 5 Bumps\n.\n---Black Phase---\nGroup 2 {Square}\nGroup 3 {Triangle}\nGroup 4 {Diamond}\nGroup 5 {Star}\n.",
+					},
+				},
+				["encounter:53879"] = {
+					[""] = {
+						["clientVersion"] = "4.3.4",
+						["time"] = 1337909647,
+						["content"] = ".\n---Corruptions---\nGroup 3\n.",
+					},
+				},
+				["encounter:55689"] = {
+					[""] = {
+						["clientVersion"] = "4.3.4",
+						["time"] = 1337908898,
+						["content"] = ".\n---Lightning Phase---\n.\nGroup 1 {Square}\nGroup 2 {Triangle}\nGroup 3 {Diamond}\nGroup 4 {Star}\n.",
+					},
+				},
+				["encounter:56427"] = {
+					[""] = {
+						["clientVersion"] = "4.3.4",
+						["time"] = 1337908833,
+						["content"] = ".\n---PHASE 1---\nGroups 1-2: DPS Left Drake\nGroups 3-4: DPS Right Drake\n.\n---PHASE 2---\nGroup 3: Stack on {Triangle}\nGroup 4: Stack on {Diamond}\n.",
+					},
+				},
+				["instance:DragonSoul"] = {
+					[""] = {
+					},
+				},
+				["encounter:55265"] = {
+					[""] = {
+						["clientVersion"] = "4.3.4",
+						["time"] = 1337909492,
+						["content"] = ".\nGroups 1-2: DPS Kohcrom on LEFT\nGroups 3-4: DPS Morchok on RIGHT\n.",
+					},
+				},
+				["encounter:55294"] = {
+					[""] = {
+						["clientVersion"] = "4.3.4",
+						["time"] = 1337909598,
+						["content"] = ".\n---Hour of Twilight Order---\nGroup 1,\nGroup 2,\nGroup 3,\nGroup 1,\nGroup 2,\nGroup 3,\nGroup 1,\nGroup 2\n.",
+					},
+				},
+			},
+			["publicNotesNotificationSeen"] = true,
+		},
+	},
+	["global"] = {
+		["databaseVersion"] = 2,
+	},
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Default",
+	},
+}

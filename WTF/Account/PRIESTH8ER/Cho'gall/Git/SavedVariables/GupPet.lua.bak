@@ -1,0 +1,647 @@
+
+GUPPET_SAVEDDATA = {
+	["Companion"] = {
+		{
+			["Name"] = "Baby Blizzard Bear",
+			["Slot"] = 1,
+			["Id"] = 61855,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 32841,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Blue Mini Jouster",
+			["Slot"] = 2,
+			["Id"] = 78683,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 42177,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		{
+			["Name"] = "Cobra Hatchling",
+			["Slot"] = 3,
+			["Id"] = 61351,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 32591,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [3]
+		{
+			["Name"] = "Core Hound Pup",
+			["Slot"] = 4,
+			["Id"] = 69452,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 36871,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [4]
+		{
+			["Name"] = "Elwynn Lamb",
+			["Slot"] = 5,
+			["Id"] = 62516,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 33200,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [5]
+		{
+			["Name"] = "Lil' K.T.",
+			["Slot"] = 6,
+			["Id"] = 69677,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 36979,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [6]
+		{
+			["Name"] = "Miniwing",
+			["Slot"] = 7,
+			["Id"] = 39181,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 22445,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [7]
+		{
+			["Name"] = "Mr. Chilly",
+			["Slot"] = 8,
+			["Id"] = 55068,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 29726,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [8]
+		{
+			["Name"] = "Mr. Wiggles",
+			["Slot"] = 9,
+			["Id"] = 28739,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 16548,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [9]
+		{
+			["Name"] = "Onyxian Whelpling",
+			["Slot"] = 10,
+			["Id"] = 69002,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 36607,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [10]
+		{
+			["Name"] = "Pandaren Monk",
+			["Slot"] = 11,
+			["Id"] = 69541,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 36911,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [11]
+		{
+			["Name"] = "Pengu",
+			["Slot"] = 12,
+			["Id"] = 61357,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 32595,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [12]
+		{
+			["Name"] = "Perky Pug",
+			["Slot"] = 13,
+			["Id"] = 70613,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 37865,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [13]
+		{
+			["Name"] = "Proto-Drake Whelp",
+			["Slot"] = 14,
+			["Id"] = 61350,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 32592,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [14]
+		{
+			["Name"] = "Sinister Squashling",
+			["Slot"] = 15,
+			["Id"] = 42609,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 23909,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [15]
+		{
+			["Name"] = "Smolderweb Hatchling",
+			["Slot"] = 16,
+			["Id"] = 16450,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 10598,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [16]
+		{
+			["Name"] = "Strand Crawler",
+			["Slot"] = 17,
+			["Id"] = 62561,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 33226,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [17]
+		{
+			["Name"] = "Tickbird Hatchling",
+			["Slot"] = 18,
+			["Id"] = 61348,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 32589,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [18]
+		{
+			["Name"] = "White Tickbird Hatchling",
+			["Slot"] = 19,
+			["Id"] = 61349,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 32590,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [19]
+		{
+			["Name"] = "Worg Pup",
+			["Slot"] = 20,
+			["Id"] = 15999,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 10259,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [20]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 20,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 20,
+	},
+	["Aquatic"] = {
+		{
+			["Name"] = "Abyssal Seahorse",
+			["Slot"] = 1,
+			["Id"] = 75207,
+			["CreatureID"] = 40054,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Sea Turtle",
+			["Slot"] = 15,
+			["Id"] = 64731,
+			["CreatureID"] = 34187,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 2,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 2,
+	},
+	["Fly"] = {
+		{
+			["Name"] = "Black Drake Mount",
+			["Slot"] = 3,
+			["Id"] = 59650,
+			["CreatureID"] = 31778,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Bloodbathed Frostbrood Vanquisher",
+			["Slot"] = 6,
+			["Id"] = 72808,
+			["CreatureID"] = 38778,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		{
+			["Name"] = "Bronze Drake Mount",
+			["Slot"] = 7,
+			["Id"] = 59569,
+			["CreatureID"] = 31717,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [3]
+		{
+			["Name"] = "Flying Machine",
+			["Slot"] = 9,
+			["Id"] = 44153,
+			["CreatureID"] = 24653,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [4]
+		{
+			["Name"] = "Red Drake",
+			["Slot"] = 12,
+			["Id"] = 59570,
+			["CreatureID"] = 31697,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [5]
+		{
+			["Name"] = "Red Proto-Drake",
+			["Slot"] = 13,
+			["Id"] = 59961,
+			["CreatureID"] = 31902,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [6]
+		{
+			["Name"] = "Rusted Proto-Drake",
+			["Slot"] = 14,
+			["Id"] = 63963,
+			["CreatureID"] = 33904,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [7]
+		{
+			["Name"] = "Swift Red Wind Rider",
+			["Slot"] = 16,
+			["Id"] = 32246,
+			["CreatureID"] = 18377,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [8]
+		{
+			["Name"] = "Tawny Wind Rider",
+			["Slot"] = 18,
+			["Id"] = 32243,
+			["CreatureID"] = 18363,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [9]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 9,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 9,
+	},
+	["Multi"] = {
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 0,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 0,
+	},
+	["Ground"] = {
+		{
+			["Name"] = "Armored Brown Bear",
+			["Slot"] = 2,
+			["Id"] = 60116,
+			["CreatureID"] = 32207,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Black War Bear",
+			["Slot"] = 4,
+			["Id"] = 60119,
+			["CreatureID"] = 32205,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		{
+			["Name"] = "Black War Mammoth",
+			["Slot"] = 5,
+			["Id"] = 59788,
+			["CreatureID"] = 31850,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [3]
+		{
+			["Name"] = "Brown Riding Camel",
+			["Slot"] = 8,
+			["Id"] = 88748,
+			["CreatureID"] = 47652,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [4]
+		{
+			["Name"] = "Flying Machine",
+			["Slot"] = 9,
+			["Id"] = 44153,
+			["CreatureID"] = 24653,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [5]
+		{
+			["Name"] = "Goblin Trike",
+			["Slot"] = 10,
+			["Id"] = 87090,
+			["CreatureID"] = 46754,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [6]
+		{
+			["Name"] = "Goblin Turbo-Trike",
+			["Slot"] = 11,
+			["Id"] = 87091,
+			["CreatureID"] = 46755,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [7]
+		{
+			["Name"] = "Tan Riding Camel",
+			["Slot"] = 17,
+			["Id"] = 88749,
+			["CreatureID"] = 47653,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [8]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 8,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 8,
+	},
+	["Unknown"] = {
+		["Total"] = 0,
+	},
+}
+GUPPET_SAVEDLOCATIONS = {
+	["BattleGrounds"] = 40,
+	["Instances"] = 20,
+	["Arenas"] = 30,
+	["Cities"] = 10,
+	["Global World"] = 0,
+}
+GUPPET_OPTIONS = {
+	["Debug"] = false,
+	["PreviewFrameStartPos"] = 0,
+	["Class"] = {
+		["AquaticForm"] = true,
+		["FlyForm"] = true,
+	},
+	["IngameButton"] = {
+		["MountButton"] = "Auto",
+		["xOffset"] = 0,
+		["Icons"] = {
+			["Fly"] = "Interface\\Icons\\Ability_Mount_Drake_Bronze.blp",
+			["Companion"] = "Interface\\Icons\\INV_Box_PetCarrier_01.blp",
+			["Ground"] = "Interface\\Icons\\Ability_Mount_Mammoth_Black.blp",
+			["Auto"] = "Interface\\Icons\\Ability_Mount_Drake_Azure.blp",
+		},
+		["yOffset"] = 0,
+		["Show"] = true,
+		["Alignment"] = "H",
+		["RelativePoint"] = "CENTER",
+		["CompanionButton"] = true,
+		["Lock"] = false,
+		["Scale"] = 1,
+	},
+	["NewVersion"] = 0,
+	["AutoDismount"] = false,
+	["PreviewFrameSpeed"] = 1,
+	["AutoCompanion"] = {
+		["Enabled"] = false,
+		["PetOfTheDay"] = {
+			["Enabled"] = false,
+			["Day"] = 0,
+			["Month"] = 0,
+			["PetId"] = 29726,
+			["Year"] = 0,
+		},
+		["Outside"] = true,
+		["BattleGround"] = true,
+		["Party"] = true,
+		["City"] = true,
+		["DismissMounted"] = false,
+		["Resummon"] = 0,
+		["Arena"] = true,
+		["Delay"] = 2,
+		["Raid"] = true,
+	},
+	["MinimapButton"] = {
+		["Show"] = false,
+		["Radius"] = 78,
+		["Position"] = 355,
+		["xOffset"] = 0,
+		["RelativePoint"] = "",
+		["Lock"] = true,
+		["yOffset"] = 0,
+	},
+	["Mode"] = "Expert_",
+}

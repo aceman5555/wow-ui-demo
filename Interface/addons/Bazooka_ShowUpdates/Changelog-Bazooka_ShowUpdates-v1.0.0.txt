@@ -1,0 +1,22 @@
+------------------------------------------------------------------------
+r3 | ternobeus | 2010-10-27 15:53:07 +0000 (Wed, 27 Oct 2010) | 1 line
+Changed paths:
+   A /tags/v1.0.0 (from /trunk:2)
+
+Tagging as v1.0.0
+------------------------------------------------------------------------
+r2 | ternobeus | 2010-10-27 15:46:43 +0000 (Wed, 27 Oct 2010) | 1 line
+Changed paths:
+   A /trunk/Bazooka_ShowUpdates.lua
+   A /trunk/Bazooka_ShowUpdates.toc
+
+Adding first version of files for 1.0.0
+------------------------------------------------------------------------
+r1 | root | 2010-10-27 15:11:59 +0000 (Wed, 27 Oct 2010) | 1 line
+Changed paths:
+   A /branches
+   A /tags
+   A /trunk
+
+"bazooka_toast/mainline: Initial Import"
+------------------------------------------------------------------------

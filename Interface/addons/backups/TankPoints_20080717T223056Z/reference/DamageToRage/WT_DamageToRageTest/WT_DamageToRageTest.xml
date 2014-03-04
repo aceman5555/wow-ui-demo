@@ -1,0 +1,140 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+	<!-- Lua Scripts -->
+	<Script file="WT_DamageToRageTest.lua"/>
+	
+	<!-- Main LinkFactory frame -->
+	<Frame name="WT_DamageToRageTestFrame" parent="UIParent" enableMouse="true" movable="true" frameStrata="DIALOG" hidden="true" toplevel="true">
+		<Size>
+			<AbsDimension x="370" y="400"/>
+		</Size>
+		
+		<Anchors>
+			<Anchor point="CENTER"/>
+		</Anchors>
+
+		<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11" />
+			</BackgroundInsets>
+		</Backdrop>
+		
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture name="$parentHeaderTexture" file="Interface\DialogFrame\UI-DialogBox-Header">
+					<Size>
+						<AbsDimension x="360" y="64" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOP">
+							<Offset>
+								<AbsDimension x="0" y="12" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+				<FontString name="$parentHeaderText" inherits="GameFontNormal" text="WT_DamageToRageTest">
+					<Anchors>
+						<Anchor point="TOP" relativeTo="WT_DamageToRageTestFrame">
+							<Offset>
+								<AbsDimension x="0" y="-2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		
+		<Frames>
+		    <!-- Drag Frame -->
+			<Frame name="$parentDrag">
+				<Size>
+					<AbsDimension x="170" y="32"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset>
+							<AbsDimension x="0" y="12"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnMouseDown>
+						if ( arg1 == "LeftButton" ) then
+							this:GetParent():StartMoving();
+						elseif ( arg1 == "RightButton" ) then
+							this:GetParent():ClearAllPoints();
+							this:GetParent():SetPoint("CENTER", "UIParent", "CENTER");
+						end
+					</OnMouseDown>
+					<OnMouseUp>
+						this:GetParent():StopMovingOrSizing();
+					</OnMouseUp>
+					<OnEnter>
+						GameTooltip:SetOwner(this, "ANCHOR_RIGHT");
+						GameTooltip:SetText("Left-click to drag\nRight-click to reset");
+					</OnEnter>
+					<OnLeave>
+						GameTooltip:Hide();
+					</OnLeave>
+				</Scripts>
+			</Frame>
+		    <!-- Test Button -->
+			<Button name="WT_DamageToRageTestFrame_TestButton" inherits="OptionsButtonTemplate" text="Reset">
+				<Anchors>
+					<Anchor point="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="20" y="20"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						WT_DamageToRageTestFrame_TestButton_OnClick();
+					</OnClick>
+				</Scripts>
+			</Button>
+		    <!-- Reset Button -->
+			<Button name="WT_DamageToRageTestFrame_ResetButton" inherits="OptionsButtonTemplate" text="Reset">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="WT_DamageToRageTestFrame" relativePoint="TOP">
+						<Offset>
+                            <AbsDimension x="0" y="-30"/>
+                        </Offset>
+                    </Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						WT_DamageToRageTestFrame_ResetButton_OnClick();
+					</OnClick>
+				</Scripts>
+			</Button>
+		    <!-- Close Button -->
+			<Button name="WT_DamageToRageTestFrame_CloseButton" inherits="OptionsButtonTemplate" text="Close">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="-20" y="20"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						HideUIPanel(WT_DamageToRageTestFrame);
+					</OnClick>
+				</Scripts>
+			</Button>
+		</Frames>
+		
+		<Scripts>	
+			<OnLoad>
+				WT_DamageToRageTestFrame_OnLoad();
+			</OnLoad>
+            <OnEvent>
+                WT_DamageToRageTestFrame_OnEvent(event);
+            </OnEvent>
+			<OnShow>
+				--WT_DamageToRageTestFrame_Update();
+			</OnShow>
+		</Scripts>
+	</Frame>
+</Ui>

@@ -1,0 +1,3398 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
+
+	<GameTooltip name="Trinity2TooltipScan" frameStrata="TOOLTIP" hidden="true" parent="UIParent" inherits="GameTooltipTemplate">
+		<Scripts>
+			<OnLoad>
+				self:SetOwner(UIParent, "ANCHOR_NONE");
+			</OnLoad>
+		</Scripts>
+	</GameTooltip>
+
+	<Font name="Trinity2GameFontNormalSmall" inherits="MasterFont" font="Fonts\FRIZQT__.TTF" virtual="true">
+		<FontHeight>
+			<AbsValue val="9"/>
+		</FontHeight>
+		<Color r="1.0" g="0.82" b="0"/>
+	</Font>
+
+	<Font name="Trinity2GameFontNormalSmaller" inherits="MasterFont" font="Fonts\FRIZQT__.TTF" virtual="true">
+		<FontHeight>
+			<AbsValue val="8"/>
+		</FontHeight>
+		<Color r="1.0" g="0.82" b="0"/>
+	</Font>
+
+	<Font name="TrinityNumberFontNormalSmall" font="Fonts\FRIZQT__.TTF" outline="NORMAL" virtual="true" >
+		<FontHeight>
+			<AbsValue val="8"/>
+		</FontHeight>
+		<Color r="1.0" g="1.0" b="1.0"/>
+	</Font>
+
+	<Font name="Trinity2NumberFontNormalSmall" font="Fonts\ARIALN.TTF" outline="NORMAL" virtual="true">
+		<FontHeight>
+			<AbsValue val="10"/>
+		</FontHeight>
+		<Color r="1.0" g="1.0" b="1.0"/>
+	</Font>
+
+	<EditBox name="Trinity2EditBoxTemplate1" letters="2" historyLines="0" numeric="true" autoFocus="false" virtual="true">
+		<Size x="22" y="16"/>
+		<Backdrop name="$parentBackdrop" bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="8"/>
+			</EdgeSize>
+			<BackgroundInsets>
+				<AbsInset left="1" right="1" top="1" bottom="1"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Scripts>
+			<OnLoad>
+				self:SetBackdropColor(0, 0, 0);
+				self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+			</OnLoad>
+			<OnEnterPressed>
+				self:ClearFocus();
+			</OnEnterPressed>
+			<OnEscapePressed>
+				self:ClearFocus();
+			</OnEscapePressed>
+			<OnEditFocusLost>
+				self:HighlightText(0, 0);
+			</OnEditFocusLost>
+			<OnEditFocusGained>
+				self:HighlightText();
+			</OnEditFocusGained>
+		</Scripts>
+		<FontString justifyH="CENTER" inherits="NumberFontNormalSmall"/>
+	</EditBox>
+
+	<EditBox name="Trinity2EditBoxTemplate2" historyLines="0" numeric="false" autoFocus="false" nonspacewrap="true" virtual="true" >
+		<Size x="135" y="25"/>
+		<Backdrop name="$parentBackdrop" bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="18"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="8"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="3" right="3" top="2" bottom="2"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="GameFontHighlightSmall" nonspacewrap="true">
+					<Anchors>
+						<Anchor point="BOTTOM" relativeTo="$parent" relativePoint="TOP">
+							<Offset x="0" y="-2"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("VARIABLES_LOADED")
+				self:SetBackdropColor(0, 0, 0);
+				self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+			</OnLoad>
+			<OnEnterPressed>
+				self:ClearFocus();
+			</OnEnterPressed>
+			<OnEscapePressed>
+				self:ClearFocus();
+			</OnEscapePressed>
+			<OnEditFocusLost>
+				self:HighlightText(0, 0);
+			</OnEditFocusLost>
+			<OnEditFocusGained>
+				self:HighlightText();
+			</OnEditFocusGained>
+		</Scripts>
+		<FontString name="$parentFont" justifyH="CENTER" inherits="GameFontNormalSmall"/>
+	</EditBox>
+
+	<EditBox name="Trinity2EditBoxTemplate3" historyLines="0" toplevel="false" numeric="false" autoFocus="false" nonspacewrap="true" virtual="true" >
+		<Size x="135" y="25"/>
+		<Backdrop name="$parentBackdrop" bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="18"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="8"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="3" right="3" top="2" bottom="2"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="GameFontHighlightSmall" nonspacewrap="true">
+					<Anchors>
+						<Anchor point="BOTTOM" relativeTo="$parent" relativePoint="TOP">
+							<Offset x="0" y="-2"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="$parentButton" toplevel="false">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPRIGHT">
+						<Offset x="-4" y="0"/>
+					</Anchor>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parent" relativePoint="BOTTOMRIGHT">
+						<Offset x="-4" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self:RegisterEvent("VARIABLES_LOADED")
+					</OnLoad>
+					<OnEvent>
+						self:SetWidth(self:GetParent():GetHeight())
+					</OnEvent>
+					<OnClick>
+						getglobal(self:GetParent():GetName().."ScrollFrame").timer = 0;
+						if (getglobal(self:GetParent():GetName().."ScrollFrame"):IsVisible()) then
+							getglobal(self:GetParent():GetName().."ScrollFrame"):Hide()
+						else
+							getglobal(self:GetParent():GetName().."ScrollFrame"):Show()
+						end
+						PlaySound("igMainMenuOptionCheckBoxOn");
+					</OnClick>
+				</Scripts>
+				<NormalTexture name="$parentNormalTexture" file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Up"/>
+				<PushedTexture name="$parentPushedTexture" file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Down"/>
+				<DisabledTexture name="$parentDisabledTexture" file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Disabled"/>
+				<HighlightTexture name="$parentHighlightTexture" file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
+			</Button>
+			<ScrollFrame name="$parentScrollFrame">
+				<Size x="0" y="85"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="BOTTOMLEFT">
+						<Offset x="-1" y="5"/>
+					</Anchor>
+					<Anchor point="TOPRIGHT" relativeTo="$parentButton" relativePoint="BOTTOMRIGHT">
+						<Offset x="0" y="5"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\ItemTextFrame\ItemText-Stone-TopLeft" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<BackgroundInsets>
+						<AbsInset left="4" right="4" top="4" bottom="4"/>
+					</BackgroundInsets>
+					<TileSize>
+						<AbsValue val="100"/>
+					</TileSize>
+					<EdgeSize>
+						<AbsValue val="20"/>
+					</EdgeSize>
+				</Backdrop>
+				<Frames>
+					<Slider name="$parentScrollBar">
+						<Size x="12" y="0"/>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+								<Offset x="-19" y="-21"/>
+							</Anchor>
+							<Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT">
+								<Offset x="-19" y="20"/>
+							</Anchor>
+						</Anchors>
+						<Frames>
+							<Button name="$parentScrollUpButton">
+								<Size x="15" y="15"/>
+								<Anchors>
+									<Anchor point="BOTTOM" relativePoint="TOP"/>
+								</Anchors>
+								<Scripts>
+									<OnClick>
+										local parent = self:GetParent();
+										parent:SetValue(parent:GetValue() - 1);
+										PlaySound("UChatScrollButton");
+									</OnClick>
+								</Scripts>
+								<NormalTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollUpButton-Up"/>
+								<PushedTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollUpButton-Down"/>
+								<DisabledTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollUpButton-Disabled"/>
+								<HighlightTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollUpButton-Highlight" alphaMode="ADD"/>
+							</Button>
+
+							<Button name="$parentScrollDownButton">
+								<Size x="15" y="15"/>
+								<Anchors>
+									<Anchor point="TOP" relativePoint="BOTTOM"/>
+								</Anchors>
+								<Scripts>
+									<OnClick>
+										local parent = self:GetParent();
+										parent:SetValue(parent:GetValue() + 1);
+										PlaySound("UChatScrollButton");
+									</OnClick>
+								</Scripts>
+								<NormalTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollDownButton-Up"/>
+								<PushedTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollDownButton-Down"/>
+								<DisabledTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollDownButton-Disabled"/>
+								<HighlightTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollDownButton-Highlight" alphaMode="ADD"/>
+							</Button>
+						</Frames>
+						<Scripts>
+							<OnLoad>
+								self:SetMinMaxValues(0, 0);
+								self:SetValue(0);
+							</OnLoad>
+							<OnValueChanged>
+								self:GetParent():SetVerticalScroll(arg1);
+							</OnValueChanged>
+						</Scripts>
+						<ThumbTexture name="$parentThumbTexture" inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-Knob">
+							<Size x="15" y="15"/>
+						</ThumbTexture>
+					</Slider>
+					<Button name="$parentOption1" inherits="Trinity2ButtonTemplate3">
+						<Size x="0" y="14"/>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+								<Offset x="3" y="-5"/>
+							</Anchor>
+							<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+								<Offset x="-15" y="-5"/>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="$parentOption2" inherits="Trinity2ButtonTemplate3">
+						<Size x="0" y="14"/>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+								<Offset x="3" y="-20"/>
+							</Anchor>
+							<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+								<Offset x="-15" y="-20"/>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="$parentOption3" inherits="Trinity2ButtonTemplate3">
+						<Size x="0" y="14"/>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+								<Offset x="3" y="-35"/>
+							</Anchor>
+							<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+								<Offset x="-15" y="-35"/>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="$parentOption4" inherits="Trinity2ButtonTemplate3">
+						<Size x="0" y="14"/>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+								<Offset x="3" y="-50"/>
+							</Anchor>
+							<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+								<Offset x="-15" y="-50"/>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="$parentOption5" inherits="Trinity2ButtonTemplate3">
+						<Size x="0" y="14"/>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+								<Offset x="3" y="-65"/>
+							</Anchor>
+							<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+								<Offset x="-15" y="-65"/>
+							</Anchor>
+						</Anchors>
+					</Button>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self.offset = 0;
+						self:SetBackdropColor(0.15,0.15,0.15,1);
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+						self:Hide()
+						self.timer = 0
+					</OnLoad>
+					<OnShow>
+						Trinity2.ScrollFrame_OnShow(self:GetParent())
+						if ( self.func ) then
+							self.func(self);
+						end
+						self.timer = 0
+					</OnShow>
+					<OnScrollRangeChanged>
+						ScrollFrame_OnScrollRangeChanged(arg2);
+						self.timer = 0
+					</OnScrollRangeChanged>
+					<OnVerticalScroll>
+						local scrollbar = getglobal(self:GetName().."ScrollBar");
+						scrollbar:SetValue(arg1);
+						local min;
+						local max;
+						min, max = scrollbar:GetMinMaxValues();
+						getglobal(scrollbar:GetName().."ScrollUpButton"):Enable();
+						getglobal(scrollbar:GetName().."ScrollDownButton"):Enable();
+						if ( self.func ) then
+							self.func(self);
+						end
+						self.timer = 0
+					</OnVerticalScroll>
+					<OnMouseWheel>
+						local scrollBar = getglobal(self:GetName().."ScrollBar");
+						if ( arg1 == 1 ) then
+							scrollBar:SetValue(scrollBar:GetValue() - 1);
+						else
+							scrollBar:SetValue(scrollBar:GetValue() + 1);
+						end
+						self.timer = 0
+					</OnMouseWheel>
+					<OnUpdate>
+						self.timer = self.timer + arg1
+						if (self.timer > 5) then
+							self:Hide()
+						end
+					</OnUpdate>
+				</Scripts>
+			</ScrollFrame>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self.scrollframe = getglobal(self:GetName().."ScrollFrame")
+				self:RegisterEvent("VARIABLES_LOADED")
+				self:SetBackdropColor(0, 0, 0);
+				self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+			</OnLoad>
+			<OnTabPressed>
+				self:ClearFocus();
+			</OnTabPressed>
+			<OnEnterPressed>
+				self:ClearFocus();
+			</OnEnterPressed>
+			<OnEscapePressed>
+				self:ClearFocus();
+			</OnEscapePressed>
+			<OnEditFocusLost>
+				self:HighlightText(0, 0);
+			</OnEditFocusLost>
+			<OnEditFocusGained>
+				self:HighlightText();
+			</OnEditFocusGained>
+		</Scripts>
+		<FontString justifyH="CENTER" inherits="GameFontNormalSmall"/>
+	</EditBox>
+
+	<EditBox name="Trinity2EditBoxTemplate4" letters="6" historyLines="0" numeric="false" autoFocus="false" virtual="true">
+		<Size x="55" y="22"/>
+		<Backdrop name="$parentBackdrop" bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="12"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="20"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="3" right="3" top="3" bottom="3"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Scripts>
+			<OnLoad>
+				self:SetBackdropColor(0, 0, 0);
+				self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+			</OnLoad>
+			<OnEscapePressed>
+				self:ClearFocus()
+			</OnEscapePressed>
+			<OnTextChanged>
+
+			</OnTextChanged>
+			<OnEditFocusLost>
+				self:HighlightText(0, 0)
+			</OnEditFocusLost>
+			<OnEditFocusGained>
+				self:HighlightText()
+			</OnEditFocusGained>
+		</Scripts>
+		<FontString justifyH="CENTER" inherits="GameFontNormalSmall"/>
+	</EditBox>
+
+	<EditBox name="Trinity2EditBoxTemplate5" historyLines="0" toplevel="false" numeric="false" autoFocus="false" nonspacewrap="true" virtual="true" >
+		<Backdrop name="$parentBackdrop" bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="18"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="8"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="3" right="3" top="2" bottom="2"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="GameFontHighlightSmall" nonspacewrap="true">
+					<Anchors>
+						<Anchor point="BOTTOM" relativeTo="$parent" relativePoint="TOP">
+							<Offset x="0" y="-2"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="$parentButton" toplevel="false">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPRIGHT">
+						<Offset x="-4" y="0"/>
+					</Anchor>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parent" relativePoint="BOTTOMRIGHT">
+						<Offset x="-4" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self:RegisterEvent("VARIABLES_LOADED")
+					</OnLoad>
+					<OnEvent>
+						self:SetWidth(self:GetParent():GetHeight())
+					</OnEvent>
+					<OnClick>
+						self:GetParent().popup.timer = 0;
+						if (self:GetParent().popup:IsVisible()) then
+							self:GetParent().popup:Hide()
+						else
+							if (self:GetParent().popup.data) then
+								self:GetParent().popup:Show()
+							end
+						end
+						PlaySound("igMainMenuOptionCheckBoxOn");
+					</OnClick>
+				</Scripts>
+				<NormalTexture name="$parentNormalTexture" file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Up"/>
+				<PushedTexture name="$parentPushedTexture" file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Down"/>
+				<DisabledTexture name="$parentDisabledTexture" file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Disabled"/>
+				<HighlightTexture name="$parentHighlightTexture" file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
+			</Button>
+			<Frame name="$parentPopUp" toplevel="true" clampedToScreen="true">
+				<Anchors>
+					<Anchor point="RIGHT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop name="$parentBackdrop" bgFile="Interface\ItemTextFrame\ItemText-Stone-TopLeft" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="18"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="8"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="3" right="3" top="2" bottom="2"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Scripts>
+					<OnLoad>
+						self.timer = 0
+						self.options = {}
+						self:RegisterEvent("VARIABLES_LOADED")
+						self:SetBackdropColor(0, 0, 0);
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+						self:Hide()
+					</OnLoad>
+					<OnShow>
+						self.timer = 0
+					</OnShow>
+					<OnUpdate>
+						self.timer = self.timer + elapsed
+						if (self:IsVisible() and self.timer > 5) then
+							if (not MouseIsOver(self)) then
+								self:Hide()
+							end
+						end
+					</OnUpdate>
+				</Scripts>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self.popup = getglobal(self:GetName().."PopUp")
+				self:RegisterEvent("VARIABLES_LOADED")
+				self:SetBackdropColor(0, 0, 0);
+				self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+			</OnLoad>
+			<OnTabPressed>
+				self:ClearFocus();
+			</OnTabPressed>
+			<OnEnterPressed>
+				self:ClearFocus();
+			</OnEnterPressed>
+			<OnEscapePressed>
+				self:ClearFocus();
+			</OnEscapePressed>
+			<OnEditFocusLost>
+				self:HighlightText(0, 0);
+			</OnEditFocusLost>
+			<OnEditFocusGained>
+				self:HighlightText();
+			</OnEditFocusGained>
+		</Scripts>
+		<FontString justifyH="CENTER" inherits="GameFontNormalSmall"/>
+	</EditBox>
+
+	<Button name="Trinity2DockFrameTemplate" enableMouse="true" movable="true" frameStrata="MEDIUM" toplevel="false" virtual="true" inherits="SecureAnchorEnterTemplate" clampedToScreen="false">
+		<Size x="36" y="36"/>
+		<Backdrop name="$parentBackdrop" bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="8"/>
+			</EdgeSize>
+			<BackgroundInsets>
+				<AbsInset left="2" right="2" top="2" bottom="2"/>
+			</BackgroundInsets>
+			<Anchors>
+				<Anchor point="TOPLEFT"/>
+				<Anchor point="BOTTOMRIGHT"/>
+			</Anchors>
+		</Backdrop>
+		<Layers>
+			<Layer level="OVERLAY">
+				<Texture name="$parentSnapToTop" file="Interface\AddOns\Trinity2\images\StickyTop.tga" alphaMode="ADD" hidden="true">
+					<Size x="32" y="16"/>
+					<Anchors>
+						<Anchor point="BOTTOM" relativeTo="$parent" relativePoint="TOP"/>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentSnapToBottom" file="Interface\AddOns\Trinity2\images\StickyBottom.tga" alphaMode="ADD" hidden="true">
+					<Size x="32" y="16"/>
+					<Anchors>
+						<Anchor point="TOP" relativeTo="$parent" relativePoint="BOTTOM"/>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentSnapToLeft" file="Interface\AddOns\Trinity2\images\StickyLeft.tga" alphaMode="ADD" hidden="true">
+					<Size x="16" y="32"/>
+					<Anchors>
+						<Anchor point="RIGHT" relativeTo="$parent" relativePoint="LEFT"/>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentSnapToRight" file="Interface\AddOns\Trinity2\images\StickyRight.tga" alphaMode="ADD" hidden="true">
+					<Size x="16" y="32"/>
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parent" relativePoint="RIGHT"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="BACKGROUND">
+				<FontString name="$parentText" inherits="GameFontNormal" justifyH="CENTER">
+					<Anchors>
+						<Anchor point="BOTTOM" relativeTo="$parent" relativePoint="TOP">
+							<Offset x="0" y="1"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentState" inherits="GameFontNormal" justifyH="CENTER">
+					<Anchors>
+						<Anchor point="CENTER" relativeTo="$parent" relativePoint="CENTER">
+							<Offset x="0" y="0"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<CheckButton name="$parentKeyBind" inherits="SecureActionButtonTemplate, SecureAnchorUpDownTemplate">
+				<Scripts>
+					<OnLoad>
+						self:RegisterForClicks("AnyUp")
+						self:SetAttribute("onmouseupbutton", "up")
+					</OnLoad>
+					<PostClick>
+						--DEFAULT_CHAT_FRAME:AddMessage(self:GetName())
+					</PostClick>
+				</Scripts>
+			</CheckButton>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				Trinity2.DockFrame_OnLoad(self)
+			</OnLoad>
+			<OnEvent>
+				Trinity2.DockFrame_OnEvent(self, event)
+			</OnEvent>
+			<OnClick>
+				Trinity2.DockFrame_OnClick(self, button)
+			</OnClick>
+			<OnKeyDown>
+				Trinity2.DockFrame_OnKeyDown(self, key)
+			</OnKeyDown>
+			<OnDragStart>
+				Trinity2.DockFrame_OnDragStart(self)
+			</OnDragStart>
+			<OnDragStop>
+				Trinity2.DockFrame_OnDragStop(self)
+			</OnDragStop>
+			<OnEnter>
+				Trinity2.DockFrame_OnEnter(self)
+			</OnEnter>
+			<OnLeave>
+				Trinity2.DockFrame_OnLeave(self)
+			</OnLeave>
+			<OnUpdate>
+				Trinity2.DockFrame_OnUpdate(self, elapsed)
+			</OnUpdate>
+			<OnMouseWheel>
+				Trinity2.DockFrame_OnMouseWheel(self, delta)
+			</OnMouseWheel>
+		</Scripts>
+	</Button>
+
+	<CheckButton name="Trinity2RoundCheckTemplate" virtual="true">
+		<Size x="16" y="16"/>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="GameFontNormal" nonspacewrap="true">
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parent" relativePoint="RIGHT">
+							<Offset x="0" y="1"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("VARIABLES_LOADED");
+				self:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+			</OnLoad>
+		</Scripts>
+		<NormalTexture file="Interface\Addons\Trinity2\images\RoundCheckBox.tga"/>
+		<CheckedTexture file="Interface\Addons\Trinity2\images\RoundCheck.tga"/>
+		<DisabledTexture file="Interface\Addons\Trinity2\images\RoundCheckDisabled.tga"/>
+		<HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD"/>
+	</CheckButton>
+
+	<CheckButton name="Trinity2RoundCheckTemplate2" virtual="true">
+		<Size x="14" y="14"/>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="GameFontNormalSmall" nonspacewrap="true">
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parent" relativePoint="RIGHT">
+							<Offset x="0" y="0"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("VARIABLES_LOADED");
+				self:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+			</OnLoad>
+		</Scripts>
+		<NormalTexture file="Interface\Addons\Trinity2\images\RoundCheckBox.tga"/>
+		<CheckedTexture file="Interface\Addons\Trinity2\images\RoundCheckGreen.tga"/>
+		<DisabledTexture file="Interface\Addons\Trinity2\images\RoundCheckDisabled.tga"/>
+		<HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD"/>
+	</CheckButton>
+
+	<CheckButton name="Trinity2RoundCheckDockOptionsTemplate" inherits="Trinity2RoundCheckTemplate2" virtual="true">
+		<Scripts>
+			<OnEvent>
+				getglobal(self:GetName().."Text"):SetPoint("LEFT", self, "RIGHT", 2, 1)
+				self:Hide()
+				self.tooltip = ""
+			</OnEvent>
+			<OnClick>
+				PlaySound("gsTitleOptionOK");
+				if (self.func) then
+					self.func(self, self.currFrame)
+				end
+				if (self.checkgroup) then
+					if (Trinity2DockFrameOptions.checkgroup) then
+						for k,v in pairs(Trinity2DockFrameOptions.checkgroup[self.checkgroup]) do
+							if (v ~= self) then
+								v:SetChecked(nil)
+								if (v.func) then
+									v.func(v, v.currFrame)
+								end
+							end
+						end
+					end
+				end
+			</OnClick>
+			<OnEnter>
+				if (self.tooltip) then
+					GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+					GameTooltip:SetText(self.tooltip)
+				end
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide();
+			</OnLeave>
+		</Scripts>
+	</CheckButton>
+
+	<CheckButton name="Trinity2MenuButtonTemplate" hidden="false" virtual="true">
+		<Size x="125" y="28"/>
+		<Backdrop bgFile="Interface\ItemTextFrame\ItemText-Stone-TopLeft" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="16"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="28"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="GameFontNormal" nonspacewrap="true" justifyH="CENTER" text="">
+					<Anchors>
+						<Anchor point="CENTER">
+							<Offset x="0" y="0"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<CheckedTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD">
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset x="3" y="-6"/>
+				</Anchor>
+				<Anchor point="BOTTOMRIGHT">
+					<Offset x="-3" y="6"/>
+				</Anchor>
+			</Anchors>
+		</CheckedTexture>
+		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD">
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset x="3" y="-6"/>
+				</Anchor>
+				<Anchor point="BOTTOMRIGHT">
+					<Offset x="-3" y="6"/>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+	</CheckButton>
+
+	<Button name="Trinity2ButtonTemplate1" text="" inherits="UIPanelButtonTemplate" virtual="true">
+		<Size x="95" y="25"/>
+	</Button>
+
+	<Button name="Trinity2ButtonTemplate2" virtual="true">
+		<Size x="60" y="20"/>
+		<NormalTexture file="Interface\Buttons\UI-Panel-Button-Up">
+			<TexCoords left="0" right="0.625" top="0" bottom="0.6875"/>
+		</NormalTexture>
+		<PushedTexture file="Interface\Buttons\UI-Panel-Button-Down">
+			<TexCoords left="0" right="0.625" top="0" bottom="0.6875"/>
+		</PushedTexture>
+		<HighlightTexture file="Interface\Buttons\UI-Panel-Button-Highlight" alphaMode="ADD">
+			<TexCoords left="0" right="0.625" top="0" bottom="0.6875"/>
+		</HighlightTexture>
+		<DisabledTexture file="Interface\Buttons\UI-Panel-Button-Disabled">
+			<TexCoords left="0" right="0.625" top="0" bottom="0.6875"/>
+		</DisabledTexture>
+		<NormalFont inherits="GameFontNormalSmall"/>
+		<HighlightFont inherits="GameFontHighlightSmall"/>
+		<DisabledFont inherits="GameFontDisableSmall"/>
+	</Button>
+
+	<Button name="Trinity2ButtonTemplate3" virtual="true">
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="GameFontHighlightSmall" justifyH="CENTER" nonspacewrap="false">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="2" y="0"/>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT">
+							<Offset x="-4" y="0"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<CheckedTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD">
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset x="1" y="-1"/>
+				</Anchor>
+				<Anchor point="BOTTOMRIGHT">
+					<Offset x="-1" y="1"/>
+				</Anchor>
+			</Anchors>
+		</CheckedTexture>
+		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD">
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset x="1" y="-1"/>
+				</Anchor>
+				<Anchor point="BOTTOMRIGHT">
+					<Offset x="-1" y="1"/>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+		<Scripts>
+			<OnClick>
+				local text = getglobal(self:GetName().."Text"):GetText()
+				self:GetParent():Hide();
+				if (text) then
+					self:GetParent():GetParent():SetText("")
+					self:GetParent():GetParent():SetText(text)
+					if (self.value and self.configFrame) then
+						self.configFrame.currFrame = getglobal(self.value)
+					end
+				end
+			</OnClick>
+			<OnEnter>
+				if (self.tooltip) then
+					GameTooltip:SetOwner(self, "ANCHOR_CURSOR")
+					GameTooltip:SetScale(0.75)
+					GameTooltip:SetText(self.tooltip)
+				end
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:SetScale(1)
+				GameTooltip:Hide()
+			</OnLeave>
+		</Scripts>
+	</Button>
+
+	<Button name="Trinity2ButtonTemplate4" virtual="true">
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="GameFontHighlightSmall" justifyH="CENTER" nonspacewrap="false">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="4" y="0"/>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT">
+							<Offset x="-4" y="0"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD">
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset x="1" y="-1"/>
+				</Anchor>
+				<Anchor point="BOTTOMRIGHT">
+					<Offset x="-1" y="1"/>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+		<Scripts>
+			<OnClick>
+				local text = getglobal(self:GetName().."Text"):GetText()
+				self:GetParent():Hide();
+				if (text) then
+					getglobal(self:GetParent():GetParent():GetName().."Text"):SetText(getglobal(self:GetName().."Text"):GetText())
+				end
+				self.func()
+			</OnClick>
+		</Scripts>
+	</Button>
+
+	<Button name="Trinity2MinimapButtonTemplate" inherits="SecureActionButtonTemplate" enableMouse="true" movable="true" hidden="true" virtual="true" clampedToScreen="false">
+		<Size x="32" y="32"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentIcon">
+					<Size x="20" y="20"/>
+					<Anchors>
+						<Anchor point="CENTER">
+							<Offset x="-0.5" y="0"/>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture name="$parentBorder" file="Interface\Minimap\MiniMap-TrackingBorder">
+					<Size x="52" y="52"/>
+					<Anchors>
+						<Anchor point="TOPLEFT"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+				self:RegisterForClicks("AnyUp");
+				self.tooltip = ""
+			</OnLoad>
+			<PreClick>
+				if (arg1 == "LeftButton") then
+					if (self.func1) then
+						self.func1()
+					end
+				elseif (arg1 == "RightButton") then
+					if (self.func2) then
+						self.func2()
+					end
+				end
+			</PreClick>
+			<OnEnter>
+				GameTooltip_SetDefaultAnchor(GameTooltip, self);
+				GameTooltip:SetText(self.tooltip)
+			</OnEnter>
+			<OnLeave>
+				self.updateTooltip = nil;
+				GameTooltip:Hide();
+			</OnLeave>
+		</Scripts>
+		<NormalTexture file=""/>
+		<HighlightTexture alphaMode="ADD" file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight"/>
+	</Button>
+
+	<Button name="Trinity2TabTemplate" virtual="true">
+		<Size>
+		    <AbsDimension x="115" y="32"/>
+		</Size>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentLeftDisabled" file="Interface\PaperDollInfoFrame\UI-Character-ActiveTab">
+					<Size>
+						<AbsDimension x="20" y="32"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="0" y="5"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+					<TexCoords left="0" right="0.15625" top="0" bottom="1.0"/>
+				</Texture>
+
+				<Texture name="$parentMiddleDisabled" file="Interface\PaperDollInfoFrame\UI-Character-ActiveTab">
+					<Size>
+						<AbsDimension x="88" y="32"/>
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parentLeftDisabled" relativePoint="RIGHT"/>
+					</Anchors>
+					<TexCoords left="0.15625" right="0.84375" top="0" bottom="1.0"/>
+				</Texture>
+
+				<Texture name="$parentRightDisabled" file="Interface\PaperDollInfoFrame\UI-Character-ActiveTab">
+					<Size>
+						<AbsDimension x="20" y="32"/>
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parentMiddleDisabled" relativePoint="RIGHT"/>
+					</Anchors>
+					<TexCoords left="0.84375" right="1.0" top="0" bottom="1.0"/>
+				</Texture>
+
+				<Texture name="$parentLeft" file="Interface\PaperDollInfoFrame\UI-Character-InActiveTab">
+					<Size>
+						<AbsDimension x="20" y="32"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="0" y ="4"/>
+						</Anchor>
+					</Anchors>
+					<TexCoords left="0" right="0.15625" top="0" bottom="1.0"/>
+				</Texture>
+
+				<Texture name="$parentMiddle" file="Interface\PaperDollInfoFrame\UI-Character-InActiveTab">
+					<Size>
+						<AbsDimension x="88" y="32"/>
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parentLeft" relativePoint="RIGHT"/>
+					</Anchors>
+					<TexCoords left="0.15625" right="0.84375" top="0" bottom="1.0"/>
+				</Texture>
+
+				<Texture name="$parentRight" file="Interface\PaperDollInfoFrame\UI-Character-InActiveTab">
+					<Size>
+						<AbsDimension x="20" y="32"/>
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parentMiddle" relativePoint="RIGHT"/>
+					</Anchors>
+					<TexCoords left="0.84375" right="1.0" top="0" bottom="1.0"/>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+				this:SetFrameLevel(this:GetFrameLevel() + 4);
+			</OnLoad>
+			<OnShow>
+				PanelTemplates_TabResize(0);
+				getglobal(this:GetName().."HighlightTexture"):SetWidth(this:GetTextWidth() + 30);
+			</OnShow>
+		</Scripts>
+		<ButtonText name="$parentText">
+			<Anchors>
+				<Anchor point="CENTER">
+					<Offset>
+						<AbsDimension x="0" y="6"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</ButtonText>
+		<NormalFont inherits="GameFontNormalSmall"/>
+		<HighlightFont inherits="GameFontHighlightSmall"/>
+		<DisabledFont inherits="GameFontHighlightSmall"/>
+		<HighlightTexture name="$parentHighlightTexture" file="Interface\PaperDollInfoFrame\UI-Character-Tab-Highlight" alphaMode="ADD">
+			<Anchors>
+				<Anchor point="LEFT">
+					<Offset>
+						<AbsDimension x="10" y="6"/>
+					</Offset>
+				</Anchor>
+				<Anchor point="RIGHT">
+					<Offset>
+						<AbsDimension x="-10" y="6"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+	</Button>
+
+	<Slider name="Trinity2SliderTemplate1" inherits="OptionsSliderTemplate" virtual="true">
+		<Size x="170" y="16"/>
+		<HitRectInsets>
+			<AbsInset left="0" right="0" top="-1" bottom="-1"/>
+		</HitRectInsets>
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("VARIABLES_LOADED")
+			</OnLoad>
+		</Scripts>
+	</Slider>
+
+	<ScrollFrame name="Trinity2ScrollFrameTemplate1" toplevel="true" virtual="true">
+		<Frames>
+			<Slider name="$parentScrollBar">
+				<Size x="12" y="0"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+						<Offset x="-14" y="-6"/>
+					</Anchor>
+					<Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT">
+						<Offset x="-14" y="6"/>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Button name="$parentScrollUpButton">
+						<Size x="12" y="12"/>
+						<Anchors>
+							<Anchor point="BOTTOM" relativePoint="TOP"/>
+						</Anchors>
+						<Scripts>
+							<OnClick>
+								local parent = self:GetParent();
+								parent:SetValue(parent:GetValue() - 2);
+								PlaySound("UChatScrollButton");
+							</OnClick>
+						</Scripts>
+						<NormalTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollUpButton-Up"/>
+						<PushedTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollUpButton-Down"/>
+						<DisabledTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollUpButton-Disabled"/>
+						<HighlightTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollUpButton-Highlight" alphaMode="ADD"/>
+					</Button>
+
+					<Button name="$parentScrollDownButton">
+						<Size x="12" y="12"/>
+						<Anchors>
+							<Anchor point="TOP" relativePoint="BOTTOM"/>
+						</Anchors>
+						<Scripts>
+							<OnClick>
+								local parent = self:GetParent();
+								parent:SetValue(parent:GetValue() + 1);
+								PlaySound("UChatScrollButton");
+							</OnClick>
+						</Scripts>
+						<NormalTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollDownButton-Up"/>
+						<PushedTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollDownButton-Down"/>
+						<DisabledTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollDownButton-Disabled"/>
+						<HighlightTexture inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-ScrollDownButton-Highlight" alphaMode="ADD"/>
+					</Button>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetMinMaxValues(0, 0);
+						self:SetValue(0);
+					</OnLoad>
+					<OnValueChanged>
+						local value= math.floor(arg1)
+						self:GetParent():SetVerticalScroll(value);
+					</OnValueChanged>
+				</Scripts>
+				<ThumbTexture name="$parentThumbTexture" inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-Knob">
+					<Size x="12" y="12"/>
+				</ThumbTexture>
+			</Slider>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self.offset = 0;
+				self.scrollbar = getglobal(self:GetName().."ScrollBar")
+				--self:SetBackdropColor(0.15,0.15,0.15,1);
+			</OnLoad>
+			<OnScrollRangeChanged>
+				ScrollFrame_OnScrollRangeChanged(arg2);
+			</OnScrollRangeChanged>
+			<OnVerticalScroll>
+				self.scrollbar:SetValue(arg1);
+				local min, max = self.scrollbar:GetMinMaxValues();
+				getglobal(self.scrollbar:GetName().."ScrollUpButton"):Enable();
+				getglobal(self.scrollbar:GetName().."ScrollDownButton"):Enable();
+			</OnVerticalScroll>
+			<OnMouseWheel>
+				ScrollFrameTemplate_OnMouseWheel(arg1);
+			</OnMouseWheel>
+		</Scripts>
+	</ScrollFrame>
+
+	<Button name="Trinity2MinimapButton" parent="Minimap" enableMouse="true" movable="true">
+		<Size x="32" y="32"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentIcon" file="Interface\Icons\Ability_Druid_FlightForm">
+					<Size x="20" y="20"/>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="6" y="-5"/>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture name="$parentBorder" file="Interface\Minimap\MiniMap-TrackingBorder">
+					<Size x="52" y="52"/>
+					<Anchors>
+						<Anchor point="TOPLEFT"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Frame name="$parentIconDraggingFrame" hidden="true" toplevel="true">
+				<Scripts>
+					<OnUpdate>
+						Trinity2.IconDraggingFrame_OnUpdate()
+					</OnUpdate>
+				</Scripts>
+			</Frame>
+		</Frames>
+		<HighlightTexture alphaMode="ADD" file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight"/>
+		<Scripts>
+			<OnLoad>
+				Trinity2.MinimapButton_OnLoad(self)
+			</OnLoad>
+			<OnEvent>
+				Trinity2.MinimapButton_OnEvent(self)
+			</OnEvent>
+			<OnDragStart>
+				Trinity2.MinimapButton_OnDragStart(self)
+			</OnDragStart>
+			<OnDragStop>
+				Trinity2.MinimapButton_OnDragStop(self)
+			</OnDragStop>
+			<OnHide>
+				Trinity2.MinimapButton_OnHide(self)
+			</OnHide>
+			<OnEnter>
+				Trinity2.MinimapButton_OnEnter(self)
+			</OnEnter>
+			<OnLeave>
+				Trinity2.MinimapButton_OnLeave(self)
+			</OnLeave>
+			<OnClick>
+				Trinity2.MinimapButton_OnClick(self, button)
+			</OnClick>
+			<OnUpdate>
+				Trinity2.MinimapButton_OnUpdate(self, elapsed)
+			</OnUpdate>
+		</Scripts>
+	</Button>
+
+	<Frame name="Trinity2PanelMover" movable="true" frameStrata="DIALOG" toplevel="false" parent="UIParent" clampedToScreen="true">
+		<Size x="250" y="20"/>
+		<Anchors>
+			<Anchor point="TOP" relativeTo="$parent" relativePoint="BOTTOM">
+				<Offset x="0" y="775"/>
+			</Anchor>
+		</Anchors>
+		<Scripts>
+			<OnLoad>
+				self:Hide()
+			</OnLoad>
+			<OnShow>
+				for k,v in pairs(Trinity2.RegisteredPanels) do
+					v[1]:ClearAllPoints()
+					v[1]:SetUserPlaced(false)
+					v[1]:SetPoint("TOP", self, "TOP")
+				end
+			</OnShow>
+		</Scripts>
+	</Frame>
+
+	<Frame name="Trinity2SimpleDockEditor" enableMouse="true" movable="true" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				self:Hide()
+
+				local index = getn(Trinity2.RegisteredPanels)+1
+				self.index = index
+				self.type = "simple"
+
+				Trinity2.RegisteredPanels[index] = { self, "Simple Binding Edit", "simple" }
+			</OnLoad>
+			<OnShow>
+				Trinity2.SimpleDockEditor_OnShow(self)
+			</OnShow>
+			<OnHide>
+				Trinity2.SimpleDockEditor_OnHide(self)
+			</OnHide>
+		</Scripts>
+	</Frame>
+
+	<Frame name="Trinity2DockFrameOptions" enableMouse="true" movable="true" frameStrata="DIALOG" toplevel="false" parent="UIParent" clampedToScreen="true">
+		<Size x="250" y="405"/>
+		<Anchors>
+			<Anchor point="TOP" relativeTo="Trinity2PanelMover" relativePoint="TOP">
+				<Offset x="0" y="0"/>
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="22"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="16"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Frames>
+			<Button name="$parentPrevOptions">
+				<Size x="24" y="24"/>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="15" y="-14"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self.button = "prev"
+					</OnLoad>
+					<OnClick>
+						PlaySound("gsTitleOptionOK");
+						Trinity2.DockFrameOptions_OnClick(self)
+					</OnClick>
+				</Scripts>
+				<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Up"/>
+				<PushedTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Down"/>
+				<DisabledTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Disabled"/>
+				<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
+			</Button>
+			<Button name="$parentNextOptions">
+				<Size x="24" y="24"/>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentPrevOptions" relativePoint="RIGHT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self.button = "next"
+					</OnLoad>
+					<OnClick>
+						PlaySound("gsTitleOptionOK");
+						Trinity2.DockFrameOptions_OnClick(self)
+					</OnClick>
+				</Scripts>
+				<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Up"/>
+				<PushedTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Down"/>
+				<DisabledTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Disabled"/>
+				<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
+			</Button>
+			<Button name="$parentDone" inherits="Trinity2ButtonTemplate2">
+				<Size x="55" y="22"/>
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset x="-10" y="-12"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self.button = "close"
+						self:SetText(TRINITY2_STRINGS.DONE)
+					</OnLoad>
+					<OnClick>
+						PlaySound("gsTitleOptionOK");
+						Trinity2.DockFrameOptions_OnClick(self)
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Frame name="$parentHeader" toplevel="false" hidden="false">
+				<Size x="120" y="48"/>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="22"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\ItemTextFrame\ItemText-Stone-TopLeft" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="20"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="55"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentTexture" file="Interface\AddOns\Trinity2\images\TrinityLogo.tga">
+							<Size x="110" y="47"/>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset x="0" y="0"/>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.7, 0.7, 0.7);
+						self:SetBackdropColor(0.3,0.3,0.3,1);
+						--self:Hide()
+					</OnLoad>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentCurrentDock">
+				<Size x="235" y="31"/>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="-30"/>
+					</Anchor>
+
+				</Anchors>
+				<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="16"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="16"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="$parentTitle" inherits="GameFontNormalSmall" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="TOP">
+									<Offset x="0" y="10"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<EditBox name="$parentEdit1" inherits="Trinity2EditBoxTemplate5" id="1">
+						<Size x="92" y="25"/>
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="3" y="-3"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnTextChanged>
+								Trinity2.DockFrameOptionsCurrentDockEdit1_OnTextChanged(self)
+							</OnTextChanged>
+							<OnShow>
+								Trinity2.DockFrameOptionsCurrentDockEdit1_OnShow(self)
+							</OnShow>
+							<OnTabPressed>
+
+							</OnTabPressed>
+							<OnEditFocusGained>
+								self:ClearFocus()
+							</OnEditFocusGained>
+						</Scripts>
+					</EditBox>
+					<EditBox name="$parentEdit2" letters="6" inherits="Trinity2EditBoxTemplate2" id="2">
+						<Size x="55" y="25"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentEdit1" relativePoint="RIGHT">
+								<Offset x="25" y="0"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnEvent>
+								getglobal(self:GetName().."Text"):SetPoint("BOTTOM", "$parent", "LEFT", -1, -4)
+								getglobal(self:GetName().."Text"):SetText("X")
+							</OnEvent>
+							<OnEnterPressed>
+								local dockFrame = Trinity2DockFrameOptions.currFrame
+								dockFrame.config.centerx = tonumber(self:GetText())
+								dockFrame.config.centery = tonumber(Trinity2DockFrameOptionsCurrentDockEdit3:GetText())
+								dockFrame:SetUserPlaced(false);
+								dockFrame:ClearAllPoints();
+								dockFrame:SetPoint("CENTER", "UIParent", "BOTTOMLEFT", dockFrame.config.centerx, dockFrame.config.centery);
+								dockFrame:SetUserPlaced(true);
+								self:ClearFocus()
+							</OnEnterPressed>
+							<OnTabPressed>
+								Trinity2DockFrameOptionsCurrentDockEdit3:SetFocus()
+							</OnTabPressed>
+							<OnEditFocusGained>
+								self:HighlightText()
+							</OnEditFocusGained>
+						</Scripts>
+					</EditBox>
+					<EditBox name="$parentEdit3" letters="6" inherits="Trinity2EditBoxTemplate2" id="3">
+						<Size x="55" y="25"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentEdit2" relativePoint="RIGHT">
+								<Offset x="3" y="0"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnEvent>
+								getglobal(self:GetName().."Text"):SetPoint("BOTTOM", "$parent", "LEFT", -1, -4)
+								getglobal(self:GetName().."Text"):SetText("Y")
+							</OnEvent>
+							<OnEnterPressed>
+								local dockFrame = Trinity2DockFrameOptions.currFrame
+								dockFrame.config.centery = tonumber(self:GetText())
+								dockFrame.config.centerx = tonumber(Trinity2DockFrameOptionsCurrentDockEdit2:GetText())
+								dockFrame:SetUserPlaced(false);
+								dockFrame:ClearAllPoints();
+								dockFrame:SetPoint("CENTER", "UIParent", "BOTTOMLEFT", dockFrame.config.centerx, dockFrame.config.centery);
+								dockFrame:SetUserPlaced(true);
+								self:ClearFocus()
+							</OnEnterPressed>
+							<OnTabPressed>
+								Trinity2DockFrameOptionsCurrentDockEdit2:SetFocus()
+							</OnTabPressed>
+							<OnEditFocusGained>
+								self:HighlightText()
+							</OnEditFocusGained>
+						</Scripts>
+					</EditBox>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+						self:SetBackdropColor(0,0,0,0.5);
+						_G[self:GetName().."Title"]:SetText(TRINITY2_STRINGS.CURRDOCK)
+					</OnLoad>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentAdjustableOptionsFrame">
+				<Size x="235" y="114"/>
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentCurrentDock" relativePoint="BOTTOM">
+						<Offset x="0" y="-38"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="16"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="16"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="$parentTitle" inherits="GameFontNormalSmall" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="TOP">
+									<Offset x="0" y="10"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Frame name="$parentOpt1">
+						<Size x="229" y="55"/>
+						<Anchors>
+							<Anchor point="TOP">
+								<Offset x="0" y="-3"/>
+							</Anchor>
+
+						</Anchors>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16"/>
+							</EdgeSize>
+							<TileSize>
+								<AbsValue val="16"/>
+							</TileSize>
+							<BackgroundInsets>
+								<AbsInset left="5" right="5" top="5" bottom="5"/>
+							</BackgroundInsets>
+						</Backdrop>
+						<Frames>
+							<EditBox name="$parentEdit1" inherits="Trinity2EditBoxTemplate5" id="1">
+								<Size x="147" y="25"/>
+								<Anchors>
+									<Anchor point="TOPLEFT">
+										<Offset x="37" y="-4"/>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEvent>
+										getglobal(self:GetName().."Text"):ClearAllPoints()
+										getglobal(self:GetName().."Text"):SetPoint("RIGHT", "$parent", "LEFT", 0, 1)
+										getglobal(self:GetName().."Text"):SetJustifyH("RIGHT")
+										getglobal(self:GetName().."Text"):SetText("Opt1:")
+									</OnEvent>
+									<OnTextChanged>
+										Trinity2.DockFrameOptionsAdjustableOptionsFrameOpt1Edit1_OnTextChanged(self)
+									</OnTextChanged>
+									<OnEditFocusGained>
+										self:ClearFocus()
+									</OnEditFocusGained>
+								</Scripts>
+							</EditBox>
+							<EditBox name="$parentEdit2" letters="60" inherits="Trinity2EditBoxTemplate2" id="2">
+								<Size x="147" y="25"/>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="$parentEdit1" relativePoint="BOTTOMLEFT">
+										<Offset x="0" y="3"/>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEvent>
+										getglobal(self:GetName().."Text"):ClearAllPoints()
+										getglobal(self:GetName().."Text"):SetPoint("RIGHT", "$parent", "LEFT", 0, 1)
+										getglobal(self:GetName().."Text"):SetJustifyH("RIGHT")
+										getglobal(self:GetName().."Text"):SetText("Value:")
+									</OnEvent>
+									<OnTextChanged>
+										Trinity2.DockFrameOptionsAdjustableOptionsFrameOpt1Edit2_OnTextChanged(self)
+									</OnTextChanged>
+									<OnEditFocusGained>
+										self:ClearFocus()
+									</OnEditFocusGained>
+								</Scripts>
+							</EditBox>
+							<EditBox name="$parentEdit3" inherits="Trinity2EditBoxTemplate5" id="3" hidden="true">
+								<Size x="147" y="25"/>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="$parentEdit1" relativePoint="BOTTOMLEFT">
+										<Offset x="0" y="3"/>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEvent>
+										getglobal(self:GetName().."Text"):ClearAllPoints()
+										getglobal(self:GetName().."Text"):SetPoint("RIGHT", "$parent", "LEFT", 0, 1)
+										getglobal(self:GetName().."Text"):SetJustifyH("RIGHT")
+										getglobal(self:GetName().."Text"):SetText("Value:")
+									</OnEvent>
+									<OnEnterPressed>
+										self:ClearFocus()
+									</OnEnterPressed>
+									<OnTextChanged>
+										Trinity2.DockFrameOptionsAdjustableOptionsFrameOpt1Edit3_OnTextChanged(self)
+									</OnTextChanged>
+									<OnEditFocusGained>
+										self:HighlightText()
+									</OnEditFocusGained>
+								</Scripts>
+							</EditBox>
+							<Button name="$parentSubtract">
+								<Size x="24" y="24"/>
+								<Anchors>
+									<Anchor point="LEFT" relativeTo="$parentEdit2" relativePoint="RIGHT">
+										<Offset x="-3.5" y="0"/>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>
+										self.elapsed = 0;
+										self.click = nil;
+										self:RegisterForClicks("AnyUp");
+										self.count = 1
+										self.pushed = false
+										self.value = ""
+									</OnLoad>
+									<OnClick>
+										PlaySound("gsTitleOptionOK");
+										self:GetParent().count = 0;
+										self.click = arg1;
+										if (self.func) then
+											self.value = self.func(Trinity2DockFrameOptions.currFrame, "subtract", self)
+											Trinity2DockFrameOptionsAdjustableOptionsFrameOpt1Edit2:SetText(self.value)
+										end
+										self.elapsed = 0;
+										self.count = 1
+										self.pushed = false
+									</OnClick>
+									<OnEnter>
+										if (Trinity2SavedState.savedOptions.CheckButtons[2]) then
+											GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+											GameTooltip:SetText("")
+										end
+									</OnEnter>
+									<OnLeave>
+										GameTooltip:Hide();
+									</OnLeave>
+									<OnUpdate>
+										if (self:GetButtonState() == "PUSHED") then
+
+											self.elapsed = self.elapsed + arg1
+
+											if (self.elapsed > 0.20) then
+												self.pushed = true
+											end
+											if (self.pushed and self.func) then
+												self.value = self.func(Trinity2DockFrameOptions.currFrame, "subtract",self)
+												Trinity2DockFrameOptionsAdjustableOptionsFrameOpt1Edit2:SetText(self.value)
+												self.count = self.count + 1
+											end
+										else
+											self.elapsed = 0
+											self.pushed = false
+										end
+									</OnUpdate>
+								</Scripts>
+								<NormalTexture file="Interface\Addons\Trinity2\images\TrinitySubtractButton.tga"/>
+								<PushedTexture file="Interface\Addons\Trinity2\images\TrinitySubtractButtonDown.tga"/>
+								<DisabledTexture file="Interface\Addons\Trinity2\images\TrinitySubtractButtonDisabled.tga"/>
+								<HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD"/>
+							</Button>
+							<Button name="$parentAdd">
+								<Size x="24" y="24"/>
+								<Anchors>
+									<Anchor point="LEFT" relativeTo="$parentSubtract" relativePoint="RIGHT">
+										<Offset x="-4" y="0"/>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>
+										self.elapsed = 0;
+										self.click = nil;
+										self:RegisterForClicks("AnyUp");
+										self.count = 1
+										self.pushed = false
+										self.value = ""
+									</OnLoad>
+									<OnClick>
+										PlaySound("gsTitleOptionOK");
+										self:GetParent().count = 0;
+										self.click = arg1;
+										if (self.func) then
+											self.value = self.func(Trinity2DockFrameOptions.currFrame, "add", self)
+											Trinity2DockFrameOptionsAdjustableOptionsFrameOpt1Edit2:SetText(self.value)
+										end
+										self.elapsed = 0;
+										self.count = 1
+										self.pushed = false
+									</OnClick>
+									<OnEnter>
+										if (Trinity2SavedState.savedOptions.CheckButtons[2]) then
+											GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+											GameTooltip:SetText("")
+										end
+									</OnEnter>
+									<OnLeave>
+										GameTooltip:Hide();
+									</OnLeave>
+									<OnUpdate>
+										if (self:GetButtonState() == "PUSHED") then
+
+											self.elapsed = self.elapsed + arg1
+
+											if (self.elapsed > 0.20) then
+												self.pushed = true
+											end
+											if (self.pushed and self.func) then
+												self.value = self.func(Trinity2DockFrameOptions.currFrame, "add", self)
+												Trinity2DockFrameOptionsAdjustableOptionsFrameOpt1Edit2:SetText(self.value)
+												self.count = self.count + 1
+											end
+										else
+											self.elapsed = 0
+											self.pushed = false
+										end
+									</OnUpdate>
+								</Scripts>
+								<NormalTexture file="Interface\Addons\Trinity2\images\TrinityAddButton.tga"/>
+								<PushedTexture file="Interface\Addons\Trinity2\images\TrinityAddButtonDown.tga"/>
+								<DisabledTexture file="Interface\Addons\Trinity2\images\TrinityAddButtonDisabled.tga"/>
+								<HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD"/>
+							</Button>
+						</Frames>
+						<Scripts>
+							<OnLoad>
+								self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+								self:SetBackdropColor(0,0,0,0.5);
+							</OnLoad>
+						</Scripts>
+					</Frame>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+						self:SetBackdropColor(0,0,0,0.5);
+						_G[self:GetName().."Title"]:SetText(TRINITY2_STRINGS.ADJOPT)
+					</OnLoad>
+				</Scripts>
+			</Frame>
+
+			<Frame name="$parentCheckOptionsFrame">
+				<Size x="235" y="105"/>
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentAdjustableOptionsFrame" relativePoint="BOTTOM">
+						<Offset x="0" y="-10"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="16"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="16"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="$parentTitle" inherits="GameFontNormalSmall" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="TOP">
+									<Offset x="0" y="10"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+						self:SetBackdropColor(0,0,0,0.5);
+						self.checkcount = 0
+						_G[self:GetName().."Title"]:SetText(TRINITY2_STRINGS.CHECKOPT)
+					</OnLoad>
+				</Scripts>
+			</Frame>
+
+			<Frame name="$parentRDCDocks">
+				<Size x="235" y="32"/>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="0"/>
+					</Anchor>
+
+				</Anchors>
+				<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="16"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="16"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="$parentTitle" inherits="GameFontNormalSmall" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="TOP">
+									<Offset x="0" y="10"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Button name="$parentReset" inherits="Trinity2ButtonTemplate2" id="1">
+						<Size x="55" y="22"/>
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="4" y="-5"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								self:SetText(TRINITY2_STRINGS.RESET)
+							</OnLoad>
+							<OnClick>
+								PlaySound("gsTitleOptionOK");
+								if (self.func) then
+									self.func(self.currFrame)
+								end
+							</OnClick>
+						</Scripts>
+					</Button>
+					<Button name="$parentDelete" inherits="Trinity2ButtonTemplate2" id="2">
+						<Size x="55" y="22"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentReset" relativePoint="RIGHT">
+								<Offset x="2" y="0"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								self:SetText(TRINITY2_STRINGS.DELETE)
+							</OnLoad>
+							<OnClick>
+								PlaySound("gsTitleOptionOK");
+								self.currtext = ""
+								if (self.func) then
+									self.currtext = self:GetText()
+									self.func(self.currFrame)
+								end
+
+								if (self.currtext ~= "Restore") then
+									Trinity2.ResetDockFrameOptions(true)
+								end
+							</OnClick>
+						</Scripts>
+					</Button>
+					<Button name="$parentCreate" inherits="Trinity2ButtonTemplate2" id="3">
+						<Size x="55" y="22"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentDelete" relativePoint="RIGHT">
+								<Offset x="2" y="0"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								self:SetText(TRINITY2_STRINGS.CREATE)
+							</OnLoad>
+							<OnClick>
+								PlaySound("gsTitleOptionOK");
+								if (self.func) then
+									self.func(self.currFrame)
+								end
+							</OnClick>
+						</Scripts>
+					</Button>
+					<Button name="$parentClone" inherits="Trinity2ButtonTemplate2" id="4">
+						<Size x="55" y="22"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentCreate" relativePoint="RIGHT">
+								<Offset x="2" y="0"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								self:SetText(TRINITY2_STRINGS.CLONE)
+							</OnLoad>
+							<OnClick>
+								PlaySound("gsTitleOptionOK");
+								if (self.func) then
+									self.func(self.currFrame)
+								end
+							</OnClick>
+						</Scripts>
+					</Button>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+						self:SetBackdropColor(0,0,0,0.5);
+						_G[self:GetName().."Title"]:SetText(TRINITY2_STRINGS.DOCKOPT)
+					</OnLoad>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentColorPickerFrame">
+				<Size x="235" y="185"/>
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentCheckOptionsFrame" relativePoint="BOTTOM">
+						<Offset x="0" y="-10"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="16"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="16"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="$parentTitle" inherits="GameFontNormalSmall" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="TOP">
+									<Offset x="0" y="10"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+						<FontString name="$parentElement" inherits="GameFontNormalSmall" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="TOPLEFT">
+									<Offset x="8" y="-11"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<EditBox name="$parentEdit1" inherits="Trinity2EditBoxTemplate5" id="1">
+						<Size x="155" y="25"/>
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="55" y="-5"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnTextChanged>
+								Trinity2.DockFrameOptionsColorPickerFrameEdit1_OnTextChanged(self)
+							</OnTextChanged>
+							<OnEditFocusGained>
+								self:ClearFocus()
+							</OnEditFocusGained>
+						</Scripts>
+					</EditBox>
+					<ColorSelect name="Trinity2ColorPicker" enableMouse="true" enableKeyboard="true">
+						<Size x="225" y="98"/>
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="5" y="-30"/>
+							</Anchor>
+						</Anchors>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16"/>
+							</EdgeSize>
+							<TileSize>
+								<AbsValue val="16"/>
+							</TileSize>
+							<BackgroundInsets>
+								<AbsInset left="5" right="5" top="5" bottom="5"/>
+							</BackgroundInsets>
+						</Backdrop>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="$parentRed" inherits="GameFontHighlight" justifyH="LEFT" text="Red">
+									<Size x="28" y="12"/>
+									<Anchors>
+										<Anchor point="TOPLEFT">
+											<Offset x="135" y="-10"/>
+										</Anchor>
+									</Anchors>
+									<Color r="1.0" g="0" b="0" a="1.0"/>
+								</FontString>
+								<FontString name="$parentGreen" inherits="GameFontHighlight" justifyH="LEFT" text="Grn">
+									<Size x="28" y="12"/>
+									<Anchors>
+										<Anchor point="TOP" relativeTo="$parentRed" relativePoint="BOTTOM">
+											<Offset x="0" y="-10"/>
+										</Anchor>
+									</Anchors>
+									<Color r="0" g="1.0" b="0" a="1.0"/>
+								</FontString>
+								<FontString name="$parentBlue" inherits="GameFontHighlight" justifyH="LEFT" text="Blu">
+									<Size x="28" y="12"/>
+									<Anchors>
+										<Anchor point="TOP" relativeTo="$parentGreen" relativePoint="BOTTOM">
+											<Offset x="0" y="-10"/>
+										</Anchor>
+									</Anchors>
+									<Color r="0" g="0" b="1.0" a="1.0"/>
+								</FontString>
+								<FontString name="$parentHex" inherits="GameFontHighlight" justifyH="LEFT" text="Hex">
+									<Size x="28" y="12"/>
+									<Anchors>
+										<Anchor point="TOP" relativeTo="$parentBlue" relativePoint="BOTTOM">
+											<Offset x="0" y="-10"/>
+										</Anchor>
+									</Anchors>
+									<Color r="1.0" g="1.0" b="1.0" a="1.0"/>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Frames>
+							<EditBox name="$parentRedValue" inherits="Trinity2EditBoxTemplate4" letters="4">
+								<Anchors>
+									<Anchor point="LEFT" relativeTo="$parentRed" relativePoint="RIGHT">
+										<Offset x="0" y="0"/>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnTabPressed>
+										Trinity2ColorPickerGreenValue:SetFocus();
+										Trinity2ColorPicker:SetColorRGB(Trinity2ColorPickerRedValue:GetText(), Trinity2ColorPickerGreenValue:GetText(), Trinity2ColorPickerBlueValue:GetText());
+									</OnTabPressed>
+									<OnEnterPressed>
+										self:ClearFocus()
+										local num = tonumber(self:GetText())
+										if (num) then
+											if (num &gt; 1 and num &lt; 256) then
+												self:SetText(num/255)
+											end
+										end
+										Trinity2ColorPicker:SetColorRGB(Trinity2ColorPickerRedValue:GetText(), Trinity2ColorPickerGreenValue:GetText(), Trinity2ColorPickerBlueValue:GetText());
+									</OnEnterPressed>
+								</Scripts>
+							</EditBox>
+							<EditBox name="$parentGreenValue" inherits="Trinity2EditBoxTemplate4" letters="4">
+								<Anchors>
+									<Anchor point="LEFT" relativeTo="$parentGreen" relativePoint="RIGHT">
+										<Offset x="0" y="0"/>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnTabPressed>
+										Trinity2ColorPickerBlueValue:SetFocus();
+										Trinity2ColorPicker:SetColorRGB(Trinity2ColorPickerRedValue:GetText(), Trinity2ColorPickerGreenValue:GetText(), Trinity2ColorPickerBlueValue:GetText());
+									</OnTabPressed>
+									<OnEnterPressed>
+										self:ClearFocus()
+										local num = tonumber(self:GetText())
+										if (num) then
+											if (num &gt; 1 and num &lt; 256) then
+												self:SetText(num/255)
+											end
+										end
+										Trinity2ColorPicker:SetColorRGB(Trinity2ColorPickerRedValue:GetText(), Trinity2ColorPickerGreenValue:GetText(), Trinity2ColorPickerBlueValue:GetText());
+									</OnEnterPressed>
+								</Scripts>
+							</EditBox>
+							<EditBox name="$parentBlueValue" inherits="Trinity2EditBoxTemplate4" letters="4">
+								<Anchors>
+									<Anchor point="LEFT" relativeTo="$parentBlue" relativePoint="RIGHT">
+										<Offset x="0" y="0"/>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnTabPressed>
+										Trinity2ColorPickerHexValue:SetFocus();
+										Trinity2ColorPicker:SetColorRGB(Trinity2ColorPickerRedValue:GetText(), Trinity2ColorPickerGreenValue:GetText(), Trinity2ColorPickerBlueValue:GetText());
+									</OnTabPressed>
+									<OnEnterPressed>
+										self:ClearFocus()
+										local num = tonumber(self:GetText())
+										if (num) then
+											if (num &gt; 1 and num &lt; 256) then
+												self:SetText(num/255)
+											end
+										end
+										Trinity2ColorPicker:SetColorRGB(Trinity2ColorPickerRedValue:GetText(), Trinity2ColorPickerGreenValue:GetText(), Trinity2ColorPickerBlueValue:GetText());
+									</OnEnterPressed>
+								</Scripts>
+							</EditBox>
+							<EditBox name="$parentHexValue" inherits="Trinity2EditBoxTemplate4">
+								<Anchors>
+									<Anchor point="LEFT" relativeTo="$parentHex" relativePoint="RIGHT">
+										<Offset x="0" y="0"/>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnTextChanged>
+										self:SetText(string.upper(string.gsub(self:GetText(), "%X", "")))
+									</OnTextChanged>
+									<OnTabPressed>
+										Trinity2ColorPickerRedValue:SetFocus();
+										hex = self:GetText()
+										local rhex, ghex, bhex = string.sub(hex, 1, 2), string.sub(hex, 3, 4), string.sub(hex, 5, 6)
+										local r, g, b = tonumber(rhex, 16), tonumber(ghex, 16), tonumber(bhex, 16)
+										r = r/255
+										g = g/255
+										b = b/255
+										Trinity2ColorPicker:SetColorRGB(r, g, b);
+									</OnTabPressed>
+									<OnEnterPressed>
+										self:ClearFocus()
+										hex = self:GetText()
+										local rhex, ghex, bhex = string.sub(hex, 1, 2), string.sub(hex, 3, 4), string.sub(hex, 5, 6)
+										local r, g, b = tonumber(rhex, 16), tonumber(ghex, 16), tonumber(bhex, 16)
+										r = r/255
+										g = g/255
+										b = b/255
+										Trinity2ColorPicker:SetColorRGB(r, g, b);
+									</OnEnterPressed>
+								</Scripts>
+							</EditBox>
+						</Frames>
+						<Scripts>
+							<OnLoad>
+								self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+								self:SetBackdropColor(0,0,0,0.5);
+							</OnLoad>
+							<OnColorSelect>
+								if (not Trinity2DockFrameOptions.currFrame.config.lockcolors) then
+
+									Trinity2ColorPickerRedValue:SetText(arg1)
+									Trinity2ColorPickerRedValue:SetTextColor(arg1,arg2,arg3)
+
+									Trinity2ColorPickerGreenValue:SetText(arg2)
+									Trinity2ColorPickerGreenValue:SetTextColor(arg1,arg2,arg3)
+
+									Trinity2ColorPickerBlueValue:SetText(arg3)
+									Trinity2ColorPickerBlueValue:SetTextColor(arg1,arg2,arg3)
+
+									Trinity2ColorPickerHexValue:SetText(string.upper(string.format("%02x%02x%02x", math.ceil((arg1*255)), math.ceil((arg2*255)), math.ceil((arg3*255)))))
+									Trinity2ColorPickerHexValue:SetTextColor(arg1,arg2,arg3)
+
+									if ( self.func) then
+										self.func(Trinity2DockFrameOptions.currFrame, arg1, arg2, arg3)
+									end
+								end
+							</OnColorSelect>
+						</Scripts>
+						<ColorWheelTexture name="Trinity2ColorPickerWheel">
+							<Size x="80" y="80"/>
+							<Anchors>
+								<Anchor point="LEFT">
+									<Offset x="7" y="-1"/>
+								</Anchor>
+							</Anchors>
+						</ColorWheelTexture>
+						<ColorWheelThumbTexture file="Interface\Buttons\UI-ColorPicker-Buttons">
+							<Size x="10" y="10"/>
+							<TexCoords left="0" right="0.15625" top="0" bottom="0.625"/>
+						</ColorWheelThumbTexture>
+						<ColorValueTexture>
+							<Size x="25" y="80"/>
+							<Anchors>
+								<Anchor point="LEFT" relativeTo="Trinity2ColorPickerWheel" relativePoint="RIGHT">
+									<Offset x="12" y="0"/>
+								</Anchor>
+							</Anchors>
+						</ColorValueTexture>
+						<ColorValueThumbTexture file="Interface\Buttons\UI-ColorPicker-Buttons">
+							<Size x="32" y="12"/>
+							<TexCoords left="0.25" right="1.0" top="0" bottom="0.875"/>
+						</ColorValueThumbTexture>
+					</ColorSelect>
+					<Button name="$parentCopy" inherits="Trinity2ButtonTemplate2" id="1">
+						<Size x="74" y="22"/>
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="7" y="-128"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								self:SetText(TRINITY2_STRINGS.COLORCOPY)
+							</OnLoad>
+							<OnClick>
+								PlaySound("gsTitleOptionOK")
+								Trinity2.DockFrameOptionsColorPickerFrameCopy_OnClick(self)
+							</OnClick>
+						</Scripts>
+					</Button>
+					<EditBox name="$parentEdit2" inherits="Trinity2EditBoxTemplate5" id="2">
+						<Size x="128" y="25"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentCopy" relativePoint="RIGHT">
+								<Offset x="0" y="0"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnShow>
+								Trinity2.DockFrameOptionsColorPickerFrameEdit2_OnShow(self)
+							</OnShow>
+							<OnTextChanged>
+								Trinity2.DockFrameOptionsColorPickerFrameEdit2_OnTextChanged(self)
+							</OnTextChanged>
+							<OnEditFocusGained>
+								self:ClearFocus()
+							</OnEditFocusGained>
+						</Scripts>
+					</EditBox>
+					<CheckButton name="$parentCheck1" inherits="Trinity2RoundCheckTemplate2" id="1">
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="9" y="-157"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnEvent>
+								getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS.COLORLOCK)
+							</OnEvent>
+							<OnClick>
+								if (self:GetChecked()) then
+									Trinity2DockFrameOptions.currFrame.config.lockcolors = true
+								else
+									Trinity2DockFrameOptions.currFrame.config.lockcolors = false
+								end
+							</OnClick>
+							<OnEnter>
+
+							</OnEnter>
+							<OnLeave>
+								GameTooltip:Hide();
+							</OnLeave>
+						</Scripts>
+					</CheckButton>
+					<Button name="$parentCopyAll" inherits="Trinity2ButtonTemplate2" id="1">
+						<Size x="120" y="22"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentCheck1" relativePoint="RIGHT">
+								<Offset x="75" y="0"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								self:SetText(TRINITY2_STRINGS.COLORCOPYALL)
+							</OnLoad>
+							<OnClick>
+								PlaySound("gsTitleOptionOK")
+								Trinity2.DockFrameOptionsColorPickerFrameCopyAll_OnClick(self)
+							</OnClick>
+						</Scripts>
+					</Button>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+						self:SetBackdropColor(0,0,0,0.5);
+						_G[self:GetName().."Title"]:SetText(TRINITY2_STRINGS.COLORPICK)
+						_G[self:GetName().."Element"]:SetText(TRINITY2_STRINGS.COLORELEMENT)
+					</OnLoad>
+				</Scripts>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self:SetBackdropBorderColor(0.7, 0.7, 0.7);
+				self:SetBackdropColor(0,0,0,1);
+				self.optionSet = 1
+				self:RegisterEvent("PLAYER_LOGIN")
+				self:RegisterForDrag("LeftButton", "RightButton")
+				self:Hide()
+
+				local index = getn(Trinity2.RegisteredPanels)+1
+				self.index = index
+
+				Trinity2.RegisteredPanels[index] = { self, TRINITY2_STRINGS.DOCKEDIT, "advanced" }
+
+			</OnLoad>
+			<OnShow>
+				Trinity2.DockFrameOptions_OnShow(self)
+			</OnShow>
+			<OnHide>
+				Trinity2.DockFrameOptions_OnHide(self)
+			</OnHide>
+			<OnDragStart>
+				Trinity2.PanelMover_OnDragStart(self)
+			</OnDragStart>
+			<OnDragStop>
+				Trinity2.PanelMover_OnDragStop(self)
+			</OnDragStop>
+			<OnEvent>
+
+			</OnEvent>
+		</Scripts>
+	</Frame>
+
+	<Frame name="Trinity2SimpleBindingEditor" enableMouse="true" movable="true" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				self:Hide()
+
+				local index = getn(Trinity2.RegisteredPanels)+1
+				self.index = index
+				self.type = "simple"
+
+				self.keyBindTextures = {}
+
+				Trinity2.RegisteredPanels[index] = { self, "Simple Binding Edit", "simple" }
+			</OnLoad>
+			<OnShow>
+				Trinity2.SimpleBindingEditor_OnShow(self)
+			</OnShow>
+			<OnHide>
+				Trinity2.SimpleBindingEditor_OnHide(self)
+			</OnHide>
+		</Scripts>
+	</Frame>
+
+	<Frame name="Trinity2BindingEditor" enableMouse="true" movable="true" frameStrata="DIALOG" toplevel="false" parent="UIParent" clampedToScreen="true">
+		<Size x="250" y="135"/>
+		<Anchors>
+			<Anchor point="TOP" relativeTo="Trinity2PanelMover" relativePoint="TOP">
+				<Offset x="0" y="0"/>
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="22"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="16"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Frames>
+			<Button name="$parentDone" inherits="Trinity2ButtonTemplate2">
+				<Size x="55" y="22"/>
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset x="-10" y="-12"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self.button = "close"
+						self:SetText(TRINITY2_STRINGS.DONE)
+					</OnLoad>
+					<OnClick>
+						PlaySound("gsTitleOptionOK");
+						self:GetParent():Hide()
+						--Trinity2.DockFrameOptions_OnClick(self)
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Frame name="$parentHeader" toplevel="false" hidden="false">
+				<Size x="120" y="48"/>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="22"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\ItemTextFrame\ItemText-Stone-TopLeft" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="20"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="55"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentTexture" file="Interface\AddOns\Trinity2\images\TrinityLogo.tga">
+							<Size x="110" y="47"/>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset x="0" y="0"/>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.7, 0.7, 0.7);
+						self:SetBackdropColor(0.3,0.3,0.3,1);
+						--self:Hide()
+					</OnLoad>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentCurrentDock">
+				<Size x="235" y="34"/>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="-40"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="16"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="16"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="$parentTitle" inherits="GameFontNormalSmall" justifyH="LEFT" text="Dock Selector">
+							<Anchors>
+								<Anchor point="TOP">
+									<Offset x="0" y="10"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+						<FontString name="$parentBinding" inherits="GameFontNormalSmall" justifyH="CENTER">
+							<Anchors>
+								<Anchor point="TOP" relativePoint="BOTTOM">
+									<Offset x="0" y="-8"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<EditBox name="$parentEdit1" inherits="Trinity2EditBoxTemplate5" id="1">
+						<Size x="100" y="25"/>
+						<Anchors>
+							<Anchor point="LEFT">
+								<Offset x="3" y="0"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnTextChanged>
+								Trinity2.Trinity2BindingEditorCurrentDockEdit1_OnTextChanged(self)
+							</OnTextChanged>
+							<OnShow>
+								Trinity2.Trinity2BindingEditorCurrentDockEdit1_OnShow(self)
+							</OnShow>
+							<OnTabPressed>
+
+							</OnTabPressed>
+							<OnEditFocusGained>
+								self:ClearFocus()
+							</OnEditFocusGained>
+						</Scripts>
+					</EditBox>
+					<CheckButton name="$parentCursorCheck" inherits="Trinity2RoundCheckTemplate2" id="101">
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentEdit1" relativePoint="RIGHT">
+								<Offset x="28" y="0"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnEvent>
+								getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS["CHECK_"..self:GetID()])
+								getglobal(self:GetName().."Text"):SetTextHeight(10)
+							</OnEvent>
+							<OnShow>
+								Trinity2.CursorToggle_OnShow(self)
+							</OnShow>
+							<OnClick>
+								Trinity2.CursorToggle_OnClick(self)
+							</OnClick>
+						</Scripts>
+					</CheckButton>
+					<CheckButton name="$parentDockBinderButton">
+						<Size x="14" y="14"/>
+						<Anchors>
+							<Anchor point="RIGHT">
+								<Offset x="-10" y="0"/>
+							</Anchor>
+
+						</Anchors>
+						<Layers>
+							<Layer level="BACKGROUND">
+								<Texture file="Interface\Buttons\UI-EmptySlot-Disabled">
+									<Anchors>
+										<Anchor point="TOPLEFT">
+											<Offset x="-10" y="10"/>
+										</Anchor>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset x="10" y="-10"/>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+						<NormalTexture name="$parentIcon">
+							<Anchors>
+								<Anchor point="TOPLEFT">
+									<Offset x="-2" y="2"/>
+								</Anchor>
+								<Anchor point="BOTTOMRIGHT">
+									<Offset x="2" y="-2"/>
+								</Anchor>
+							</Anchors>
+							<TexCoords left="0.05" right="0.95" top="0.05" bottom="0.95"/>
+						</NormalTexture>
+						<HighlightTexture alphaMode="ADD" file="Interface\Buttons\ButtonHilight-Square">
+							<Anchors>
+								<Anchor point="TOPLEFT">
+									<Offset x="-2" y="2"/>
+								</Anchor>
+								<Anchor point="BOTTOMRIGHT">
+									<Offset x="2" y="-2"/>
+								</Anchor>
+							</Anchors>
+						</HighlightTexture>
+						<CheckedTexture alphaMode="ADD" file="Interface\Buttons\CheckButtonHilight">
+							<Anchors>
+								<Anchor point="TOPLEFT">
+									<Offset x="-2" y="2"/>
+								</Anchor>
+								<Anchor point="BOTTOMRIGHT">
+									<Offset x="2" y="-2"/>
+								</Anchor>
+							</Anchors>
+						</CheckedTexture>
+						<Scripts>
+							<OnLoad>
+								self.elapsed = 0
+								self.click = false
+								self:EnableMouseWheel(false)
+								self:EnableKeyboard(false)
+								self:RegisterForClicks("AnyUp")
+								self:RegisterForClicks("AnyDown")
+								getglobal(self:GetName().."Icon"):SetTexture("Interface\\Icons\\Ability_Druid_FlightForm")
+							</OnLoad>
+							<OnClick>
+								Trinity2.BindFrame_OnAction(self, arg1)
+							</OnClick>
+							<OnMouseWheel>
+								Trinity2.BindFrame_OnAction(self, arg1)
+							</OnMouseWheel>
+							<OnKeyDown>
+								Trinity2.BindFrame_OnAction(self, arg1)
+							</OnKeyDown>
+							<PostClick>
+								self.click = true
+								self.elapsed = 0
+							</PostClick>
+							<OnShow>
+								self:EnableMouseWheel(false)
+								self:EnableKeyboard(false)
+							</OnShow>
+							<OnHide>
+								self:EnableMouseWheel(false)
+								self:EnableKeyboard(false)
+							</OnHide>
+							<OnEnter>
+								Trinity2.BindFrame_OnEnter(self)
+							</OnEnter>
+							<OnLeave>
+								self:EnableMouseWheel(false)
+								self:EnableKeyboard(false)
+								Trinity2.BindFrame_OnLeave(self)
+							</OnLeave>
+							<OnUpdate>
+								self.elapsed = self.elapsed + arg1
+								if (self.elapsed > 0.1 and self.click) then
+									self.click = false
+									self:SetChecked(nil)
+								end
+							</OnUpdate>
+						</Scripts>
+					</CheckButton>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+						self:SetBackdropColor(0,0,0,0.5);
+					</OnLoad>
+				</Scripts>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self:SetBackdropBorderColor(0.7, 0.7, 0.7);
+				self:SetBackdropColor(0,0,0,1);
+				self.optionSet = 1
+				self:RegisterEvent("PLAYER_LOGIN")
+				self:RegisterForDrag("LeftButton", "RightButton")
+				self:Hide()
+
+				self.keyBindTextures = {}
+
+				local index = getn(Trinity2.RegisteredPanels)+1
+				self.index = index
+				self.type = "advanced"
+
+				Trinity2.RegisteredPanels[index] = { self, TRINITY2_STRINGS.BINDEDIT, "advanced" }
+
+			</OnLoad>
+			<OnShow>
+				Trinity2.BindingEditor_OnShow(self)
+			</OnShow>
+			<OnHide>
+				Trinity2.BindingEditor_OnHide(self)
+			</OnHide>
+			<OnDragStart>
+				Trinity2.PanelMover_OnDragStart(self)
+			</OnDragStart>
+			<OnDragStop>
+				Trinity2.PanelMover_OnDragStop(self)
+			</OnDragStop>
+			<OnEvent>
+
+			</OnEvent>
+		</Scripts>
+	</Frame>
+
+	<Frame name="Trinity2TemplateManager" enableMouse="true" movable="true" frameStrata="DIALOG" toplevel="false" parent="UIParent" clampedToScreen="true">
+		<Size x="250" y="94"/>
+		<Anchors>
+			<Anchor point="TOP" relativeTo="Trinity2PanelMover" relativePoint="TOP">
+				<Offset x="0" y="0"/>
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="22"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="16"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Frames>
+			<Button name="$parentDone" inherits="Trinity2ButtonTemplate2">
+				<Size x="55" y="22"/>
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset x="-10" y="-12"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self.button = "close"
+						self:SetText(TRINITY2_STRINGS.DONE)
+					</OnLoad>
+					<OnClick>
+						PlaySound("gsTitleOptionOK");
+						self:GetParent():Hide()
+						--Trinity2.DockFrameOptions_OnClick(self)
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Frame name="$parentHeader" toplevel="false" hidden="false">
+				<Size x="120" y="48"/>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="22"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\ItemTextFrame\ItemText-Stone-TopLeft" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="20"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="55"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentTexture" file="Interface\AddOns\Trinity2\images\TrinityLogo.tga">
+							<Size x="110" y="47"/>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset x="0" y="0"/>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.7, 0.7, 0.7);
+						self:SetBackdropColor(0.3,0.3,0.3,1);
+						--self:Hide()
+					</OnLoad>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentCurrentAddon">
+				<Size x="235" y="45"/>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="-40"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="16"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="16"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="$parentTitle" inherits="GameFontNormalSmall" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="TOP">
+									<Offset x="0" y="10"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+						<FontString name="$parentBinding" inherits="GameFontNormalSmall" justifyH="CENTER">
+							<Anchors>
+								<Anchor point="TOP" relativePoint="BOTTOM">
+									<Offset x="0" y="-8"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<EditBox name="$parentEdit1" inherits="Trinity2EditBoxTemplate5" id="1">
+						<Size x="115" y="24"/>
+						<Anchors>
+							<Anchor point="BOTTOMLEFT">
+								<Offset x="5" y="5"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnEvent>
+								getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS.EDITBOX_1)
+							</OnEvent>
+							<OnTextChanged>
+								Trinity2.TemplateManagerCurrentAddonEdit1_OnTextChanged(self)
+							</OnTextChanged>
+							<OnShow>
+								local data = {}
+								for k,v in pairs(Trinity2.RegisteredAddons) do
+									if (not string.find(Trinity2.RegisteredAddons[k][1], "dummy")) then
+										data[Trinity2.RegisteredAddons[k][1]] = k
+									end
+								end
+								Trinity2.EditBox_PopUpInitialize(self.popup, data)
+								self:ClearFocus();
+							</OnShow>
+							<OnTabPressed>
+								--getglobal(self:GetParent():GetName().."Edit14"):SetFocus()
+							</OnTabPressed>
+						</Scripts>
+					</EditBox>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5)
+						self:SetBackdropColor(0,0,0,0.5)
+						_G[self:GetName().."Title"]:SetText(TRINITY2_STRINGS.TEMPLATEMGR)
+					</OnLoad>
+				</Scripts>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self:SetBackdropBorderColor(0.7, 0.7, 0.7)
+				self:SetBackdropColor(0,0,0,1)
+				self.optionSet = 1
+				self:RegisterEvent("PLAYER_LOGIN")
+				self:RegisterForDrag("LeftButton", "RightButton")
+				self:Hide()
+
+				self.keyBindTextures = {}
+
+				local index = getn(Trinity2.RegisteredPanels)+1
+				self.index = index
+				self.type = "simple"
+
+				Trinity2.RegisteredPanels[index] = { self, TRINITY2_STRINGS.TEMPLATEMGR, "simple" }
+			</OnLoad>
+			<OnShow>
+				Trinity2.TemplateManager_OnShow(self)
+			</OnShow>
+			<OnHide>
+				Trinity2.TemplateManager_OnHide(self)
+			</OnHide>
+			<OnDragStart>
+				Trinity2.PanelMover_OnDragStart(self)
+			</OnDragStart>
+			<OnDragStop>
+				Trinity2.PanelMover_OnDragStop(self)
+			</OnDragStop>
+			<OnEvent>
+
+			</OnEvent>
+		</Scripts>
+	</Frame>
+
+	<Frame name="Trinity2DockFrameEditorBottom" clampedToScreen="true" frameStrata="MEDIUM">
+		<Size x="120" y="18"/>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="GameFontNormalSmall" justifyh="CENTER" justifyv="TOP">
+					<Anchors>
+						<Anchor point="CENTER"/>
+					</Anchors>
+					<Scripts>
+						<OnLoad>
+							self:SetTextColor(0,0,0,0)
+						</OnLoad>
+					</Scripts>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Frame name="$parentBackground">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop name="$parentBackdrop" bgFile="Interface\ItemTextFrame\ItemText-Stone-TopLeft" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="10"/>
+					</EdgeSize>
+					<BackgroundInsets>
+						<AbsInset left="2" right="2" top="2" bottom="2"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropColor(0, 0, 0, 0.5);
+						self:SetBackdropBorderColor(0.3, 0.3, 0.3, 0.5);
+					</OnLoad>
+				</Scripts>
+			</Frame>
+			<EditBox name="$parentEdit1" inherits="Trinity2EditBoxTemplate5" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnEvent>
+						getglobal(self:GetName().."Text"):SetText("")
+						self:SetBackdropColor(0, 0, 0, 0)
+						self:SetBackdropBorderColor(0.3, 0.3, 0.3, 0)
+						local button = getglobal(self:GetName().."Button")
+
+						button:SetNormalTexture("")
+						button:SetPushedTexture("")
+						button:SetDisabledTexture("")
+
+						button:ClearAllPoints()
+						button:SetPoint("TOPLEFT", self:GetParent(), "TOPLEFT", 15, 0)
+						button:SetPoint("BOTTOMRIGHT", self:GetParent(), "BOTTOMRIGHT", -15, 0)
+
+						self:SetTextInsets(-10, -10, 0, 0)
+
+						self.popup:ClearAllPoints()
+						self.popup:SetPoint("CENTER")
+					</OnEvent>
+					<OnTextChanged>
+						Trinity2.DockFrameEditorBottomEdit1_OnTextChanged(self)
+					</OnTextChanged>
+					<OnTabPressed>
+						--getglobal(self:GetParent():GetName().."Edit14"):SetFocus()
+					</OnTabPressed>
+					<OnEditFocusGained>
+						self:ClearFocus()
+					</OnEditFocusGained>
+				</Scripts>
+			</EditBox>
+			<Button name="$parentAdd">
+				<Size x="20" y="20"/>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentEdit1" relativePoint="RIGHT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self.elapsed = 0;
+						self.click = nil;
+						self:RegisterForClicks("AnyUp");
+						self.count = 1
+						self.pushed = false
+						self.value = ""
+					</OnLoad>
+					<OnClick>
+						PlaySound("gsTitleOptionOK");
+						self:GetParent().count = 0;
+						self.click = arg1;
+						if (self.func) then
+							self.value = self.func(Trinity2DockFrameOptions.currFrame, "add", self)
+
+							if (Trinity2DockFrameEditorBottomEdit1.action) then
+								Trinity2DockFrameEditorBottomEdit1:SetText(Trinity2DockFrameEditorBottomEdit1.action.." - "..self.value)
+								Trinity2.DockFrameEditorBottomEdit1_SetWidth(Trinity2DockFrameEditorBottomEdit1)
+							end
+						end
+						self.elapsed = 0;
+						self.count = 1
+						self.pushed = false
+					</OnClick>
+					<OnEnter>
+						if (Trinity2SavedState.savedOptions.CheckButtons[2]) then
+							GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+							GameTooltip:SetText("")
+						end
+					</OnEnter>
+					<OnLeave>
+						GameTooltip:Hide();
+					</OnLeave>
+					<OnUpdate>
+						if (self:GetButtonState() == "PUSHED") then
+
+							self.elapsed = self.elapsed + arg1
+
+							if (self.elapsed > 0.20) then
+								self.pushed = true
+							end
+							if (self.pushed and self.func) then
+								self.value = self.func(Trinity2DockFrameOptions.currFrame, "add", self)
+
+								if (Trinity2DockFrameEditorBottomEdit1.action) then
+									Trinity2DockFrameEditorBottomEdit1:SetText(Trinity2DockFrameEditorBottomEdit1.action.." - "..self.value)
+									Trinity2.DockFrameEditorBottomEdit1_SetWidth(Trinity2DockFrameEditorBottomEdit1)
+								end
+
+								self.count = self.count + 1
+							end
+						else
+							self.elapsed = 0
+							self.pushed = false
+						end
+					</OnUpdate>
+				</Scripts>
+				<NormalTexture file="Interface\Addons\Trinity2\images\TrinityAddButton.tga"/>
+				<PushedTexture file="Interface\Addons\Trinity2\images\TrinityAddButtonDown.tga"/>
+				<DisabledTexture file="Interface\Addons\Trinity2\images\TrinityAddButtonDisabled.tga"/>
+				<HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD"/>
+			</Button>
+
+			<Button name="$parentSubtract">
+				<Size x="20" y="20"/>
+				<Anchors>
+					<Anchor point="RIGHT" relativeTo="$parentEdit1" relativePoint="LEFT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self.elapsed = 0;
+						self.click = nil;
+						self:RegisterForClicks("AnyUp");
+						self.count = 1
+						self.pushed = false
+						self.value = ""
+					</OnLoad>
+					<OnClick>
+						PlaySound("gsTitleOptionOK");
+						self:GetParent().count = 0;
+						self.click = arg1;
+						if (self.func) then
+							self.value = self.func(Trinity2DockFrameOptions.currFrame, "subtract" ,self)
+
+							if (Trinity2DockFrameEditorBottomEdit1.action) then
+								Trinity2DockFrameEditorBottomEdit1:SetText(Trinity2DockFrameEditorBottomEdit1.action.." - "..self.value)
+								Trinity2.DockFrameEditorBottomEdit1_SetWidth(Trinity2DockFrameEditorBottomEdit1)
+							end
+						end
+						self.elapsed = 0;
+						self.count = 1
+						self.pushed = false
+					</OnClick>
+					<OnEnter>
+						if (Trinity2SavedState.savedOptions.CheckButtons[2]) then
+							GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+							GameTooltip:SetText("")
+						end
+					</OnEnter>
+					<OnLeave>
+						GameTooltip:Hide();
+					</OnLeave>
+					<OnUpdate>
+						if (self:GetButtonState() == "PUSHED") then
+
+							self.elapsed = self.elapsed + arg1
+
+							if (self.elapsed > 0.20) then
+								self.pushed = true
+							end
+							if (self.pushed and self.func) then
+								self.value = self.func(Trinity2DockFrameOptions.currFrame, "subtract" ,self)
+
+								if (Trinity2DockFrameEditorBottomEdit1.action) then
+									Trinity2DockFrameEditorBottomEdit1:SetText(Trinity2DockFrameEditorBottomEdit1.action.." - "..self.value)
+									Trinity2.DockFrameEditorBottomEdit1_SetWidth(Trinity2DockFrameEditorBottomEdit1)
+								end
+
+								self.count = self.count + 1
+							end
+						else
+							self.elapsed = 0
+							self.pushed = false
+						end
+					</OnUpdate>
+				</Scripts>
+				<NormalTexture file="Interface\Addons\Trinity2\images\TrinitySubtractButton.tga"/>
+				<PushedTexture file="Interface\Addons\Trinity2\images\TrinitySubtractButtonDown.tga"/>
+				<DisabledTexture file="Interface\Addons\Trinity2\images\TrinitySubtractButtonDisabled.tga"/>
+				<HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD"/>
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self:Hide()
+			</OnLoad>
+		</Scripts>
+	</Frame>
+
+	<Frame name="Trinity2Options" hidden="false" parent="InterfaceOptionsFramePanelContainer">
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentTitle" inherits="GameFontNormalLarge" justifyh="CENTER" justifyv="TOP">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="16" y="-16"/>
+						</Anchor>
+						<Anchor point="TOPRIGHT">
+							<Offset x="-16" y="-16"/>
+						</Anchor>
+					</Anchors>
+					<Scripts>
+						<OnLoad>
+							self:RegisterEvent("VARIABLES_LOADED")
+						</OnLoad>
+						<OnEvent>
+							self:SetText(TRINITY2_STRINGS.OPTIONS_TITLE)
+						</OnEvent>
+					</Scripts>
+				</FontString>
+				<FontString name="$parentSubText" inherits="GameFontHighlightSmall" nonSpaceWrap="true" maxLines="3" justifyh="CENTER" justifyv="TOP">
+					<Size y="32" x="0"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parentTitle" relativePoint="BOTTOMLEFT">
+							<Offset x="0" y="-8"/>
+						</Anchor>
+						<Anchor point="RIGHT">
+							<Offset x="-32" y="0"/>
+						</Anchor>
+					</Anchors>
+					<Scripts>
+						<OnLoad>
+							self:RegisterEvent("VARIABLES_LOADED")
+						</OnLoad>
+						<OnEvent>
+							self:SetText(TRINITY2_STRINGS.OPTIONS_TITLE)
+						</OnEvent>
+					</Scripts>
+				</FontString>
+			</Layer>
+		</Layers>
+
+		<Frames>
+			<Frame name="$parentHeader" toplevel="true">
+				<Size x="162" y="72"/>
+				<Anchors>
+					<Anchor point="CENTER" relativeTo="InterfaceOptionsFrame" relativePoint="TOP">
+						<Offset x="0" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\ItemTextFrame\ItemText-Stone-TopLeft" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+					<BackgroundInsets>
+						<AbsInset left="11" right="12" top="12" bottom="11"/>
+					</BackgroundInsets>
+					<TileSize>
+						<AbsValue val="80"/>
+					</TileSize>
+					<EdgeSize>
+						<AbsValue val="32"/>
+					</EdgeSize>
+				</Backdrop>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentTexture" file="Interface\AddOns\Trinity2\images\TrinityLogo.tga">
+							<Size x="158" y="67"/>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset x="0" y="0"/>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</Frame>
+			<CheckButton name="$parentCheck1" inherits="Trinity2RoundCheckTemplate" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="12" y="-20"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnEvent>
+						getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS["CHECK_"..self:GetID()])
+						getglobal(self:GetName().."Text"):SetTextHeight(10)
+						self:SetChecked(Trinity2SavedState.savedOptions["CheckButtons"][self:GetID()])
+						if (self:GetChecked()) then
+							Trinity2MinimapButton:Show()
+						else
+							Trinity2MinimapButton:Hide()
+						end
+					</OnEvent>
+					<OnClick>
+						PlaySound("gsTitleOptionOK");
+						Trinity2SavedState.savedOptions["CheckButtons"][self:GetID()] = self:GetChecked()
+						if (self:GetChecked()) then
+							Trinity2MinimapButton:Show()
+						else
+							Trinity2MinimapButton:Hide()
+						end
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$parentCheck2" inherits="Trinity2RoundCheckTemplate" id="2">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentCheck1" relativePoint="BOTTOM">
+						<Offset x="0" y="-12"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnEvent>
+						getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS["CHECK_"..self:GetID()])
+						getglobal(self:GetName().."Text"):SetTextHeight(10)
+						self:SetChecked(Trinity2SavedState.savedOptions["CheckButtons"][self:GetID()])
+					</OnEvent>
+					<OnClick>
+						PlaySound("gsTitleOptionOK");
+						Trinity2SavedState.savedOptions["CheckButtons"][self:GetID()] = self:GetChecked()
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<Slider name="$parentSlider1" inherits="Trinity2SliderTemplate1" minValue="1" maxValue="200" valueStep="0.5" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="200" y="-25"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnEvent>
+						getglobal(self:GetName().."Text"):SetTextHeight(10)
+						getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS["SLIDER_"..self:GetID()])
+						getglobal(self:GetName().."Low"):SetText("")
+						getglobal(self:GetName().."High"):SetText("")
+					</OnEvent>
+					<OnShow>
+						Trinity2.OptionsSlider1_OnShow(self)
+					</OnShow>
+					<OnValueChanged>
+						Trinity2.OptionsSlider1_OnValueChanged(self,value)
+					</OnValueChanged>
+				</Scripts>
+			</Slider>
+			<Slider name="$parentSlider2" inherits="Trinity2SliderTemplate1" minValue="1" maxValue="100" valueStep="0.5" id="2">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentSlider1" relativePoint="BOTTOM">
+						<Offset x="0" y="-12"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnEvent>
+						getglobal(self:GetName().."Text"):SetTextHeight(10)
+						getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS["SLIDER_"..self:GetID()])
+						getglobal(self:GetName().."Low"):SetText("")
+						getglobal(self:GetName().."High"):SetText("")
+					</OnEvent>
+					<OnShow>
+						Trinity2.OptionsSlider2_OnShow(self)
+					</OnShow>
+					<OnValueChanged>
+						Trinity2.OptionsSlider2_OnValueChanged(self,value)
+					</OnValueChanged>
+				</Scripts>
+			</Slider>
+			<Slider name="$parentSlider3" inherits="Trinity2SliderTemplate1" minValue="0.2" maxValue="2" valueStep="0.01" id="3">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentSlider2" relativePoint="BOTTOM">
+						<Offset x="0" y="-12"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnEvent>
+						getglobal(self:GetName().."Text"):SetTextHeight(10)
+						getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS["SLIDER_"..self:GetID()])
+						getglobal(self:GetName().."Low"):SetText("")
+						getglobal(self:GetName().."High"):SetText("")
+					</OnEvent>
+					<OnShow>
+						Trinity2.OptionsSlider3_OnShow(self)
+					</OnShow>
+					<OnValueChanged>
+						Trinity2.OptionsSlider3_OnValueChanged(self,value)
+					</OnValueChanged>
+				</Scripts>
+			</Slider>
+
+			<EditBox name="$parentEdit1" inherits="Trinity2EditBoxTemplate5" id="1">
+				<Size x="115" y="24"/>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="9" y="-140"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnEvent>
+						getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS.EDITBOX_1)
+					</OnEvent>
+					<OnTextChanged>
+						Trinity2.Edit1_OnTextChanged(self)
+					</OnTextChanged>
+					<OnShow>
+						local data = {}
+						for k,v in pairs(Trinity2.RegisteredAddons) do
+							if (not string.find(Trinity2.RegisteredAddons[k][1], "dummy")) then
+								data[Trinity2.RegisteredAddons[k][1]] = k
+							end
+						end
+						Trinity2.EditBox_PopUpInitialize(self.popup, data)
+						self:ClearFocus();
+					</OnShow>
+				</Scripts>
+			</EditBox>
+
+			<EditBox name="$parentEdit2" inherits="Trinity2EditBoxTemplate5" id="2">
+				<Size x="215" y="24"/>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentEdit1" relativePoint="RIGHT">
+						<Offset x="17" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnEvent>
+						getglobal(self:GetName().."Text"):SetText(TRINITY2_STRINGS.EDITBOX_2)
+					</OnEvent>
+					<OnTextChanged>
+						if (getglobal(self.data)) then
+							getglobal(self:GetParent():GetName().."Data1ScrollFrame1EditBox1"):SetText(getglobal(self.data)[self:GetText()])
+						end
+					</OnTextChanged>
+				</Scripts>
+			</EditBox>
+
+			<Frame name="$parentData1">
+				<Size x="368" y="235"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentEdit1" relativePoint="BOTTOMLEFT">>
+						<Offset x="0" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\ItemTextFrame\ItemText-Stone-TopLeft" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<BackgroundInsets>
+						<AbsInset left="4" right="4" top="4" bottom="4"/>
+					</BackgroundInsets>
+					<TileSize>
+						<AbsValue val="100"/>
+					</TileSize>
+					<EdgeSize>
+						<AbsValue val="20"/>
+					</EdgeSize>
+				</Backdrop>
+				<Frames>
+					<ScrollFrame name="$parentScrollFrame1" inherits="Trinity2ScrollFrameTemplate1">
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="5" y="-12"/>
+							</Anchor>
+							<Anchor point="BOTTOMRIGHT">
+								<Offset x="-5" y="12"/>
+							</Anchor>
+						</Anchors>
+						<ScrollChild>
+							<EditBox name="$parentEditBox1" multiLine="true" letters="5000" autoFocus="false">
+								<Size x="340" y="240"/>
+								<Scripts>
+									<OnTextChanged>
+										ScrollingEdit_OnTextChanged();
+									</OnTextChanged>
+									<OnCursorChanged>
+										ScrollingEdit_OnCursorChanged(arg1, arg2, arg3, arg4);
+									</OnCursorChanged>
+									<OnUpdate>
+										ScrollingEdit_OnUpdate()
+									</OnUpdate>
+									<OnEscapePressed>
+
+									</OnEscapePressed>
+
+								</Scripts>
+								<FontString inherits="GameFontHighlight"/>
+								<TextInsets left="10" right="10" top="0" bottom="0"/>
+							</EditBox>
+						</ScrollChild>
+					</ScrollFrame>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropColor(0,0,0,1);
+						self:SetBackdropBorderColor(0.5, 0.5, 0.5);
+					</OnLoad>
+				</Scripts>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self.name = "Trinity 2.0"
+				self:RegisterEvent("PLAYER_LOGIN");
+				self:Hide()
+			</OnLoad>
+			<OnEvent>
+				local index = getn(Trinity2.RegisteredAddons)+1
+				self.index = index
+
+				Trinity2.RegisteredAddons[index] = { "Trinity 2.0", "Trinity2CoreOptions", Trinity2.ToggleSimpleDockEditMode, "Interface\\Icons\\Spell_Holy_HolyGuidance", TRINITY2_STRINGS.TOOLTIP_1, nil, Trinity2.ToggleAdvancedDockEditMode }
+				Trinity2.RegisterAddon(index)
+
+				Trinity2.RegisteredAddons[index+1] = { "dummy_keybind", "Trinity2CoreOptions", Trinity2.ToggleSimpleBindingEditMode, "Interface\\Addons\\Trinity2\\images\\TrinityBindOffButton.tga", TRINITY2_STRINGS.TOOLTIP_2, nil, Trinity2.ToggleAdvancedBindingEditMode }
+				Trinity2.RegisterAddon(index+1)
+
+				tinsert(Trinity2.RegisteredOptions, self)
+				InterfaceOptions_AddCategory(self)
+			</OnEvent>
+		</Scripts>
+	</Frame>
+
+	<Frame parent="InterfaceOptionsFrame">
+		<Scripts>
+			<OnShow>
+				for k,v in pairs(Trinity2.RegisteredPanels) do
+					if (v[1]:IsVisible()) then
+						v[1]:Hide()
+					end
+				end
+			</OnShow>
+		</Scripts>
+	</Frame>
+
+	<MessageFrame name="Trinity2MessageFrame" displayDuration="5" insertMode="TOP" parent="UIParent" frameStrata="HIGH" toplevel="true" hidden="false">
+		<Size x="512" y="60"/>
+		<Anchors>
+			<Anchor point="TOP">
+				<Offset x="0" y="-100"/>
+			</Anchor>
+		</Anchors>
+		<FontString inherits="ErrorFont" justifyH="CENTER"/>
+	</MessageFrame>
+
+	<Frame name="Trinity2Loader" frameStrata="BACKGROUND" toplevel="false" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("PLAYER_LOGIN")
+				self:RegisterEvent("PLAYER_ENTERING_WORLD")
+				self:RegisterEvent("PLAYER_REGEN_DISABLED")
+			</OnLoad>
+			<OnEvent>
+				Trinity2.TrinityLoader_OnEvent(self, event, ...)
+			</OnEvent>
+		</Scripts>
+	</Frame>
+
+</Ui>

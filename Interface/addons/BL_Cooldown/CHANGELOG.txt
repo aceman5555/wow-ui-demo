@@ -1,0 +1,60 @@
+3.22
+- Update ToC to 5.4
+- Update to reflect changes in 5.4 (Note: tooltip changes will be in a future patch)
+
+3.20
+- Fix Ancestral Guidance
+
+3.19
+- Added Shadow Priest Void Shift tracking
+- Position now saves to profile
+
+3.18
+- Merge InKahootz dead player code
+
+3.17
+- Update ToC to 5.3
+
+3.16
+- Tagged as 3.16
+- Added more commands to /blcd command list
+- Added wipe detection and CD reset
+
+3.15
+- Tagged as 3.15
+- Added Paladin's Light's Hammer and Hand of Purity
+- Added Warrior's Intervene
+- Corrected Hand of Salvation spellID
+
+3.14
+- Tagged as 3.14
+- Reduced number of active cooldowns on Default settings
+- Added Paladin's Holy Avenger
+- Added Shaman's Ancestral Guidance
+- Added Druid's Heart of the Wild
+- Added Paladin's Hand of Salvation
+- Corrected Void Shift and Hymn of Hope tooltips
+
+3.13
+- Tagged as 3.13
+- Added Shadow Priest's Vampiric Embrace
+- Added Warrior's Shattering Throw
+
+3.12
+- Tagged as 3.12
+- Added AceTimer-3.0 back to libs as AceBucket is dependent on it
+- Added Shaman's Reincarnation
+- Added missing argument in Scale function
+- Added names for available CD to tooltip
+
+3.11
+-Tagged as 3.11
+-Updated TOC
+
+-Removed libraries from repository
+
+-Returned to latest LibCandyBar-3.0 release
+
+-Corrected .pkgmeta paths
+
+-Added repository to WowAce

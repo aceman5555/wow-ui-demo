@@ -1,0 +1,20 @@
+
+TomTomDB = {
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+TomTomWaypoints = nil
+TomTomWaypointsMF = {
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Gitt - Cho'gall",
+	},
+	["profiles"] = {
+		["Gitt - Cho'gall"] = {
+		},
+	},
+}

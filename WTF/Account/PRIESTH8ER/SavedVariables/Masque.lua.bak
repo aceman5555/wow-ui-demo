@@ -1,0 +1,57 @@
+
+MasqueDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Git - Cho'gall"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["Groups"] = {
+				["Bartender4_4"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Raven"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["Bartender4_StanceBar"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Raven_Buffs"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["Bartender4_5"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Bartender4"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Bartender4_1"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Bartender4_PetBar"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Bartender4_3"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Bartender4_2"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Bartender4_7"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Bartender4_6"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["Masque"] = {
+					["SkinID"] = "Zoomed",
+				},
+			},
+		},
+	},
+}

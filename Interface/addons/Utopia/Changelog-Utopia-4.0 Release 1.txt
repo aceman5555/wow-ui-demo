@@ -1,0 +1,82 @@
+------------------------------------------------------------------------
+r220 | zeksie | 2010-10-28 19:21:54 +0000 (Thu, 28 Oct 2010) | 1 line
+Changed paths:
+   A /tags/4.0 Release 1 (from /trunk:219)
+
+Tagging as 4.0 Release 1
+------------------------------------------------------------------------
+r219 | Zeksie | 2010-10-28 19:20:20 +0000 (Thu, 28 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/data.lua
+
+Added some missing min levels for spells.
+------------------------------------------------------------------------
+r218 | Zeksie | 2010-10-27 22:11:49 +0000 (Wed, 27 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/Locales/localization.lua
+
+Added resistance description.
+------------------------------------------------------------------------
+r217 | Zeksie | 2010-10-27 20:36:30 +0000 (Wed, 27 Oct 2010) | 5 lines
+Changed paths:
+   M /trunk/Locales/localization.lua
+   M /trunk/Utopia.lua
+   M /trunk/data.lua
+
+Fixed a number of temp aura flags.
+Fixed minLevel on BoM(mana regen)
+Renamed Warlock's Shadow and Flame to Shadow Mastery.
+Mark/Kings now use formulas for the resistance amounts.
+Added Spell Pushback Prevention category.
+------------------------------------------------------------------------
+r215 | Zeksie | 2010-10-22 15:24:56 +0000 (Fri, 22 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/Locales/localization.lua
+   M /trunk/Utopia.lua
+   M /trunk/data.lua
+
+Many more spell fixes and additions. Some description changes and clarifications.
+------------------------------------------------------------------------
+r214 | greltok | 2010-10-22 04:03:55 +0000 (Fri, 22 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/Utopia.lua
+
+Fixed reference to debug global.
+------------------------------------------------------------------------
+r213 | Zeksie | 2010-10-21 18:31:39 +0000 (Thu, 21 Oct 2010) | 2 lines
+Changed paths:
+   M /trunk/Locales/localization.lua
+   M /trunk/Utopia.lua
+   M /trunk/Utopia_Details/details.lua
+   M /trunk/Utopia_UpTime/uptime.lua
+   M /trunk/data.lua
+
+Many many spell fixes, additions etc.
+Fixed chat spell linking.
+------------------------------------------------------------------------
+r212 | Zeksie | 2010-10-20 21:20:15 +0000 (Wed, 20 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/Utopia.toc
+   M /trunk/Utopia_Custom/Utopia_Custom.toc
+   M /trunk/Utopia_CustomConfig/Utopia_CustomConfig.toc
+   M /trunk/Utopia_Details/Utopia_Details.toc
+   M /trunk/Utopia_UpTime/Utopia_UpTime.toc
+
+And actually change the TOC version instead of just thinking about it while sipping beer.
+------------------------------------------------------------------------
+r211 | Zeksie | 2010-10-20 21:18:29 +0000 (Wed, 20 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/Locales/localization.lua
+   M /trunk/Utopia.lua
+   M /trunk/Utopia_Custom/custom.lua
+   M /trunk/Utopia_UpTime/uptime.lua
+   M /trunk/data.lua
+
+Initial 4.0 changes. Likely missing many auras (please do let me know on the Utopia page, but do check if someone already posted it. Don't need 100 people telling me the same aura is missing).
+------------------------------------------------------------------------
+r210 | Zeksie | 2010-05-13 22:18:55 +0000 (Thu, 13 May 2010) | 1 line
+Changed paths:
+   M /trunk/Utopia_UpTime/uptime.lua
+
+Fixed the reverse horizontal scrolling thing in UpTime.
+------------------------------------------------------------------------

@@ -1,0 +1,19 @@
+## Interface: 30100
+
+## Title: Wow-Pro TourGuide Horde 1-80
+## Notes: Easy to follow optimized quest circuits for Horde
+## Author: WoW-Pro Community
+## Version: 0.6
+## X-Category: Quest
+
+## RequiredDeps: TourGuide
+## OptionalDeps: Dongle, Optionhouse, TomTom, tekDebug
+
+## DefaultState: disabled
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+WoW-Pro_TourGuide_Horde.lua
+Guides.xml
+WoW-Pro_TourGuide_Horde2.lua

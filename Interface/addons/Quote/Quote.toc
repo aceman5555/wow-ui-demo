@@ -1,0 +1,10 @@
+## Interface: 30200
+## Title: Quotes
+## Notes: Original concept by Anavar of 'The Drive-By'
+## More Notes:  Code ideas blatantly stolen from Cryolysis; And quotes from Firefly/Serenity Quoter by Treestump.
+## Version: 1.2.1
+## Author: Gid
+quote.xml
+quote.lua
+speech.lua
+

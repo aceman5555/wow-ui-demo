@@ -1,0 +1,682 @@
+
+WoWDBProfilerData = {
+	["profileKeys"] = {
+		["Gimm - Cho'gall"] = "Default",
+	},
+	["version"] = 17,
+	["build_num"] = 17128,
+	["global"] = {
+		["npcs"] = {
+			[22445] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 12,
+							["max_health"] = 150,
+							["attack"] = 8,
+						},
+					},
+				},
+			},
+			[32589] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 11,
+							["max_health"] = 148,
+							["attack"] = 11,
+						},
+					},
+				},
+			},
+			[32590] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 12,
+							["max_health"] = 145,
+							["attack"] = 10,
+						},
+					},
+				},
+			},
+			[32591] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 11,
+							["max_health"] = 145,
+							["attack"] = 11,
+						},
+					},
+				},
+			},
+			[67021] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131769] = 169,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[54027] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 161,
+							["attack"] = 11,
+						},
+					},
+				},
+			},
+			[67092] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131956] = 4,
+							[131962] = 1,
+							[131957] = 4,
+							[131980] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[10598] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 147,
+							["attack"] = 11,
+						},
+					},
+				},
+			},
+			[66986] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[1604] = 10,
+							[131656] = 3,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[23909] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 155,
+							["attack"] = 12,
+						},
+					},
+				},
+			},
+			[66943] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131572] = 16,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[66947] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131575] = 437,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[33200] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 151,
+							["attack"] = 10,
+						},
+					},
+				},
+			},
+			[66207] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131743] = 8,
+							[129953] = 8,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[10259] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 160,
+							["attack"] = 10,
+						},
+					},
+				},
+			},
+			[16548] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 150,
+							["attack"] = 11,
+						},
+					},
+				},
+			},
+			[33226] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 168,
+							["attack"] = 10,
+						},
+					},
+				},
+			},
+			[66255] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131772] = 18,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[66138] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Bow to me and we shall begin."] = true,
+						["As a <class>, your reflexes are among your greatest resources.  Often, the ability to think and move quickly can save your life."] = true,
+						["Well done.  Remember that swiftness of mind and body can keep you alive."] = true,
+					},
+				},
+				["reaction"] = "50:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["Kun-Lai Summit:809"] = {
+										["0:472:402"] = true,
+										["0:480:404"] = true,
+									},
+								},
+								["max_health"] = 17720,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			[29726] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 11,
+							["max_health"] = 153,
+							["attack"] = 10,
+						},
+					},
+				},
+			},
+			[67009] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131612] = 8,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[67095] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[1604] = 1,
+							[131962] = 2,
+							[131956] = 4,
+							[131957] = 4,
+							[131980] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[7387] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 9,
+							["max_health"] = 156,
+							["attack"] = 10,
+						},
+					},
+				},
+			},
+			[45340] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 155,
+							["attack"] = 12,
+						},
+					},
+				},
+			},
+			[71201] = {
+				["wild_pet"] = true,
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 12,
+							["max_health"] = 158,
+							["attack"] = 10,
+						},
+					},
+				},
+			},
+			[66256] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131617] = 3,
+							[131616] = 6,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[66258] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131664] = 13,
+						},
+						["stats"] = {
+							["level_20"] = {
+								["locations"] = {
+									["Kun-Lai Summit:809"] = {
+										["0:472:402"] = true,
+									},
+								},
+								["max_health"] = 2710,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "50:Horde:FRIENDLY",
+			},
+			[36911] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 12,
+							["max_health"] = 152,
+							["attack"] = 12,
+						},
+					},
+				},
+			},
+			[66257] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131604] = 22,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[42177] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 156,
+							["attack"] = 9,
+						},
+					},
+				},
+			},
+			[7389] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 154,
+							["attack"] = 10,
+						},
+					},
+				},
+			},
+			[36871] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 8,
+							["max_health"] = 161,
+							["attack"] = 13,
+						},
+					},
+				},
+			},
+			[36979] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 9,
+							["max_health"] = 161,
+							["attack"] = 12,
+						},
+					},
+				},
+			},
+			[66260] = {
+				["reaction"] = "51:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_90"] = {
+								["locations"] = {
+									["Kun-Lai Summit:809"] = {
+										["0:486:428"] = true,
+									},
+								},
+								["max_health"] = 1181823,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			[37865] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 145,
+							["attack"] = 12,
+						},
+					},
+				},
+			},
+			[36607] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 8,
+							["max_health"] = 161,
+							["attack"] = 13,
+						},
+					},
+				},
+			},
+			[32592] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 9,
+							["max_health"] = 156,
+							["attack"] = 11,
+						},
+					},
+				},
+			},
+			[66969] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[28012] = 28,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[67066] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[131616] = 26,
+							[131617] = 12,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[7390] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 13,
+							["max_health"] = 148,
+							["attack"] = 9,
+						},
+					},
+				},
+			},
+			[67233] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 160,
+							["attack"] = 10,
+						},
+					},
+				},
+			},
+			[31575] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 152,
+							["attack"] = 14,
+						},
+					},
+				},
+			},
+			[32841] = {
+				["battle_pet_data"] = {
+					["Uncommon"] = {
+						["level_1"] = {
+							["speed"] = 10,
+							["max_health"] = 153,
+							["attack"] = 11,
+						},
+					},
+				},
+			},
+			[32595] = {
+				["battle_pet_data"] = {
+					["Rare"] = {
+						["level_1"] = {
+							["speed"] = 12,
+							["max_health"] = 155,
+							["attack"] = 11,
+						},
+					},
+				},
+			},
+		},
+		["quests"] = {
+			[28512] = {
+				["can_share"] = true,
+			},
+			[27112] = {
+				["can_share"] = true,
+			},
+			[27603] = {
+				["can_share"] = true,
+			},
+			[27009] = {
+				["can_share"] = true,
+			},
+			[31840] = {
+				["begin"] = {
+					["NPC:66260"] = true,
+				},
+				["races"] = {
+					["Pandaren_Horde"] = true,
+				},
+				["end"] = {
+					["NPC:66260"] = true,
+				},
+				["reward_text"] = "I hear from Master Cheng that your training went well.  Come back again in the future to continue your training.",
+				["classes"] = {
+					["MONK"] = true,
+				},
+			},
+			[27109] = {
+				["can_share"] = true,
+			},
+			[27110] = {
+				["can_share"] = true,
+			},
+			[27119] = {
+				["can_share"] = true,
+			},
+		},
+		["items"] = {
+			[65969] = {
+				["durability"] = 100,
+			},
+			[65977] = {
+				["durability"] = 65,
+			},
+			[1608] = {
+				["durability"] = 75,
+				["unique_id"] = 8,
+				["suffix_id"] = -20,
+			},
+			[63171] = {
+				["durability"] = 115,
+			},
+			[7521] = {
+				["durability"] = 40,
+				["unique_id"] = 14,
+				["suffix_id"] = -69,
+			},
+			[63204] = {
+				["durability"] = 85,
+			},
+			[62154] = {
+				["durability"] = 40,
+			},
+			[13408] = {
+				["durability"] = 90,
+			},
+			[15617] = {
+				["durability"] = 70,
+				["unique_id"] = 14,
+				["suffix_id"] = -13,
+			},
+			[89561] = {
+				["durability"] = 50,
+			},
+			[15291] = {
+				["durability"] = 85,
+				["unique_id"] = 22,
+				["suffix_id"] = -9,
+			},
+			[88356] = {
+				["durability"] = 50,
+			},
+			[51992] = {
+				["unique_id"] = 14,
+				["suffix_id"] = -84,
+			},
+			[66027] = {
+				["durability"] = 50,
+			},
+			[51963] = {
+				["durability"] = 65,
+				["unique_id"] = 24,
+				["suffix_id"] = -78,
+			},
+			[7530] = {
+				["durability"] = 40,
+				["unique_id"] = 14,
+				["suffix_id"] = -78,
+			},
+			[51996] = {
+				["unique_id"] = 11,
+				["suffix_id"] = -79,
+			},
+			[51966] = {
+				["durability"] = 85,
+				["unique_id"] = 19,
+				["suffix_id"] = -78,
+			},
+			[4017] = {
+				["durability"] = 75,
+			},
+			[89550] = {
+				["durability"] = 85,
+			},
+			[62146] = {
+				["durability"] = 55,
+			},
+			[18716] = {
+				["durability"] = 65,
+			},
+			[63193] = {
+				["durability"] = 55,
+			},
+			[9923] = {
+				["durability"] = 70,
+				["unique_id"] = 14,
+				["suffix_id"] = -84,
+			},
+			[13054] = {
+				["durability"] = 100,
+			},
+		},
+	},
+}

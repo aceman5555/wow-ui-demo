@@ -1,0 +1,21 @@
+------------------------------------------------------------------------
+r22 | watchout | 2013-04-07 14:21:58 +0000 (Sun, 07 Apr 2013) | 3 lines
+Changed paths:
+   A /tags/50000.3 (from /trunk:21)
+
+Tagging as 50000.3
+
+This will very much likely become the last version of this Addon.
+------------------------------------------------------------------------
+r21 | watchout | 2013-04-03 02:18:18 +0000 (Wed, 03 Apr 2013) | 1 line
+Changed paths:
+   M /trunk/GridUnitMenu.lua
+
+GUM is probably obsolete now...
+------------------------------------------------------------------------
+r20 | watchout | 2013-03-16 14:12:15 +0000 (Sat, 16 Mar 2013) | 1 line
+Changed paths:
+   M /trunk/GridUnitMenu.toc
+
+toc bump
+------------------------------------------------------------------------

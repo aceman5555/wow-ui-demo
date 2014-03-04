@@ -1,0 +1,60 @@
+RageForHitting = damage / (0.5 * playerLevel)
+RageForGettingHit = damage / (1.33333 * mobLevel)
+RageForGettingHit = damage / (1.8 * (mobLevel - 8))
+RageForGettingHit = damage / (1.5 * mobLevel + 3)
+
+level 58, 4953 damage taken, 55 rage gain, 90.05(first 116)
+level 55, 2518 damage taken, 30 rage gain, 83.93(first 107)
+level 52, 5571 damage taken, 71 rage gain, 78.46(first 133)
+level 50, 5162 damage taken, 68 rage gain, 75.91(first 94)
+level 48, 4895 damage taken, 68 rage gain, 71.99(first 94)
+level 45, 5125 damage taken, 76 rage gain, 67.43(first 86)
+level 42, 4549 damage taken, 75 rage gain, 60.65
+level 41, 4026 damage taken, 69 rage gain, 58.34(first 62)
+level 40, 4065 damage taken, 72 rage gain, 56.46(first 57)(Scorpid Hunter)(5261armor)
+level 40, 4065 damage taken, 72 rage gain, 56.46 - first 57 - Scorpid Hunter - 5261armor - 
+level 40, 4094 damage taken, 72 rage gain, 56.86 - first 57 - Scorpid Hunter - 8:40 start - 8:51end - 5261armor - 
+*level 40, 4345 damage taken, 72 rage gain, 60.34(first 84)
+level 33, 3222 damage taken, 73 rage gain, 44.14
+level 32, 2859 damage taken, 66 rage gain, 43.32
+
+hits:rage
+737:23(34.56)
+703:23
+628:21
+615:20
+589:19
+588:19
+368:12
+357:12
+356:12
+354:12(11.8)
+346:11
+343:11
+338:11
+331:11
+329:11
+327:11
+323:11 *
+322:10
+316:10 *
+315:10
+314:10
+304:10
+300:10
+292:9
+291:9
+
+level 5
+miss=10.12+11=21.12	370 18.47%
+dodge=17.37+11=28.37	564 28.16%
+parry=12.12+11=23.12	506 25.26%
+block=23.12+11=34.12	563 28.11%
+=106.73			=2003 100%
+
+level 4
+miss=9.88+11=20.88	434 21.65%
+dodge=21.13+11=32.13	641 31.97%
+parry=16.88+11=27.88	567 28.28%
+block=33.88+11=44.88	363 18.10%
+=125.77			=2005

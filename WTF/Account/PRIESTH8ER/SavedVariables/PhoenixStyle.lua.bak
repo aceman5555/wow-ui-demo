@@ -1,0 +1,83 @@
+
+pslocationnames = {
+	"Baradin Hold", -- [1]
+	"Blackwing Descent", -- [2]
+	"The Bastion of Twilight", -- [3]
+	"Throne of the Four Winds", -- [4]
+}
+psbossnames = {
+	{
+		"Argaloth", -- [1]
+	}, -- [1]
+	{
+		"Magmaw", -- [1]
+		"Omnitron Defense System", -- [2]
+		"Maloriak", -- [3]
+		"Atramedes", -- [4]
+		"Chimaeron", -- [5]
+		"Nefarian", -- [6]
+	}, -- [2]
+	{
+		"Halfus Wyrmbreaker", -- [1]
+		"Valiona & Theralion", -- [2]
+		"Twilight Ascendant Council", -- [3]
+		"Cho'gall", -- [4]
+	}, -- [3]
+	{
+		"Conclave of Wind", -- [1]
+		"Al'Akir", -- [2]
+	}, -- [4]
+}
+psicccombatsvqu = 25
+psicccombatsvqu2 = 10
+psiccsavedfails = {
+}
+psiccsavedfailsplayern = {
+	{
+	}, -- [1]
+	{
+	}, -- [2]
+}
+psfontsset = {
+	11, -- [1]
+	12, -- [2]
+}
+psaddoninstalledsins = "14/11/2010"
+psfchatadd = {
+}
+PS_Settings = {
+	["PSMinimapPos"] = -16,
+}
+psminibutenabl = true
+psoldvern = 0
+psraidchats3 = {
+	"raid", -- [1]
+	"sebe", -- [2]
+	"sebe", -- [3]
+	"raid", -- [4]
+}
+psraidoptionsnumers = {
+	2, -- [1]
+	0, -- [2]
+	4, -- [3]
+	8, -- [4]
+	5, -- [5]
+	7, -- [6]
+	8, -- [7]
+	20, -- [8]
+}
+psdamaginfchat = "raid"
+psmoddmg_title1 = {
+}
+psmoddmg_title2 = {
+}
+psmoddmg_indexboss = {
+}
+psmoddmg_additioninfo = {
+}
+psmoddmg_damageinfo = {
+}
+psmoddmg_switchinfo = {
+}
+psmoddmg_classcolor = {
+}

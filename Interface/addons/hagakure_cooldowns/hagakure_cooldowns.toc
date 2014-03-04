@@ -1,0 +1,40 @@
+﻿## Interface: 50200
+## Title: Hagakure Cooldowns
+## Version: 0.1.4
+## Credits: hagakure.su
+## E-mail: kazmin.oleg@gmail.com
+## Author: m9ist
+## SavedVariables: hagakure_cooldownsDB
+## Notes: Draw cooldown's interface
+## Notes-ruRU: Создает интерфейс доступных кулдаунов в рейде.
+## X-Curse-Packaged-Version: r65
+## X-Curse-Project-Name: Hagakure Cooldowns
+## X-Curse-Project-ID: hagakure-cooldowns
+## X-Curse-Repository-ID: wow/hagakure-cooldowns/mainline
+
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Libs\AceTimer-3.0\AceTimer-3.0.xml
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\LibSharedMedia-3.0\lib.xml
+Libs\LibStub\LibStub.lua
+Libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+
+localization\enUS.lua
+localization\ruRU.lua
+
+main.lua
+func.lua
+spells.lua
+spell.lua
+config.lua
+GridStatusHagakureCooldowns_def_values.lua
+GridStatusHagakureCooldowns.lua

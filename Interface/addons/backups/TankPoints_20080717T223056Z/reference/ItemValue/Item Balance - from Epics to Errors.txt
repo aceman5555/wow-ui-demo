@@ -1,0 +1,256 @@
+http://forums.worldofwarcraft.com/thread.aspx?fn=wow-dungeons&t=143561&p=1&tmp=1#post143561
+_________________________________________________________________
+
+Item Balance - from Epics to Errors | 9/9/2005 11:48:58 AM PDT
+
+I¡¦ve been toying with the idea of how WoW items are balanced on creation for the last few weeks. Here is something I¡¦ve come up with that seems to consistently represent things pretty well, and after posting it up for some guildies I decided to put it here as well. 
+
+Blizz Reps, please take a look at some sections of this, especially the part about the d#@!& of benediction, so those poor souls can get it fixed or at least see what it really is. Also, if you have access to the actual balance formulae I¡¥d love to see how close my numbers are to the real thing. There will be some rounding errors due to trying to reverse engineer a system in which I have to take items as they are given. However the errors I point out aren¡¦t off by just a few points, they are off by an entire quality lvl or 10+ ilvls. 
+
+----------- 
+
+Some people have been asking me about my work on these and I promised I¡¦d put up something so here it is. So far these calculations only work reliably for armor, trinkets, rings, necks, shields, etc¡K Weapons are a different beast entirely and they sometimes modify innate dps in ways that defy logic (or at least I don¡¦t have enough samples yet to get a reliable figure for), and scaling seems to be different for them. You can try to apply these scaling routines to weapons, but don¡¦t be upset if they fall short on the high end things (they should work fine for most of the greens and blues below ilvl 65 though). 
+
+First, some basic concepts/terms 
+
+All numbers in this examination are in arbitrary units, they depend heavily on the values I give to each StatMod, and they aren¡¦t pretty and round because I didn¡¦t use the same absolute StatMods that blizzard does (they should all still be in the same ratios though). 
+So even though the numbers aren¡¦t pretty, they should still give correct results. 
+
+Ilvl - the effective level of an item, this is intimately related to its stats bonuses, armor and dps. The minimum level to use an item is ilvl ¡V 5. If that value is above 60, then the min level is 60. 
+
+ItemValue ¡V the total value of stats on a given item, this value scales predictably based on item type, quality and ilvl. It is normalized to be linear with increasing ilvl for a given item type. 
+
+StatValue ¡V the amount of a given stat on an item, if a ring has 12 int, then it has an int statvalue of 12. 
+
+StatMod ¡V the weighting given to a specific stat, this is how stats are compared in value; in my system everything is compared to the base stat value of +healing, which is assigned a StatMod of 100. Really any value could be used and set to any standard; it is the ratios that are important, so if done properly any standardization should give the same overall results. 
+
+SlotMod ¡V Weighting for predicting the value of an item based on equipment slot. 
+
+The Stats 
+
+Items have stats, sometimes many, sometimes few. Sometimes these stats are well thought out, other times they are absolutely worthless. All items share from the basic pool of stats, these are: 
+
+Strength, Agility, Stamina, Intellect, Spirit, DPS, Attack Power, Ranged Attack Power, +%To Hit, +%Crit, Armor, Defense, Damage Shield, +%Dodge, +%Parry, +%Block, +BlockValue, x/5 hp regen, x/5 mana regen, +%SpellCrit, +%SpellHit, +AllSpells, +Healing, +Fire, +Frost, +Shadow, +Arcane, +Nature, +Holy, Fire Resist, Frost Resist, Nature Resist, Arcane Resist and Shadow Resist. 
+
+There are other, less common stats that cannot be weighted, such as the chance to put an attacker to sleep, or of using the item to regain mana. While these don¡¦t just out with an immediately obvious value this system can be used to see what the blizzard item designers think they are worth and translate them into a stat-equivalent format. 
+
+Armor Scaling 
+
+Armor values on item follow a simple linear scaling pattern within specific regimes. For example, mail armor scales linearly between certain ilvls, at which points the sloes of the linear increase change. One of these points is ilvl 45, above this point it scales more rapidly. Remember that an ilvl 45 item can be worn at lvl 40, and shamans and hunters get mail at 40. So they wanted mail to scale up fast for those classes just getting into it without raising the amour values of pre 40 warriors too high (don¡¦t worry warriors, plate armor scales up even faster). An example of armor scaling is shown below. 
+
+Plate Chest Armor = (ilvl-44)*8.9+428 
+
+The values from this scaling are for green plate chests. The armor value of rare or epic pieces is also very easy to obtain using a simple multiplier. If you really want to go into detail, you will notice that there are plate chests with ilvls below 44. Due to their ilvl they should be equippable below lvl 40 (if any class could) and follow a different scaling equation (which is why jouster plate stuff has such pitiful armor values compared to many other starting plate item, their ilvls are all low). 
+
+For Items of the same armor type (cloth, leather, etc¡K) and the same ilvl 
+
+Rare Armor Value = Green Armor Value * 1.1 
+Epic Armor Value = Green Armor Value * 1.2 
+
+The exception to this is shields, which use a slightly different scaling 
+
+Rare Shield Armor Value = Green Shield Armor Value * 1.125 
+Epic Shield Armor Value = Green Shield Armor Value * 1.25 
+
+Now you are thinking, ¡§But I¡¦ve seen some items with much higher armor than others around that lvl!¡¨ And you are right, some items do have higher armor than these equations would predict. But those items are using that extra armor as an actual ¡¥stat¡¦. Only this extra armor, above and beyond the predicted armor is considered in item weighting. So while the base armor level of an item is ¡¥free¡¦, going higher will cost you other stats. 
+
+To find an expected armorvalue for a given item you will first need to know the scaling of that item type. 
+
+Do a search on thottbot for green items of that type, with lvl ranges of 44-46. Find the base armor they have. Then do the same for items of that slot at ilvl 61-63. 
+
+Then use 
+
+ArmorScaling = (higharmor - lowamor)/(highilvl - lowilvl) 
+
+this is the armor increase per ilvl for a green of that armor type. 
+
+Once you have that, do 
+
+ArmorValue = (Desiredilvl - highilvl)*ArmorScaling + higharmor 
+
+This will give the value of a green at that ilvl. 
+
+Then multiply it by 1.1 for a rare, or 1.2 for an epic. 
+
+Let's try this on a stormrage helm, 183 armor, ilvl 76. 
+Green leather helms: 
+ilvl 45, armor 99 
+ilvl 64, armor 132 
+
+ArmorScaling = (132 - 99)/(64-45) = 1.74 armor/ilvl 
+
+(76 - 64) * 1.74 + 132 = 152.8 
+152.8 * 1.2 = 183.4 -> 183 armor 
+
+You can use this to find the ArmorScaling factor and expected armor for any item. 
+
+
+The Equation 
+
+Here is the result of testing many forms of equations to see what did the best job of representing the way WoW itemization was handled. 
+
+ItemValue = [(StatValueX*StatModX)^1.5+(StatValueY*StatModY)^1.5+ ¡K]^(2/3)/100 
+
+There are a few things you should notice about this equation 
+
+1) It¡¦s simple (I was dreading something ridiculously complex) but not so simple that it is just all the stats added together. This means that there isn¡¦t some weird voodoo trick to balancing items, but it rather can be represented with a very simple value. 
+
+2) Each stat is taken to the 1.5 power. This isn¡¦t too fast of a growth, but it does cause a single high stat to be weighted fairly heavily. For example, an item could have +29 to Str or +18/19 to Str/Stm, the ItemValue would be the roughly the same in either case (close enough to correspond to the same ilvl). 
+
+3) After summing the series of stats to the 1.5 power, the total sum it taken to the 2/3 power, this keeps the ItemValue from spiraling up and scaling with a power. After this modification the ItemValue scales linearly with ilvl. 
+
+
+Item Types 
+
+You¡¦ve probably noticed that some item slots tend to have better stats than others. That is a helm for example will usually give a better benefit than a bracer. The stat value for each item corresponds not only to its ilvl, but also to the equipment slot in which it belongs. Below are the scaling factors by which the predicted ItemValue for any item of a given ilvl should be modified by to compare it to the actual ItemValue. That is, ItemValue = PredictedItemValue * SlotMod 
+
+SlotMod list 
+
+Head ¡V 100% 
+Neck ¡V 54% 
+Shoulder ¡V 74% 
+Back ¡V 54% 
+Chest ¡V 100% 
+Wrist ¡V 54% 
+Hands ¡V 74% 
+Waist ¡V 74% 
+Legs ¡V 100% 
+Feet ¡V 74% 
+Ring ¡V 54% 
+Trinkets ¡V 68% 
+Shield ¡V 52% 
+Off-hand ¡V 52% 
+
+These weapons aren¡¦t guaranteed, but they are my preliminary numbers 
+1h Weapon ¡V 42% 
+2h Weapon ¡V 100% 
+
+
+The Weightings 
+
+After comparing thousands of items, these are some rough weightings I have obtained. Some, such as str, int, resists, +spell damage, etc¡K are pretty reliable since they occur on many items and in large values. Others, such as %crit, %tohit, %spellcrit and others are much rougher as they don¡¦t appear much and then only in small values (1 or 2%). It is harder to get a solid value for them due to this. Also, items that have nothing else except for 1 or 2 of these less common stats sometimes wont fit in at exactly the ilvl you would expect because getting 1 more of that stat would push it far too high, or it was close and they just rounded when creating the item. 
+
+Another thing to consider, a few weightings seem to be different on different item types. This is certainly the case for weapons, but also some stats on rings and necks as well. For example, rings can get higher resist values than their ilvl would imply, so they have a slightly lower StatMod for resists. They have a higher StatMod for x/5 health regen though. There are a few scattered stats that are this way, but overall they make a relatively small impact. 
+
+Strength = Agility = Stamina = Intellect = Spirit = 230 
+Attack Power = 115 
+Ranged Attack Power = 92 
++%To Hit = 2200 
++%Crit = 3200 
+Armor = 22 
+Defense = 345 post 1.7 (was 230 prior) 
+Damage Shield = 720 
++%Dodge = 2500 
++%Parry = 3600 
++%Block =1300 
++BlockValue = 150 
+x/5 hp regen = 650 
+x/5 mana regen = 550 
++%SpellCrit = 2600 
++%SpellHit = 2500 
++AllSpells = 192 
++Healing = 100 
++Fire = +Frost = +Shadow = +Arcane = +Nature = 159 
++Holy = 210 
+Fire Resist = Frost Resist = Nature Resist = Arcane Resist = Shadow Resist = 230 
+
+
+ItemValue Estimations 
+
+Now that we know how item values are figured, and having listed out hundred of items we know that they scale linearly with level, we should be able to predict them based on ilvl, item type and quality. 
+
+Green ItemValuePrediction = (ilvl * 1.21 ¡V 9.8 ) * SlotMod 
+Blue ItemValuePrediction = (ilvl * 1.42 ¡V 4.2) * SlotMod 
+Purple ItemValuePrediction = (ilvl * 1.64 + 11.2) * SlotMod 
+
+
+What does this tell us? 
+
+So now we have all the tools, let¡¦s apply them. 
+
+First let¡¦s try to see if we can predict an item¡¦s ItemValue and then check it. 
+
+For this example we will use 
+
+Circle of Applied Force 
+Binds when picked up 
+Unique 
+Finger Miscellaneous 
++12 Strength 
++22 Agility 
++9 Stamina 
+Requires Level 60 
+
+This item has an ilvl of 75. 
+
+If we do the prediction calc above we find that it should have an ItemValue of about 72.1. If we do the calculations with the stat numbers of the item we find that its actual ItemValue is 71.1. Now why is this a whole point below what it should be? That¡¦s because if any of the 3 stats on the ring were increased by just 1 point it would go above 72.1 and wouldn¡¦t be a valid ilvl 75 ring anymore (also I wouldn¡¦t put it past rounding errors). 
+
+We can also try this on 
+
+Cloak of the Shrouded Mists 
+Binds when picked up 
+Back 
+57 Armor 
++22 Agility 
++12 Stamina 
++6 Fire Resistance 
++6 Nature Resistance 
+Requires Level 60 
+Item Level 74 
+
+This case is a tigher fit, estimated value using this system comes to 71.8, while the actual ItemValue of the cloak is 71.7. 
+
+And just so you casters don¡¦t think I¡¦m forgetting you (I¡¦m a healer too after all). 
+
+Shroud of Pure Thought 
+Binds when picked up 
+Back 
+57 Armor 
++10 Stamina 
++11 Intellect 
+Requires Level 60 
+Equip: Increases healing done by spells and effects by up to 33. 
+Equip: Restores 6 mana every 5 sec. 
+Item Level 75 
+
+The estimated ItemValue of this cape is 72.7, while the actual value falls into the window well at 72.5. 
+
+You might be wondering why I keep showing capes. It¡¦s because of my next example of mishaps in item creation. 
+
+Also, I am showing some high end items to demonstrate that this system works, but many of my values and the scaling groundwork were obtained examining low - med lvl green and blue scaling. So it typically works well across all ilvl ranges. 
+
+
+Item Creation Gone Wrong - Mislabelling 
+
+Let¡¦s use this to examine a blizzard blooper. 
+
+Everyone probably knows of the D#@!& of Benediction (ilvl 67) 
+http://www.thottbot.com/?i=35923 
+
+It is a cape that seems horribly underpowered for where you get it from, Azuregos. Let¡¦s see how it shapes up using these tools. 
+
+When you work out the numbers, the actual ItemValue of the D#@!& is 48.3, but an ilvl 67 Epic cape should chime in at 65.3 so something seems amiss. 
+
+Maybe its ilvl was too high? Lets see at what ilvl an epic cape should have an ItemValue of 48.3. This works out to be ilvl 48, seems a little low and random, maybe we are missing something¡K. 
+
+Let¡¦s see what the ItemValue of a rare (blue) ilvl 67 cape would be, maybe that will tell us something. This value is 48.9 (with a lower bound of 48.2). The ItemValue of the d#@!& of benediction falls right into this window. 
+
+
+So now we have the mysterious ilvl 67 rare (not epic) cape, d#@!& of benediction. All of you who said it shouldn¡¦t have been an epic are exactly right. It was designed as a rare and flagged as an epic (a mixup like the snowblind shoes that are epic but originally tagged as a rare, though they fixed those). 
+
+
+Items Valued with unnaturally high ItemValue 
+
+There are also items that have been tweaked or changed by blizz that have item values far above what they should (and if you look carefully for discrepancies you will be able to tell which they are). But I¡¦m not going to go into specifics as I was asked by people who use them not to get them nerfed ;) 
+
+
+Tier 2 Sets 
+
+Many people have voiced opinions that tier 2 sets are not any better and in some cases worse than tier 1. In some cases of practicality for the needs of the class they are assigned to that may be true, but they were not balanced as worse. People also said that they were intentionally created to be even with tier 1 sets because people already got some in molten core, and that their stats would be raised after bwl comes out. 
+
+However, taking a look at item values for items in tier 2, they are exactly where they should be as ilvl 76 items compared to the tier 1 sets sitting at ilvl 66. The item designers just made choices on where to spend those stats that many people don¡¦t agree with. 
+
+So don¡¦t expect an across the board boost of tier 2 armor. The most they would do is move some of the allowed stats around, but they will likely stay ilvl 76. 
+----- 
+Itemvalue Spreadsheet by Zifnab 
+http://www.savefile.com/projects/137702

@@ -1,0 +1,11 @@
+## Interface: 40300
+## Title: EPGP Donation Calculator
+## Notes: 
+## Author: Liath (Uppsala@Medivh US)
+## SavedVariablesPerCharacter: LZGDB
+## X-Curse-Packaged-Version: r8
+## X-Curse-Project-Name: EPGP Donation Calculator
+## X-Curse-Project-ID: lazyguildee
+## X-Curse-Repository-ID: wow/lazyguildee/mainline
+embeds.xml
+EPGP-Donation-Calculator.lua

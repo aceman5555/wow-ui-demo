@@ -1,0 +1,57 @@
+------------------------------------------------------------------------
+r13 | sirjoga | 2012-01-03 08:13:27 +0000 (Tue, 03 Jan 2012) | 1 line
+Changed paths:
+   A /tags/0.6.4 (from /trunk:12)
+
+Tagging as 0.6.4
+------------------------------------------------------------------------
+r12 | sirjoga | 2012-01-03 08:12:26 +0000 (Tue, 03 Jan 2012) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+missed local in enqueue def
+------------------------------------------------------------------------
+r9 | sirjoga | 2012-01-01 20:51:09 +0000 (Sun, 01 Jan 2012) | 1 line
+Changed paths:
+   M /trunk/Localization.RU.lua
+   M /trunk/Localization.lua
+
+localizations1
+------------------------------------------------------------------------
+r7 | sirjoga | 2012-01-01 20:46:16 +0000 (Sun, 01 Jan 2012) | 1 line
+Changed paths:
+   M /trunk/Localization.RU.lua
+   M /trunk/Localization.lua
+
+localizations
+------------------------------------------------------------------------
+r5 | sirjoga | 2012-01-01 19:43:48 +0000 (Sun, 01 Jan 2012) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+
+forgot pkgmeta (
+------------------------------------------------------------------------
+r3 | sirjoga | 2012-01-01 19:40:48 +0000 (Sun, 01 Jan 2012) | 1 line
+Changed paths:
+   M /trunk
+   M /trunk/EpgpCop.toc
+
+libs externals and toc 'nolib' added
+------------------------------------------------------------------------
+r2 | sirjoga | 2012-01-01 19:29:16 +0000 (Sun, 01 Jan 2012) | 1 line
+Changed paths:
+   A /trunk/EpgpCop.toc
+   A /trunk/Localization.RU.lua
+   A /trunk/Localization.lua
+   A /trunk/core.lua
+
+initial state
+------------------------------------------------------------------------
+r1 | svn | 2012-01-01 19:27:32 +0000 (Sun, 01 Jan 2012) | 1 line
+Changed paths:
+   A /branches
+   A /tags
+   A /trunk
+
+epgpcop/mainline: Initial Import
+------------------------------------------------------------------------

@@ -1,0 +1,307 @@
+﻿<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
+<Frame name="CombatReplayFrame">
+
+	<Scripts>
+	<OnLoad>cr_OnLoad()</OnLoad>
+	<OnEvent>cr_OnEvent(self,event,...)</OnEvent>
+	<OnUpdate>cr_OnUpdate(GetTime())</OnUpdate>
+	</Scripts>
+	</Frame>
+
+
+<Frame name="crmain" hidden="true" toplevel="true" virtual="true" frameStrata="DIALOG" movable="true" enableMouse="true" parent="UIParent">
+	<Size x="1050" y="950"/>
+	<Anchors>
+	<Anchor point="CENTER"/>
+	</Anchors>
+
+
+<Scripts>
+	<OnMouseDown>crmain1:StartMoving()</OnMouseDown>
+	<OnMouseUp>crmain1:StopMovingOrSizing()</OnMouseUp>
+	<OnDragStop>crmain1:StopMovingOrSizing()</OnDragStop>
+	</Scripts>
+</Frame>
+
+
+
+<Frame name="crmain1" hidden="true" inherits="crmain">
+	<Size x="1050" y="950"/>
+	<Anchors>
+	<Anchor point="CENTER"/>
+	</Anchors>
+<frames>
+
+
+
+<Frame name="crframecenter" hidden="true">
+
+	<Size x="700" y="700"/>
+	<Anchors>
+	<Anchor point="CENTER"><Offset x="-25" y="25"/></Anchor>
+	</Anchors>
+	<Layers>
+	<Layer level="ARTWORK">
+	</Layer>
+	</Layers>
+	<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+	<TileSize>
+	<AbsValue val="32"/>
+	</TileSize>
+	<EdgeSize>
+	<AbsValue val="32"/>
+	</EdgeSize>
+	<BackgroundInsets>
+	<AbsInset left="11" right="12" top="12" bottom="11"/>
+	</BackgroundInsets>
+	</Backdrop>
+<frames>
+
+</frames>
+</Frame>
+
+
+<Frame name="crframeoptions" hidden="true">
+
+	<Size x="1050" y="950"/>
+	<Anchors>
+	<Anchor point="TOPLEFT"/>
+	</Anchors>
+	<Layers>
+	<Layer level="ARTWORK">
+<FontString name="$parent_Text" inherits="GameFontNormal" text="crlocoptions">
+	<Anchors><Anchor point="LEFT" relativePoint="TOPLEFT"/></Anchors>
+	</FontString>
+<FontString name="$parent_PlayersSize" inherits="GameFontNormal" text="crlocplayerssize">
+	<Anchors><Anchor point="TOPLEFT"><Offset x="100" y="-170"/></Anchor></Anchors>
+	</FontString>
+	</Layer>
+	</Layers>
+	<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+	<TileSize>
+	<AbsValue val="32"/>
+	</TileSize>
+	<EdgeSize>
+	<AbsValue val="32"/>
+	</EdgeSize>
+	<BackgroundInsets>
+	<AbsInset left="11" right="12" top="12" bottom="11"/>
+	</BackgroundInsets>
+	</Backdrop>
+<frames>
+<Slider name="crPlayersSizeSlider" inherits="OptionsSliderTemplate">
+	<Anchors><Anchor point="TOPLEFT"><Offset x="100" y="-200" /></Anchor></Anchors>
+	</Slider>
+<Button name="crButtonCloseOptions" inherits="UIPanelButtonTemplate" text="crloccloseoptions">
+	<Size x="130" y="26"/><Anchors><Anchor point="BOTTOM"><Offset x="0" y="20"/></Anchor></Anchors>
+	<Scripts><OnClick>crCloseOptions()</OnClick></Scripts>
+	</Button>
+<Button name="crButtonResetData" inherits="UIPanelButtonTemplate" text="crlocresetdata">
+	<Size x="150" y="26"/><Anchors><Anchor point="TOPRIGHT"><Offset x="-200" y="-200"/></Anchor></Anchors>
+	<Scripts><OnClick>crResetData() print ("|cff99ffffCombatReplay:|r "..crlocinfoafterdelete)</OnClick></Scripts>
+	</Button>
+<CheckButton name="$parent_CheckButton1" inherits="UICheckButtonTemplate">
+	<Size x="25" y="25"/><Anchors><Anchor point="TOPLEFT"><Offset x="20" y="-20"/></Anchor></Anchors>
+	<Scripts><OnLoad>getglobal(crframeoptions_CheckButton1:GetName().."Text"):SetText(format(crloctrackcombats,3)) getglobal(crframeoptions_CheckButton1:GetName().."Text"):SetFont(GameFontNormal:GetFont(), 13)</OnLoad><OnClick>if crOptTrackBoss then crOptTrackBoss=false else crOptTrackBoss=true end</OnClick></Scripts>
+	</CheckButton>
+<CheckButton name="$parent_CheckButton2" inherits="UICheckButtonTemplate">
+	<Size x="25" y="25"/><Anchors><Anchor point="TOPLEFT"><Offset x="20" y="-50"/></Anchor></Anchors>
+	<Scripts><OnLoad>getglobal(crframeoptions_CheckButton2:GetName().."Text"):SetText(crlocshowiconabove) getglobal(crframeoptions_CheckButton2:GetName().."Text"):SetFont(GameFontNormal:GetFont(), 13)</OnLoad><OnClick>crOptPlayerIconChange()</OnClick></Scripts>
+	</CheckButton>
+<CheckButton name="$parent_CheckButton3" inherits="UICheckButtonTemplate">
+	<Size x="25" y="25"/><Anchors><Anchor point="TOPLEFT"><Offset x="20" y="-80"/></Anchor></Anchors>
+	<Scripts><OnLoad>getglobal(crframeoptions_CheckButton3:GetName().."Text"):SetText(crlocenableinlfr) getglobal(crframeoptions_CheckButton3:GetName().."Text"):SetFont(GameFontNormal:GetFont(), 13)</OnLoad><OnClick>if crOptTrackLfr then crOptTrackLfr=false else crOptTrackLfr=true end</OnClick></Scripts>
+	</CheckButton>
+<CheckButton name="$parent_CheckButton4" inherits="UICheckButtonTemplate">
+	<Size x="25" y="25"/><Anchors><Anchor point="TOPLEFT"><Offset x="20" y="-280"/></Anchor></Anchors>
+	<Scripts><OnLoad>getglobal(crframeoptions_CheckButton4:GetName().."Text"):SetText(crlocshowallplayershp) getglobal(crframeoptions_CheckButton4:GetName().."Text"):SetFont(GameFontNormal:GetFont(), 13)</OnLoad><OnClick>if crShowPlayersHpDynamic then crShowPlayersHpDynamic=false crajustsizelefthp() else crShowPlayersHpDynamic=true end</OnClick></Scripts>
+	</CheckButton>
+</frames>
+</Frame>
+
+
+<Frame name="crframetop" hidden="true">
+
+	<Size x="1050" y="100"/>
+	<Anchors>
+	<Anchor point="TOP"/>
+	</Anchors>
+	<Layers>
+	<Layer level="ARTWORK">
+<FontString name="$parent_Text" inherits="GameFontNormal" text="   CombatReplay">
+	<Anchors><Anchor point="LEFT" relativePoint="TOPLEFT"/></Anchors>
+	</FontString>
+	</Layer>
+	</Layers>
+	<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+	<TileSize>
+	<AbsValue val="32"/>
+	</TileSize>
+	<EdgeSize>
+	<AbsValue val="32"/>
+	</EdgeSize>
+	<BackgroundInsets>
+	<AbsInset left="11" right="12" top="12" bottom="11"/>
+	</BackgroundInsets>
+	</Backdrop>
+<frames>
+
+</frames>
+</Frame>
+
+
+<Frame name="crframeleft" hidden="true">
+
+	<Size x="150" y="850"/>
+	<Anchors>
+	<Anchor point="BOTTOMLEFT"/>
+	</Anchors>
+	<Layers>
+	<Layer level="ARTWORK">
+	</Layer>
+	</Layers>
+	<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+	<TileSize>
+	<AbsValue val="32"/>
+	</TileSize>
+	<EdgeSize>
+	<AbsValue val="32"/>
+	</EdgeSize>
+	<BackgroundInsets>
+	<AbsInset left="11" right="12" top="12" bottom="11"/>
+	</BackgroundInsets>
+	</Backdrop>
+<frames>
+
+</frames>
+</Frame>
+
+<Frame name="crframeright" hidden="true">
+
+	<Size x="200" y="850"/>
+	<Anchors>
+	<Anchor point="BOTTOMRIGHT"/>
+	</Anchors>
+	<Layers>
+	<Layer level="ARTWORK">
+	</Layer>
+	</Layers>
+	<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+	<TileSize>
+	<AbsValue val="32"/>
+	</TileSize>
+	<EdgeSize>
+	<AbsValue val="32"/>
+	</EdgeSize>
+	<BackgroundInsets>
+	<AbsInset left="11" right="12" top="12" bottom="11"/>
+	</BackgroundInsets>
+	</Backdrop>
+<frames>
+<Button name="crButtonOptions" inherits="UIPanelButtonTemplate" text="crlocoptionsbut">
+	<Size x="150" y="26"/><Anchors><Anchor point="BOTTOM"><Offset x="0" y="20"/></Anchor></Anchors>
+	<Scripts><OnClick>crShowOptions()</OnClick></Scripts>
+	</Button>
+<Button name="crButtonToolRange" inherits="UIPanelButtonTemplate" text="crlocrangeverif">
+	<Size x="136" y="26"/><Anchors><Anchor point="BOTTOM"><Offset x="13" y="55"/></Anchor></Anchors>
+	<Scripts><OnClick>crRangeCheckRaid()</OnClick></Scripts>
+	</Button>
+<EditBox name="crRaidRangeEditBox" inherits="InputBoxTemplate" numeric="true" letters="2" autoFocus="false">
+	<Size x="25" y="20"/><Anchors><Anchor point="BOTTOMLEFT"><Offset x="16" y="56"/></Anchor></Anchors>
+	</EditBox>
+<CheckButton name="$parent_CheckButton1" inherits="UICheckButtonTemplate">
+	<Size x="25" y="25"/>
+	<Anchors>
+	<Anchor point="BOTTOMLEFT">
+	<Offset x="15" y="82"/>
+	</Anchor>
+	</Anchors>
+	<Scripts>
+	<OnLoad>getglobal(crframeright_CheckButton1:GetName().."Text"):SetText(crlocnotinmeleerange) getglobal(crframeright_CheckButton1:GetName().."Text"):SetFont(GameFontNormal:GetFont(), 13)</OnLoad>
+	<OnClick>print ("Not yet ready. Boss not found.")</OnClick>
+	</Scripts>
+	</CheckButton>
+</frames>
+</Frame>
+
+
+<Frame name="crframebottom" hidden="true">
+
+	<Size x="700" y="150"/>
+	<Anchors>
+	<Anchor point="BOTTOM"><Offset x="-25" y="0"/></Anchor>
+	</Anchors>
+	<Layers>
+	<Layer level="ARTWORK">
+	</Layer>
+	</Layers>
+	<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+	<TileSize>
+	<AbsValue val="32"/>
+	</TileSize>
+	<EdgeSize>
+	<AbsValue val="32"/>
+	</EdgeSize>
+	<BackgroundInsets>
+	<AbsInset left="11" right="12" top="12" bottom="11"/>
+	</BackgroundInsets>
+	</Backdrop>
+<frames>
+<Slider name="crPlaySlider" inherits="OptionsSliderTemplate">
+	<Anchors><Anchor point="CENTER"><Offset x="0" y="45" /></Anchor></Anchors>
+	</Slider>
+<Button name="crButtonPlay" inherits="UIPanelButtonTemplate" text="crlocnavplay">
+	<Size x="130" y="26"/><Anchors><Anchor point="TOP"><Offset x="-190" y="-75"/></Anchor></Anchors>
+	<Scripts><OnClick>crPlayReplay(crPlayingCombatID,1)</OnClick></Scripts>
+	</Button>
+<Button name="crButtonStop" inherits="UIPanelButtonTemplate" text="crlocnavpause">
+	<Size x="130" y="26"/><Anchors><Anchor point="TOP"><Offset x="-190" y="-75"/></Anchor></Anchors>
+	<Scripts><OnClick>crStopReplay()</OnClick></Scripts>
+	</Button>
+<Button name="crButtonGoto30p" inherits="UIPanelButtonTemplate" text="crlocnavplus30">
+	<Size x="100" y="26"/><Anchors><Anchor point="TOP"><Offset x="-60" y="-75"/></Anchor></Anchors>
+	<Scripts><OnClick>crGoToNextseconds(30)</OnClick></Scripts>
+	</Button>
+<Button name="crButtonGoto5b" inherits="UIPanelButtonTemplate" text="crlocnavminus5">
+	<Size x="100" y="26"/><Anchors><Anchor point="TOP"><Offset x="-60" y="-100"/></Anchor></Anchors>
+	<Scripts><OnClick>crGoToBackseconds(5)</OnClick></Scripts>
+	</Button>
+<Button name="crButtonPlayx4" inherits="UIPanelButtonTemplate" text="crlocnavplayspeed4">
+	<Size x="100" y="26"/><Anchors><Anchor point="TOP"><Offset x="50" y="-75"/></Anchor></Anchors>
+	<Scripts><OnClick>crPlayReplay(crPlayingCombatID,4)</OnClick></Scripts>
+	</Button>
+<Button name="crButtonPlayx8" inherits="UIPanelButtonTemplate" text="crlocnavplayspeed8">
+	<Size x="100" y="26"/><Anchors><Anchor point="TOP"><Offset x="50" y="-100"/></Anchor></Anchors>
+	<Scripts><OnClick>crPlayReplay(crPlayingCombatID,8)</OnClick></Scripts>
+	</Button>
+<Button name="crButtonNextEvent" inherits="UIPanelButtonTemplate" text="crlocnavnextevent">
+	<Size x="110" y="26"/><Anchors><Anchor point="TOP"><Offset x="160" y="-75"/></Anchor></Anchors>
+	<Scripts><OnClick>crGoToNextEvent()</OnClick></Scripts>
+	</Button>
+<Button name="crButtonPreviousEvent" inherits="UIPanelButtonTemplate" text="crlocnavprevevent">
+	<Size x="110" y="26"/><Anchors><Anchor point="TOP"><Offset x="160" y="-100"/></Anchor></Anchors>
+	<Scripts><OnClick>crGoToPreviousEvent()</OnClick></Scripts>
+	</Button>
+</frames>
+</Frame>
+
+
+
+<Button name="$parent_Button1" inherits="UIPanelCloseButton">
+	<Anchors>
+	<Anchor point="TOPRIGHT">
+	<Offset x="-2" y="-3"/>
+	</Anchor>
+	</Anchors>
+	<Scripts>
+	<OnClick>crHideFrames()</OnClick>
+	</Scripts>
+	</Button>
+	
+	
+</frames>
+</Frame>
+
+
+
+</Ui>

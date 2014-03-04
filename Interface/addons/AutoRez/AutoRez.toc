@@ -1,0 +1,17 @@
+## Interface: 40300
+## Title: AutoRez
+## Title-deDE: AutoRez
+## Notes: Automatically accept player resurrection requests.
+## Notes-deDE: Eine Wiederbelebung automatisch annehmen.
+## Author: Momro - Runetotem (EU)
+## Version 1.0
+## DefaultState: enabled
+## X-Category: Raid
+## SavedVariables: ar_emote, ar_whisper 
+## SavedVariablesPerCharacter: 
+## X-Curse-Packaged-Version: 4.3.1
+## X-Curse-Project-Name: AutoRez
+## X-Curse-Project-ID: project-3488
+## X-Curse-Repository-ID: wow/project-3488/mainline
+
+Core.lua

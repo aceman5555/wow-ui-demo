@@ -1,0 +1,33 @@
+## Title: Auc-Advanced |cff665555(core)
+## Notes: AuctioneerAdvanced, An addon to help keep track of items values. You must at least enable a statistics extension (like Auc:Stats:Simple) to start tracking stats.
+##
+## Interface: 20400
+## LoadOnDemand: 0
+## Dependencies: EnhTooltip, Stubby
+## OptionalDependencies: !nLog, SlideBar, Configator, Babylonian, DebugLib
+## SavedVariables: AucAdvancedConfig, AucAdvancedData
+## SavedVariablesPerCharacter: AucAdvancedLocal
+##
+## Version: 5.0.PRE.3262 (BillyGoat)
+## Revision: $Id: Auc-Advanced.toc 3002 2008-04-04 17:42:35Z RockSlice $
+## URL: http://auctioneeraddon.com/
+##
+CoreManifest.lua
+Support\Load.xml
+Libs\Load.xml
+
+CoreStrings.lua
+CoreLocale.lua
+
+CoreMain.lua
+CoreUtil.lua
+CoreConst.lua
+CoreConfig.lua
+CorePost.lua
+CoreBuy.lua
+CoreScan.lua
+CoreSettings.lua
+CoreReport.lua
+CoreAPI.lua
+
+Modules\Active.xml

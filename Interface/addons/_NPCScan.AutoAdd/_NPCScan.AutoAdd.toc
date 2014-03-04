@@ -1,0 +1,9 @@
+## Interface: 50400
+## Title: _|cffCCCC88NPCScan|r.AutoAdd
+## Notes: Automatically add custom NPCs as you encounter them.   |cff00AAffVersion 2.2|r
+## Version: 2.3
+## Dependencies: _NPCScan
+## Author: Janniie - Stormreaver EU
+## SavedVariables: _NPCScan_AutoAdd
+
+_NPCScan.AutoAdd.lua

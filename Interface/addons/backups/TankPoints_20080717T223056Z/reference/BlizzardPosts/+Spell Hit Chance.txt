@@ -1,0 +1,50 @@
++Spell Hit Chance | 9/21/2005 2:10:37 PM PDT           
+ 
+ 
+I've seen a number of threads recently on the boards pertaining to +spell hit chance and I've gathered some information for you which I hope will dispel some of the confusion. Please feel free to post your comments in a reply to this thread. 
+
++1% spell hit chance increases the base chance for a spell to land against a target by 1% 
+
+If your target is the same level as you, a spell has a base chance to hit of 96%. 
+
+If the target is +1 level compared to you: 95% 
+
++2 levels: 94% 
+
++3 levels: 83% if the target is a mob, 87% if the target is a player. 
+
++4 levels: mob: 72% player: 80% 
+
++5 levels: mob: 61% player: 73% 
+
+Etc... 
+
+If you wear a +1% spell hit chance item, the above percentages will increase by 1. +2% gives +2. 
+
+Etc... 
+
+For binary spells only, there is an additional modifier for the resistance of the victim to your particular spell school: fire, frost, shadow, nature, arcane. That modifier is multiplied by your hit chance to get your actual chance to land. This is done with binary spells only, because they never do partial damage. 
+
+Example: 
+
+Eyonix the Mage (level 60) fires a frost bolt at Yeti of Doom (level 63). Eyonix is also wearing a total of +6% spell hit gear. Yeti of Doom has frost resistance such that he takes 50% from level 60 frost attacks. So, here¡¦s the hit calculation: 
+
+0.83 (83% for +3 levels mob) + 0.06 (+6% spell hit) = 0.89 
+
+0.89*0.5 (50% damage from frost) = 0.445. 
+
+The game will roll a number between 0 and 1, and if it¡¦s less than 0.445, the frost bolt will hit for full damage. Otherwise, a resist message will appear. 
+
+2nd Example: 
+
+After the resist, Eyonix decides to fire a fireball at Yeti of Doom. Eyonix still has +6% spell hit. Fireball is not a binary spell. Here¡¦s the calculation: 
+
+0.83+0.06= 0.89 
+
+The game will roll a number between 0 and 1, and if its less than 0.89, the fireball will hit. Otherwise, a resist message will appear. After the fireball lands, the game will then apply spell resistance to determine a partial resist, if any. Assuming the yeti also has 50% fire resistance, on average, 50% of the damage will be resisted. 
+
+I hope that illuminates the impact of +spell hit gear on magical combat. 
+--------------------------------------------------------------------------------
+Friend of Matt the Gnome 
+ 
+ 

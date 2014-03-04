@@ -1,0 +1,19 @@
+
+crcombatlog - track log
+
+t=time
+g=guid
+e:
+	1 = SPELL_CAST_SUCCESS
+	2 = SWING_DAMAGE
+	3 = SWING_MISSED
+id=spellid
+sn=spellname
+
+
+
+
+--crPlayingCombatID текущий бой
+--crPlayingCombatTimeLast время последнего евента что был
+--crPlayingCombatTimeNext время СЛЕДУЮЩЕГО ЕВЕНТА
+--crPlayingCombatEvent евент который уже прошел

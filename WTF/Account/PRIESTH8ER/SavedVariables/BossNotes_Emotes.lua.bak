@@ -1,0 +1,9 @@
+
+BossNotesEmotesDB = {
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Default",
+	},
+	["global"] = {
+		["databaseVersion"] = 1,
+	},
+}

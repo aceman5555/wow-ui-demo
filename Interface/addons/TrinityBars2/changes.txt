@@ -1,0 +1,74 @@
+Trinity Bars 2.0
+
+20400.1
+
+- Initial release for patch 2.4
+
+20400.2
+
+- Remade the simple dock editor. A central dropdown makes available the most common function for editing a bar.
+- The toggles for the dock editors, bindings editors and button editors now toggle simple/advanced mode on a left or right click respectively.
+- Fixes for both Blizzard macros and Trinity Bars macros
+- Fix for spells that have () in the spell name, like druid Mangle(Cat)
+
+20400.3
+
+- The GCD for druid abilities like mangle should trigger now
+- New buttons should react to right-clicks now without having to relog.
+- A new font has been chosen for keybinds, hopefully clearer for many users.
+- Using the mousewheel over a dock will now cycle through all available states.
+- Minor changes to setting up macros for proper icon selection.
+- Added the option "Arc Preset" to the simple dock editor.
+- When using keybinds that contain multiple modifiers, the keybind text should now reflect them properly.
+- Fixed a bug when picking up spells of spell-based buttons
+- Fixed an issue using the advanced dock editor when adjusting values on the xp/castbars
+
+20400.4
+
+- Adjusted the French localization file to account for the new gender-based class names.
+- Changed the default colors of button elements to colors other then white =)
+- Changes to buttons of type "action", they should react as expected now.
+- More minor changes to setting up macros for proper icon selection.
+- Some performance optimizations
+
+20400.5
+
+- Added a "spell count" feature. This feature is toggled per button. This feature will show you how many of the button's current spell you can cast/perform based on mana/rage/energy left. This feature is CPU intensive if used for many buttons, just FYI.
+- Storing non action buttons should no longer give the "Button storage is full" error.
+- Some more optimizations
+- Some small bug fixes
+
+20400.5.1
+- Small fix for the line 3071 error (I hope :) )
+
+20400.5.2
+- buttons of type "spell" should upgrade their spells properly if they were the max rank prior to learning a new rank.
+
+20400.5.3
+- a small tweak to the max rank spells upgrading for buttons of type "spell"
+
+20400.6
+- Hopefully final adjustment for buttons of type "spell" to uprank properly.
+- Using the shift-click micro adjust should now follow the current dock.
+- Buttons of type "item" should now properly reflect random "of the" items.
+- Minimap button should now adjust position based on minimap shape.
+- Fixed macros not saving when editing macros and jumping from one to the other while the macro editor is open.
+- Added the ability to define paging/stance/aspect transitions in the advanced dock editor.
+- Transparent bars set to "trans up" on battle should no longer "trans up" on mouseover too.
+- The cast bars should no longer flash in red (failure) when it should not.
+
+20400.7
+- Changed the draw layer of macro names on buttons.
+- Added a new event to help keep item button counts updated.
+- Fixed an issue where the minimap button "creeped" along the minimap each time the main menu was opened.
+- Added many new elements to the localization file.
+- Fixed the issue of the cursor picking up a spell while over a button and the buttons are locked.
+- Added coloring options to the castbar and xpbar addons in the advanced dock config menu.
+- Added a new method of loading button contents only from templates
+- Buttons of type "spell" should now have the proper tooltip based on the enhanced tooltip setting.
+- Some more performance improvements.
+- Added a new option in the main menu. When enabled, Left-dragging a button will fully pick up the contents, while right-dragging will copy the contents. Currently only works for spells of type "spell", "macro" and "item".
+- Added "Retreat" and "Retreat+Mouseover" options to the "Transparency-Up" option.
+- Reverted a change to alt/ctrl/shift bars to always set themselves to the last known state instead of the default of '0'. This will help with bars that get stuck when more than 2 modifiers are held down.
+- Added a new template manager. Shift-click the main minimap button to open.
+- Macros that use slot numbers should now reflect the item in the slot.

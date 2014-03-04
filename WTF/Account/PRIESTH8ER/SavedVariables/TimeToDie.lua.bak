@@ -1,0 +1,12 @@
+
+TimeToDieDB = {
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["y"] = -179.0400756980487,
+			["x"] = 152.1599561286454,
+		},
+	},
+}

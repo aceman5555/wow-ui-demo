@@ -1,0 +1,26 @@
+Custom Font Install Instructions:
+
+First you will need to locate the Fonts lua file in '\Fonter\Fonts.lua' you will need to open the file using wordpad or notepad.
+
+Locate your locale (e.g. --Korea "koKR") If no locale is found use --Europe, Mexico, United States.
+
+Copy this line into it:
+
+
+["********"] = "Interface\\Addons\\Fonter\\Fonts\\**Locale**\\********.ttf",
+
+
+Replace the '********' with the name of your font(s), Copy your '********.ttf' font(s) to '\Fonter\Fonts\**Locale**\
+
+Where **Locale** Is: 
+
+EU = Europe, Mexico, United States.
+KR = Korea.
+RU = Russia.
+CH = China.
+TW = Taiwan.
+
+Example: ["Test Font"] = "Interface\\Addons\\Fonter\\Fonts\\EU\\TestFont.ttf",
+
+
+Currently World of Warcraft only supports TTF fonts and not all TTF fonts work accordingly. Use these characters as a test to see if your font is compatible with WoW : []{}()¿ﬂ–¡È˙ÌÛ^%$£"!_+=@~<*&#>/|\;:

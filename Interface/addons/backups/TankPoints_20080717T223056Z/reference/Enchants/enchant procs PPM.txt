@@ -1,0 +1,74 @@
+http://tinyurl.com/7m6nd
+
+Rogue enchant priorities 
+
+Combat rogue mainhand PvE: 
+crusader >= lifesteal > fiery > +15agil >> +5dam >= +15str >>> unholy = icy 
+
+Combat rogue mainhand PvP: 
+lifesteal >= crusader > fiery > +15agil >> +5dam >= +15str >>> unholy = icy 
+
+Dagger rogue mainhand PvE: 
++15 agil = crusader >= lifesteal = +5dam >= fiery > 15 str >>> unholy = icy 
+
+Dagger rogue mainhand PvP: 
++5dam = +15 agil = lifesteal >= crusader = fiery > 15 str >>> unholy = icy 
+
+Offhand (all): 
++15 agil >= lifesteal >= crusader > fiery > 15 str >>>>> +5dam > unholy = icy 
+
+> better than 
+>> much better than 
+>> much much better than 
+>= better than or equal to (very close) 
+= equal to 
+
+Rogues, Instant Attacks and Procs 
+- Rogues have a real advantage when it comes to mainhand weapon procs. Procs are calculated as procs per minute, however this is internally expressed as a percentage value per attack. This means that when you spam 3 sinister strikes in the beginning of a fight your fiery enchant has a 84% chance to proc with a 2.80 speed weapon. 
+- Mainhand weapon procs tend to go off roughly 2X as often as their procs per minute would infer for combat rogues. 
+- Mainhand weapon procs tend to go off roughly 1.5X as often as their procs per minute would infer for dagger rogues. 
+
+Crusader 
+- 75-125 point heal and +100 strength for 15 seconds 
+- crusader on both weapons dualwielding does stack. Only one icon shows up but you get both heals and your strength goes up by 200. 
+- crusader is by far the best weapon buff for non-rogues and hunters as they get 2 attack per strength 
+- rogues get 1 attack per strength, so 100 attack or 7.14dps 
+- 7.14dps = +7.14dps on mainhand and +3.6 offhand (or +5.36dps offhand with imp dualwielding) 
+- the 7.14dps also adds to instant attacks. This is calculated by (weaponspeed * 7.14)= damage added to instants 
+- crusader is a buff so it isn't resistable, thus it is the best mainhand enchant for PvE raids 
+- crusader has a low procrate and a duration, so it is much less useful in PvP and soloing where it seems to always proc at the end of a fight 
+- crusader procs at a rate of 1 proc per minute. Thus a 2.80 speed weapon would proc 1/(60/2.80)= 4.67% chance per proc 
+
+Lifesteal 
+- 30 point heal and 30 point fire (NOT shadow) damage per proc 
+- lifesteal procs at a rate of 6 procs per minute. Thus a 2.80 speed weapon would proc 6/(60/2.80)= 28.00% chance per proc 
+- lifesteal is better than crusader for PvP and soloing as it is atomic damage and healing 
+- lifesteal does 3dps and heals 3hps per hand with autoattack alone 
+
+Fiery 
+- 40 point fire damage per proc 
+- fiery does 4dps with autoattack alone 
+- fiery procs at a rate of 6 procs per minute. Thus a 2.80 speed weapon would proc 6/(60/2.80)= 28.00% chance per proc 
+
+15 agil 
+- 15 agil = 15 attack = +1.07dps to mainhand and 0.54dps to offhand (0.80dps to offhand with imp dualwield) 
+- 15 agil = 0.52% crit = 1.03% dodge 
+
+15 str 
+- 15 str = 15 attack = +1.07dps to mainhand and 0.54dps to offhand (0.80dps to offhand with imp dualwield) 
+
+5 damage 
+- adds a flat 5 damage to every attack 
+- dps added is 5 / (speed of weapon), so on a 2.00 speed weapon like the barman shanker it would add 2.5dps to mainhand only 
+- useful for mainhand dagger rogues only 
+
+Demonslaying 
+- 75-125 holy damage against demons and a 5 second stun 
+- don't know procrate 
+- useful if you're grinding on satyrs, basically 
+
+Unholy/Icy 
+- unholy is worthless and icy has a very low procrate, don't bother 
+
+Maelstrom/Heroism Cards 
+- No real tests have been performed yet for these procs. Hearsay says they are 1 proc per minute per hand. If this is true, they are worthy of being purple. 

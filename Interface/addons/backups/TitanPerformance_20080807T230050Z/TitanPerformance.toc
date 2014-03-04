@@ -1,0 +1,9 @@
+## Interface: 20100
+## Title: Titan Panel [Performance]
+## Notes: Adds FPS and Garbage collection information to Titan Panel
+## Author: Adsertor
+## SavedVariables: 
+## OptionalDeps: 
+## Dependencies: Titan
+## Version: 3.0.6.20100
+..\Titan\TitanPerformance\TitanPerformance.xml

@@ -1,0 +1,37 @@
+## Title: Enchantrix
+## Notes: Display information in item tooltips pertaining to the results of disenchanting said item.  [5.0.PRE.3117] This AddOn is licenced under the GNU GPL, see GPL.txt for details.
+##
+## Interface: 20400
+## LoadOnDemand: 1
+## Dependencies: EnhTooltip, Stubby
+## OptionalDeps: !nLog, Babylonian, DebugLib, Configator, SlideBar
+## SavedVariables: EnchantConfig, EnchantedLocal, EnchantedItemTypes, NonDisenchantablesLocal, ProspectedLocal
+## SavedVariablesPerCharacter: AutoDisenchantIgnoreList
+##
+## Version: 5.0.PRE.3117 (BillyGoat)
+## Revision: $Id: Enchantrix.toc 2952 2008-03-25 03:29:55Z MentalPower $
+## URL: http://enchantrix.org
+##
+EnxManifest.lua
+
+Libs\Load.xml
+
+EnxObjects.lua
+
+EnxStrings.lua
+EnxLocale.lua
+
+Data\EnxNonDisenchant.lua
+
+EnxSettings.lua
+EnxMiniIcon.lua
+EnxCommand.lua
+EnxConfig.lua
+EnxConstants.lua
+EnxStorage.lua
+EnxTooltip.lua
+EnxUtil.lua
+EnxAutoDisenchant.lua
+EnxMain.lua
+
+EnxAucUtil.lua

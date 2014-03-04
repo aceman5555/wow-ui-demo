@@ -1,0 +1,23 @@
+Identifier = "LibDataBroker"
+Name = "LibDataBroker"
+NameShort = "LDB"
+
+Description = {
+	English = "A library to create plugins independent of display bars"
+}
+
+Environment = "1.5"
+
+Author = "Myrroddin/Lorandii of Keenblade US Defiant - LEGION"
+Website = "http://rift.curseforge.com/addons/libdatabroker-1-0/"
+Email = "myrroaddon@gmail.com"
+
+Version = "r8"
+
+RunOnStartup = {
+	"LibDataBroker-1.0.lua"
+}
+-- X-Curse-Packaged-Version: r8
+-- X-Curse-Project-Name: LibDataBroker-1.0
+-- X-Curse-Project-ID: libdatabroker-1-0
+-- X-Curse-Repository-ID: rift/libdatabroker-1-0/mainline

@@ -1,0 +1,25 @@
+------------------------------------------------------------------------
+r34 | julith | 2012-08-29 15:57:19 +0000 (Wed, 29 Aug 2012) | 1 line
+Changed paths:
+   A /tags/v0.72-toc5.0 (from /trunk:33)
+
+Tagging as v0.72-toc5.0
+------------------------------------------------------------------------
+r33 | julith | 2012-08-14 08:32:18 +0000 (Tue, 14 Aug 2012) | 1 line
+Changed paths:
+   M /trunk/GridStatusAurasExt.toc
+
+GridStatusAurasExt: updated toc for MoP
+------------------------------------------------------------------------
+r32 | julith | 2012-08-13 13:58:46 +0000 (Mon, 13 Aug 2012) | 1 line
+Changed paths:
+   M /trunk/GridStatusAurasExt.toc
+
+GridStatusAurasExt: updated toc for 4.0.3
+------------------------------------------------------------------------
+r31 | julith | 2011-08-08 18:30:58 +0000 (Mon, 08 Aug 2011) | 1 line
+Changed paths:
+   M /trunk/GridStatusAurasExt.toc
+
+GridStatusAurasExt: fixed wrong interface-version in toc...
+------------------------------------------------------------------------

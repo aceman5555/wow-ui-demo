@@ -1,0 +1,63 @@
+WoW-Pro_TourGuide_Horde v0.6 -- Updated May 14th 2009
+
+*REVAMP: Jame's Horde Leveling Guide Nagrand | Jiyambi
+*REVAMP: Jame's Horde Leveling Guide Howling Fjord | Jiyambi
+*REVAMP: Mannovan's Undead Starter | Skully0815
+*REVAMP: Snowflake's Ghostlands | Skully0815
+*REVAMP: Jame's Horde Leveling Guide (21-31) | Jiyambi
+*MISC: Fixed the TOC. Addon will no longer appear as "out of date" | Jahwo/Jame
+
+WoW-Pro_TourGuide_Horde v0.5.2 -- Updated April 7th 2009
+
+*Added optional circuits and fixed transitions: Plaguelands, Silithus, Hellfire Penninsula, etc. | Jiyambi
+*Added Scryer and Aldor version of Terokkar Forest | Jiyambi
+*Fixes to Snowflake's Ghostland 12-20 | Jiyambi
+*Fixes to Hosho's Barrens 12-20 | Jiyambi
+
+WoW-Pro_TourGuide_Horde v0.5.1 -- Updated April 1st 2009
+
+*Default guides can be accessed again. They can be found at the bottom of the list.
+*Added: Jame's Horde Leveling Guide 51-60 | Jiyambi
+*REVAMPS: Hellfire Peninsula, Zangarmarsh, Snowflake's Blood Elf Starter, Hosho's 12-20
+
+WoW-Pro_TourGuide_Horde v0.5 -- Updated March 13th 2009
+
+*Added Jame's Death Knight Leveling Guide | Coder: Gethe |
+*Added Shinke's Tauren Starter | Coder: TzTz |
+*REVAMP: Zerinj's Orc Starter
+*REVAMP: Snowflake's Blood Elf Starter | Skully0815
+*REVAMP: Jame's Horde Leveling Guide 21-31
+*REVAMP: Jame's Horde Leveling Guide 31-41
+*REVAMP: Jame's Horde Leveling Guide 41-51
+*REVAMP: Jame's Horde Leveling Guide Hellfire Penninsula
+*REVAMP: Jame's Horde Leveling Guide Zangarmarsh
+*REVAMP: Jame's Horde Leveling Guide Terokkar
+
+WoW-Pro_TourGuide_Horde v0.4 -- Updated February 24th 2009
+
+*BIG CHANGE: The default guides will no longer appear on the list. WoW-Pro guides will now appear on top of the list. Thank you Jahwo!
+*REVAMP: Zerinj's Orc/troll starter 1-12 | Jiyambi | High Quality, test it!
+*REVAMP: Hosho's Barrens Guide 12-20 | Jiyambi | High Quality, test it!
+*Fixes made to Jame's Horde Leveling Guide 31-41 | Jiyambi
+
+
+
+WoW-Pro_TourGuide_Horde v0.3 -- Update February 18th 2009
+
+*Added SilverKnight's Silverpine 12-20 | Coder: Clearasil | Needs testing
+*Zerinj's Orc/Troll starter 1-12 IMPROVED | 1st Revamp: Clearasil Final Revamp: Jiyambi | Quality should be PERFECT.
+*Fixes made to Hillsbrad Foothills 22-24 | Jiyambi
+*Fixes made to Ashenvale 24-25 | Jiyambi
+*Fixed .xml for Hosho's Barrens 12-20. It should now properly appear in the list
+
+
+WoW-Pro_TourGuide_Horde v0.2 -- Update February 15th 2009
+
+*Added Jame's 31-41 | Coder: Clearasil | Needs testing
+*Added Jame's 41-51 | Coder: Plover2 | Needs testing
+*Added Snowflake's Blood Elf 1-12 | Coder: Inyurbak | Needs testing
+*Added Zerinj's Orc/Troll 1-12 | Coder: Clearasil | Needs testing
+*Added Manovan's Undead Starter | Coder: Romgar | Needs testing
+*Added Hosho's Barrens 12-20 | Coder: Clearasil | Needs testing
+*Fixed file names. Please follow this naming format from now on.
+*Fixed file names INSIDE the files. Please follow this naming format from now on.

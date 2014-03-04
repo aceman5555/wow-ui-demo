@@ -1,0 +1,13 @@
+to use a custom alert sound you must create a directory called "TauntAware_CustomSounds" in your addons directory
+(i.e. c:\users\public\games\World of Warcraft\Interface\Addons\TauntAware_CustomSounds") 
+and put the "custom.mp3" or "custom.ogg" in that directory
+
+if you replace one of the supplied sounds in the addon directory then when the addon gets updated by the curse client the
+sound files you replaced will be overwritten. This is the only way to prevent that and still use an automatic update client.
+
+you can then select that sound from the command line or control panel plugin
+just pick a command line
+
+ /ta alertsound custom.mp3
+ /ta alertsound custom.ogg
+ /ta config

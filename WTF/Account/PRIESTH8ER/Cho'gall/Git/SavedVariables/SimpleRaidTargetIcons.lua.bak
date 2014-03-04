@@ -1,0 +1,12 @@
+
+SRTISaved = {
+	["alt"] = false,
+	["bindinghover"] = false,
+	["double"] = true,
+	["ctrl"] = true,
+	["hovertime"] = 0.2,
+	["doublehover"] = false,
+	["shift"] = false,
+	["speed"] = 0.25,
+	["singlehover"] = false,
+}

@@ -1,0 +1,8 @@
+## Interface: 20000
+## Title: WT_DamageToRageTest
+## Notes: by Whitetooth
+## Author: Whitetooth
+## SavedVariables: 
+## OptionalDeps: 
+## Dependencies: 
+WT_DamageToRageTest.xml

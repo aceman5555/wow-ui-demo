@@ -1,0 +1,7 @@
+## Interface: 50400
+## Title: |cFF990099TrainAlert|r
+## Author: GeodesicDragon
+## Notes: Alerts you whenever someone uses one of WoW's irritating items.
+## SavedVariables: TAConfig
+## Version: 1.12.21
+TrainAlert.xml

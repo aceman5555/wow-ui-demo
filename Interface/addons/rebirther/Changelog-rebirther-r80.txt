@@ -1,0 +1,56 @@
+------------------------------------------------------------------------
+r80 | lordburton | 2012-09-08 19:00:17 +0000 (Sat, 08 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/Locales/enUS.lua
+   M /trunk/rebirther.lua
+
+Added a Debug Toggle button so that I don't hard code it in the future. Made another small adjustment.
+------------------------------------------------------------------------
+r79 | lordburton | 2012-09-08 03:40:37 +0000 (Sat, 08 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/rebirther.lua
+
+Missing an Not in a check for party. Wondering why I make so many mistakes.
+------------------------------------------------------------------------
+r78 | lordburton | 2012-09-08 01:47:06 +0000 (Sat, 08 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/rebirther.lua
+
+Removing Debug
+------------------------------------------------------------------------
+r77 | lordburton | 2012-09-07 03:51:34 +0000 (Fri, 07 Sep 2012) | 3 lines
+Changed paths:
+   M /trunk/rebirther.lua
+
+Figured out the issues with Groups. Also added some new events that should make updating a little better. 
+
+
+------------------------------------------------------------------------
+r76 | torkel104 | 2012-09-05 08:53:00 +0000 (Wed, 05 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/rebirther.lua
+   M /trunk/rebirther.toc
+
+Fixed revision numbering
+------------------------------------------------------------------------
+r75 | lordburton | 2012-09-05 03:20:27 +0000 (Wed, 05 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/rebirther.lua
+
+Fixes... Round 2.
+------------------------------------------------------------------------
+r74 | lordburton | 2012-09-04 04:33:34 +0000 (Tue, 04 Sep 2012) | 3 lines
+Changed paths:
+   M /trunk/rebirther.lua
+   M /trunk/rebirther.toc
+
+Fixed TOC
+Fixed GetPrimaryTalentTree to GetSpecialization
+Fixed GetNumGroupMembers
+------------------------------------------------------------------------
+r73 | torkel104 | 2011-12-21 22:35:48 +0000 (Wed, 21 Dec 2011) | 1 line
+Changed paths:
+   M /trunk/rebirther.lua
+
+Windows should now hide properly
+------------------------------------------------------------------------

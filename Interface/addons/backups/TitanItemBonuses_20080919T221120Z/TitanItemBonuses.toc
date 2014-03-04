@@ -1,0 +1,13 @@
+## Interface: 20400
+## Title: Titan Panel [|cffeda55fItemBonuses|r] |cff00aa003.2.6.20400|r
+## Notes: Adds the ability to display bonuses from items you are wearing to Titan Panel
+## Author: Tristanian
+## SavedVariables: 
+## OptionalDeps: LibRock-1.0
+## Dependencies: Titan,BonusScanner
+## Version: 3.2.6.20400
+## X-Embeds: LibRock-1.0, LibRockHook-1.0
+
+embeds.xml
+
+TitanItemBonuses.xml

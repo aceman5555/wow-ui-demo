@@ -1,0 +1,22 @@
+Combat Ratings conversions at level 70 (rounded to 1 decimal point):
+
+                C O M B A T   R A T I N G S
+
+                 Level 60        Level 70
+
+Weapon Skill        2.5            3.9
+Defense             1.5            2.4
+
+Dodge              12.0           18.9
+Parry              20.0           31.5
+Block               5.0            7.9
+
+Hit                10.0           15.8
+Crit               14.0           22.1
+Haste              10.0           15.8
+
+Spell Hit           8.0           12.6
+Spell Crit         14.0           22.1
+Spell Haste        10.0           15.8
+
+Resilience         25.0           39.4

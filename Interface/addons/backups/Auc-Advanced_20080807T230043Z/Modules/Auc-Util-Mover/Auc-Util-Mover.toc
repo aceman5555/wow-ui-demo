@@ -1,0 +1,13 @@
+## Title: Auc:Util:Mover
+## Notes: Allows the Auction frame to be repositioned.
+##
+## Interface: 20400
+## LoadOnDemand: 0
+## Disabled: 0
+## Dependencies: Auc-Advanced
+##
+## Version: 5.0.PRE.3164 (BillyGoat)
+## Revision: $Id: Auc-Util-Mover.toc
+## URL: http://auctioneeraddon.com/
+##
+Embed.xml

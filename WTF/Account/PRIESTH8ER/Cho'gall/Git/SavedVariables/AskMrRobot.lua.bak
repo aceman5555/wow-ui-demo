@@ -1,0 +1,193 @@
+
+AmrBagItems = {
+	"|cff0070dd|Hitem:76734:0:0:0:0:0:0:79849856:90:0:0|h[Serpent's Eye]|h|r", -- [1]
+	"|cffffffff|Hitem:101618:0:0:0:0:0:0:0:90:0:0|h[Pandaren Treasure Noodle Soup]|h|r", -- [2]
+	"|cff0070dd|Hitem:76140:0:0:0:0:0:0:2122023680:90:0:0|h[Vermilion Onyx]|h|r", -- [3]
+	"|cff0070dd|Hitem:76141:0:0:0:0:0:0:-1739993088:90:0:0|h[Imperial Amethyst]|h|r", -- [4]
+	"|cffa335ee|Hitem:97826:0:0:0:0:0:0:1759249664:90:0:0|h[Latent Kor'kron Chestpiece]|h|r", -- [5]
+	"|cffa335ee|Hitem:96731:4420:4590:4590:4590:0:0:0:90:154:465|h[Battleplate of the Last Mogu]|h|r", -- [6]
+	"|cff0070dd|Hitem:76664:0:0:0:0:0:0:322226944:90:0:0|h[Stalwart Vermilion Onyx]|h|r", -- [7]
+	"|cffffffff|Hitem:101616:0:0:0:0:0:0:0:90:0:0|h[Noodle Soup]|h|r", -- [8]
+	"|cff1eff00|Hitem:82264:0:0:0:0:0:-5:598475678:90:0:0|h[Vine Waistband of the Monkey]|h|r", -- [9]
+	"|cffa335ee|Hitem:103736:0:0:0:0:0:0:138059392:90:0:491|h[Chestplate of Congealed Corrosion]|h|r", -- [10]
+	"|cff0070dd|Hitem:97849:0:0:0:0:0:0:797101568:90:0:0|h[Radical Mojo]|h|r", -- [11]
+	"|cffa335ee|Hitem:96739:4805:4615:4615:0:0:0:0:90:168:467|h[Shoulderguards of the Last Mogu]|h|r", -- [12]
+	"|cffa335ee|Hitem:94976:4429:4652:0:0:0:0:806522240:90:0:465|h[Tidal Force Treads]|h|r", -- [13]
+	"|cffa335ee|Hitem:96733:4824:4590:4590:0:0:0:0:90:0:465|h[Legplates of the Last Mogu]|h|r", -- [14]
+	"|cffa335ee|Hitem:83144:0:0:0:0:0:0:154578048:90:0:0|h[Rigid Serpent's Eye]|h|r", -- [15]
+	"|cffa335ee|Hitem:97827:0:0:0:0:0:0:790882048:90:0:0|h[Latent Kor'kron Boots]|h|r", -- [16]
+	"|cffa335ee|Hitem:96730:0:5032:4541:0:0:0:0:90:154:465|h[Helmet of the Last Mogu]|h|r", -- [17]
+	"|cffa335ee|Hitem:96746:0:0:0:0:0:0:1781897856:90:0:465|h[Chestplate of Violent Detonation]|h|r", -- [18]
+	"|cffa335ee|Hitem:96734:4805:4590:4590:0:0:0:0:90:0:465|h[Pauldrons of the Last Mogu]|h|r", -- [19]
+	"|cffffffff|Hitem:38577:0:0:0:0:0:0:320839552:90:0:0|h[Party G.R.E.N.A.D.E.]|h|r", -- [20]
+	"|cff0070dd|Hitem:95590:0:0:0:0:0:0:1704592128:90:0:0|h[Glorious Standard of the Sunreaver Onslaught]|h|r", -- [21]
+	"|cffa335ee|Hitem:96799:4803:4647:0:0:0:0:1177535104:90:0:465|h[Shoulderguards of Centripetal Destruction]|h|r", -- [22]
+	"|cffffffff|Hitem:76076:0:0:0:0:0:0:1046344193:90:0:0|h[Mad Hozen Elixir]|h|r", -- [23]
+	"|cffffffff|Hitem:3466:0:0:0:0:0:0:0:90:0:0|h[Strong Flux]|h|r", -- [24]
+	"|cffa335ee|Hitem:95650:0:0:0:0:0:0:2054782336:90:0:465|h[Frozen Warlord's Bracers]|h|r", -- [25]
+	"|cffa335ee|Hitem:99695:0:0:0:0:0:0:764566272:90:0:491|h[Shoulders of the Cursed Protector]|h|r", -- [26]
+	"|cffa335ee|Hitem:95011:0:0:0:0:0:0:94849408:90:0:465|h[Lightning-Walker Clawfeet]|h|r", -- [27]
+	"|cffffffff|Hitem:76097:0:0:0:0:0:0:1896024576:90:0:0|h[Master Healing Potion]|h|r", -- [28]
+	"|cffffffff|Hitem:94233:0:0:0:0:0:0:859703680:90:0:0|h[Incantation of Deng]|h|r", -- [29]
+	"|cffa335ee|Hitem:95114:4424:0:0:0:0:0:0:90:166:465|h[Spikeshard Greatcloak]|h|r", -- [30]
+	"|cff0070dd|Hitem:76131:0:0:0:0:0:0:79479040:90:0:0|h[Primordial Ruby]|h|r", -- [31]
+	"|cffa335ee|Hitem:96419:0:0:0:0:0:0:896635648:90:0:465|h[Zerat, Malakk's Soulburning Greatsword]|h|r", -- [32]
+	"|cff0070dd|Hitem:76139:0:0:0:0:0:0:1802860416:90:0:0|h[Wild Jade]|h|r", -- [33]
+	"|cffffffff|Hitem:34828:0:0:0:0:0:0:1896024576:90:0:0|h[Antique Silver Cufflinks]|h|r", -- [34]
+	"|cffffffff|Hitem:94233:0:0:0:0:0:0:65028224:90:0:0|h[Incantation of Deng]|h|r", -- [35]
+	"|cffffffff|Hitem:72988:0:0:0:0:0:0:265249280:90:0:0|h[Windwool Cloth]|h|r", -- [36]
+	"|cffa335ee|Hitem:96428:4411:4820:0:0:0:0:1849923840:90:126:467|h[Shell-Coated Wristplates]|h|r", -- [37]
+	"|cffa335ee|Hitem:95023:0:0:0:0:0:0:713764096:90:0:465|h[Legplates of Lightning Blood]|h|r", -- [38]
+	"|cffa335ee|Hitem:96522:0:0:0:0:0:0:160670848:90:0:465|h[Crown of the Golden Golem]|h|r", -- [39]
+	"|cffa335ee|Hitem:94267:4429:4652:4652:0:0:0:1635764096:90:139:465|h[Haunted Steel Warboots]|h|r", -- [40]
+	"|cffa335ee|Hitem:87062:0:0:0:0:0:0:596673280:90:0:445|h[Elegion, the Fanged Crescent]|h|r", -- [41]
+	"|cffa335ee|Hitem:96429:0:4647:0:0:0:0:247253504:90:139:465|h[Amulet of the Primal Turtle]|h|r", -- [42]
+	"|cffa335ee|Hitem:96851:0:0:0:0:0:0:1636859008:90:0:465|h[Artery Rippers]|h|r", -- [43]
+	"|cffa335ee|Hitem:96446:0:4590:4590:4820:0:0:677484800:90:132:465|h[Plated Toothbreaker Girdle]|h|r", -- [44]
+	"|cff0070dd|Hitem:81255:0:0:0:0:0:0:783368960:90:0:451|h[Soulbinder Treads]|h|r", -- [45]
+	"|cffa335ee|Hitem:96746:0:0:0:0:0:0:1783857280:90:0:465|h[Chestplate of Violent Detonation]|h|r", -- [46]
+	"|cff0070dd|Hitem:92741:0:0:0:0:0:0:357787520:90:0:0|h[Flawless Battle-Stone]|h|r", -- [47]
+	"|cffa335ee|Hitem:96989:0:0:0:0:0:0:1487174784:90:0:465|h[Reconstructed Furious Shoulderplates]|h|r", -- [48]
+	"|cffa335ee|Hitem:95339:4805:4590:4590:0:0:0:0:90:139:465|h[Shoulderguards of the Last Mogu]|h|r", -- [49]
+	"|cffa335ee|Hitem:14512:0:0:0:0:0:0:1536657792:90:0:0|h[Pattern: Truefaith Vestments]|h|r", -- [50]
+	"|cffffffff|Hitem:94220:0:0:0:0:0:0:1664967424:90:0:0|h[Sunreaver Bounty]|h|r", -- [51]
+	"|cffa335ee|Hitem:96448:0:0:0:0:0:0:1476501248:90:0:465|h[Spinescale Seal]|h|r", -- [52]
+	"|cffa335ee|Hitem:95810:0:0:0:0:0:0:844596608:90:0:465|h[Ultimate Protection of the Emperor]|h|r", -- [53]
+	"|cffffffff|Hitem:77589:0:0:0:0:0:0:1257834624:90:0:0|h[G91 Landshark]|h|r", -- [54]
+	"|cffa335ee|Hitem:83146:0:0:0:0:0:0:290500992:90:0:0|h[Smooth Serpent's Eye]|h|r", -- [55]
+	"|cffffffff|Hitem:77589:0:0:0:0:0:0:212856320:90:0:0|h[G91 Landshark]|h|r", -- [56]
+	"|cffffffff|Hitem:79249:0:0:0:0:0:0:0:90:0:0|h[Tome of the Clear Mind]|h|r", -- [57]
+	"|cff0070dd|Hitem:76138:0:0:0:0:0:0:2109860992:90:0:0|h[River's Heart]|h|r", -- [58]
+	"|cffffffff|Hitem:76095:0:0:0:0:0:0:1004747904:90:0:0|h[Potion of Mogu Power]|h|r", -- [59]
+	"|cffa335ee|Hitem:96512:4993:4590:0:0:0:0:1599487872:90:125:467|h[Greatshield of the Gloaming]|h|r", -- [60]
+	"|cffa335ee|Hitem:96501:0:0:0:0:0:0:1103937792:90:0:465|h[Primordius' Talisman of Rage]|h|r", -- [61]
+	"|cff1eff00|Hitem:89124:0:0:0:0:0:0:0:90:0:0|h[Celestial Offering]|h|r", -- [62]
+	"|cffffffff|Hitem:87806:0:0:0:0:0:0:982733296:90:0:0|h[Ancient Mogu Key]|h|r", -- [63]
+	"|cffa335ee|Hitem:96430:4444:4590:4590:0:0:0:411379328:90:146:465|h[Shellsplitter Greataxe]|h|r", -- [64]
+	"|cffffffff|Hitem:76084:0:0:0:0:0:0:832168576:90:0:0|h[Flask of Spring Blossoms]|h|r", -- [65]
+	"|cffffffff|Hitem:76088:0:0:0:0:0:0:2117863680:90:0:0|h[Flask of Winter's Bite]|h|r", -- [66]
+	"|cffa335ee|Hitem:96625:0:0:0:0:0:0:2058105472:90:0:465|h[Helm of the Crackling Protector]|h|r", -- [67]
+	"|cffffffff|Hitem:103642:0:0:0:0:0:0:1027861120:90:0:0|h[Book of the Ages]|h|r", -- [68]
+	"|cffffffff|Hitem:95568:0:0:0:0:0:0:860399872:90:0:0|h[Sunreaver Beacon]|h|r", -- [69]
+	"|cffa335ee|Hitem:94222:0:0:0:0:0:0:389184384:90:0:0|h[Key to the Palace of Lei Shen]|h|r", -- [70]
+	"|cff0070dd|Hitem:76142:0:0:0:0:0:0:974481536:90:0:0|h[Sun's Radiance]|h|r", -- [71]
+	"|cffffffff|Hitem:76087:0:0:0:0:0:0:136704128:90:0:0|h[Flask of the Earth]|h|r", -- [72]
+	"|cffffffff|Hitem:76085:0:0:0:0:0:0:1695592192:90:0:0|h[Flask of the Warm Sun]|h|r", -- [73]
+	"|cffa335ee|Hitem:94768:4445:4590:4590:0:0:0:318084352:90:146:465|h[Shellsplitter Greataxe]|h|r", -- [74]
+	"|cffa335ee|Hitem:96803:4422:0:0:0:0:0:516616960:90:125:465|h[Beakbreaker Greatcloak]|h|r", -- [75]
+	"|cffffffff|Hitem:87230:0:0:0:0:0:0:1732131840:90:0:0|h[Banquet of the Wok]|h|r", -- [76]
+	"|cffffffff|Hitem:74656:0:0:0:0:0:0:2127152640:90:0:0|h[Chun Tian Spring Rolls]|h|r", -- [77]
+	"|cff1eff00|Hitem:63353:0:0:0:0:0:0:0:90:0:0|h[Shroud of Cooperation]|h|r", -- [78]
+	"|cffffffff|Hitem:13442:0:0:0:0:0:0:1255411456:90:0:0|h[Mighty Rage Potion]|h|r", -- [79]
+	"|cffffffff|Hitem:6948:0:0:0:0:0:0:0:90:0:0|h[Hearthstone]|h|r", -- [80]
+	"|cffffffff|Hitem:40772:0:0:0:0:0:0:2086946028:90:0:0|h[Gnomish Army Knife]|h|r", -- [81]
+	"|cffffffff|Hitem:20815:0:0:0:0:0:0:0:90:0:0|h[Jeweler's Kit]|h|r", -- [82]
+	"|cffffffff|Hitem:75016:0:0:0:0:0:0:1164944128:90:0:0|h[Great Pandaren Banquet]|h|r", -- [83]
+	"|cffa335ee|Hitem:96523:0:0:0:0:0:0:497737856:90:0:465|h[Delicate Vial of the Sanguinaire]|h|r", -- [84]
+	"|cff0070dd|Hitem:94221:0:0:0:0:0:0:1988172928:90:0:0|h[Shan'ze Ritual Stone]|h|r", -- [85]
+	"|cffa335ee|Hitem:94958:0:5032:4647:0:0:0:1590613120:90:153:465|h[Crown of the Golden Golem]|h|r", -- [86]
+	"|cffa335ee|Hitem:96916:0:4820:0:0:0:0:1729732352:90:0:467|h[Moonjade Necklace]|h|r", -- [87]
+	"|cffa335ee|Hitem:96427:4803:4647:0:0:0:0:889347840:90:151:465|h[Shoulderguards of Centripetal Destruction]|h|r", -- [88]
+	"|cffa335ee|Hitem:96499:4424:4647:0:0:0:0:53522688:90:0:465|h[Hydra-Scale Bloodcloak]|h|r", -- [89]
+	"|cffa335ee|Hitem:96840:4419:4647:4652:0:0:0:1081826688:90:139:465|h[Talonrender Chestplate]|h|r", -- [90]
+	"|cffa335ee|Hitem:96375:4415:4647:4647:0:0:-339:1759184712:90:166:465|h[Bracers of Constant Implosion]|h|r", -- [91]
+	"|cffa335ee|Hitem:95332:4432:4652:4818:0:0:0:0:90:139:465|h[Gauntlets of the Last Mogu]|h|r", -- [92]
+	"|cffa335ee|Hitem:89826:0:4647:4592:4818:0:0:-1755940480:90:158:445|h[Warbelt of Sealed Pods]|h|r", -- [93]
+	"|cffa335ee|Hitem:95333:4823:4647:4652:0:0:0:0:90:168:465|h[Legplates of the Last Mogu]|h|r", -- [94]
+	"|cffa335ee|Hitem:98143:4429:0:0:0:0:0:756398080:90:165:465|h[Subservient Greatboots]|h|r", -- [95]
+	"|cffa335ee|Hitem:86322:0:0:0:0:0:0:745764640:90:139:445|h[Dread Shadow Ring]|h|r", -- [96]
+	"|cffa335ee|Hitem:86957:0:0:0:0:0:0:-1932254272:90:152:445|h[Ring of the Bladed Tempest]|h|r", -- [97]
+	"|cffa335ee|Hitem:96182:4993:4652:0:0:0:0:1244667136:90:132:467|h[Ultimate Protection of the Emperor]|h|r", -- [98]
+	"|cffffffff|Hitem:94220:0:0:0:0:0:0:1577085696:90:0:0|h[Sunreaver Bounty]|h|r", -- [99]
+}
+AmrBankItems = {
+}
+AmrEquipedItems = {
+	["15"] = "|cffff8000|Hitem:102250:4422:4615:0:0:0:0:1360499456:90:163:493|h[Qian-Ying, Fortitude of Niuzao]|h|r",
+	["1"] = "|cffa335ee|Hitem:96768:0:5030:4634:0:0:0:1403960192:90:132:467|h[Puncture-Proof Greathelm]|h|r",
+	["5"] = "|cffa335ee|Hitem:96790:4420:4615:4615:0:0:0:1892943744:90:135:467|h[Overloaded Bladebreaker Cuirass]|h|r",
+	["3"] = "|cffa335ee|Hitem:105167:4805:4634:4634:0:0:0:138059392:90:132:491|h[Pauldrons of Violent Eruption]|h|r",
+	["2"] = "|cffa335ee|Hitem:96916:0:4615:0:0:0:0:324912640:90:157:467|h[Moonjade Necklace]|h|r",
+	["19"] = "|cffffffff|Hitem:5976:0:0:0:0:0:0:0:90:0:0|h[Guild Tabard]|h|r",
+	["14"] = "|cffa335ee|Hitem:96927:0:0:0:0:0:0:710046464:90:0:467|h[Soul Barrier]|h|r",
+	["7"] = "|cffa335ee|Hitem:96869:4824:4615:4634:0:0:0:1599487872:90:125:467|h[Black Blood Legplates]|h|r",
+	["6"] = "|cffa335ee|Hitem:96818:0:4615:4615:4820:0:0:1821629952:90:0:467|h[Plated Toothbreaker Girdle]|h|r",
+	["9"] = "|cffa335ee|Hitem:96800:4412:4615:0:0:0:0:254577664:90:132:465|h[Shell-Coated Wristplates]|h|r",
+	["8"] = "|cffa335ee|Hitem:96850:4429:4634:0:0:0:0:494972416:90:0:467|h[Treads of the Blind Eye]|h|r",
+	["16"] = "|cffa335ee|Hitem:96906:4446:4615:4820:0:0:0:1838190336:90:165:467|h[Qon's Flaming Scimitar]|h|r",
+	["17"] = "|cffa335ee|Hitem:96926:4993:4615:0:0:0:0:710046464:90:168:467|h[Ultimate Protection of the Emperor]|h|r",
+	["13"] = "|cffa335ee|Hitem:102306:0:0:0:0:0:0:852622080:90:0:493|h[Vial of Living Corruption]|h|r",
+	["12"] = "|cffa335ee|Hitem:96481:0:4615:0:0:0:0:161864448:90:0:467|h[Durumu's Severed Tentacle]|h|r",
+	["11"] = "|cffa335ee|Hitem:96749:0:0:0:0:0:0:1759216512:90:122:467|h[Jin'rokh's Soulcrystal]|h|r",
+	["10"] = "|cffa335ee|Hitem:96736:4869:4615:4615:0:0:0:0:90:157:467|h[Handguards of the Last Mogu]|h|r",
+}
+AmrGold = 4334205727
+AmrRealmName = "Cho'gall"
+AmrCharacterName = "Git"
+AmrIconInfo = {
+}
+AmrCurrencies = {
+	[395] = 4000,
+	[396] = 2820,
+	[81] = 48,
+	[614] = 7,
+	[384] = 12,
+	[416] = 45,
+	[402] = 27,
+	[361] = 6,
+	[241] = 40,
+	[392] = 1288,
+	[393] = 4,
+	[394] = 13,
+	[391] = 46,
+}
+AmrProfessions = {
+	["Cooking"] = 591,
+	["Blacksmithing"] = 600,
+	["Archaeology"] = 165,
+	["Fishing"] = 544,
+	["First Aid"] = 450,
+	["Jewelcrafting"] = 600,
+}
+AmrSpecializations = {
+	["1"] = 73,
+	["2"] = 73,
+}
+AmrRace = "Pandaren"
+AmrLevel = 90
+AmrFaction = "Horde"
+AmrActiveSpec = 1
+AmrHideMapIcon = false
+AmrGlyphs = {
+	{
+		58099, -- [1]
+		58388, -- [2]
+		123779, -- [3]
+		58356, -- [4]
+		68164, -- [5]
+		58364, -- [6]
+	}, -- [1]
+	{
+		115946, -- [1]
+		63325, -- [2]
+		58099, -- [3]
+		89003, -- [4]
+		123779, -- [5]
+		94374, -- [6]
+	}, -- [2]
+}
+AmrTalents = {
+	"133332", -- [1]
+	"232312", -- [2]
+}
+AmrBankItemsAndCounts = {
+}
+AmrImportString = "region=USA;realm=Cho'gall;name=Git;faction=Horde;spec=73;talents=133332;glyphs=58099,58098,58388,58364,68164,123779;race=Pandaren;professions=Blacksmithing:600,Jewelcrafting:600;item=6:96869:0:467:r,b:4615,5024:76664,93705:4824:125;item=2:105167:0:491:b,b:5024,5024:93705,93705:4805:0;item=4:96790:0:467:r,y:4615,4615:76664,76664:4420:139;item=14:102250:0:467:r:4615:76664:4422:163;item=8:96800:0:465:p:4615:76664:4412:132;item=16:96926:0:467:r:4615:76664:4993:168;item=7:96850:0:467:b:5024:93705:4429:0;item=15:96906:0:467:r,p:4615,4820:76664,83148:4446:165;item=5:96818:0:467:r,y,p:4615,4615,4820:76664,76664,83148:0:0;item=0:96768:0:467:m,b:5030,4634:95344,76683:0:125;item=9:96736:0:467:r,p:4615,4615:76664,76664:4869:0;item=1:96916:0:467:r:4615:76664:0:157;item=11:96481:0:467:r:4615:76664:0:0;item=10:96749:0:467:0:0:0:0:122;item=13:96927:0:467:0:0:0:0:0;item=12:102306:0:493:0:0:0:0:0;"
+AmrImportDate = "09/13/13 14:02:02"
+AmrSendSettings = {
+	["SendTo"] = "",
+	["SendGems"] = true,
+	["SendEnchants"] = true,
+	["SendEnchantMaterials"] = true,
+	["SendToType"] = "a friend",
+}

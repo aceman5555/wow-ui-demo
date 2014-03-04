@@ -1,0 +1,104 @@
+== Version 1.12.21 (November 24th 2013) ==
+
+* Added /trainalert as an alternative to /ta, as suggested by cheebc.
+
+== Version 1.11.21 (November 12th 2013) ==
+
+* Only Rogues will see messages about Turkey Shooters now, as they're the ones who need to avoid them the most.
+
+== Version 1.11.20 (September 11th 2013) ==
+
+* Bumped TOC to 50400.
+
+== Version 1.11.19 (June 9th 2013) ==
+
+* Bumped TOC to 50300.
+
+== Version 1.11.18 (March 12th 2013) ==
+
+* Bumped TOC to 50200.
+
+== Version 1.11.17 (November 29th 2012) ==
+
+* Bumped TOC to 50100.
+
+== Version 1.11.16 (October 22nd 2012) ==
+
+* Fixed Party G.R.E.N.A.D.E. spam.
+
+== Version 1.11.15 (August 28th 2012) ==
+
+* Bumped TOC to 50001.
+
+== Version 1.10.15 (May 4th 2012) ==
+
+* The chat message sent when a player puts down a Train Set will no longer be sent if you are marked as AFK.
+* The sound played when a player puts down a Toy Train Set will only play if you have set up TrainAlert to NOT disable sound effects. It was rather pointless playing the sound when sound effects were turned off.
+
+== Version 1.10.13 (January 19th 2012) ==
+
+* Removed range check, since it didn't work (for me, at least).
+* Ever-so-slightly tweaked the Toy Train Set chat message.
+
+== Version 1.10.11 (January 16th 2012) ==
+
+* Fixed 'Usage: CheckInteractDistance("unit", distIndex)' error.
+
+== Version 1.10.10 (January 12th 2012) ==
+
+* Fixed messages about people starting and failing to place a Train Set not using the range check feature.
+* Changed 'Emote sounds' to 'Sound effects' in messages.
+
+== Version 1.10.8 (January 11th 2012) ==
+
+* Increased train check range to 28 yards (same as Inspect and Follow).
+* Added a help screen, accessed via /ta help.
+* Added an option to disable sound effects when a train set is placed. This can be toggled on or off.
+	* Sound is disabled for 10 seconds by default. This can be changed by using the /tak command.
+
+== Version 1.8.7 (January 7th 2012) ==
+
+* TrainAlert will now tell you when someone uses The Mischief Maker on you.
+* TrainAlert will now check how far away a person using a Toy Train set is from you. If they are within trading range (11.11 yards), you will be warned about the train. If they aren't in range, you won't be alerted.
+* TrainAlert no longer sends chat messages regarding people using a Piccolo of the Flaming Fire.
+
+== Version 1.7.5 (November 30th 2011) ==
+
+* Bumped TOC to 40300.
+
+== Version 1.7.4 (November 25th 2011) ==
+
+* Removed all references to the player regarding Turkey Shooters. It should now say '<Name> used a Turkey Shooter!', rather than '<Name' blasted you with a Turkey Shooter!'. Thanks to Veyska for mentioning this to me.
+
+== Version 1.7.3 (November 15th 2011) ==
+
+Special Pilgrim's Bounty Update!
+
+* TrainAlert will now tell you when someone throws a Party G.R.E.N.A.D.E. nearby.
+* TrainAlert will now tell you when someone uses a Turkey Shooter either nearby or on you.
+* Added Debug Mode. This will tell you the name, ID number and type of each spell cast on you by another player. Use it to find more annoying spells and items. Once you find one, send the information acquired via debug to me via a Curse PM.
+
+**If this update gives you problems, delete the addon's Saved Variables. That worked for me.**
+
+== Version 1.4.3 (November 14th 2011) ==
+
+* TrainAlert will now tell you when someone is playing a Piccolo of the Flaming Fire. If the feature is enabled, a chat message will also be sent. The sound warning is not used.
+
+== Version 1.3.3 (October 22nd 2011) ==
+
+* Special Hallows End update!
+* TrainAlert will now tell you when someone jams a Weighted Jack O' Lantern on your head.
+
+== Version 1.2.3 (October 14th 2011) ==
+
+* Fixed warnings not being displayed properly.
+
+== Version 1.2.2 (October 10th 2011) ==
+
+* Added an option to send a chat message (via say) whenever someone puts down a train set.
+* Added an option to play a sound whenever someone uses a train set.
+* TA no longer warns you whenever you put your own train set down.
+
+== Version 1.0.1 (October 6th 2011) ==
+
+* Initial Release.

@@ -1,0 +1,9 @@
+## Interface: 20100
+## Title: Titan Panel [Coords]
+## Notes: Adds Co-Ordinates and location information to Titan Panel
+## Author: Adsertor
+## SavedVariables: 
+## OptionalDeps: 
+## Dependencies: Titan
+## Version: 3.0.6.20100
+..\Titan\TitanCoords\TitanCoords.xml

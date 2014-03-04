@@ -1,0 +1,3 @@
+
+BetterPowerBarAltDB = {
+}

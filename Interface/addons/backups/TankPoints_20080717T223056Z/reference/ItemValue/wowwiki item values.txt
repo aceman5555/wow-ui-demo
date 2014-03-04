@@ -1,0 +1,365 @@
+http://www.wowwiki.com/Formulas:Item_Values
+___________________________________________
+
+The item level is a rather important property of every item. At the same time item level quite adequatly reflects the items usefulness, and determines the minimum level a character must have in order to use it (item level minus 5, currently capped at 60). Unfortunately it's hidden in the game. Only UI mods can read it via the programmers interface. 
+
+As Hyzenthlei (Tauren Shaman 60 on Zul'Jin) first found out, and was later confirmed by a presentation at Blizzcon, Blizzard uses a formula to calculate item level from the items stats. The following is an attempt to reverse-engineer this formula. This text is based on a forum post by Hyzenthlei (the original author) in the Blizzard forums, but it has disappeared from there since. 
+
+Terms and definitions
+StatValue ¡X the amount of a given stat on an item 
+StatMod ¡X the weighting given to the stats 
+ItemValue ¡X the total modified value of the stats on an item 
+SlotMod ¡X weighting based on equipment slot 
+ItemSlotValue ¡X ItemValue modified for the item slot 
+ilvl ¡X the effective level of an item (hidden in game) 
+Calculating Item Level
+This calculation is a three step process. First, the individual stats are each multiplied by their modifiers and taken to the 1.5 power, these terms are summed up and taken to the (2/3) power. The result, the Item Value, is a direct measure for the item's quality. It can be used to compare items across slots and without regard for quality. 
+
+ItemValue = [(StatValue[1]*StatMod[1])1.5 + (StatValue[2]*StatMod[2])1.5 + ...]1/1.5 
+Second, this sum is modified by the slot (or item type): 
+
+ItemSlotValue = ItemValue * SlotMod 
+The third and final modification takes into account item quality. The end result is a calculated value for item level. 
+
+Green: ilvl = ItemSlotValue * 2.0 + 4.00 
+Blue:   ilvl = ItemSlotValue * 1.6 + 1.84 
+Epic:   ilvl = ItemSlotValue * 1.3 + 1.30 
+This calculated item level usually matches Blizzards item level quite well. 
+
+The heart of the formula is to take each modified stat value to the 1.5th power, sum up these terms and draw the 1.5th root from the sum. This process makes single, high values of one stat more expensive than multiple, lower stats. Still it is a fairly simple mathematical model, but not so simple that it is just all the stats added together. It has been suggested that the actual power used may be higher than 1.5 (up to 1.7, see the discussions page). 
+
+StatMods
+The numbers for StatMod were taken from a Blizzard slide on BlizzCon. It was revealed in this slide that 1% Melee Crit = 14 points, and 1% to Dodge = 12 points. The factors for the other modifiers were reverse-engineered from there. These points are a "cost" associated with the stat, so an item of the same level can have more of a stat with a low StatMod, than with a high one. For example 1% Crit = 14 Agility and 5 mana regen/5 = 12 Spirit. 
+
+Stat  StatMod  
+Armor  0.10  
+Attack Power vs (demons, beasts, undead)  0.33  
+Ranged Attack Power  0.40  
+Spell Healing  0.45  
+Attack Power  0.50  
+Spell Damage vs (demons, beasts, undead)  0.55  
+Blocking Value  0.65  
+Spell Damage (One school)  0.70  
+Spell Damage (All Spells)  0.85  
+Magical Penetration  0.90  
+Magic Resist (One school)  1.00  
+Magic Resist (All schools)  2.50  
+Primary Stat (STR, AGI, STA, INT, SPI)  1.00  
+Defense  1.50  
+Regen per 5 sec (Health or Mana)  2.40  
+Weapon skill (other)  2.30  
+Weapon skill (daggers)  3.00  
+Damage Shield  3.15  
+Stealth Skill  2.00  
++1 Stealth Level  7.00  
+% Chance to Hit (Spells)  8.00  
+% Chance to Crit (Spells)  14.00  
+% Chance to Hit (Melee)  10.00  
+% Chance to Crit (Melee)  14.00  
+% Chance to Block  4.33  
+% Chance to Dodge  12.00  
+% Chance to Parry  20.00  
+
+Notes: 
+
++Holy has value of 0.92 on some items (according to Hyzenthlei), while for example Green Lens will have the same +34-36 to any school including Holy 
++Weapon skill (daggers) - Possibly just due to having more examples, most other weapon skill mods have several clumped onto one item 
+Magic Resist (All schools) includes items that specifically state "All Resistances", along with items that list each individual school. 
+An item that adds damage to two schools of magic may be charged anything between one school and all spells. This varies among a few items that do this which seemingly depends on useability of two schools for any classes. 
+Some stat combinations are not allowed, for example mana/5 sec and attack power. 
+These stat mods were obtained by evaluating several thousands of items. Some values (like resists or +spell damage) are pretty reliable since they occur on many items and in large values. Knowing the base that Blizzard uses, most others were rounded to a number that would appear to make sense. 
+
+Some of these weightings seem to be different on different item types. A probably non-conclusive list is: 
+
+Ring  StatMod  
+Magic Resist (One school)  0.72  
+Magic Resist (All schools)  1.80  
+Health per 5 sec  3.50  
+Neck   
+Health per 5 sec  3.50  
+Shield   
+Blocking Value  0.60  
+Defense  1.20  
+Slot Modifiers
+Some item types have better or more stats than items that go in different slots. Helms for for example will always give better benefits than bracers of the same item level. A high SlotMod (and consequently low SlotValue) in this table means that the item will have worse stats than an item for a slot with a lower number and the same ilvl. 
+
+SlotMod * SlotValue = 1.0 
+
+Slot  SlotValue  SlotMod  
+Head, Chest, Legs, 2H weapon  1.00  1.00  
+Shoulder, Hands, Waist, Feet  0.777  1.29  
+Trinket  0.70  1.43  
+Wrist, Neck, Back, Finger, Off-hand/Shield  0.55  1.82  
+1H weapon  0.42  2.38  
+Ranged  0.30  3.33  
+Weapons DPS Trade
+Neither casters nor feral druids benefit from weapon DPS or procs. Thus some high end weapons may have some of their DPS sacrificed in favor of spell damage or feral attack power. A few melee weapons also do this, to gain large damage procs. Two examples are Jeklik's Crusher, and Thunderfury, Blessed Blade of the Windseeker. 
+
+SacrificedDPS = ilvl-60 
+
+Added Spell Damage and Healing = 4*SacrificedDPS 
+
+Added School Spell Damage = 5*SacrificedDPS 
+
+Added Spell Healing = 7.66*SacrificedDPS 
+
+Added Feral Attack Power = 14 * (ilvl-60) 
+
+Feral Attack Power is unique in that it shares its stat cost with another attribute, for example: 
+
+Hammer of Bestial Fury
+Unique
+Main Hand
+69 - 130 Damage
+(52.4 damage per second)
+90 Armor
++13 Strength
++12 Stamina
+Requires Level 60
++154 Attack Power in Cat, Bear and Dire Bear forms only.
+Item Level 71
+Expected DPS: 52.5
+The Expected DPS and actual DPS match perfectly - the item is slightly over budget (iLvl 74), and the (71-60)*14=154 feral attack power "shares" its stat points with the points that would be gained by "sacrificing" the weapon DPS. This is because in feral form druids do not benefit from the DPS stat so it's value is 0. This can be seen on other weapons such as the End of Dreams where the feral attack power shares the item budget of the +spell damage, because again in feral form a druid does not benefit from +damage, and when out of feral form they do not benefit from feral attack power. 
+
+Notes: 
+
+Sacrificed DPS may vary by a bit either way. However (ilvl-60) generally works 
+Hyzenthlei suggests that Sacrificed DPS creates additional stat points which are spent in those stats. 
+For majority of high end weapons all those mods come only as a result of DPS sacrifice. 
+Feral Attack Power doesn't always sacrifice actual DPS (though it does in some cases). This is apparently to make the items with this stat desirable by classes other than Druids. 
+Another way of looking at it is that weapon DPS has a stat cost, on melee items those points are spent on DPS, on caster items they are spent on +damage/healing etc... if the DPS on a melee weapon was 'free', then caster items having a significantly higher item budget would be unbalanced. 
+
+Procs and uses effects
+The stat mods table contains the most frequently appearing stats. There are other stats which are sometimes unique or difficult to describe. All procs fall in this category, as do all Use:<do something> abilities. While these don't fit with an immediately obvious value, this system can be used to see what the blizzard item designers think they are worth and translate them into a stat-equivalent format. 
+
+Armor Scaling
+Armor values on items follow a simple linear scaling pattern within certain limits. For example, mail armor scales linearly between certain ilvls, at which points the slope of the linear increase changes. One of these points is ilvl 45, above this point it scales more rapidly. Remember that an ilvl 45 item can be worn at lvl 40, and shamans and hunters get mail at 40. So they wanted mail to scale up fast for those classes, but without raising the amour values of pre 40 warriors too high (dont worry warriors, plate armor scales up even faster). Examples of armor scaling are shown below. 
+
+Green Plate Chest AC = (ilvl-44) * 8.9 + 428 
+Green Mail Chest AC = (ilvl-46) * 4.9 + 254 
+Green Leather Chest AC = (ilvl-40) * 2.2 + 110 
+Green Cloth Chest AC = (ilvl-40) * 1.2 + 53 
+Green Shield AC = (ilvl-44) * 28.3 + 1380 
+This only applies between a certain level boundary, in this case between X and 65, where X is found using the general formula of "(ilvl - X) * Y + Z", although they will most likely also apply post-level 65, as there are no big armor changes past that level. 
+
+The armor value of rare or epic pieces is also very easy to obtain using a simple multiplier. If you really want to go into detail, you will notice that there are plate chests with ilvls below 44. Due to their ilvl they should be equippable below lvl 40 (if any class could) and follow a different scaling equation (which is why jouster plate stuff has such pitiful armor values compared to many other starting plate item, their ilvls are all low). 
+
+For Items of the same armor type (cloth, leather, etc) and the same ilvl 
+
+Rare Armor Value = Green Armor Value * 1.1 
+Epic Armor Value = Green Armor Value * 1.2 
+The exception to this is shields, which use a slightly different scaling 
+
+Rare Shield Armor Value = Green Shield Armor Value * 1.125 
+Epic Shield Armor Value = Green Shield Armor Value * 1.25 
+Of course there are items with much higher armor than others around that lvl. Those items are using the extra armor as an actual stat. Only this extra armor, above and beyond the predicted armor is considered in item weighting. So while the base armor level of an item is free, going higher will cost you other stats. 
+
+The item slot plays a role in armor as well: 
+
+Slot  Armor Multiplier  
+Chest  1.00  
+Legs  0.875  
+Head  0.812  
+Shoulder  0.750  
+Feet  0.69  
+Hands  0.624  
+Waist  0.562  
+Wrist  0.438  
+Back (always Cloth)  0.480  
+DPS Calculation
+Just like AC, you can also calculate weapon DPS. Before you continue however, make sure you read the parts about AC and DPS sacrificing, from here it is assumed you know what is written there. 
+
+The idea is far more simple than the AC, as there are no equivalent to armor types in DPS. This is the calculation for green onehanders: 
+
+Green One Hander DPS = ( ilvl - 45 ) * 0.6 + 26.6 
+But instead of having multiple formulas, you just have to multiply the DPS of a green onehander of the same level with a certain number, linked to what kind of new weapon you have, to give the DPS of that weapon: 
+
+Modifier  DPS Multiplier  
+Two Hand  1.305  
+Ranged (bow, gun etc.)  1.275  
+Wand  1.522  
+Superior  1.105  
+Epic  1.215  
+
+Besides these multipliers, raid items (some other items maybe as well) can sacrifice DPS for stats, in that case you simply have to subtract that from the expected DPS. 
+
+Note: 
+
+This seems to fit in the item range of level 45-65, before the green items have a different formula and after might scale differently. Also, these multipliers could be off, or each case could be a formula on their own, but it fits so well it seems unlikely. 
+Examples
+AC example
+To find an expected armorvalue for a given item you will first need to know the scaling of that item type. 
+
+Do a search on thottbot for green items of that type, with lvl ranges of 44-46. Find the base armor they have. Then do the same for items of that slot at ilvl 61-63. 
+
+Then use 
+
+ArmorScaling = (higharmor - lowamor)/(highilvl - lowilvl) 
+
+this is the armor increase per ilvl for a green of that armor type. Once you have that, do 
+
+ArmorValue = (Desiredilvl - highilvl)*ArmorScaling + higharmor 
+
+This will give the value of a green at that ilvl. 
+
+Then multiply it by 1.1 for a rare, or 1.2 for an epic. 
+
+Let's try this on a stormrage helm, 183 armor, ilvl 76. Green leather helms: ilvl 45, armor 99 ilvl 64, armor 132 
+
+ArmorScaling = (132 - 99)/(64-45) = 1.74 armor/ilvl 
+
+(76 - 64) * 1.74 + 132 = 152.8 152.8 * 1.2 = 183.4 -> 183 armor 
+
+You can use this to find the ArmorScaling factor and expected armor for any item. 
+
+Item value examples
+Circle of Applied Force
+Binds when picked up
+Unique
+Epic
+Finger Miscellaneous
++12 Strength
++22 Agility
++9 Stamina
+Requires Level 60
+Item Level 75
+If we calculate the Item Value from the stats, we find that it's effective item level is 74.4 
+
+Cloak of the Shrouded Mists
+Binds when picked up
+Epic
+Back
+57 Armor
++22 Agility
++12 Stamina
++6 Fire Resistance
++6 Nature Resistance
+Requires Level 60
+Item Level 74
+Calculated item value is 74.3 
+
+Shroud of Pure Thought
+Binds when picked up
+Back
+57 Armor
++10 Stamina
++11 Intellect
+Requires Level 60
+Equip: Increases healing done by spells and effects by up to 33.
+Equip: Restores 6 mana every 5 sec.
+Item Level 75
+Here the calculated value of 76.7 slightly exceeds the blizzard item level 
+
+Item Creation Gone Wrong - Mislabelling
+The Drape of Benediction had its stats increased in a recent patch. Prior to that, it could be proven with this forumla that it was actually a blue item, mislabelled as purple. Since the patch, the drape is an epic worth its designation. 
+
+A more recent example is the ironically much desired Eyestalk Waist Cord: 
+
+Eyestalk Waist Cord
+Binds when picked up
+Waist
+75 Armor
++10 Stamina
++9 Intellect
+Requires Level 60
+Equip: Improves your chance to get a critical strike with spells by 1%.
+Equip: Improves damage and healing done by magical spells and effects by up to 41.
+Item Level 88
+An epic of level 88, yet only has the stats of a 78. Proof: 
+
+((41*0.85)^1.5 + (1*14)^1.5 + (10*1)^1.5 + (9*1)^1.5)^2/3 = 46.466 
+
+46.466 / (0.777 = Waist Mod) / (0.7814 = Epic Multiplier) + (1.3 = Epic Offset) = 77.8 
+
+Another example is the Ironvine Belt. 
+
+Ironvine Belt
+Binds when equipped
+Waist
+408 Armor
++12 Stamina
++15 Nature Resistance
+Requires Level 60
+Equip: Increased Defense +3.
+Item Level 70
+Supposedly a blue of iLevel 70, it doesn't even have the stats of a level 70 green! 
+
+((12*1)^1.5 + (15*1)^1.5 + (3*1.5)^1.5)^2/3 = 22.848 
+
+As a blue, its effective level is: 22.848 / (0.777 = Waist Mod) / (0.62125 = Rare Multiplier) + (1.8375 = Rare Offset) = 49.2 
+
+And as a green: 22.848 / (0.777 = Waist Mod) / (0.5 = Rare Multiplier) + (4 = Rare Offset) = 62.8 
+
+This is currently the most underpowered item in the game. 
+
+Items Valued with unnaturally high ItemValue
+There are also items that have been tweaked or changed by blizz that have item values far above what they should (and if you look carefully for discrepancies you will be able to tell which they are). But Im not going to go into specifics as I was asked by people who use them not to get them nerfed ;) 
+
+Suitablility of this formula for calculating DKP
+The idea to use this formula as the basis for DKP values of items is rather natural. It has a few drawbacks though: 
+
+using this formula simply yields the item level, so why not just use Blizzard's item level? 
+stat usefulness is a function of the class using the item 
+mid-range values on two useful stats is much superior to a high value in only one stat 
+should the SlotMods influence the DKP value or not? 
+In summary, the factors from the StatMods table could be used as a starting point for a DKP mod, but after that much thought has to be put into such a project. 
+
+
+
+
+The Burning Crusade
+In the Burning Crusade a lot of items (almost all) got different stats. Also, the items that drop in TBC (The Burning Crusade) seem to be far more powerful than any item currently in game, for example blue items that drop off level 63 bosses in a dungeon in Outland are often better than Molten Core epic items. Also, the % Chance to Hit and Crit stats are gone, instead there are crit and hit ratings now. The same applies to parry, dodge and defence. The old items are also changed to reflect this change. 
+
+These changes make it possible however to track the value of these new stats. An item with a +1% to crit now gets 14 to crit rating. The cost of 1% to crit is 14, so 1 crit rating costs 1 'point'. This applies to all new ratings, although I'm not sure about the new resilience rating. 
+
+So all those new ratings are 1. This makes it a lot easier for Blizzard to make items with these stats, as in the previous system +1% to crit was expensive, but +2% crit was very expensive. But there was nothing like +1.3% to crit, so there are no items in between those values. This system however makes it possible to have 2 items with +7 to crit rating, on total increasing your crit chance by 1, essentially having 2 items with 0.5% to crit. 
+
+Also, the spell penetration cost has changed, as Frostfire Robe now has 15 spell penetration instead of the current 13, but the exact new cost is unknown. 
+
+The items in TBC are a lot more powerful, but that is because the items have a lot higher ilevels than in the current game. For example, all the new Gladiator sets (the new Arena rewards) have an ilevel of 111 and are epic, where the highest epic item currently in game has an ilevel of only 92. The same calculations apply to these new items, but the ilevels just are far higher. 
+
+Additionally Stamina now costs less. Estimated cost is about 2/3. 
+
+For some time the armor values of items seemed to have gone down, but apparently in a recent patch they have gone back to normal and some items even went over their original values: Dryad's Wrist Bindings has not changed in TBC (Dryad's Wrist Bindings in TBC) but Robes of Insight has gained 10 armor (Robes of Insight in TBC). What the formulas behind these changes are is unknown. 
+
+How the table of stat costs will look like in TBC: 
+
+Stat  StatMod  
+Armor  0.10  
+Attack Power vs (demons, beasts, undead)  0.33  
+Ranged Attack Power  0.40  
+Spell Healing  0.45  
+Attack Power  0.50  
+Spell Damage vs (demons, beasts, undead)  0.55  
+Blocking Value  0.65  
+Spell Damage (One school)  0.70  
+Spell Damage (All Spells)  0.85  
+Magical Penetration  0.90  
+Magic Resist (One school)  1.00  
+Magic Resist (All schools)  2.50  
+Primary Stat (STR, AGI, INT, SPI)  1.00  
+Stamina  0.67  
+Combat Rating (Any)  1.00  
+Regen per 5 sec (Health or Mana)  2.40  
+Damage Shield  3.15  
+Stealth Skill  2.00  
++1 Stealth Level  7.00  
+
+Level 60 conversions for Combat Ratings: 
+
+Rating (At 60)  In percentages  
++8 Hit Rating (Spells)  1% Chance to Hit (Spells)  
++14 Crit Rating (Spells)  1% Chance to Crit (Spells)  
++10 Hit Rating (Melee)  1% Chance to Hit (Melee)  
++14 Crit Rating (Melee)  1% Chance to Crit (Melee)  
++13 Block Rating  3% Chance to Block  
++12 Dodge Rating  1% Chance to Dodge  
++20 Parry Rating  1% Chance to Parry  
++1.5 Defense Rating  +1 Defense Skill  
++2.5 Weapon Skill Rating  +1 Weapon Skill  
++25 Resilience Rating  1% Resilience  
+
+Retrieved from "http://www.wowwiki.com/Formulas:Item_Values"
+
+
+Retrieved from "http://www.wowwiki.com/Formulas:Item_Values"

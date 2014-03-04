@@ -1,0 +1,435 @@
+
+EPGP_DB = {
+	["namespaces"] = {
+		["log"] = {
+			["profiles"] = {
+				["Requiem"] = {
+					["snapshot"] = {
+						["guild_info"] = "@DECAY_P:5\n@EXTRAS_P:100\n@MIN_EP:100\n@BASE_GP:1350",
+						["time"] = 1289696700,
+						["roster_info"] = {
+							{
+								"Failion", -- [1]
+								"PRIEST", -- [2]
+								"Taleion", -- [3]
+							}, -- [1]
+							{
+								"Tuskyhusky", -- [1]
+								"DRUID", -- [2]
+								"0,0", -- [3]
+							}, -- [2]
+							{
+								"Tailterrier", -- [1]
+								"SHAMAN", -- [2]
+								"0,0", -- [3]
+							}, -- [3]
+							{
+								"Twigi", -- [1]
+								"WARRIOR", -- [2]
+								"Painn", -- [3]
+							}, -- [4]
+							{
+								"Lashter", -- [1]
+								"DRUID", -- [2]
+								"0,0", -- [3]
+							}, -- [5]
+							{
+								"Notenufdeath", -- [1]
+								"DEATHKNIGHT", -- [2]
+								"Anarchybob", -- [3]
+							}, -- [6]
+							{
+								"Boredjaco", -- [1]
+								"WARRIOR", -- [2]
+								"Jacobine", -- [3]
+							}, -- [7]
+							{
+								"Abeaa", -- [1]
+								"HUNTER", -- [2]
+								"1065,0", -- [3]
+							}, -- [8]
+							{
+								"Slaeer", -- [1]
+								"WARRIOR", -- [2]
+								"8087,0", -- [3]
+							}, -- [9]
+							{
+								"Bullshatt", -- [1]
+								"SHAMAN", -- [2]
+								"6214,0", -- [3]
+							}, -- [10]
+							{
+								"Jmbloodelf", -- [1]
+								"HUNTER", -- [2]
+								"647,0", -- [3]
+							}, -- [11]
+							{
+								"Hyphyashell", -- [1]
+								"ROGUE", -- [2]
+								"0,0", -- [3]
+							}, -- [12]
+							{
+								"Nonja", -- [1]
+								"WARLOCK", -- [2]
+								"Pyrion", -- [3]
+							}, -- [13]
+							{
+								"Issues", -- [1]
+								"DEATHKNIGHT", -- [2]
+								"0,0", -- [3]
+							}, -- [14]
+							{
+								"Taleionjr", -- [1]
+								"DEATHKNIGHT", -- [2]
+								"Taleion", -- [3]
+							}, -- [15]
+							{
+								"Randyshaman", -- [1]
+								"SHAMAN", -- [2]
+								"", -- [3]
+							}, -- [16]
+							{
+								"Deadkind", -- [1]
+								"PRIEST", -- [2]
+								"0,0", -- [3]
+							}, -- [17]
+							{
+								"Deadkin", -- [1]
+								"PALADIN", -- [2]
+								"0,0", -- [3]
+							}, -- [18]
+							{
+								"Jmtauren", -- [1]
+								"SHAMAN", -- [2]
+								"Jmbloodelf", -- [3]
+							}, -- [19]
+							{
+								"Enufsaid", -- [1]
+								"WARRIOR", -- [2]
+								"Anarchybob", -- [3]
+							}, -- [20]
+							{
+								"Rumjin", -- [1]
+								"HUNTER", -- [2]
+								"Necrosus", -- [3]
+							}, -- [21]
+							{
+								"Restorific", -- [1]
+								"DRUID", -- [2]
+								"Git", -- [3]
+							}, -- [22]
+							{
+								"Greny", -- [1]
+								"HUNTER", -- [2]
+								"0,0", -- [3]
+							}, -- [23]
+							{
+								"Deathblitz", -- [1]
+								"DEATHKNIGHT", -- [2]
+								"Blitzors", -- [3]
+							}, -- [24]
+							{
+								"Jmpaladin", -- [1]
+								"PALADIN", -- [2]
+								"0,0", -- [3]
+							}, -- [25]
+							{
+								"Monkeykïng", -- [1]
+								"PALADIN", -- [2]
+								"2974,0", -- [3]
+							}, -- [26]
+							{
+								"Bellaxmuerte", -- [1]
+								"PRIEST", -- [2]
+								"0,0", -- [3]
+							}, -- [27]
+							{
+								"Ganyt", -- [1]
+								"PRIEST", -- [2]
+								"slaeer", -- [3]
+							}, -- [28]
+							{
+								"Burk", -- [1]
+								"PRIEST", -- [2]
+								"0,0", -- [3]
+							}, -- [29]
+							{
+								"Damncow", -- [1]
+								"DRUID", -- [2]
+								"0,0", -- [3]
+							}, -- [30]
+							{
+								"Luli", -- [1]
+								"HUNTER", -- [2]
+								"Painn", -- [3]
+							}, -- [31]
+							{
+								"Bõb", -- [1]
+								"WARLOCK", -- [2]
+								"1019,0", -- [3]
+							}, -- [32]
+							{
+								"Cyruz", -- [1]
+								"HUNTER", -- [2]
+								"4522,1709", -- [3]
+							}, -- [33]
+							{
+								"Cowbeary", -- [1]
+								"DRUID", -- [2]
+								"Git", -- [3]
+							}, -- [34]
+							{
+								"Merirosvo", -- [1]
+								"WARLOCK", -- [2]
+								"Painn", -- [3]
+							}, -- [35]
+							{
+								"Kebab", -- [1]
+								"DRUID", -- [2]
+								"737,0", -- [3]
+							}, -- [36]
+							{
+								"Deathvayne", -- [1]
+								"WARLOCK", -- [2]
+								"0,0", -- [3]
+							}, -- [37]
+							{
+								"Synruki", -- [1]
+								"DEATHKNIGHT", -- [2]
+								"Painn", -- [3]
+							}, -- [38]
+							{
+								"Git", -- [1]
+								"WARRIOR", -- [2]
+								"6255,0", -- [3]
+							}, -- [39]
+							{
+								"Evun", -- [1]
+								"DRUID", -- [2]
+								"Git", -- [3]
+							}, -- [40]
+							{
+								"Sylestaria", -- [1]
+								"MAGE", -- [2]
+								"Azmaria", -- [3]
+							}, -- [41]
+							{
+								"Mylinh", -- [1]
+								"PRIEST", -- [2]
+								"Bucnasty", -- [3]
+							}, -- [42]
+							{
+								"Darkdisciple", -- [1]
+								"PALADIN", -- [2]
+								"1058,430", -- [3]
+							}, -- [43]
+							{
+								"Albinotron", -- [1]
+								"SHAMAN", -- [2]
+								"331,0", -- [3]
+							}, -- [44]
+							{
+								"Redphoenix", -- [1]
+								"PALADIN", -- [2]
+								"Whitephoenix", -- [3]
+							}, -- [45]
+							{
+								"Megatronn", -- [1]
+								"MAGE", -- [2]
+								"Monkeykïng", -- [3]
+							}, -- [46]
+							{
+								"Frôstitute", -- [1]
+								"MAGE", -- [2]
+								"Bucnasty", -- [3]
+							}, -- [47]
+							{
+								"Cece", -- [1]
+								"PALADIN", -- [2]
+								"Taleion", -- [3]
+							}, -- [48]
+							{
+								"Whitephoenix", -- [1]
+								"PRIEST", -- [2]
+								"1956,0", -- [3]
+							}, -- [49]
+							{
+								"Azmaria", -- [1]
+								"PALADIN", -- [2]
+								"548,0", -- [3]
+							}, -- [50]
+							{
+								"Ivxx", -- [1]
+								"WARRIOR", -- [2]
+								"Monkeykïng", -- [3]
+							}, -- [51]
+							{
+								"Gemlock", -- [1]
+								"WARLOCK", -- [2]
+								"gemelo", -- [3]
+							}, -- [52]
+							{
+								"Failbinotron", -- [1]
+								"PALADIN", -- [2]
+								"Albinotron", -- [3]
+							}, -- [53]
+							{
+								"Fübu", -- [1]
+								"ROGUE", -- [2]
+								"Bucnasty", -- [3]
+							}, -- [54]
+							{
+								"Killerblitz", -- [1]
+								"WARLOCK", -- [2]
+								"Blitzors", -- [3]
+							}, -- [55]
+							{
+								"Dolphinboy", -- [1]
+								"DEATHKNIGHT", -- [2]
+								"0,0", -- [3]
+							}, -- [56]
+							{
+								"Orihime", -- [1]
+								"HUNTER", -- [2]
+								"Azmaria", -- [3]
+							}, -- [57]
+							{
+								"Saji", -- [1]
+								"HUNTER", -- [2]
+								"slaeer", -- [3]
+							}, -- [58]
+							{
+								"Taleion", -- [1]
+								"HUNTER", -- [2]
+								"860,0", -- [3]
+							}, -- [59]
+							{
+								"Jacobine", -- [1]
+								"MAGE", -- [2]
+								"16,0", -- [3]
+							}, -- [60]
+							{
+								"Cuzzhunter", -- [1]
+								"HUNTER", -- [2]
+								"404,709", -- [3]
+							}, -- [61]
+							{
+								"Machette", -- [1]
+								"WARRIOR", -- [2]
+								"", -- [3]
+							}, -- [62]
+							{
+								"Painn", -- [1]
+								"DRUID", -- [2]
+								"541,0", -- [3]
+							}, -- [63]
+							{
+								"Aizenkenzi", -- [1]
+								"DRUID", -- [2]
+								"Blitzors", -- [3]
+							}, -- [64]
+							{
+								"Kymata", -- [1]
+								"WARLOCK", -- [2]
+								"Ebontail", -- [3]
+							}, -- [65]
+							{
+								"Yoshimi", -- [1]
+								"SHAMAN", -- [2]
+								"Painn", -- [3]
+							}, -- [66]
+							{
+								"Abeaadead", -- [1]
+								"DEATHKNIGHT", -- [2]
+								"Abeaa", -- [3]
+							}, -- [67]
+							{
+								"Tahruc", -- [1]
+								"DRUID", -- [2]
+								"slaeer", -- [3]
+							}, -- [68]
+							{
+								"Mugarlin", -- [1]
+								"WARLOCK", -- [2]
+								"1764,0", -- [3]
+							}, -- [69]
+							{
+								"Bucnasty", -- [1]
+								"SHAMAN", -- [2]
+								"8770,0", -- [3]
+							}, -- [70]
+							{
+								"Yori", -- [1]
+								"PRIEST", -- [2]
+								"Painn", -- [3]
+							}, -- [71]
+							{
+								"Ebontail", -- [1]
+								"SHAMAN", -- [2]
+								"Necrosus", -- [3]
+							}, -- [72]
+							{
+								"Powerblitz", -- [1]
+								"WARRIOR", -- [2]
+								"Blitzors", -- [3]
+							}, -- [73]
+							{
+								"Brodde", -- [1]
+								"HUNTER", -- [2]
+								"Brodisk", -- [3]
+							}, -- [74]
+							{
+								"ßrodisk", -- [1]
+								"ROGUE", -- [2]
+								"Brodisk", -- [3]
+							}, -- [75]
+							{
+								"Knivesblitz", -- [1]
+								"MAGE", -- [2]
+								"0,0", -- [3]
+							}, -- [76]
+							{
+								"Goldratio", -- [1]
+								"WARLOCK", -- [2]
+								"0,0", -- [3]
+							}, -- [77]
+							{
+								"Volimar", -- [1]
+								"WARRIOR", -- [2]
+								"0,0", -- [3]
+							}, -- [78]
+						},
+					},
+				},
+			},
+		},
+		["ui"] = {
+		},
+		["boss"] = {
+		},
+		["whisper"] = {
+		},
+		["warnings"] = {
+		},
+		["ldb"] = {
+		},
+		["gptooltip"] = {
+		},
+		["announce"] = {
+		},
+		["loot"] = {
+		},
+	},
+	["global"] = {
+		["last_version"] = "5.5.22",
+	},
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Requiem",
+	},
+	["profiles"] = {
+		["Requiem"] = {
+		},
+		["Git - Azuremyst"] = {
+		},
+	},
+}

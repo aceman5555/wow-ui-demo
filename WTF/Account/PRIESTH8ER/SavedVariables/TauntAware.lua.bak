@@ -1,0 +1,11 @@
+
+TauntAware_Settings = {
+	["MFScale"] = 156,
+}
+TauntAware_PC = {
+	["Cho'gall"] = {
+		["Git"] = {
+			["MsgFrameSet"] = true,
+		},
+	},
+}

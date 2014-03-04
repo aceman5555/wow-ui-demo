@@ -1,0 +1,11 @@
+## Interface: 20400
+## Title: SW_UniLog
+## Author: Artack (Madmortem EU DE) artack@sw-stats.com
+## Version: 2.1.4
+## Notes: A (sortable, filterable) combat log
+## RequiredDeps: SW_Stats
+## SavedVariablesPerCharacter: SW_UL_Settings
+SW_UniLog_Filters.lua
+localization.lua
+SW_UniLog.xml
+SW_UniLog.lua

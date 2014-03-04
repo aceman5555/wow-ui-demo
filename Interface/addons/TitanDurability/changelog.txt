@@ -1,0 +1,161 @@
+Titan Panel [Durability] v1.24
+
+http://wow.curse.com/downloads/wow-addons/details/titan-panel-durability.aspx
+
+http://www.jthawk.de
+
+About Titan Panel [Durability]:
+
+Original code from Titan Durability by tekkub and Titan by TitanMod / Adsertor
+Gold formatting code, shamelessly "borrowed" from Auctioneer
+
+Additional to the built-in Durability-Addon coming with Titan-Panel (Titan Repair), this addon can also display the discounted repaircosts for friendly, honored, revered and exalted reputation.
+
+This is not a replacement for Titan Repair, since Titan Durability is NOT a "repair" addon - and will never be.
+
+Features:
+- display of durability and repair cost for equipped items and items in your bags
+- display of detailed durability status for equiped items on Titan Panel tooltip
+- all durability informations can be displayed on Titan Panel
+- total repair cost (equipped + inventory)
+- you can see the most damaged item on titan panel
+- option to show your item names instead of just the names of the slots
+- all repair costs displayable with selected discount (friendly (5%), honored (10%), revered (15%) and exalted (20%) or all together if u want)
+- durability and repair cost is only calculated out of combat
+- currently works with english, german, french, simplified chinese and spanish client ... should be working with all other language versions too - just test it :)
+
+This is a continued version of Tekkub's Titan Panel [Durability]
+
+Changelog:
+
+v1.24
+- changed TOC to 50001 for patch 5.0.4
+- removed Ranged slot
+
+v1.23
+- changed TOC to 40200 for patch 4.2
+
+v1.22
+- another attempt: fixed a lua error if items details are not available right after login, slot names will be desplayed until they are available
+
+v1.21
+- fixed a lua error if items details are not available right after login, slot names will be desplayed until they are available
+
+v1.20
+- fixed a rare lua error for items without durability
+- durability is now only calculated once every 5 seconds (down from 30)
+- add option to disable the "once every 5 seconds calculation"
+
+v1.19
+- discount now correctly affects repaircost for most damged item
+- add option to show only the lowest durability of all eqipped items instead of average
+- updated menu
+
+v1.18
+- changed TOC to 40000 for patch 4.x
+- fixed lua error in patch 4.0.1
+
+v1.17
+- changed TOC to 30300 for patch 3.3.x
+- some fixes for the recent version of Titan Panel 
+- minor localization changes
+- durability is now only calculated once every 30 seconds
+
+v1.16
+- add Simplified Chinese Translation (zhCN) - thx to yeachan @CWDG
+- add option to show the itemdetails for the inventory
+- several small bugfixes and code cleanups
+
+v1.15
+- changed TOC to 30000 for patch 3.x
+- works now with Titan Panel 4.0.2.30000
+- default settings changed
+- new option to hide empty slots
+
+v1.14
+- a few changes to the menu
+- add option to toggle display of repair cost on the tooltip, again :)
+- fixed bug where "Show colored Text" was not working properly
+
+v1.13
+- changed TOC to 20400 for patch 2.4.x
+- add options for repaircost discounts on friendly, honored, revered and exalted (5, 10, 15, 20%)
+
+v1.12
+- durability is now calculated on guildbank use also
+- Durability text is now properly updated on recent Titan Panel
+- several small bugfixes
+
+v1.11
+- changed TOC to 20300 for patch 2.3.x
+- changed the way Titan Durability gets durability information for items (new API functions)
+- added option to show the itemname instead of just the slot ("Head" -> "Über-Ugly Googles")
+- changed calculation for repaircost discounts (to be prepared for eventually future repair discount changes like the new vendor discounts coming with 2.3.0)
+- all repaircosts can be displayed at once, however the cost next to an item is with highest available discount (actually 10% honored)
+- fixed several calculation problems with low level items and very low repair costs (e.g. 1 copper)
+
+v1.10
+- changed TOC to 20200 for patch 2.2.x
+- fixed update of repaircost since patch 2.2.0
+
+v1.09
+- changed TOC to 20003 for patch 2.0.3
+- some code cleanups
+- few more localizations
+
+v1.08
+- changed TOC to 20000 for patch 2.0.x
+- make TP [Durability] TBC compatible
+- minor bugfixes
+- removed handle of PvP rank 3 discount, cause PvP ranks are no longer exist in TBC
+
+v1.07b
+- changed TOC to 11200 for patch 1.12.x
+- add some spanish translations
+
+v1.07a
+- reworked menu
+- option to show total durability on Titan Panel
+- option to show all discounts (normal, 10% and 20%) on tooltip like Titan Panel [Durability] 1.06
+
+v1.07
+- changed TOC to 11100 for patch 1.11.x
+- you can now turn on/off repair cost / honored / honored + sergeant discount
+- durability is now only calculated if player is out of combat to prevent some lag issues during durability loss in fight
+- changed display of detailed repair costs
+- add option to show repair cost on Titan Panel (with selected discount)
+- several code optimization
+- updated french translation, thx Sasmira!
+- add option to show most damaged item on Titan Panel (with selected discount)
+- add total repair cost (character and inventory) to tooltip
+- durability for damaged items moved from bank will now calculated after the bank frame is closed
+- add option to only show damaged items on tooltip
+- add option to show inventory durability/repair cost on Titan Panel
+
+v1.06b
+- add check for PLAYER_ENTERING_WORLD and PLAYER_LEAVING_WORLD, maybe there is a little decrease in zoning time
+- Titan Panel [Durability] continued is now listed in Titan Panels "Information" category
+
+v1.06a
+- add inventory repair cost (can be turn off)
+
+v1.05d
+- changed TOC to 11000 for patch 1.10.x
+- several very small code changes
+- also small translation updates to clarify Honored and Sergeant discount
+
+v1.05c
+- changed TOC to 10900 for patch 1.9.x
+- add frensh translation (by Halrik)
+- fixed error if no durability available (naked)
+
+v1.05b
+- fixed localization error (hopefully)
+
+v1.05a
+- changed TOC to 1800 for patch 1.8.0
+- repair cost only appear in tooltip if repair is necessary
+- add repair cost line for 10% discount on honored or/and PvP Rank 3
+- add german translation
+
+original history: http://www.curse-gaming.com/mod.php?addid=1300

@@ -1,0 +1,11 @@
+
+RKDatabase = {
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["firstLoad"] = false,
+		},
+	},
+}

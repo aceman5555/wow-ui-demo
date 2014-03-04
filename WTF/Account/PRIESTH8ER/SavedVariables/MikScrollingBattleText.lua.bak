@@ -1,0 +1,23 @@
+
+MSBTProfiles_SavedVars = {
+	["profiles"] = {
+		["Default"] = {
+			["creationVersion"] = "5.7.123",
+		},
+		["Gitt"] = {
+			["critFontSize"] = 38,
+			["normalFontSize"] = 15,
+			["critFontName"] = "DorisPP",
+			["animationSpeed"] = 80,
+			["normalFontName"] = "DorisPP",
+			["healThreshold"] = 10000,
+			["creationVersion"] = "5.7.123",
+		},
+	},
+}
+MSBT_SavedMedia = {
+	["fonts"] = {
+	},
+	["sounds"] = {
+	},
+}

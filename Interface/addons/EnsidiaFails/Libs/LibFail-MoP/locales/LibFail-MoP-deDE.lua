@@ -1,0 +1,31 @@
+﻿local L = LibStub("AceLocale-3.0"):NewLocale("LibFail-MoP", "deDE")
+if not L then return end
+
+L["Barrel Roll"] = "Ausweichmanöver" -- Needs review
+L["casting"] = "Zauberwirken"
+L["Damage Constraint"] = "Schadensgrenze"
+L["detects"] = "bemerkt" -- Needs review
+L["dispelling"] = "entzaubern"
+L["Fail"] = "Fehlschlag"
+L["Fails"] = "Misslingen"
+L["moving"] = "Bewegen"
+L["not attacking"] = "nicht angreifen"
+L["not being at the wrong place"] = "am falschem Ort sein"
+L["not casting"] = "nicht zaubern"
+L["not dispelling"] = "nicht entzaubern"
+L["not moving"] = "nicht bewegen"
+L["not spreading"] = "nicht verbreiten"
+L["Overkill Only"] = "Nur Fehler mit Todesfolge"
+L["rolls left"] = "rollt nach links" -- Needs review
+L["rolls right"] = "rollt nach rechts" -- Needs review
+L["'s Failers"] = "s Versager"
+L["'s Fail Events"] = "s misslungene Ereignisse"
+L["'s Fails"] = "s Fehlschläge"
+L["%s fails at %s"] = "%s versagte bei: %s"
+L["%s fails at %s (%s)"] = "%s versagte bei %s (%s)"
+L["spreading"] = "verbreiten"
+L["switching"] = "Zielwechsel"
+L["Tanks Dont Fail"] = "Tanks ausschließen"
+L["Tick Constraint"] = "erlaubte Ticks"
+L["Time Constraint - High"] = "Zeitbegrenzung - hoch"
+L["Time Constraint - Low"] = "Zeitbegrenzung - gering"

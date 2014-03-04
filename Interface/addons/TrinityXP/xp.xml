@@ -1,0 +1,194 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
+
+	<Texture name="TrinityXPMarker" file="Interface\AddOns\TrinityXP\images\bubbleMark.tga" hidden="false" alphaMode="ADD" virtual="true">
+		<Size x="16" y="32"/>
+		<Anchors>
+			<Anchor point="TOPLEFT">
+				<Offset x="0" y="1"/>
+			</Anchor>
+			<Anchor point="BOTTOMLEFT">
+				<Offset x="0" y="-1"/>
+			</Anchor>
+		</Anchors>
+	</Texture>
+
+	<Button name="TrinityXPRepBarTemplate" frameStrata="LOW" hidden="false" virtual="true">
+		<Size x="195" y="10"/>
+		<Frames>
+			<StatusBar name="$parentBar">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset x="0" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="OVERLAY">
+						<FontString name="$parentText" justifyH="CENTER" inherits="GameFontNormalSmall">
+							<Anchors>
+								<Anchor point="TOPLEFT">
+									<Offset x="0" y="0.5"/>
+								</Anchor>
+								<Anchor point="BOTTOMRIGHT">
+									<Offset x="0" y="0.5"/>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Frame name="$parentBackground">
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="-3" y="3"/>
+							</Anchor>
+							<Anchor point="BOTTOMRIGHT">
+								<Offset x="3" y="-3"/>
+							</Anchor>
+						</Anchors>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="12"/>
+							</EdgeSize>
+							<BackgroundInsets>
+								<AbsInset left="3" right="3" top="3" bottom="3"/>
+							</BackgroundInsets>
+						</Backdrop>
+						<Scripts>
+							<OnLoad>
+								self:SetBackdropColor(0, 0, 0, 0.8)
+								self:SetBackdropBorderColor(0.8,0.8,0.8,0)
+								self:SetFrameLevel(0)
+							</OnLoad>
+						</Scripts>
+					</Frame>
+					<Frame name="$parentBorder">
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="-3" y="3"/>
+							</Anchor>
+							<Anchor point="BOTTOMRIGHT">
+								<Offset x="3" y="-3"/>
+							</Anchor>
+						</Anchors>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="12"/>
+							</EdgeSize>
+							<BackgroundInsets>
+								<AbsInset left="3" right="3" top="3" bottom="3"/>
+							</BackgroundInsets>
+						</Backdrop>
+						<Scripts>
+							<OnLoad>
+								self:SetBackdropColor(0, 0, 0, 0)
+								self:SetBackdropBorderColor(0.8,0.8,0.8,0)
+								self:SetFrameLevel(0)
+							</OnLoad>
+						</Scripts>
+					</Frame>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetFrameLevel(1)
+					</OnLoad>
+				</Scripts>
+				<BarTexture file="Interface\TargetingFrame\UI-StatusBar"/>
+				<BarColor r="0.75" g="0" b="0.75"/>
+			</StatusBar>
+			<Frame name="$parentDropDown" inherits="UIDropDownMenuTemplate" id="1" hidden="true">
+				<Size x="10" y="10"/>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parent" relativePoint="RIGHT">
+						<Offset x="3" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						TrinityXP.RepDropDown_OnLoad(self)
+					</OnLoad>
+				</Scripts>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnEvent>
+				TrinityXP.Bar_OnEvent(self)
+			</OnEvent>
+			<OnEnter>
+				TrinityXP.Bar_OnEnter(self)
+			</OnEnter>
+			<OnLeave>
+				TrinityXP.Bar_OnLeave(self)
+			</OnLeave>
+			<OnClick>
+				TrinityXP.Bar_OnClick(self)
+			</OnClick>
+		</Scripts>
+	</Button>
+
+	<Frame name="TrinityXPOptions" enableMouse="true" movable="true" toplevel="false" hidden="true" parent="Trinity2Options">
+		<Size>
+			<AbsDimension x="502" y="361"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT" relativeTo="Trinity2Options" relativePoint="TOPLEFT">
+				<Offset>
+					<AbsDimension x="12" y="-45"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\TutorialFrame\TutorialFrameBackground" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="16"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="16"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="3" right="5" top="3" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentTitle" inherits="GameFontNormal" nonspacewrap="true" text="">
+					<Anchors>
+						<Anchor point="TOP">
+							<Offset>
+								<AbsDimension x="0" y="-13"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("PLAYER_LOGIN");
+				self:SetFrameLevel(1)
+			</OnLoad>
+			<OnEvent>
+				local index = getn(Trinity2.RegisteredAddons)+1
+				self.index = index
+				Trinity2.RegisteredAddons[index] = { "Trinity XP/Rep Bars", "TrinityXPOptions", nil, nil, "" }
+				--Trinity2.RegisterAddon(index)
+			</OnEvent>
+		</Scripts>
+	</Frame>
+
+	<Frame name="TrinityXPLoader" frameStrata="BACKGROUND" toplevel="false" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				TrinityXP.Loader_OnLoad(self);
+			</OnLoad>
+			<OnEvent>
+				TrinityXP.Loader_OnEvent(self, event);
+			</OnEvent>
+		</Scripts>
+	</Frame>
+</Ui>

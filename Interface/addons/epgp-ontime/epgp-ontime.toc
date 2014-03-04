@@ -1,0 +1,19 @@
+## Interface: 40300
+## Title: EPGP OnTime Awards
+## Notes: Provides on-time awards to those who accepted the calendar invite, and punishes those who confirmed and are late/AWOL
+## Author: jcjones
+## RequiredDeps: EPGP
+## DefaultState: Enabled
+## X-Category: Guild
+## Version: v1.0
+## SavedVariablesPerCharacter: epep-ontime
+## X-Curse-Packaged-Version: 0.3
+## X-Curse-Project-Name: epgp-ontime
+## X-Curse-Project-ID: epgp-ontime
+## X-Curse-Repository-ID: wow/epgp-ontime/mainline
+
+# Libraries
+embeds.xml
+
+# Core
+epgp-ontime.lua

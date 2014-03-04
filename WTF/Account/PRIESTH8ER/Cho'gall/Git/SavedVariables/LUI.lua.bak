@@ -1,0 +1,10 @@
+
+LUICONFIG = {
+	["IsConfigured"] = true,
+	["Versions"] = {
+		["lui"] = 3403,
+		["omen"] = 3300,
+		["bartender"] = 3300,
+		["grid"] = 3300,
+	},
+}

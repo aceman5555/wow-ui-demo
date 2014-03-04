@@ -1,0 +1,11 @@
+<Bindings>
+	<Binding name="TRINITY2_CONFIG" header="TRINITY2">
+		Trinity2.ToggleConfigMode()
+	</Binding>
+	<Binding name="TRINITY2_MAINMENU" header="TRINITY2">
+		Trinity2.ToggleMainMenu()
+	</Binding>	
+	<Binding name="TRINITY2_DOCKCONFIG" header="TRINITY2">
+		Trinity2.ToggleDockFrameOptions()
+	</Binding>		
+</Bindings>

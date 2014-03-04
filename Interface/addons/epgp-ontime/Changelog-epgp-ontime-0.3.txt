@@ -1,0 +1,12 @@
+tag 0.3
+e26015478eb18993fbedc2c9056ca7acd36032f6
+James "J.C." Jones <james.jones@cummingsconsultinginc.com>
+2011-08-25 19:06:31 -0700
+
+Tagging as 0.3
+
+
+--------------------
+
+James "J.C." Jones:
+	- Fix algorithm for alts

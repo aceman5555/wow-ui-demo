@@ -1,0 +1,45 @@
+------------------------------------------------------------------------
+r62 | zensunim | 2014-02-19 09:39:30 +0000 (Wed, 19 Feb 2014) | 7 lines
+Changed paths:
+   A /tags/4.29 (from /trunk:61)
+
+2.49
+* Updated for patch 5.4.7, resolved communication issues
+* Raised default trivial % from .5% HP (200+ ticks to death) to 2% of HP (50+ ticks to death)
+* Trivial slider increments in .5% intervals with .5% as the minimum
+* /gtfo options now opens directly to the options frame
+* Added Pandaria spells for Pandaria (world)
+
+------------------------------------------------------------------------
+r61 | zensunim | 2014-02-19 09:38:55 +0000 (Wed, 19 Feb 2014) | 1 line
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Fail_MP.lua
+
+Preparing for 4.29 release
+------------------------------------------------------------------------
+r59 | zensunim | 2014-02-16 20:14:15 +0000 (Sun, 16 Feb 2014) | 1 line
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Fail_MP.lua
+   M /trunk/GTFO_Spells_MP.lua
+   M /trunk/GTFO_Spells_Special.lua
+
+Preparing for 4.28 release
+------------------------------------------------------------------------
+r58 | zensunim | 2014-01-23 01:32:05 +0000 (Thu, 23 Jan 2014) | 1 line
+Changed paths:
+   M /trunk/GTFO_Spells_MP.lua
+
+Update to Heroic SoO
+------------------------------------------------------------------------
+r56 | zensunim | 2014-01-19 17:35:11 +0000 (Sun, 19 Jan 2014) | 1 line
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Spells_MP.lua
+
+Prepping for 4.27.2
+------------------------------------------------------------------------

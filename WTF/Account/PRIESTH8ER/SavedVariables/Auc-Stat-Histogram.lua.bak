@@ -1,0 +1,16 @@
+
+AucAdvancedStatHistogramData = {
+	["version"] = 2,
+	["Azuremyst-Horde"] = {
+		[52976] = {
+			[0] = "66;67;1000;2;1,1",
+		},
+		[52980] = {
+			[0] = "85;85;47500;12;2",
+		},
+		[56516] = {
+			[0] = "96;96;3150;21;17",
+		},
+	},
+}
+AucAdvancedStatHistogramTotalData = ""

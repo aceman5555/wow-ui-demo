@@ -1,0 +1,18 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+<Script file="LootCouncilBot.lua" />
+<Frame name="LootCouncilBot" parent="UIParent">
+	<Scripts>
+		<OnLoad>
+			LootCouncilBot_OnLoad();
+		</OnLoad>
+		<OnUpdate>
+			LootCouncilBot_OnUpdate(arg1);
+		</OnUpdate>
+		<OnEvent>
+			LootCouncilBot_OnEvent(event);
+		</OnEvent>
+	</Scripts>
+</Frame>
+</Ui>

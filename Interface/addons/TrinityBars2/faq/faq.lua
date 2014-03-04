@@ -1,0 +1,6 @@
+-- For a human-readable version, open TrinityBars2FAQ.htm =)
+
+TrinityBars2FAQ = {
+	--["1. How do I configure these bars?"] = "In order to configure the bars, you must be in configuration mode. On a fresh install, configuration mode is on by default. However, to enter and leave config mode, you have three options.\n\n\t1: Shift-click the main minimap button\n\t2: Click on the top submenu of minimap buttons.\n\t3: or type /trinity config in the chat box.\n\nOnce in config mode, these special frames called docks will appear over Trinity Bars buttons and status bars. The docks are reference frames that tell the buttons where to place themselves and stores info on how the associated buttons should behave. The docks are a shaded gray color until moused-over, then they will turn a blue color.\n\nTo adjust the properties of buttons associated with a dock, simply left-click on the shaded area of the dock and a set of configuration options (Option Set One) will appear at the bottom, left and right sides of the dock. A right-click on the dock will display a second set of options (Option Set Two) on the top and bottom sides of the dock.",
+
+}

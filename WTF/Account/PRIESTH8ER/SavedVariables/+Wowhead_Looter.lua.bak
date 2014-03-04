@@ -1,0 +1,3479 @@
+
+wlVersion = 50007
+wlUploaded = 3
+wlStats = "98^2^1^11^0^1^enUS^16357"
+wlExportData = "who=us.logon.worldofwarcraft.com,Cho'gall,Gitt,4&glyphs=927,763,491,764,496,500,493,492,504,501,485,489,499,932,507,495,502,767,766,505,487,508,1020,484,490,991,486,765,488,483,851&projects=89893,89894,89895,89896,88262,88908,90423,93441,90458,89693,88929,88930,89696,93443:1,1,1,1,1,1,1,1,1,1,1,1,1,1&timePlayedTotal=15685902;"
+wlRealmList = {
+	["us.logon.worldofwarcraft.com"] = 1,
+}
+wlAuction = {
+}
+wlEvent = {
+	["Gitt^Cho'gall"] = {
+		{
+			{
+				["date"] = "12^20^2012",
+				["what"] = "login",
+			}, -- [1]
+			{
+				["flags"] = 2048,
+				["dd"] = 6,
+				["action"] = "Killing",
+				["drop"] = {
+					"82244^1", -- [1]
+				},
+				["id"] = 60576,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
+				["what"] = "loot",
+			}, -- [2]
+			{
+				["flags"] = 2048,
+				["isAoeLoot"] = 1,
+				["action"] = "Killing",
+				["drop"] = {
+					"82247^1", -- [1]
+				},
+				["id"] = 60576,
+				["kind"] = "npc",
+				["dd"] = 6,
+				["what"] = "loot",
+			}, -- [3]
+			{
+				["flags"] = 2048,
+				["isAoeLoot"] = 1,
+				["action"] = "Killing",
+				["drop"] = {
+					"81194^2", -- [1]
+				},
+				["id"] = 60576,
+				["kind"] = "npc",
+				["dd"] = 6,
+				["what"] = "loot",
+			}, -- [4]
+			{
+				["flags"] = 2048,
+				["isAoeLoot"] = 1,
+				["action"] = "Killing",
+				["drop"] = {
+					"82277^1", -- [1]
+				},
+				["id"] = 60576,
+				["kind"] = "npc",
+				["dd"] = 6,
+				["what"] = "loot",
+			}, -- [5]
+			{
+				["flags"] = 2048,
+				["dd"] = 6,
+				["action"] = "Killing",
+				["drop"] = {
+					"81194^3", -- [1]
+				},
+				["id"] = 60576,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
+				["what"] = "loot",
+			}, -- [6]
+			{
+				["flags"] = 2048,
+				["isAoeLoot"] = 1,
+				["action"] = "Killing",
+				["drop"] = {
+					"81194^3", -- [1]
+				},
+				["id"] = 60576,
+				["kind"] = "npc",
+				["dd"] = 6,
+				["what"] = "loot",
+			}, -- [7]
+			{
+				["flags"] = 2048,
+				["dd"] = 6,
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60051,
+				["isAoeLoot"] = 0,
+				["drop"] = {
+					"coin^7889557", -- [1]
+					"87021^1", -- [2]
+					"87060^1", -- [3]
+					"87015^1", -- [4]
+					"87012^1", -- [5]
+					"89930^1", -- [6]
+					"89931^1", -- [7]
+				},
+				["kind"] = "npc",
+			}, -- [8]
+			{
+				["flags"] = 2048,
+				["action"] = "Killing",
+				["what"] = "reward",
+				["id"] = 60009,
+				["kind"] = "npc",
+				["dd"] = 6,
+				["drop"] = {
+					"currency^40^396", -- [1]
+				},
+			}, -- [9]
+			{
+				["flags"] = 2048,
+				["dd"] = 6,
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60402,
+				["isAoeLoot"] = 0,
+				["drop"] = {
+					"coin^18006", -- [1]
+				},
+				["kind"] = "npc",
+			}, -- [10]
+			{
+				["flags"] = 2048,
+				["action"] = "Killing",
+				["what"] = "reward",
+				["id"] = 60143,
+				["kind"] = "npc",
+				["dd"] = 6,
+				["drop"] = {
+					"currency^40^396", -- [1]
+				},
+			}, -- [11]
+			{
+				["flags"] = 2048,
+				["dd"] = 6,
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60143,
+				["isAoeLoot"] = 0,
+				["drop"] = {
+					"coin^7823383", -- [1]
+					"87035^2", -- [2]
+					"87043^1", -- [3]
+					"86382^1", -- [4]
+					"87037^2", -- [5]
+					"87036^1", -- [6]
+				},
+				["kind"] = "npc",
+			}, -- [12]
+			{
+				["flags"] = 2048,
+				["dd"] = 4,
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 64947,
+				["isAoeLoot"] = 0,
+				["drop"] = {
+					"coin^19135", -- [1]
+				},
+				["kind"] = "npc",
+			}, -- [13]
+		}, -- [1]
+		{
+			{
+				["date"] = "12^20^2012",
+				["what"] = "login",
+			}, -- [1]
+			{
+				["flags"] = 2048,
+				["action"] = "Killing",
+				["what"] = "reward",
+				["id"] = 60400,
+				["kind"] = "npc",
+				["drop"] = {
+					"currency^40^396", -- [1]
+				},
+				["dd"] = 4,
+			}, -- [2]
+			{
+				["targetkind"] = "npc",
+				["targetid"] = 43929,
+				["action"] = "turn-in",
+				["what"] = "quest",
+				["progress"] = "",
+				["questid"] = 31752,
+				["targetname"] = "Blingtron 4000",
+				["complete"] = "I am pleased to offer this gift to you, $r $c.  According to my calibrations, it will invoke feelings of enjoyment and gratitude.\n\nHave a nice day.",
+			}, -- [3]
+			{
+				["flags"] = 2048,
+				["action"] = "Killing",
+				["what"] = "reward",
+				["id"] = 63191,
+				["kind"] = "npc",
+				["drop"] = {
+					"currency^40^396", -- [1]
+				},
+				["dd"] = 6,
+			}, -- [4]
+			{
+				["flags"] = 2048,
+				["action"] = "Killing",
+				["what"] = "reward",
+				["id"] = 62397,
+				["kind"] = "npc",
+				["drop"] = {
+					"currency^40^396", -- [1]
+				},
+				["dd"] = 4,
+			}, -- [5]
+			{
+				["flags"] = 2048,
+				["action"] = "Killing",
+				["what"] = "reward",
+				["id"] = 62511,
+				["kind"] = "npc",
+				["drop"] = {
+					"currency^40^396", -- [1]
+				},
+				["dd"] = 4,
+			}, -- [6]
+			{
+				["flags"] = 2048,
+				["isAoeLoot"] = 0,
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 64453,
+				["kind"] = "npc",
+				["drop"] = {
+					"coin^11902", -- [1]
+				},
+				["dd"] = 4,
+			}, -- [7]
+		}, -- [2]
+	},
+}
+wlItemSuffix = {
+	[82244] = {
+		[-5] = 1,
+		["sF"] = 926,
+	},
+	[82277] = {
+		[-136] = 1,
+		["sF"] = 1246,
+	},
+	[82247] = {
+		[-5] = 1,
+		["sF"] = 926,
+	},
+}
+wlObject = {
+	["Opening^Mogu'shan Vaults^Ancient Control Console"] = {
+		["4^Mogu'shan Vaults"] = {
+			{
+				["y"] = 666,
+				["x"] = 691,
+				["dl"] = 3,
+				["n"] = 1,
+			}, -- [1]
+			["n"] = 1,
+		},
+	},
+	["Opening^Mogu'shan Vaults^Nullification Barrier"] = {
+		["6^Mogu'shan Vaults"] = {
+			{
+				["y"] = 363,
+				["x"] = 329,
+				["dl"] = 1,
+				["n"] = 1,
+			}, -- [1]
+			{
+				["y"] = 373,
+				["x"] = 336,
+				["dl"] = 1,
+				["n"] = 1,
+			}, -- [2]
+			["n"] = 2,
+		},
+	},
+}
+wlProfile = {
+	["Gitt^Cho'gall"] = {
+		["race"] = "Pandaren",
+		["faction"] = "Horde",
+		["class"] = "WARRIOR",
+		["sex"] = 2,
+		["n"] = 2,
+	},
+}
+wlUnit = {
+	[60410] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912408432888,
+		},
+		["sex"] = {
+			[2] = 17,
+		},
+		["quote"] = {
+			["yell"] = {
+				["Existence ends... I become nothing..."] = "",
+				["Energy Vortex ramping down."] = "",
+				["Countermeasures successful."] = "",
+				["What was is no longer."] = "",
+				["Energy Conduits active, draw stable."] = "",
+				["Conduits offline."] = "",
+				["Let the energies consume you!"] = "",
+				["Redirecting power."] = "",
+				["Approach! Feel the power of the titans!"] = "",
+				["Drawing from reserve power."] = "",
+				["The spark of life fades."] = "",
+				["Entering defensive mode.  Disabling output failsafes."] = "",
+			},
+		},
+		["spec"] = {
+			[4] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 883177408,
+					["powermax"] = 0,
+				},
+			},
+			[6] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 1018816000,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[127362] = 3,
+					[117960] = 28,
+					[119387] = 1,
+					[119358] = 10,
+					[119360] = 10,
+					[118310] = 2,
+					[117204] = 2,
+					[117954] = 7,
+					[116997] = 21,
+					[124967] = 4,
+					[116994] = 4,
+				},
+			},
+		},
+		["class"] = "WARRIOR",
+	},
+	[63589] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356075226738,
+		},
+		["sex"] = {
+			31, -- [1]
+		},
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 761,
+								["x"] = 318,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [1]
+							{
+								["y"] = 772,
+								["x"] = 309,
+								["dl"] = 2,
+								["n"] = 5,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 25295520,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[124077] = 24,
+					[125422] = 56,
+					[125390] = 31,
+					[125886] = 57,
+				},
+			},
+		},
+		["class"] = {
+		},
+	},
+	[63593] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356063238998,
+		},
+		["sex"] = {
+			[2] = 11,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 126,
+								["x"] = 642,
+								["dl"] = 2,
+								["n"] = 6,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 18971640,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[124085] = 17,
+				},
+			},
+		},
+	},
+	[66992] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912406995741,
+		},
+		["sex"] = {
+			3, -- [1]
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 287,
+								["x"] = 820,
+								["dl"] = 2,
+								["n"] = 5,
+							}, -- [1]
+							{
+								["y"] = 282,
+								["x"] = 812,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 758866,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[116278] = 3,
+				},
+			},
+		},
+	},
+	[62847] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356075093434,
+		},
+		["sex"] = {
+			10, -- [1]
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[4] = {
+				[90] = {
+					["powertype"] = 0,
+					["health"] = 60,
+					["powermax"] = 60,
+				},
+				["spell"] = {
+					[123255] = 44,
+					[123184] = 79,
+					[123504] = 20,
+				},
+			},
+		},
+	},
+	[60184] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912406993872,
+		},
+		["sex"] = {
+			[2] = 4,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 314,
+								["x"] = 802,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [1]
+							{
+								["y"] = 305,
+								["x"] = 806,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [2]
+							{
+								["y"] = 296,
+								["x"] = 811,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [3]
+							{
+								["y"] = 287,
+								["x"] = 815,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [4]
+							["n"] = 4,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 674548,
+					["powermax"] = 22012,
+				},
+				["spell"] = {
+					[122118] = 125,
+				},
+			},
+		},
+	},
+	[64383] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[124748] = 18,
+					[125826] = 12,
+				},
+			},
+		},
+	},
+	[58672] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[127349] = 4,
+				},
+			},
+		},
+	},
+	[60708] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912407797320,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["yell"] = {
+				["Enemies... everywhere! Kill! Kill them all!"] = "",
+				["I... I don't want to die!"] = "",
+				["Slaughter yourselves for my amusement!"] = "",
+			},
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[4] = {
+				[-1] = {
+					["powertype"] = 3,
+					["health"] = 130841104,
+					["powermax"] = 100,
+				},
+				["spell"] = {
+					[117708] = 52,
+					[117737] = 3,
+					[117833] = 6,
+					[117756] = 1,
+				},
+			},
+		},
+	},
+	[61347] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912407429080,
+		},
+		["sex"] = {
+			[2] = 4,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 708,
+								["x"] = 364,
+								["dl"] = 2,
+								["n"] = 7,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 8431840,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[119629] = 2,
+				},
+			},
+		},
+	},
+	[62002] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[120676] = 6,
+				},
+			},
+		},
+	},
+	[64038] = {
+		["isPvp"] = true,
+		["reaction"] = {
+			["90^Horde^5"] = 912403513410,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Shrine of Two Moons"] = {
+							{
+								["y"] = 602,
+								["x"] = 708,
+								["dl"] = 1,
+								["n"] = 693,
+							}, -- [1]
+							{
+								["y"] = 593,
+								["x"] = 708,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [2]
+							{
+								["y"] = 589,
+								["x"] = 702,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [3]
+							["n"] = 3,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[64947] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912408084793,
+		},
+		["sex"] = {
+			[2] = 5,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 527,
+								["x"] = 299,
+								["dl"] = 3,
+								["n"] = 3,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 25295520,
+					["powermax"] = 10312,
+				},
+				["spell"] = {
+					[126955] = 7,
+					[126958] = 14,
+					[126970] = 9,
+				},
+			},
+		},
+	},
+	[60768] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[116550] = 11,
+				},
+			},
+		},
+	},
+	[60776] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356061405965,
+		},
+		["sex"] = {
+			3, -- [1]
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[90] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 605,
+								["x"] = 216,
+								["dl"] = 3,
+								["n"] = 2,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 6106086,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[116598] = 24,
+					[116989] = 12,
+				},
+			},
+		},
+	},
+	[60399] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[132425] = 1,
+				},
+			},
+		},
+	},
+	[61423] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[119521] = 1,
+				},
+			},
+		},
+	},
+	[61427] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[119553] = 1,
+					[119554] = 1,
+					[119552] = 1,
+				},
+			},
+		},
+	},
+	[63594] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356073668499,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 4215920,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[125054] = 5,
+				},
+			},
+		},
+	},
+	[59915] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912404864911,
+		},
+		["sex"] = {
+			[2] = 8,
+		},
+		["spec"] = {
+			[6] = {
+				[-1] = {
+					["powertype"] = 3,
+					["health"] = 769345664,
+					["powermax"] = 100,
+				},
+				["spell"] = {
+					[115745] = 3,
+					[125206] = 89,
+					[130395] = 72,
+					[115828] = 5,
+					[116038] = 212,
+					[115843] = 4,
+				},
+			},
+		},
+		["class"] = "ROGUE",
+	},
+	[43929] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^5"] = 1356064117753,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[134847] = 2,
+				},
+			},
+			[6] = {
+				[90] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 218,
+								["x"] = 659,
+								["dl"] = 2,
+								["n"] = 28,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 12160,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[134847] = 4,
+				},
+			},
+		},
+	},
+	[60701] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912407711023,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["yell"] = {
+				["The darkness comes for you, and with it, death."] = "",
+			},
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[4] = {
+				[-1] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 515,
+								["x"] = 263,
+								["dl"] = 2,
+								["n"] = 5,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 130841104,
+					["powermax"] = 10514,
+				},
+				["spell"] = {
+					[117685] = 6,
+					[117506] = 3,
+					[117628] = 14,
+				},
+			},
+		},
+	},
+	[58673] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[127434] = 4,
+					[127457] = 2,
+				},
+			},
+		},
+	},
+	[60709] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912407554449,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["yell"] = {
+				["Soldiers! Crush their flank!"] = "",
+				["I will crush you, in body AND spirit."] = "",
+				["Flanking attack! March into battle!"] = "",
+			},
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[117920] = 4,
+				},
+			},
+			[4] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 130841104,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[117948] = 1,
+					[117910] = 5,
+				},
+			},
+		},
+	},
+	[61348] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^5"] = 912407467751,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["yell"] = {
+				["A secret passage has opened beneath the platform, this way!"] = "",
+			},
+			["say"] = {
+				["Oh dear...this could get messy. I will observe from a safer distance!"] = "",
+				["These Jinyu have been locked in an eternity of servitude."] = "",
+				["This room pulses with energy, but feels unlike any we have seen so far."] = "",
+				["Once, the mogu enslaved all of the races of Pandaria, and bent them to their nefarious will."] = "",
+				["Magnificent! It talks! This seems beyond what we thought the mogu were capable of."] = "",
+				["Fascinating, I have never heard tales of anything like this. The mogu hide their secrets well."] = "",
+				["I hear a faint humming. It is coming from this direction!"] = "",
+				["Look at the dust along the floor, these dark halls have not seen footfalls for many centuries."] = "",
+				["This seems to be a terminal controlling the device. Let's see here..."] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 689,
+								["x"] = 243,
+								["dl"] = 2,
+								["n"] = 247,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 25295520,
+					["powermax"] = 0,
+				},
+			},
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 689,
+								["x"] = 243,
+								["dl"] = 2,
+								["n"] = 86,
+							}, -- [1]
+							{
+								["y"] = 682,
+								["x"] = 236,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [2]
+							{
+								["y"] = 672,
+								["x"] = 236,
+								["dl"] = 2,
+								["n"] = 23,
+							}, -- [3]
+							{
+								["y"] = 661,
+								["x"] = 237,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [4]
+							{
+								["y"] = 654,
+								["x"] = 239,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [5]
+							{
+								["y"] = 646,
+								["x"] = 239,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [6]
+							{
+								["y"] = 640,
+								["x"] = 236,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [7]
+							["n"] = 7,
+						},
+					},
+				},
+			},
+		},
+	},
+	[64916] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356073414101,
+		},
+		["sex"] = {
+			[2] = 4,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 18971640,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[126928] = 12,
+				},
+			},
+		},
+	},
+	[62511] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356073836315,
+		},
+		["sex"] = {
+			[2] = 5,
+		},
+		["quote"] = {
+			["yell"] = {
+				["What have you done? No, this will not be how my work ends. I will not allow it!"] = "",
+				["Forgive me, Empress...."] = "",
+				["Feel fortunate to receive this gift."] = "",
+				["You must be powerful, to have come this far. Yes, yes... you will make worthy test subjects."] = "",
+				["From death comes life, and from life, death...."] = "",
+				["Watch your step!"] = "",
+				["Is that all?"] = "",
+				["You must think yourselves mighty. How little you know. Behold now, my greatest creation!"] = "",
+			},
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[4] = {
+				[-1] = {
+					["powertype"] = 0,
+					["health"] = 654205504,
+					["powermax"] = 2628500,
+				},
+				["spell"] = {
+					[122370] = 13,
+					[122556] = 2,
+					[122784] = 26,
+					[121994] = 14,
+					[121949] = 20,
+					[122547] = 2,
+				},
+			},
+		},
+	},
+	[62408] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356072674731,
+		},
+		["sex"] = {
+			[2] = 10,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 344,
+								["x"] = 667,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 164420880,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[122149] = 48,
+					[122193] = 4,
+				},
+			},
+		},
+	},
+	[64063] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912408129996,
+		},
+		["sex"] = {
+			[2] = 3,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["powertype"] = 0,
+					["health"] = 17074476,
+					["powermax"] = 10312,
+				},
+				["spell"] = {
+					[126973] = 47,
+				},
+			},
+		},
+	},
+	[63942] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[125451] = 4,
+				},
+			},
+		},
+	},
+	[60396] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356062321220,
+		},
+		["sex"] = {
+			[2] = 11,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 888,
+								["x"] = 708,
+								["dl"] = 3,
+								["n"] = 3,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 3372736,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[116525] = 56,
+				},
+			},
+		},
+	},
+	[60781] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912406201913,
+		},
+		["sex"] = {
+			[2] = 1,
+			[3] = 1,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["powertype"] = 0,
+					["health"] = 4047283,
+					["powermax"] = 33,
+				},
+			},
+		},
+	},
+	[60277] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[116278] = 4,
+				},
+			},
+		},
+	},
+	[60281] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[116374] = 5,
+				},
+			},
+		},
+	},
+	[60793] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356061252297,
+		},
+		["sex"] = {
+			6, -- [1]
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 528,
+								["x"] = 244,
+								["dl"] = 3,
+								["n"] = 9,
+							}, -- [1]
+							{
+								["y"] = 517,
+								["x"] = 242,
+								["dl"] = 3,
+								["n"] = 2,
+							}, -- [2]
+							{
+								["y"] = 522,
+								["x"] = 248,
+								["dl"] = 3,
+								["n"] = 1,
+							}, -- [3]
+							["n"] = 3,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 12331566,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[117911] = 12,
+					[117870] = 7,
+					[129711] = 6,
+					[132222] = 18,
+					[117945] = 9,
+				},
+			},
+		},
+	},
+	[63591] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356075227239,
+		},
+		["sex"] = {
+			14, -- [1]
+		},
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 762,
+								["x"] = 315,
+								["dl"] = 2,
+								["n"] = 10,
+							}, -- [1]
+							{
+								["y"] = 767,
+								["x"] = 309,
+								["dl"] = 2,
+								["n"] = 6,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 126477600,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[124821] = 8,
+					[125422] = 21,
+					[124777] = 700,
+				},
+			},
+		},
+		["class"] = {
+		},
+	},
+	[58769] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[126126] = 1,
+				},
+			},
+		},
+	},
+	[60043] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912404863274,
+		},
+		["sex"] = {
+			[2] = 8,
+		},
+		["class"] = "ROGUE",
+		["spec"] = {
+			[6] = {
+				[-1] = {
+					["powertype"] = 3,
+					["health"] = 769345664,
+					["powermax"] = 100,
+				},
+				["spell"] = {
+					[115745] = 6,
+					[116008] = 261,
+					[115827] = 7,
+					[116223] = 42,
+					[115842] = 5,
+					[125206] = 84,
+				},
+			},
+		},
+	},
+	[60047] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912404866248,
+		},
+		["sex"] = {
+			[2] = 4,
+		},
+		["class"] = "ROGUE",
+		["spec"] = {
+			[6] = {
+				[-1] = {
+					["powertype"] = 3,
+					["health"] = 769345664,
+					["powermax"] = 100,
+				},
+				["spell"] = {
+					[130774] = 972,
+					[125206] = 77,
+					[115844] = 2,
+					[115829] = 6,
+					[115745] = 4,
+					[116060] = 54,
+				},
+			},
+		},
+	},
+	[60051] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912404862021,
+		},
+		["sex"] = {
+			[2] = 4,
+		},
+		["class"] = "ROGUE",
+		["spec"] = {
+			[6] = {
+				[-1] = {
+					["powertype"] = 3,
+					["health"] = 769345664,
+					["powermax"] = 100,
+				},
+				["spell"] = {
+					[115745] = 11,
+					[125206] = 82,
+					[115771] = 12,
+					[115861] = 31,
+					[115840] = 1,
+				},
+			},
+		},
+	},
+	[64351] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[125822] = 12,
+				},
+			},
+		},
+	},
+	[62837] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356074922627,
+		},
+		["sex"] = {
+			[3] = 23,
+		},
+		["quote"] = {
+			["yell"] = {
+				["You will serve ME now!"] = "",
+				["I will dispose of the outsiders."] = "",
+				["Taste defeat, stranger!"] = "",
+				["Power... I must have more power! Guards! Protect your empress!"] = "",
+				["Breathe no longer!"] = "",
+				["Such is the fate of those who question authority."] = "",
+				["Death to all who dare challenge my empire!"] = "",
+				["Sing... yes! Sing in agony!"] = "",
+			},
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[4] = {
+				[-1] = {
+					["powertype"] = 0,
+					["health"] = 610591808,
+					["powermax"] = 150,
+				},
+				["spell"] = {
+					[123707] = 104,
+					[123788] = 50,
+					[124849] = 12,
+					[124862] = 76,
+					[125464] = 20,
+					[123735] = 98,
+					[124845] = 30,
+				},
+			},
+		},
+	},
+	[64458] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356074481571,
+		},
+		["sex"] = {
+			5, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 741,
+								["x"] = 338,
+								["dl"] = 2,
+								["n"] = 7,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 31619400,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[125907] = 27,
+					[125422] = 5,
+					[125900] = 12,
+					[125902] = 39,
+				},
+			},
+		},
+	},
+	[63570] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356073618551,
+		},
+		["sex"] = {
+			11, -- [1]
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["powertype"] = 0,
+					["health"] = 12647760,
+					["powermax"] = 103120,
+				},
+				["spell"] = {
+					[125426] = 12,
+					[125432] = 34,
+				},
+			},
+		},
+	},
+	[61341] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912407352405,
+		},
+		["sex"] = {
+			[2] = 2,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 553,
+								["x"] = 310,
+								["dl"] = 2,
+								["n"] = 4,
+							}, -- [1]
+							{
+								["y"] = 542,
+								["x"] = 312,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 12647760,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[119514] = 4,
+				},
+			},
+		},
+	},
+	[60710] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912407622571,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["yell"] = {
+				["There is nothing I cannot take!"] = "",
+				["All that is yours? Mine!"] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 130841104,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[118048] = 1,
+					[118094] = 3,
+					[118105] = 3,
+					[118106] = 3,
+					[118047] = 5,
+					[118049] = 5,
+				},
+			},
+		},
+	},
+	[64454] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356074479065,
+		},
+		["sex"] = {
+			10, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 25295520,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[125865] = 134,
+					[125422] = 4,
+					[125876] = 10,
+					[125871] = 34,
+				},
+			},
+		},
+	},
+	[62711] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356074086770,
+		},
+		["sex"] = {
+			3, -- [1]
+		},
+		["quote"] = {
+			["yell"] = {
+				["Fa... ther...."] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[-1] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 768,
+								["x"] = 480,
+								["dl"] = 2,
+								["n"] = 4,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 196261648,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[122402] = 4,
+					[122413] = 6,
+					[122540] = 2,
+					[122408] = 9,
+					[122415] = 6,
+				},
+			},
+		},
+	},
+	[62691] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[122348] = 56,
+					[122532] = 149,
+				},
+			},
+		},
+	},
+	[64917] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356073418161,
+		},
+		["sex"] = {
+			[2] = 5,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 529,
+								["x"] = 670,
+								["dl"] = 2,
+								["n"] = 7,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 12647760,
+					["powermax"] = 154680,
+				},
+				["spell"] = {
+					[126937] = 4,
+				},
+			},
+		},
+	},
+	[64132] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356073684034,
+		},
+		["sex"] = {
+			4, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[90] = {
+					["powertype"] = 1,
+					["health"] = 5909115,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[63597] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[125054] = 2,
+				},
+			},
+		},
+	},
+	[63568] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356073642105,
+		},
+		["sex"] = {
+			6, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 25295520,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[125081] = 189,
+					[125069] = 7,
+				},
+			},
+		},
+	},
+	[61250] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912407316473,
+		},
+		["sex"] = {
+			[2] = 5,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 623,
+								["x"] = 418,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 8431840,
+					["powermax"] = 10312,
+				},
+				["spell"] = {
+					[119365] = 23,
+				},
+			},
+		},
+	},
+	[62397] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356072671724,
+		},
+		["sex"] = {
+			[2] = 5,
+		},
+		["quote"] = {
+			["yell"] = {
+				["The wings of the empress cannot fail!"] = "",
+				["Empress... I have... failed you..."] = "",
+				["The skies belong to the Empress!"] = "",
+				["You fight like cowards!"] = "",
+				["My blade never misses its mark!"] = "",
+				["All of Pandaria will fall beneath the Wings of the Empress!"] = "",
+				["To die for the empress is an honor!"] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 854392384,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[122406] = 7,
+					[131813] = 22,
+					[122399] = 1,
+					[121896] = 18,
+				},
+			},
+		},
+	},
+	[61131] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912407964786,
+		},
+		["sex"] = {
+			[2] = 13,
+		},
+		["quote"] = {
+			["say"] = {
+				["Lo-kal..."] = "",
+				["Turo von Kuros!"] = "",
+				["Kalimaste!"] = "",
+			},
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 336,
+								["x"] = 690,
+								["dl"] = 3,
+								["n"] = 6,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 37943280,
+					["powermax"] = 10312,
+				},
+				["spell"] = {
+					[118552] = 78,
+					[118529] = 23,
+				},
+			},
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 638,
+								["x"] = 688,
+								["dl"] = 3,
+								["n"] = 1,
+							}, -- [1]
+							{
+								["y"] = 648,
+								["x"] = 686,
+								["dl"] = 3,
+								["n"] = 5,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 37943280,
+					["powermax"] = 10312,
+				},
+				["spell"] = {
+					[118552] = 232,
+					[118529] = 111,
+				},
+			},
+		},
+	},
+	[64183] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912404542058,
+		},
+		["sex"] = {
+			[2] = 4,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[91] = {
+					["powertype"] = 1,
+					["health"] = 7335576,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[125092] = 50,
+					[125096] = 5,
+				},
+			},
+		},
+	},
+	[58542] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[57724] = 7,
+					[80354] = 1,
+				},
+			},
+			[4] = {
+				["spell"] = {
+					[57724] = 2,
+				},
+			},
+		},
+	},
+	[60381] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912406538965,
+		},
+		["sex"] = {
+			[3] = 5,
+			[2] = 7,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 743,
+								["x"] = 776,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [1]
+							{
+								["y"] = 735,
+								["x"] = 775,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [2]
+							{
+								["y"] = 724,
+								["x"] = 777,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [3]
+							{
+								["y"] = 423,
+								["x"] = 775,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [4]
+							{
+								["y"] = 408,
+								["x"] = 776,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [5]
+							{
+								["y"] = 334,
+								["x"] = 623,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [6]
+							{
+								["y"] = 330,
+								["x"] = 616,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [7]
+							["n"] = 7,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 10539800,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[116595] = 76,
+					[116596] = 241,
+				},
+			},
+		},
+	},
+	[64068] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912408218982,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["powertype"] = 0,
+					["health"] = 30354624,
+					["powermax"] = 10312,
+				},
+			},
+		},
+	},
+	[64453] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356074479466,
+		},
+		["sex"] = {
+			8, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 735,
+								["x"] = 339,
+								["dl"] = 2,
+								["n"] = 7,
+							}, -- [1]
+							{
+								["y"] = 712,
+								["x"] = 309,
+								["dl"] = 2,
+								["n"] = 4,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 25295520,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[125877] = 10,
+					[125422] = 9,
+					[125888] = 11,
+				},
+			},
+		},
+	},
+	[60266] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[117723] = 9,
+				},
+			},
+		},
+	},
+	[60397] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356062340163,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 854,
+								["x"] = 731,
+								["dl"] = 3,
+								["n"] = 1,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 8436056,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[59384] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[117516] = 2,
+				},
+			},
+		},
+	},
+	[61421] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[117685] = 2,
+				},
+			},
+		},
+	},
+	[62452] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[122354] = 1,
+				},
+			},
+		},
+	},
+	[62405] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356072648989,
+		},
+		["sex"] = {
+			[2] = 7,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 164420880,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[122064] = 20,
+					[121876] = 10,
+				},
+			},
+		},
+	},
+	[63592] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356063201831,
+		},
+		["sex"] = {
+			[2] = 12,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[91] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 181,
+								["x"] = 633,
+								["dl"] = 2,
+								["n"] = 5,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 3667788,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[124072] = 154,
+				},
+			},
+		},
+	},
+	[60375] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912406483204,
+		},
+		["sex"] = {
+			[2] = 10,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 210,
+								["x"] = 315,
+								["dl"] = 1,
+								["n"] = 6,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 12647760,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[116606] = 4,
+					[116607] = 4,
+				},
+			},
+		},
+	},
+	[66998] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[129003] = 141,
+				},
+			},
+		},
+	},
+	[62164] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[128555] = 5,
+					[122735] = 423,
+					[122774] = 2883,
+					[122754] = 98,
+					[123495] = 117,
+				},
+			},
+		},
+	},
+	[63053] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356064166266,
+		},
+		["sex"] = {
+			57, -- [1]
+		},
+		["spec"] = {
+			[6] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 26168220,
+					["powermax"] = 0,
+				},
+			},
+		},
+		["class"] = "WARRIOR",
+	},
+	[63191] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356064123383,
+		},
+		["sex"] = {
+			81, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 872273984,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[55612] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[31365] = 2,
+				},
+			},
+		},
+	},
+	[61334] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912405649953,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[6] = {
+				[90] = {
+					["powertype"] = 0,
+					["health"] = 22060696,
+					["powermax"] = 9916,
+				},
+				["spell"] = {
+					[121224] = 11,
+					[121087] = 3,
+				},
+			},
+		},
+	},
+	[60576] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912404450081,
+		},
+		["sex"] = {
+			[2] = 30,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[91] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 664,
+								["x"] = 632,
+								["dl"] = 1,
+								["n"] = 3,
+							}, -- [1]
+							{
+								["y"] = 654,
+								["x"] = 630,
+								["dl"] = 1,
+								["n"] = 3,
+							}, -- [2]
+							{
+								["y"] = 603,
+								["x"] = 549,
+								["dl"] = 1,
+								["n"] = 5,
+							}, -- [3]
+							{
+								["y"] = 594,
+								["x"] = 545,
+								["dl"] = 1,
+								["n"] = 4,
+							}, -- [4]
+							{
+								["y"] = 654,
+								["x"] = 550,
+								["dl"] = 1,
+								["n"] = 5,
+							}, -- [5]
+							{
+								["y"] = 663,
+								["x"] = 546,
+								["dl"] = 1,
+								["n"] = 2,
+							}, -- [6]
+							["n"] = 6,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 5420176,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[116980] = 142,
+					[116970] = 498,
+					[116974] = 22,
+					[116982] = 12,
+					[116990] = 104,
+					[116977] = 8,
+				},
+			},
+		},
+	},
+	[59645] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[37596] = 1,
+				},
+			},
+		},
+	},
+	[64902] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356073529849,
+		},
+		["sex"] = {
+			[2] = 4,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 677,
+								["x"] = 637,
+								["dl"] = 2,
+								["n"] = 5,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 31619400,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[126912] = 43,
+					[126907] = 3,
+					[126901] = 17,
+				},
+			},
+		},
+	},
+	[60627] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[115856] = 2,
+				},
+			},
+		},
+	},
+	[61989] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912405707885,
+		},
+		["sex"] = {
+			[2] = 7,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[6] = {
+				[90] = {
+					["powertype"] = 0,
+					["health"] = 17727344,
+					["powermax"] = 9916,
+				},
+				["spell"] = {
+					[121245] = 16,
+					[121247] = 33,
+					[121229] = 28,
+				},
+			},
+		},
+	},
+	[46499] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[86678] = 1,
+				},
+			},
+		},
+	},
+	[60438] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[115856] = 24,
+				},
+			},
+		},
+	},
+	[60731] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[118303] = 6,
+					[117539] = 6,
+					[117514] = 6,
+				},
+			},
+		},
+	},
+	[61345] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912407389823,
+		},
+		["sex"] = {
+			[2] = 6,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 402,
+								["x"] = 339,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [1]
+							{
+								["y"] = 392,
+								["x"] = 340,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [2]
+							{
+								["y"] = 381,
+								["x"] = 339,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [3]
+							["n"] = 3,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 8431840,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[119524] = 31,
+				},
+			},
+		},
+	},
+	[60143] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912406851211,
+		},
+		["sex"] = {
+			[2] = 4,
+		},
+		["quote"] = {
+			["yell"] = {
+				["Bah! Bested by de likes of you! What a shame for a Zandalari Priest ta endure."] = "",
+				["OUCH! Eh-heheheh."] = "",
+				["Death be a doorway, an' time a window; I'll be back! AH-HAHAHAHAHAH!"] = "",
+				["Spirits be praised!"] = "",
+				["But it ain't no ting. Take your trinkets; you'll be needin' dem."] = "",
+				["I be goin' now; time ta find a new home for me soul."] = "",
+				["It be dyin' time, now!"] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 542990592,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[122151] = 12,
+					[116272] = 3,
+					[116174] = 10,
+					[117752] = 2,
+				},
+			},
+		},
+	},
+	[61124] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[115856] = 4,
+				},
+			},
+		},
+	},
+	[60400] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356062404995,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[4] = {
+				[-1] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 859,
+								["x"] = 708,
+								["dl"] = 3,
+								["n"] = 6,
+							}, -- [1]
+							{
+								["y"] = 859,
+								["x"] = 714,
+								["dl"] = 3,
+								["n"] = 1,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 471027968,
+					["powermax"] = 20,
+				},
+				["spell"] = {
+					[116969] = 3,
+				},
+			},
+		},
+	},
+	[62402] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356072646483,
+		},
+		["sex"] = {
+			[2] = 12,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["loc"] = {
+						["Heart of Fear"] = {
+							{
+								["y"] = 337,
+								["x"] = 668,
+								["dl"] = 2,
+								["n"] = 5,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 164420880,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[122409] = 8,
+					[123962] = 8,
+				},
+			},
+		},
+	},
+	[62618] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356061427764,
+		},
+		["sex"] = {
+			20, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[90] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 608,
+								["x"] = 242,
+								["dl"] = 3,
+								["n"] = 10,
+							}, -- [1]
+							{
+								["y"] = 614,
+								["x"] = 237,
+								["dl"] = 3,
+								["n"] = 1,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 3545469,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[117870] = 22,
+				},
+			},
+		},
+	},
+	[64061] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912408082204,
+		},
+		["sex"] = {
+			[2] = 5,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[4] = {
+				[92] = {
+					["powertype"] = 0,
+					["health"] = 25295520,
+					["powermax"] = 10312,
+				},
+				["spell"] = {
+					[126955] = 11,
+					[126958] = 22,
+					[126970] = 6,
+				},
+			},
+		},
+	},
+	[60913] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 1356061320269,
+		},
+		["sex"] = {
+			10, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[6] = {
+				[90] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 532,
+								["x"] = 198,
+								["dl"] = 3,
+								["n"] = 28,
+							}, -- [1]
+							{
+								["y"] = 543,
+								["x"] = 195,
+								["dl"] = 3,
+								["n"] = 5,
+							}, -- [2]
+							{
+								["y"] = 539,
+								["x"] = 196,
+								["dl"] = 3,
+								["n"] = 2,
+							}, -- [3]
+							{
+								["y"] = 525,
+								["x"] = 198,
+								["dl"] = 3,
+								["n"] = 4,
+							}, -- [4]
+							["n"] = 4,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 2215918,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[60386] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912406630474,
+		},
+		["sex"] = {
+			[2] = 6,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 11382984,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[78660] = 14,
+					[49863] = 11,
+					[76622] = 5,
+				},
+			},
+		},
+	},
+	[60009] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912405784243,
+		},
+		["sex"] = {
+			[2] = 5,
+		},
+		["quote"] = {
+			["yell"] = {
+				["Great soul of champions past! Bear to me your shield!"] = "",
+				["Oh great spirit! Grant me the power of the earth!"] = "",
+				["They crumble so easily."] = "",
+				["Ripe for the picking."] = "",
+				["Oh exalted one! Through me you shall melt flesh from bone!"] = "",
+				["Oh sage of the ages! Instill to me your arcane wisdom!"] = "",
+				["If they only knew... what horrors await..."] = "",
+				["Tender your souls, mortals! These are the halls of the dead!"] = "",
+			},
+		},
+		["spec"] = {
+			[6] = {
+				[-1] = {
+					["powertype"] = 0,
+					["health"] = 628037248,
+					["powermax"] = 1051400,
+				},
+				["spell"] = {
+					[118783] = 13,
+					[118530] = 36,
+					[131790] = 17,
+					[131792] = 17,
+					[131788] = 11,
+					[116942] = 11,
+					[116295] = 6,
+					[116364] = 8,
+					[116363] = 7,
+					[116018] = 4,
+					[116784] = 12,
+					[116040] = 75,
+					[116711] = 2,
+					[116417] = 20,
+				},
+			},
+		},
+		["class"] = "PALADIN",
+	},
+	[63569] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[125490] = 6,
+					[125480] = 2,
+				},
+			},
+		},
+	},
+	[60398] = {
+		["spec"] = {
+			[4] = {
+				["spell"] = {
+					[116778] = 8,
+					[117485] = 5,
+				},
+			},
+		},
+	},
+	[60402] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Horde^2"] = 912406542924,
+		},
+		["sex"] = {
+			[2] = 7,
+			[3] = 3,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[6] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 690,
+								["x"] = 775,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [1]
+							{
+								["y"] = 682,
+								["x"] = 775,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [2]
+							{
+								["y"] = 671,
+								["x"] = 775,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [3]
+							{
+								["y"] = 660,
+								["x"] = 775,
+								["dl"] = 2,
+								["n"] = 2,
+							}, -- [4]
+							{
+								["y"] = 648,
+								["x"] = 774,
+								["dl"] = 2,
+								["n"] = 3,
+							}, -- [5]
+							{
+								["y"] = 635,
+								["x"] = 773,
+								["dl"] = 2,
+								["n"] = 4,
+							}, -- [6]
+							["n"] = 6,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 6745480,
+					["powermax"] = 22012,
+				},
+				["spell"] = {
+					[15228] = 59,
+					[120670] = 52,
+					[116592] = 18,
+					[117241] = 25,
+				},
+			},
+		},
+	},
+	[65803] = {
+		["spec"] = {
+			[6] = {
+				["spell"] = {
+					[116281] = 83,
+				},
+			},
+		},
+	},
+	[35642] = {
+		["isPvp"] = false,
+		["merchant"] = {
+			["39354^0^1^15"] = -1,
+			["5956^0^1^18"] = -1,
+			["90146^0^1^20000"] = -1,
+			["63388^0^1^4500"] = -1,
+			["10647^0^1^2000"] = -1,
+			["79249^0^1^5000"] = -1,
+			["39684^0^1^9000"] = -1,
+			["4364^0^1^48"] = 4,
+			["2901^0^1^81"] = -1,
+			["4400^0^1^2000"] = -1,
+			["3466^0^1^2000"] = -1,
+			["64670^0^5^4000"] = -1,
+			["40533^0^1^50000"] = -1,
+			["4357^0^1^16"] = 4,
+			["2880^0^1^100"] = -1,
+			["4399^0^1^200"] = -1,
+		},
+		["gossip"] = {
+			["vendor"] = 10,
+		},
+		["class"] = {
+		},
+		["reaction"] = {
+			["90^Horde^5"] = 912404906673,
+		},
+		["sex"] = {
+			8, -- [1]
+		},
+		["quote"] = {
+			["say"] = {
+				["If you'll excuse me, I'm afraid I have other business I must attend to.  Please call on me again in the future."] = "",
+			},
+		},
+		["canRepair"] = 1,
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[68054] = 2,
+				},
+			},
+			[6] = {
+				[80] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 626,
+								["x"] = 546,
+								["dl"] = 1,
+								["n"] = 62,
+							}, -- [1]
+							{
+								["y"] = 632,
+								["x"] = 540,
+								["dl"] = 1,
+								["n"] = 11,
+							}, -- [2]
+							{
+								["y"] = 634,
+								["x"] = 554,
+								["dl"] = 1,
+								["n"] = 4,
+							}, -- [3]
+							{
+								["y"] = 633,
+								["x"] = 547,
+								["dl"] = 1,
+								["n"] = 2,
+							}, -- [4]
+							{
+								["y"] = 545,
+								["x"] = 286,
+								["dl"] = 3,
+								["n"] = 79,
+							}, -- [5]
+							{
+								["y"] = 537,
+								["x"] = 285,
+								["dl"] = 3,
+								["n"] = 9,
+							}, -- [6]
+							{
+								["y"] = 532,
+								["x"] = 280,
+								["dl"] = 3,
+								["n"] = 2,
+							}, -- [7]
+							["n"] = 7,
+						},
+						["Heart of Fear"] = {
+							{
+								["y"] = 216,
+								["x"] = 667,
+								["dl"] = 2,
+								["n"] = 603,
+							}, -- [1]
+							{
+								["y"] = 216,
+								["x"] = 660,
+								["dl"] = 2,
+								["n"] = 132,
+							}, -- [2]
+							{
+								["y"] = 215,
+								["x"] = 653,
+								["dl"] = 2,
+								["n"] = 6,
+							}, -- [3]
+							["n"] = 3,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 27645,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[68054] = 14,
+				},
+			},
+			[4] = {
+				[80] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 541,
+								["x"] = 287,
+								["dl"] = 3,
+								["n"] = 18,
+							}, -- [1]
+							{
+								["y"] = 530,
+								["x"] = 287,
+								["dl"] = 3,
+								["n"] = 23,
+							}, -- [2]
+							["n"] = 2,
+						},
+						["Heart of Fear"] = {
+							{
+								["y"] = 750,
+								["x"] = 324,
+								["dl"] = 2,
+								["n"] = 53,
+							}, -- [1]
+							{
+								["y"] = 744,
+								["x"] = 323,
+								["dl"] = 2,
+								["n"] = 1,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 27645,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[68054] = 8,
+				},
+			},
+		},
+	},
+}
+wlBaseStats = {
+	["WARRIOR^Pandaren^90"] = {
+		["SPIRIT"] = 69,
+		["AGILITY"] = 131,
+		["INTELLECT"] = 38,
+		["STRENGTH"] = 206,
+		["DODGEPERAGI"] = 0,
+		["STAMINA"] = 228,
+	},
+}
+wlItemDurability = {
+	[89828] = 100,
+	[2459] = 0,
+	[29454] = 0,
+	[81113] = 65,
+	[86336] = 0,
+	[85328] = 165,
+	[77589] = 0,
+	[82201] = 40,
+	[89837] = 120,
+	[86162] = 0,
+	[81098] = 85,
+	[79344] = 0,
+	[81130] = 50,
+	[81138] = 0,
+	[79249] = 0,
+	[91838] = 0,
+	[82202] = 40,
+	[82234] = 40,
+	[81234] = 0,
+	[90521] = 80,
+	[86219] = 110,
+	[81401] = 0,
+	[81409] = 0,
+	[82195] = 70,
+	[82973] = 100,
+	[86172] = 0,
+	[72988] = 0,
+	[85188] = 0,
+	[74655] = 0,
+	[89530] = 0,
+	[89665] = 100,
+	[76084] = 0,
+	[87903] = 0,
+	[6948] = 0,
+	[20815] = 0,
+	[63353] = 0,
+	[90523] = 0,
+	[85324] = 100,
+	[81403] = 0,
+	[76085] = 0,
+	[87015] = 80,
+	[81697] = 100,
+	[82975] = 165,
+	[89079] = 0,
+	[86076] = 165,
+	[82248] = 115,
+	[87226] = 0,
+	[86075] = 120,
+	[76090] = 0,
+	[87230] = 0,
+	[85333] = 100,
+	[81404] = 0,
+	[81412] = 0,
+	[76086] = 0,
+	[89937] = 0,
+	[86202] = 0,
+	[89826] = 55,
+	[82976] = 55,
+	[89969] = 55,
+	[38577] = 0,
+	[76142] = 0,
+	[86046] = 0,
+	[44050] = 80,
+	[89112] = 0,
+	[82292] = 70,
+	[85326] = 100,
+	[85325] = 120,
+	[81405] = 0,
+	[40772] = 0,
+	[76087] = 0,
+	[6532] = 0,
+	[89921] = 100,
+	[5512] = 0,
+	[81413] = 0,
+	[74656] = 0,
+	[87060] = 55,
+	[88567] = 0,
+	[89815] = 0,
+	[75016] = 0,
+	[87216] = 0,
+	[82271] = 85,
+	[85327] = 55,
+	[90520] = 55,
+	[81406] = 0,
+	[81414] = 0,
+	[76088] = 0,
+	[86387] = 110,
+	[34498] = 0,
+	[5976] = 0,
+}
+wlBattlePetStats = {
+	["0x000000000028fe7f"] = {
+		{
+			196, -- [1]
+			3, -- [2]
+			50, -- [3]
+			156, -- [4]
+			11, -- [5]
+			9, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe81"] = {
+		{
+			211, -- [1]
+			4, -- [2]
+			50, -- [3]
+			168, -- [4]
+			10, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe7a"] = {
+		{
+			149, -- [1]
+			3, -- [2]
+			50, -- [3]
+			150, -- [4]
+			8, -- [5]
+			12, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe88"] = {
+		{
+			249, -- [1]
+			4, -- [2]
+			50, -- [3]
+			161, -- [4]
+			12, -- [5]
+			9, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe8e"] = {
+		{
+			320, -- [1]
+			4, -- [2]
+			50, -- [3]
+			161, -- [4]
+			11, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe86"] = {
+		{
+			209, -- [1]
+			3, -- [2]
+			50, -- [3]
+			151, -- [4]
+			10, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe82"] = {
+		{
+			126, -- [1]
+			3, -- [2]
+			50, -- [3]
+			150, -- [4]
+			11, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe90"] = {
+		{
+			259, -- [1]
+			3, -- [2]
+			50, -- [3]
+			156, -- [4]
+			9, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe8c"] = {
+		{
+			244, -- [1]
+			4, -- [2]
+			50, -- [3]
+			161, -- [4]
+			13, -- [5]
+			8, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe89"] = {
+		{
+			266, -- [1]
+			4, -- [2]
+			50, -- [3]
+			155, -- [4]
+			12, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe87"] = {
+		{
+			193, -- [1]
+			4, -- [2]
+			50, -- [3]
+			152, -- [4]
+			14, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe8a"] = {
+		{
+			192, -- [1]
+			3, -- [2]
+			50, -- [3]
+			153, -- [4]
+			10, -- [5]
+			11, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe85"] = {
+		{
+			197, -- [1]
+			3, -- [2]
+			50, -- [3]
+			145, -- [4]
+			11, -- [5]
+			11, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe7b"] = {
+		{
+			202, -- [1]
+			3, -- [2]
+			50, -- [3]
+			153, -- [4]
+			11, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe83"] = {
+		{
+			195, -- [1]
+			3, -- [2]
+			50, -- [3]
+			145, -- [4]
+			10, -- [5]
+			12, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe80"] = {
+		{
+			198, -- [1]
+			4, -- [2]
+			50, -- [3]
+			155, -- [4]
+			11, -- [5]
+			12, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe8f"] = {
+		{
+			243, -- [1]
+			4, -- [2]
+			50, -- [3]
+			161, -- [4]
+			13, -- [5]
+			8, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe7e"] = {
+		{
+			90, -- [1]
+			3, -- [2]
+			50, -- [3]
+			147, -- [4]
+			11, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe7d"] = {
+		{
+			162, -- [1]
+			4, -- [2]
+			50, -- [3]
+			155, -- [4]
+			12, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000061a224"] = {
+		{
+			50, -- [1]
+			3, -- [2]
+			50, -- [3]
+			156, -- [4]
+			10, -- [5]
+			9, -- [6]
+		}, -- [1]
+	},
+	["0x000000000061a223"] = {
+		{
+			149, -- [1]
+			3, -- [2]
+			50, -- [3]
+			150, -- [4]
+			8, -- [5]
+			12, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe8b"] = {
+		{
+			248, -- [1]
+			4, -- [2]
+			50, -- [3]
+			152, -- [4]
+			12, -- [5]
+			12, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe8d"] = {
+		{
+			250, -- [1]
+			3, -- [2]
+			50, -- [3]
+			145, -- [4]
+			12, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe84"] = {
+		{
+			194, -- [1]
+			3, -- [2]
+			50, -- [3]
+			148, -- [4]
+			11, -- [5]
+			11, -- [6]
+		}, -- [1]
+	},
+	["0x000000000028fe7c"] = {
+		{
+			89, -- [1]
+			3, -- [2]
+			50, -- [3]
+			160, -- [4]
+			10, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+}

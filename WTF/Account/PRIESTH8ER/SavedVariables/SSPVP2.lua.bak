@@ -1,0 +1,77 @@
+
+SSPVPDB = {
+	["profileKeys"] = {
+		["Giitt - Silvermoon"] = "Giitt - Silvermoon",
+	},
+	["namespaces"] = {
+		["overlay"] = {
+			["profiles"] = {
+				["Giitt - Silvermoon"] = {
+					["scale"] = 1,
+					["opacity"] = 1,
+					["border"] = {
+						["r"] = 0.75,
+						["g"] = 0.75,
+						["b"] = 0.75,
+					},
+					["growUp"] = false,
+					["y"] = 600,
+					["x"] = 300,
+					["background"] = {
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["noClick"] = false,
+					["locked"] = true,
+					["shortTime"] = true,
+					["categoryColor"] = {
+						["r"] = 0.75,
+						["g"] = 0.75,
+						["b"] = 0.75,
+					},
+					["textColor"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+			},
+		},
+		["battlefield"] = {
+		},
+		["score"] = {
+		},
+		["flag"] = {
+		},
+		["window"] = {
+			["profiles"] = {
+				["Giitt - Silvermoon"] = {
+					["enabled"] = true,
+					["remind"] = false,
+				},
+			},
+		},
+		["match"] = {
+		},
+		["ab"] = {
+		},
+		["av"] = {
+		},
+		["eots"] = {
+		},
+		["arena"] = {
+		},
+		["move"] = {
+			["profiles"] = {
+				["Giitt - Silvermoon"] = {
+					["capture"] = true,
+					["pvp"] = true,
+					["score"] = true,
+					["position"] = {
+					},
+				},
+			},
+		},
+	},
+}

@@ -1,0 +1,21 @@
+## Interface: 40000
+## Title: Guild Bank Repair Toggle
+## Notes: Allows a guild leader to quickly enable/disable guild bank repairs.
+## Author: Sylphael @ Argent Dawn
+## Version: 1.0.1
+## SavedVariables: GuildBankRepairToggleDB
+## OptionalDeps: Ace3
+## X-Category: Guild
+## X-Embeds: Ace3
+## X-Curse-Packaged-Version: 1.0
+## X-Curse-Project-Name: Guild Bank Repair Toggle
+## X-Curse-Project-ID: guild-bank-repair-toggle
+## X-Curse-Repository-ID: wow/guild-bank-repair-toggle/mainline
+## X-Curse-Packaged-Version: 1.0.1
+## X-Curse-Project-Name: Guild Bank Repair Toggle
+## X-Curse-Project-ID: guild-bank-repair-toggle
+## X-Curse-Repository-ID: wow/guild-bank-repair-toggle/mainline
+
+embeds.xml
+
+Core.lua

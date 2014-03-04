@@ -1,0 +1,62 @@
+------------------------------------------------------------------------
+r5 | TAP3AH | 2010-12-10 13:47:36 +0000 (Fri, 10 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/Modules/PitBull4_RaceIcon/RaceIcon.lua
+
+fixed Worgen/Goblin race icon textures data
+------------------------------------------------------------------------
+r4 | TAP3AH | 2010-12-09 16:26:40 +0000 (Thu, 09 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/Modules/PitBull4_ClassIcon/PitBull4_ClassIcon.toc
+   M /trunk/Modules/PitBull4_DCIcon/PitBull4_DCIcon.toc
+   M /trunk/Modules/PitBull4_DeadIcon/PitBull4_DeadIcon.toc
+   M /trunk/Modules/PitBull4_LeaderIconEx/PitBull4_LeaderIconEx.toc
+   M /trunk/Modules/PitBull4_NamePlate/PitBull4_NamePlate.toc
+   M /trunk/Modules/PitBull4_RaceIcon/PitBull4_RaceIcon.toc
+   M /trunk/Modules/PitBull4_RaidRoleIcon/PitBull4_RaidRoleIcon.toc
+
+toc updated to 40000
+------------------------------------------------------------------------
+r3 | TAP3AH | 2009-09-28 16:59:20 +0000 (Mon, 28 Sep 2009) | 3 lines
+Changed paths:
+   A /trunk/.pkgmeta
+   A /trunk/Modules
+   A /trunk/Modules/PitBull4_ClassIcon
+   A /trunk/Modules/PitBull4_ClassIcon/ClassIcon.lua
+   A /trunk/Modules/PitBull4_ClassIcon/PitBull4_ClassIcon.toc
+   A /trunk/Modules/PitBull4_ClassIcon/load.xml
+   A /trunk/Modules/PitBull4_DCIcon
+   A /trunk/Modules/PitBull4_DCIcon/DCIcon.lua
+   A /trunk/Modules/PitBull4_DCIcon/PitBull4_DCIcon.toc
+   A /trunk/Modules/PitBull4_DCIcon/load.xml
+   A /trunk/Modules/PitBull4_DeadIcon
+   A /trunk/Modules/PitBull4_DeadIcon/DeadIcon.lua
+   A /trunk/Modules/PitBull4_DeadIcon/PitBull4_DeadIcon.toc
+   A /trunk/Modules/PitBull4_DeadIcon/load.xml
+   A /trunk/Modules/PitBull4_LeaderIconEx
+   A /trunk/Modules/PitBull4_LeaderIconEx/LeaderIconEx.lua
+   A /trunk/Modules/PitBull4_LeaderIconEx/PitBull4_LeaderIconEx.toc
+   A /trunk/Modules/PitBull4_LeaderIconEx/load.xml
+   A /trunk/Modules/PitBull4_NamePlate
+   A /trunk/Modules/PitBull4_NamePlate/NamePlate.lua
+   A /trunk/Modules/PitBull4_NamePlate/PitBull4_NamePlate.toc
+   A /trunk/Modules/PitBull4_NamePlate/load.xml
+   A /trunk/Modules/PitBull4_RaceIcon
+   A /trunk/Modules/PitBull4_RaceIcon/PitBull4_RaceIcon.toc
+   A /trunk/Modules/PitBull4_RaceIcon/RaceIcon.lua
+   A /trunk/Modules/PitBull4_RaceIcon/load.xml
+   A /trunk/Modules/PitBull4_RaidRoleIcon
+   A /trunk/Modules/PitBull4_RaidRoleIcon/PitBull4_RaidRoleIcon.toc
+   A /trunk/Modules/PitBull4_RaidRoleIcon/RaidRoleIcon.lua
+   A /trunk/Modules/PitBull4_RaidRoleIcon/load.xml
+   D /trunk/PitBull4_ClassIcon
+   D /trunk/PitBull4_DCIcon
+   D /trunk/PitBull4_DeadIcon
+   D /trunk/PitBull4_NamePlate
+   D /trunk/PitBull4_RaceIcon
+   D /trunk/PitBull4_RaidRoleIcon
+
+LeaderIconEx module added
+added .pkgmeta to exclude top level folder
+toc Interface updated to 30200
+------------------------------------------------------------------------

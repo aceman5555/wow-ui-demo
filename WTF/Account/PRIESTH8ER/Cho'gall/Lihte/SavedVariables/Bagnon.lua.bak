@@ -1,0 +1,8 @@
+
+BagnonFrameSettings = {
+	["version"] = "4.3.24",
+	["frames"] = {
+		["inventory"] = {
+		},
+	},
+}

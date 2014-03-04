@@ -1,0 +1,196 @@
+local LCB_Running = false;
+local LCB_Results = {};
+local LCB_ResultIndex = 1;
+local LCB_ChatType = "RAID";
+local LCB_ChatOutput = "OFFICER";
+local LCB_Time = 0;
+local LCB_Item = "";
+local LCB_Delay = 45;
+local LCB_DelayWarning = 20;
+local LCB_CountDown = 5;
+
+----------------------------------------------------------------------------
+-- OnLoad Event
+----------------------------------------------------------------------------
+function LootCouncilBot_OnLoad()
+	LootCouncilBot_Print("LootCouncilBot Loaded 1.0.0");
+	SLASH_LOOTCOUNCILBOT1 = "/lootcouncilbot";
+	SLASH_LOOTCOUNCILBOT2 = "/lcb";
+	SlashCmdList["LOOTCOUNCILBOT"] = LootCouncilBot_Command;
+	this:RegisterEvent("CHAT_MSG_WHISPER"); -- Enables whisper commands
+	this.TimeSinceLastUpdate = 0;
+end
+
+----------------------------------------------------------------------------
+-- Command Event
+----------------------------------------------------------------------------
+function LootCouncilBot_Command(cmd)
+	if (this.Rolling) then
+		return;
+	end
+
+	if (cmd == 'summary') then
+		LootCouncilBot_Summary();
+	else
+		LCB_Item = LootCouncilBot_FindItem(cmd);
+		
+		if (LCB_Item == nil) then
+			LootCouncilBot_Help();
+			return;
+		end
+		
+		LCB_Running = true;
+		LCB_Results = {};
+		LCB_ResultIndex = 1;
+		LCB_Time = GetTime();
+		LCB_CurrentCount = LCB_DelayWarning;		
+		LootCouncilBot_Print("LootCouncilBot Command " .. cmd);
+		SendChatMessage("LCB: " .. cmd .. " send me tells in " .. LCB_Delay .. " seconds", "RAID_WARNING");
+	end
+end
+
+----------------------------------------------------------------------------
+-- Help
+----------------------------------------------------------------------------
+function LootCouncilBot_Help()
+	LootCouncilBot_Print("List of /lcb commands:");
+	LootCouncilBot_Print("/lcb \124cffa335ee\124Hitem:40400:0:0:0:0:0:0:0\124h[Linked Item]\124h\124r    |cff999999(will begin rolls on item)");
+	LootCouncilBot_Print("/lcb summary    |cff999999(prints out a summary of the most recent tells)");
+	-- LootCouncilBot_Print("/lcb delay n (enter the number of seconds for the delay timer)");
+	-- LootCouncilBot_Print("/lcb ");
+	-- LootCouncilBot_Print("/lcb ");
+	
+end
+
+----------------------------------------------------------------------------
+-- OnEvent Event
+----------------------------------------------------------------------------
+function LootCouncilBot_OnEvent(event)
+	
+	if (LCB_Running == false) then
+		return;
+	end
+
+	if (event == "CHAT_MSG_WHISPER") then
+		local type = nil;
+		local msg = arg1;
+		local player = arg2;
+		local item = LootCouncilBot_FindItem(msg);
+		
+		if (item ~= nil) then
+			msg = string.lower(string.gsub(msg, item, ""));
+			
+			if (string.len(msg) > 3) then
+				if (msg:find("need")) then
+					type = "Need";
+				elseif (msg:find("greed")) then
+					type = "Greed";
+				end
+			end
+		end
+
+		if (type ~= nil and item ~= nil) then
+			msg = type .. ": " .. player .. " has " .. item;
+			
+			local playerMsg = "We have received your " .. type .. " request for " .. LCB_Item .. " to replace your old " .. item .. ".";
+			playerMsg = playerMsg .. " " .. LootCouncilBot_GetSecondsRemaining() .. " seconds left.";
+			
+			SendChatMessage(playerMsg, "WHISPER", nil, player);
+			
+			LCB_Results[LCB_ResultIndex] = msg;
+			LCB_ResultIndex = LCB_ResultIndex + 1;
+		else
+			local failMsg = "LCB Failure. Did you mean to 'need' or 'greed' on " .. LCB_Item .. "?";
+			failMsg = failMsg .. " Resend request with 'need' or 'greed'";
+			failMsg = failMsg .. " and link the current item you would be replacing it with.";
+			failMsg = failMsg .. " " .. LootCouncilBot_GetSecondsRemaining() .. " seconds left.";
+			SendChatMessage(failMsg, "WHISPER", nil, player);
+		end
+	end
+end
+
+----------------------------------------------------------------------------
+-- OnUpdate Event
+----------------------------------------------------------------------------
+function LootCouncilBot_OnUpdate(elapsed)
+	if (LCB_Running) then
+		this.TimeSinceLastUpdate = this.TimeSinceLastUpdate + elapsed;
+		if (this.TimeSinceLastUpdate > 0.01) then
+			LootCouncilBot_DoSchedule();
+			this.TimeSinceLastUpdate = 0;
+		end
+	end
+end
+
+----------------------------------------------------------------------------
+-- DoSchedule Event
+----------------------------------------------------------------------------
+function LootCouncilBot_DoSchedule()
+	local delta = LootCouncilBot_GetSecondsRemaining();
+	
+	if (LCB_CurrentCount == delta) then
+		SendChatMessage(delta .. " seconds remaining", LCB_ChatType);
+		if (LCB_CurrentCount == LCB_DelayWarning) then
+			LCB_CurrentCount = LCB_CountDown;
+		else
+			LCB_CurrentCount = LCB_CurrentCount - 1;
+		end
+	end
+
+	if (LCB_CurrentCount == -1) then
+		LCB_Running = false;
+		LootCouncilBot_Summary();
+	end
+end
+
+----------------------------------------------------------------------------
+-- Summary
+----------------------------------------------------------------------------
+function LootCouncilBot_Summary()
+	SendChatMessage("=== " .. LCB_Item .. " ===", LCB_ChatOutput);
+	
+	if (LCB_ResultIndex > 1) then
+		for i=1, LCB_ResultIndex - 1 do
+			if string.sub(LCB_Results[i], 1, 4) == "Need" then
+				SendChatMessage(LCB_Results[i], LCB_ChatOutput);
+			end
+		end
+		for i=1, LCB_ResultIndex - 1 do
+			if string.sub(LCB_Results[i], 1, 5) == "Greed" then
+				SendChatMessage(LCB_Results[i], LCB_ChatOutput);
+			end
+		end
+	else
+		SendChatMessage("0 tells received", LCB_ChatOutput);
+	end
+	SendChatMessage("=== END LCB SUMMARY ===", LCB_ChatOutput);
+end
+
+----------------------------------------------------------------------------
+-- Match Item in String
+----------------------------------------------------------------------------
+function LootCouncilBot_FindItem(input)
+	local colors = { "\124cffa335ee", "\124cff0070dd", "\124cff1eff00", "\124cffffffff", "\124cff9d9d9d" };
+	for i=1, 5 do
+		for item in gmatch(input, colors[i] .. ".+\124r") do
+			return item;
+			-- DEFAULT_CHAT_FRAME:AddMessage("Found item: " .. item);
+		end
+	end
+	return nil;
+end
+
+----------------------------------------------------------------------------
+-- Get Seconds Remaining
+----------------------------------------------------------------------------
+function LootCouncilBot_GetSecondsRemaining()
+	return math.floor(LCB_Time + LCB_Delay - GetTime());
+end
+
+----------------------------------------------------------------------------
+-- Summary
+----------------------------------------------------------------------------
+function LootCouncilBot_Print(msg)
+	DEFAULT_CHAT_FRAME:AddMessage("|cffD16E22[LCB]:  |cffffffff" .. msg);
+end
+

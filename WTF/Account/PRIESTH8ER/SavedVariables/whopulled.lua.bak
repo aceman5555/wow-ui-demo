@@ -1,0 +1,33 @@
+
+WhoPulled_Settings = {
+	["silent"] = false,
+	["msg"] = "%p PULLED %e!!!",
+	["yonboss"] = false,
+	["rwonboss"] = true,
+}
+WhoPulled_RageList = {
+}
+WhoPulled_Ignored = {
+	"Adder", -- [1]
+	"Arctic Hare", -- [2]
+	"Beetle", -- [3]
+	"Bloodworm", -- [4]
+	"Crab", -- [5]
+	"Crystal Spider", -- [6]
+	"Devout Follower", -- [7]
+	"Flametongue Totem", -- [8]
+	"Frog", -- [9]
+	"Gold Beetle", -- [10]
+	"Healing Stream Totem", -- [11]
+	"Larva", -- [12]
+	"Maggot", -- [13]
+	"Rat", -- [14]
+	"Risen Zombie", -- [15]
+	"Roach", -- [16]
+	"Snake", -- [17]
+	"Spider", -- [18]
+	"Toad", -- [19]
+	"Zul'Drak Rat", -- [20]
+}
+WhoPulled_Ignore = {
+}

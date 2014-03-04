@@ -1,0 +1,23 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<Include file="ShadoPanMonastery\locales.xml"/>
+<Include file="ShadoPanMonastery\modules.xml"/>
+
+<Include file="ScarletHalls\locales.xml"/>
+<Include file="ScarletHalls\modules.xml"/>
+
+<Include file="ScarletMonastery\locales.xml"/>
+<Include file="ScarletMonastery\modules.xml"/>
+
+<Include file="MogushanPalace\locales.xml"/>
+<Include file="MogushanPalace\modules.xml"/>
+
+<Include file="TempleOfTheJadeSerpent\locales.xml"/>
+<Include file="TempleOfTheJadeSerpent\modules.xml"/>
+
+<Include file="BlackTempleSolo\locales.xml"/>
+<Include file="BlackTempleSolo\modules.xml"/>
+
+</Ui>
+

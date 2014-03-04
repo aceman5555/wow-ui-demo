@@ -1,0 +1,10 @@
+## Interface: 20400
+## Title: SW_Stats_Profiles
+## Author: Artack (Madmortem EU DE) artack@sw-stats.com
+## Version: 2.1.4
+## Notes: A "profile" system for SW_Stats
+## RequiredDeps: SW_Stats
+## SavedVariables: SW_P_Saved
+## LoadOnDemand: 1 
+localization.lua
+SW_Stats_Profiles.lua

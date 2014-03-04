@@ -1,0 +1,10 @@
+
+VengeanceStatusDB = {
+	["baseHP"] = {
+		[85] = 45449,
+	},
+	["scale"] = 1,
+	["keepSession"] = false,
+	["border"] = true,
+	["vengeanceMAX"] = 68917,
+}

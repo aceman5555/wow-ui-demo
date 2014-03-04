@@ -1,0 +1,1767 @@
+
+ThreatPlatesDB = {
+	["char"] = {
+		["Git - Azuremyst"] = {
+			["stances"] = {
+				false, -- [1]
+				true, -- [2]
+				false, -- [3]
+				[0] = false,
+				["ON"] = false,
+			},
+			["presences"] = {
+				true, -- [1]
+				false, -- [2]
+				false, -- [3]
+				[0] = false,
+				["ON"] = false,
+			},
+			["spec"] = {
+				["primary"] = true,
+				["secondary"] = false,
+			},
+			["auras"] = {
+				true, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				["ON"] = false,
+				[0] = false,
+			},
+			["specInfo"] = {
+				{
+					6, -- [1]
+					2, -- [2]
+					33, -- [3]
+				}, -- [1]
+				{
+					35, -- [1]
+					6, -- [2]
+					0, -- [3]
+				}, -- [2]
+			},
+			["specName"] = {
+				"Arms", -- [1]
+				"Fury", -- [2]
+				"Protection", -- [3]
+			},
+			["threat"] = {
+				["tanking"] = true,
+			},
+			["welcome"] = true,
+			["shapeshifts"] = {
+				true, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				[0] = false,
+				["ON"] = false,
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["nameplate"] = {
+				["toggle"] = {
+					["Normal"] = true,
+					["Boss"] = true,
+					["Totem"] = false,
+					["Neutral"] = true,
+					["Elite"] = true,
+				},
+				["alpha"] = {
+					["Elite"] = 1,
+					["Boss"] = 1,
+					["Totem"] = 1,
+					["Neutral"] = 1,
+					["Marked"] = 1,
+					["Normal"] = 1,
+				},
+				["scale"] = {
+					["Elite"] = 1.04,
+					["Boss"] = 1.1,
+					["Totem"] = 0.75,
+					["Neutral"] = 0.9,
+					["Marked"] = 1,
+					["Normal"] = 1,
+				},
+			},
+			["comboWidget"] = {
+				["scale"] = 64,
+				["x"] = 0,
+				["ON"] = false,
+				["y"] = -8,
+			},
+			["OldSetting"] = true,
+			["allowClass"] = false,
+			["uniqueSettings"] = {
+				{
+					["color"] = {
+						["r"] = 0.61,
+						["g"] = 0.4,
+						["b"] = 0.86,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Shadow Fiend",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U1",
+					["scale"] = 0.45,
+				}, -- [1]
+				{
+					["color"] = {
+						["r"] = 0.32,
+						["g"] = 0.7,
+						["b"] = 0.89,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Spirit Wolf",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U2",
+					["scale"] = 0.45,
+				}, -- [2]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.71,
+						["b"] = 0,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Ebon Gargoyle",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U3",
+					["scale"] = 0.45,
+				}, -- [3]
+				{
+					["color"] = {
+						["r"] = 0.33,
+						["g"] = 0.72,
+						["b"] = 0.44,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Water Elemental",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U4",
+					["scale"] = 0.45,
+				}, -- [4]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.71,
+						["b"] = 0,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Treant",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U5",
+					["scale"] = 0.45,
+				}, -- [5]
+				{
+					["color"] = {
+						["r"] = 0.39,
+						["g"] = 1,
+						["b"] = 0.11,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Viper",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U6",
+					["scale"] = 0.45,
+				}, -- [6]
+				{
+					["color"] = {
+						["r"] = 0.75,
+						["g"] = 0,
+						["b"] = 0.02,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Venomous Snake",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U6",
+					["scale"] = 0.45,
+				}, -- [7]
+				{
+					["color"] = {
+						["r"] = 0.87,
+						["g"] = 0.78,
+						["b"] = 0.88,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Army of the Dead Ghoul",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U7",
+					["scale"] = 0.45,
+				}, -- [8]
+				{
+					["color"] = {
+						["r"] = 0.62,
+						["g"] = 0.19,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Shadowy Apparition",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U8",
+					["scale"] = 1,
+				}, -- [9]
+				{
+					["color"] = {
+						["r"] = 0.69,
+						["g"] = 0.26,
+						["b"] = 0.25,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Shambling Horror",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U9",
+					["scale"] = 1,
+				}, -- [10]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.39,
+						["b"] = 0.96,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Web Wrap",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U10",
+					["scale"] = 0.75,
+				}, -- [11]
+				{
+					["color"] = {
+						["r"] = 0.33,
+						["g"] = 0.33,
+						["b"] = 0.33,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Immortal Guardian",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U11",
+					["scale"] = 1,
+				}, -- [12]
+				{
+					["color"] = {
+						["r"] = 0.75,
+						["g"] = 0,
+						["b"] = 0.02,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Marked Immortal Guardian",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U12",
+					["scale"] = 1,
+				}, -- [13]
+				{
+					["color"] = {
+						["r"] = 0.29,
+						["g"] = 0.11,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Empowered Adherent",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U13",
+					["scale"] = 1,
+				}, -- [14]
+				{
+					["color"] = {
+						["r"] = 0.55,
+						["g"] = 0.7,
+						["b"] = 0.29,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Deformed Fanatic",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U14",
+					["scale"] = 1,
+				}, -- [15]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.88,
+						["b"] = 0.61,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Reanimated Adherent",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U15",
+					["scale"] = 1,
+				}, -- [16]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.88,
+						["b"] = 0.61,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Reanimated Fanatic",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U15",
+					["scale"] = 1,
+				}, -- [17]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Bone Spike",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U16",
+					["scale"] = 1,
+				}, -- [18]
+				{
+					["color"] = {
+						["r"] = 0.33,
+						["g"] = 0.28,
+						["b"] = 0.71,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = false,
+					["allowMarked"] = true,
+					["name"] = "Onyxian Whelp",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U17",
+					["scale"] = 1,
+				}, -- [19]
+				{
+					["color"] = {
+						["r"] = 0.96,
+						["g"] = 0.5600000000000001,
+						["b"] = 0.07000000000000001,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Gas Cloud",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U18",
+					["scale"] = 1,
+				}, -- [20]
+				{
+					["color"] = {
+						["r"] = 0.36,
+						["g"] = 0.95,
+						["b"] = 0.33,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Volatile Ooze",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U19",
+					["scale"] = 1,
+				}, -- [21]
+				{
+					["color"] = {
+						["r"] = 0.78,
+						["g"] = 0.61,
+						["b"] = 0.43,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Darnavan",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U20",
+					["scale"] = 1,
+				}, -- [22]
+				{
+					["color"] = {
+						["r"] = 0.47,
+						["g"] = 0.89,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Val'kyr Shadowguard",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U21",
+					["scale"] = 1,
+				}, -- [23]
+				{
+					["color"] = {
+						["r"] = 0.91,
+						["g"] = 0.71,
+						["b"] = 0.1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Kinetic Bomb",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U22",
+					["scale"] = 1,
+				}, -- [24]
+				{
+					["color"] = {
+						["r"] = 0.77,
+						["g"] = 0.12,
+						["b"] = 0.23,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Lich King",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U23",
+					["scale"] = 1,
+				}, -- [25]
+				{
+					["color"] = {
+						["r"] = 0.77,
+						["g"] = 0.27,
+						["b"] = 0,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Raging Spirit",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U24",
+					["scale"] = 1,
+				}, -- [26]
+				{
+					["color"] = {
+						["r"] = 0.43,
+						["g"] = 0.43,
+						["b"] = 0.43,
+					},
+					["showIcon"] = false,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Drudge Ghoul",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U25",
+					["scale"] = 0.85,
+				}, -- [27]
+				{
+					["color"] = {
+						["r"] = 0,
+						["g"] = 1,
+						["b"] = 0,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Living Inferno",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U27",
+					["scale"] = 1,
+				}, -- [28]
+				{
+					["color"] = {
+						["r"] = 0.25,
+						["g"] = 0.25,
+						["b"] = 0.25,
+					},
+					["showIcon"] = false,
+					["alpha"] = 0.75,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Living Ember",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U28",
+					["scale"] = 0.6,
+				}, -- [29]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = false,
+					["alpha"] = 0,
+					["overrideAlpha"] = false,
+					["showNameplate"] = false,
+					["allowMarked"] = true,
+					["name"] = "Fanged Pit Viper",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 0,
+				}, -- [30]
+				{
+					["color"] = {
+						["r"] = 0,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Canal Crab",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U29",
+					["scale"] = 1,
+				}, -- [31]
+				{
+					["color"] = {
+						["r"] = 0.96,
+						["g"] = 0.36,
+						["b"] = 0.34,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "Muddy Crawfish",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "Interface\\Addons\\TidyPlates_ThreatPlates\\Widgets\\UniqueIconWidget\\U30",
+					["scale"] = 1,
+				}, -- [32]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [33]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [34]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [35]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [36]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [37]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [38]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [39]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [40]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [41]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [42]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [43]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [44]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [45]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [46]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [47]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [48]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [49]
+				{
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				}, -- [50]
+				["list"] = {
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["showIcon"] = true,
+					["alpha"] = 1,
+					["overrideAlpha"] = false,
+					["showNameplate"] = true,
+					["allowMarked"] = true,
+					["name"] = "",
+					["useStyle"] = true,
+					["overrideScale"] = false,
+					["useColor"] = true,
+					["icon"] = "",
+					["scale"] = 1,
+				},
+			},
+			["totemWidget"] = {
+				["y"] = 35,
+				["x"] = 0,
+				["scale"] = 35,
+				["level"] = 1,
+				["ON"] = true,
+				["anchor"] = "CENTER",
+			},
+			["socialWidget"] = {
+				["y"] = 6,
+				["x"] = 65,
+				["scale"] = 16,
+				["ON"] = false,
+				["anchor"] = "CENTER",
+			},
+			["threatWidget"] = {
+				["y"] = 26,
+				["x"] = 0,
+				["ON"] = false,
+				["anchor"] = "CENTER",
+			},
+			["threat"] = {
+				["nonCombat"] = true,
+				["tank"] = {
+					["scale"] = {
+						["MEDIUM"] = 0.9,
+						["LOW"] = 1.25,
+						["HIGH"] = 0.8,
+					},
+					["alpha"] = {
+						["MEDIUM"] = 0.85,
+						["LOW"] = 1,
+						["HIGH"] = 0.75,
+					},
+				},
+				["art"] = {
+					["ON"] = true,
+					["theme"] = "default",
+				},
+				["marked"] = {
+					["scale"] = false,
+					["art"] = false,
+					["alpha"] = false,
+				},
+				["hideNonCombat"] = false,
+				["useAlpha"] = true,
+				["ON"] = true,
+				["useScale"] = true,
+				["scaleType"] = {
+					["Normal"] = -0.2,
+					["Boss"] = 0.2,
+					["Elite"] = 0,
+				},
+				["toggle"] = {
+					["Elite"] = true,
+					["Boss"] = true,
+					["Normal"] = true,
+					["Neutral"] = true,
+				},
+				["useType"] = true,
+				["useHPColor"] = true,
+				["dps"] = {
+					["scale"] = {
+						["MEDIUM"] = 0.9,
+						["LOW"] = 0.8,
+						["HIGH"] = 1.25,
+					},
+					["alpha"] = {
+						["MEDIUM"] = 1,
+						["LOW"] = 1,
+						["HIGH"] = 1,
+					},
+				},
+			},
+			["aHPbarColor"] = {
+				["r"] = 0,
+				["g"] = 1,
+				["b"] = 0,
+			},
+			["bHPbarColor"] = {
+				["r"] = 1,
+				["g"] = 0,
+				["b"] = 0,
+			},
+			["tankedWidget"] = {
+				["y"] = 6,
+				["x"] = 65,
+				["scale"] = 16,
+				["ON"] = false,
+				["anchor"] = "CENTER",
+			},
+			["healthColorChange"] = false,
+			["cacheClass"] = false,
+			["cache"] = {
+			},
+			["customColor"] = false,
+			["settings"] = {
+				["tank"] = {
+					["threatcolor"] = {
+						["MEDIUM"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 0,
+						},
+						["LOW"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 0,
+							["b"] = 0,
+						},
+						["HIGH"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0,
+						},
+					},
+				},
+				["highlight"] = {
+					["texture"] = "TP_HealthBarHighlight",
+				},
+				["eliteicon"] = {
+					["show"] = true,
+					["x"] = 64,
+					["y"] = 9,
+					["anchor"] = "CENTER",
+					["level"] = 22,
+					["theme"] = "default",
+					["scale"] = 15,
+				},
+				["spellicon"] = {
+					["show"] = true,
+					["x"] = 75,
+					["scale"] = 20,
+					["anchor"] = "CENTER",
+					["y"] = -7,
+				},
+				["unique"] = {
+					["threatcolor"] = {
+						["MEDIUM"] = {
+							["a"] = 0,
+							["r"] = 0,
+							["g"] = 0,
+							["b"] = 0,
+						},
+						["LOW"] = {
+							["a"] = 0,
+							["r"] = 0,
+							["g"] = 0,
+							["b"] = 0,
+						},
+						["HIGH"] = {
+							["a"] = 0,
+							["r"] = 0,
+							["g"] = 0,
+							["b"] = 0,
+						},
+					},
+				},
+				["elitehealthborder"] = {
+					["show"] = true,
+					["texture"] = "TP_HealthBarEliteOverlay",
+				},
+				["spelltext"] = {
+					["shadow"] = true,
+					["align"] = "CENTER",
+					["width"] = 110,
+					["show"] = true,
+					["x"] = 0,
+					["flags"] = "NONE",
+					["height"] = 14,
+					["typeface"] = "Accidental Presidency",
+					["vertical"] = "CENTER",
+					["y"] = -13,
+					["size"] = 12,
+				},
+				["level"] = {
+					["shadow"] = true,
+					["align"] = "RIGHT",
+					["width"] = 20,
+					["show"] = true,
+					["x"] = 50,
+					["flags"] = "NONE",
+					["height"] = 14,
+					["typeface"] = "Accidental Presidency",
+					["vertical"] = "TOP",
+					["y"] = 0,
+					["size"] = 12,
+				},
+				["normal"] = {
+					["threatcolor"] = {
+						["MEDIUM"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 0,
+						},
+						["LOW"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+						["HIGH"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 0,
+							["b"] = 0,
+						},
+					},
+				},
+				["customart"] = {
+					["show"] = true,
+					["x"] = -74,
+					["scale"] = 22,
+					["anchor"] = "CENTER",
+					["y"] = -7,
+				},
+				["healthbar"] = {
+					["texture"] = "ThreatPlatesBar",
+				},
+				["healthborder"] = {
+					["show"] = true,
+					["backdrop"] = "",
+					["texture"] = "TP_HealthBarOverlay",
+				},
+				["threatborder"] = {
+					["show"] = true,
+				},
+				["skullicon"] = {
+					["show"] = true,
+					["x"] = 55,
+					["scale"] = 16,
+					["anchor"] = "CENTER",
+					["y"] = 0,
+				},
+				["castnostop"] = {
+					["y"] = -15,
+					["x"] = 0,
+					["show"] = true,
+					["texture"] = "TP_CastBarLock",
+				},
+				["castbar"] = {
+					["y"] = -15,
+					["x"] = 0,
+					["show"] = true,
+					["texture"] = "ThreatPlatesBar",
+				},
+				["totem"] = {
+					["threatcolor"] = {
+						["MEDIUM"] = {
+							["a"] = 0,
+							["r"] = 0,
+							["g"] = 0,
+							["b"] = 0,
+						},
+						["LOW"] = {
+							["a"] = 0,
+							["r"] = 0,
+							["g"] = 0,
+							["b"] = 0,
+						},
+						["HIGH"] = {
+							["a"] = 0,
+							["r"] = 0,
+							["g"] = 0,
+							["b"] = 0,
+						},
+					},
+				},
+				["castborder"] = {
+					["y"] = -15,
+					["x"] = 0,
+					["show"] = true,
+					["texture"] = "TP_CastBarOverlay",
+				},
+				["name"] = {
+					["shadow"] = true,
+					["align"] = "CENTER",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["width"] = 116,
+					["y"] = 13,
+					["x"] = 0,
+					["height"] = 14,
+					["vertical"] = "CENTER",
+					["typeface"] = "Accidental Presidency",
+					["show"] = true,
+					["flags"] = "NONE",
+					["size"] = 14,
+				},
+				["dps"] = {
+					["threatcolor"] = {
+						["MEDIUM"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 0,
+						},
+						["LOW"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0,
+						},
+						["HIGH"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 0,
+							["b"] = 0,
+						},
+					},
+				},
+				["frame"] = {
+					["y"] = 0,
+				},
+				["customtext"] = {
+					["shadow"] = true,
+					["align"] = "CENTER",
+					["width"] = 110,
+					["show"] = true,
+					["x"] = 0,
+					["flags"] = "NONE",
+					["height"] = 14,
+					["typeface"] = "Accidental Presidency",
+					["vertical"] = "CENTER",
+					["y"] = 1,
+					["size"] = 12,
+				},
+				["raidicon"] = {
+					["y"] = 27,
+					["x"] = 0,
+					["scale"] = 20,
+					["anchor"] = "CENTER",
+					["show"] = true,
+					["hpColor"] = true,
+					["hpMarked"] = {
+						["SKULL"] = {
+							["r"] = 0.89,
+							["g"] = 0.83,
+							["b"] = 0.74,
+						},
+						["SQUARE"] = {
+							["r"] = 0,
+							["g"] = 0.64,
+							["b"] = 1,
+						},
+						["MOON"] = {
+							["r"] = 0.6,
+							["g"] = 0.75,
+							["b"] = 0.85,
+						},
+						["CIRCLE"] = {
+							["r"] = 0.9300000000000001,
+							["g"] = 0.51,
+							["b"] = 0.06,
+						},
+						["TRIANGLE"] = {
+							["r"] = 0.14,
+							["g"] = 0.66,
+							["b"] = 0.14,
+						},
+						["CROSS"] = {
+							["r"] = 0.82,
+							["g"] = 0.18,
+							["b"] = 0.18,
+						},
+						["STAR"] = {
+							["r"] = 0.85,
+							["g"] = 0.8100000000000001,
+							["b"] = 0.27,
+						},
+						["DIAMOND"] = {
+							["r"] = 0.7,
+							["g"] = 0.06,
+							["b"] = 0.84,
+						},
+					},
+				},
+			},
+			["friendlyClassIcon"] = false,
+			["targetWidget"] = {
+				["a"] = 1,
+				["r"] = 1,
+				["theme"] = "default",
+				["ON"] = true,
+				["g"] = 1,
+				["b"] = 1,
+			},
+			["friendlyClass"] = false,
+			["castbarColorShield"] = {
+				["a"] = 1,
+				["r"] = 1,
+				["toggle"] = true,
+				["g"] = 0,
+				["b"] = 0,
+			},
+			["tHPbarColor"] = {
+				["r"] = 0,
+				["g"] = 0.5,
+				["b"] = 1,
+			},
+			["text"] = {
+				["deficit"] = false,
+				["amount"] = true,
+				["max"] = false,
+				["full"] = false,
+				["percent"] = true,
+				["truncate"] = true,
+			},
+			["blizzFade"] = {
+				["toggle"] = true,
+				["amount"] = -0.3,
+			},
+			["verbose"] = true,
+			["castbarColor"] = {
+				["a"] = 1,
+				["r"] = 1,
+				["toggle"] = true,
+				["g"] = 0.5600000000000001,
+				["b"] = 0.06,
+			},
+			["HPbarColor"] = {
+				["r"] = 1,
+				["g"] = 1,
+				["b"] = 1,
+			},
+			["totemSettings"] = {
+				["W1"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.58,
+						["g"] = 0.72,
+						["b"] = 1,
+					},
+				},
+				["W3"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.58,
+						["g"] = 0.72,
+						["b"] = 1,
+					},
+				},
+				["W2"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.58,
+						["g"] = 0.72,
+						["b"] = 1,
+					},
+				},
+				["A4"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.67,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["A5"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.67,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["A6"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.67,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["A3"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.67,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["A2"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.67,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["A1"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.67,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["E3"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.7,
+						["b"] = 0.12,
+					},
+				},
+				["E2"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.7,
+						["b"] = 0.12,
+					},
+				},
+				["E1"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.7,
+						["b"] = 0.12,
+					},
+				},
+				["F3"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.4,
+						["b"] = 0.4,
+					},
+				},
+				["E4"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.7,
+						["b"] = 0.12,
+					},
+				},
+				["E5"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.7,
+						["b"] = 0.12,
+					},
+				},
+				["E6"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.7,
+						["b"] = 0.12,
+					},
+				},
+				["F6"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.4,
+						["b"] = 0.4,
+					},
+				},
+				["F1"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.4,
+						["b"] = 0.4,
+					},
+				},
+				["hideHealthbar"] = false,
+				["F2"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.4,
+						["b"] = 0.4,
+					},
+				},
+				["F4"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.4,
+						["b"] = 0.4,
+					},
+				},
+				["F5"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 1,
+						["g"] = 0.4,
+						["b"] = 0.4,
+					},
+				},
+				["W4"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.58,
+						["g"] = 0.72,
+						["b"] = 1,
+					},
+				},
+				["W5"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.58,
+						["g"] = 0.72,
+						["b"] = 1,
+					},
+				},
+				["W6"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					[7] = "normal",
+					["color"] = {
+						["r"] = 0.58,
+						["g"] = 0.72,
+						["b"] = 1,
+					},
+				},
+			},
+			["eliteWidget"] = {
+				["y"] = 9,
+				["x"] = 64,
+				["scale"] = 15,
+				["theme"] = "default",
+				["ON"] = true,
+				["anchor"] = "CENTER",
+			},
+			["classWidget"] = {
+				["y"] = -7,
+				["x"] = -74,
+				["scale"] = 22,
+				["theme"] = "default",
+				["ON"] = true,
+				["anchor"] = "CENTER",
+			},
+			["uniqueWidget"] = {
+				["y"] = 35,
+				["x"] = 0,
+				["scale"] = 35,
+				["level"] = 1,
+				["ON"] = true,
+				["anchor"] = "CENTER",
+			},
+			["fHPbarColor"] = {
+				["r"] = 1,
+				["g"] = 1,
+				["b"] = 1,
+			},
+			["debuffWidget"] = {
+				["y"] = 32,
+				["x"] = 18,
+				["filter"] = {
+				},
+				["scale"] = 1,
+				["mode"] = "whitelist",
+				["ON"] = true,
+				["anchor"] = "CENTER",
+			},
+			["nHPbarColor"] = {
+				["r"] = 1,
+				["g"] = 1,
+				["b"] = 1,
+			},
+		},
+	},
+}

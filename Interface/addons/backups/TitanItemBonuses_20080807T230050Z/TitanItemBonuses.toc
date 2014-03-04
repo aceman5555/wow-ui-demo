@@ -1,0 +1,9 @@
+## Interface: 20100
+## Title: Titan Panel [ItemBonuses]
+## Notes: Adds the ability to display bonuses from items you are wearing to Titan Panel
+## Author: Adsertor
+## SavedVariables: 
+## OptionalDeps: 
+## Dependencies: Titan,BonusScanner
+## Version: 3.0.6.20100
+..\Titan\TitanItemBonuses\TitanItemBonuses.xml

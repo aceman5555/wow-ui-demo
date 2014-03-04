@@ -1,0 +1,13 @@
+## Interface: 50400
+## Title: Skada |r[|caaedc99fEnsidiaFails|r]
+## Notes: Fail display for Skada based on EnsidiaFails filtering options
+## Author: Caleb
+## Version: 1.2.7
+## Dependencies: Skada, EnsidiaFails
+## X-Part-Of: Skada
+## X-Curse-Packaged-Version: 1.2.7
+## X-Curse-Project-Name: SkadaEnsidiaFails
+## X-Curse-Project-ID: skadaensidiafails
+## X-Curse-Repository-ID: wow/skadaensidiafails/mainline
+
+SkadaEnsidiaFails.lua

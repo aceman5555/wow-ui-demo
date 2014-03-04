@@ -1,0 +1,602 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+	<Frame name="SW_UL_Item" virtual="true">
+		<Size>
+			<AbsDimension x="150" y="15" />
+		</Size>
+		<Scripts>
+			<OnLoad></OnLoad>
+			<OnEnter>
+
+        getglobal(this:GetName().."_Highlight"):Show();
+        if this.EventData then
+        GameTooltip:SetOwner(this, "ANCHOR_CURSOR");
+
+        --GameTooltip:SetHyperlink("unit:" .. this.EventData.srcGUID);
+
+        
+        GameTooltip:AddDoubleLine(
+        date("%H:%M:%S", this.EventData.timestamp),
+        string.format("(+%ims)",this.EventData.ms),
+        1,0,0, 1,0,0);
+
+        GameTooltip:AddLine(this.EventData.FullMsg);
+        GameTooltip:AddLine("");
+        GameTooltip:AddDoubleLine(this.EventData.Action.str, this.EventData.Action.Explain); 
+        GameTooltip:Show();
+        end
+
+      </OnEnter>
+			<OnLeave>
+				getglobal(this:GetName().."_Highlight"):Hide();
+				GameTooltip:Hide();
+			</OnLeave>
+			<OnMouseWheel>
+				--GameTooltip:Hide();
+				SW_UL_ScrollSlider:SetValue(SW_UL_ScrollSlider:GetValue()-arg1);
+				-- update rightaway
+				SW_UL_TimerScrollUpdate = 1;
+			</OnMouseWheel>
+			<OnMouseUp>
+				if not this.EventData then return end;
+				if arg1 == "RightButton" and IsShiftKeyDown() then
+					SW_UL_CopyToCopyBox(this.EventData);
+				else
+					
+				end
+			</OnMouseUp>
+		</Scripts>
+		<Backdrop bgFile="Interface\AddOns\SW_Stats\images\back" tile="true">
+			<TileSize>
+				<AbsValue val="16" />
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="1" right="1" top="1" bottom="1" />
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="BORDER">
+				<FontString name="$parent_When_Text" inherits="SW_FontBar" wraponspaces="false" justifyH="LEFT"
+					text="entry">
+					<Size>
+						<AbsDimension x="75" y="16" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="2" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parent_Source_Text" inherits="SW_FontBar" wraponspaces="false" justifyH="LEFT"
+					text="entry">
+					<Size>
+						<AbsDimension x="75" y="16" />
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="2" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parent_Action_Text" inherits="SW_FontBar" wraponspaces="false" justifyH="LEFT"
+					text="entry">
+					<Size>
+						<AbsDimension x="30" y="16" />
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="77" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parent_Target_Text" inherits="SW_FontBar" wraponspaces="false" justifyH="LEFT"
+					text="entry">
+					<Size>
+						<AbsDimension x="75" y="16" />
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="107" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parent_What_Text" inherits="SW_FontBar" wraponspaces="false" justifyH="LEFT"
+					text="entry">
+					<Size>
+						<AbsDimension x="100" y="16" />
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="182" y="0" />
+							</Offset>
+						</Anchor>
+						<Anchor point="RIGHT" relativePoint="RIGHT">
+							<Offset>
+								<AbsDimension x="-10" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture name="$parent_Highlight" file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD"
+					hidden="true">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<!--
+							<Offset>
+								<AbsDimension x="1" y="-1" />
+							</Offset> --></Anchor>
+						<Anchor point="BOTTOMRIGHT">
+							<!--
+							<Offset>
+								<AbsDimension x="-1" y="1" />
+							</Offset> --></Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+	</Frame>
+	<Button name="SW_UL_FilterButton" virtual="true">
+		<Scripts>
+			<OnLoad>
+				getglobal(this:GetName().."Text"):SetText(SW_UL_L[gsub(this:GetName(), "SW_UL_F_", "")])
+			</OnLoad>
+		</Scripts>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentLeft" file="Interface\FriendsFrame\WhoFrame-ColumnTabs">
+					<Size>
+						<AbsDimension x="5" y="19" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" />
+					</Anchors>
+					<TexCoords left="0" right="0.078125" top="0" bottom="0.59375" />
+				</Texture>
+				<Texture name="$parentRight" file="Interface\FriendsFrame\WhoFrame-ColumnTabs">
+					<Size>
+						<AbsDimension x="4" y="19" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPRIGHT" />
+					</Anchors>
+					<TexCoords left="0.90625" right="0.96875" top="0" bottom="0.59375" />
+				</Texture>
+				<Texture name="$parentMiddle" file="Interface\FriendsFrame\WhoFrame-ColumnTabs">
+					<Size>
+						<AbsDimension x="10" y="19" />
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parentLeft" relativePoint="RIGHT" />
+						<Anchor point="RIGHT" relativeTo="$parentRight" relativePoint="LEFT" />
+					</Anchors>
+					<TexCoords left="0.078125" right="0.90625" top="0" bottom="0.59375" />
+				</Texture>
+			</Layer>
+		</Layers>
+		<ButtonText name="$parentText">
+			<Anchors>
+				<Anchor point="LEFT">
+					<Offset>
+						<AbsDimension x="8" y="0" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</ButtonText>
+		<NormalFont inherits="GameFontHighlightSmall" />
+		<HighlightTexture file="Interface\PaperDollInfoFrame\UI-Character-Tab-Highlight" alphaMode="ADD">
+			<Size>
+				<AbsDimension x="5" y="24" />
+			</Size>
+			<Anchors>
+				<Anchor point="LEFT">
+					<Offset>
+						<AbsDimension x="0" y="0" />
+					</Offset>
+				</Anchor>
+				<Anchor point="RIGHT">
+					<Offset>
+						<AbsDimension x="4" y="0" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+	</Button>
+	<EditBox name="SW_UL_FilterBox" letters="50" historyLines="0" autoFocus="false" virtual="true">
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentLeft" file="Interface\Common\Common-Input-Border">
+					<Size>
+						<AbsDimension x="8" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="-5" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+					<TexCoords left="0" right="0.0625" top="0" bottom="0.625" />
+				</Texture>
+				<Texture name="$parentRight" file="Interface\Common\Common-Input-Border">
+					<Size>
+						<AbsDimension x="8" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="RIGHT">
+							<Offset>
+								<AbsDimension x="0" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+					<TexCoords left="0.9375" right="1.0" top="0" bottom="0.625" />
+				</Texture>
+				<Texture name="$parentMiddle" file="Interface\Common\Common-Input-Border">
+					<Size>
+						<AbsDimension x="10" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parentLeft" relativePoint="RIGHT" />
+						<Anchor point="RIGHT" relativeTo="$parentRight" relativePoint="LEFT" />
+					</Anchors>
+					<TexCoords left="0.0625" right="0.9375" top="0" bottom="0.625" />
+				</Texture>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnEnterPressed>
+				this:ClearFocus();
+				this:Hide();
+				SW_UL_HandleEdit(this, gsub(this:GetName(), "SW_UL_", ""));
+			</OnEnterPressed>
+			<OnEscapePressed>
+				this:ClearFocus();
+				this:Hide();
+			</OnEscapePressed>
+			<OnTextChanged></OnTextChanged>
+			<OnEditFocusLost>
+				this:HighlightText(0, 0);
+			</OnEditFocusLost>
+			<OnEditFocusGained>
+				this:HighlightText();
+			</OnEditFocusGained>
+		</Scripts>
+		<FontString inherits="ChatFontNormal" />
+	</EditBox>
+	<Frame name="SW_UniLogFrame" inherits="SW_Frame" enableMouse="true" movable="true" resizable="true"
+		frameStrata="LOW" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				this:SetBackdropBorderColor(SW_COLOR_ACT["r"],SW_COLOR_ACT["g"],SW_COLOR_ACT["b"],1);
+				this:SetMinResize(350,100);
+				SW_UniLogFrame_Title_Text:SetText("");
+				this.CallOnResize = function (self)
+					SW_UL_TimerRedoLayout = 1;
+				end
+			</OnLoad>
+			<OnHide>SW_UL_Settings.ShowOnStart = false;</OnHide>
+			<OnShow>
+				SW_UL_Settings.ShowOnStart = true;
+				SW_UL_SliderUpdate();
+				SW_UL_Buffer.updateDisplay = true;
+			</OnShow>
+		</Scripts>
+		<Size>
+			<AbsDimension x="350" y="100" />
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER" />
+		</Anchors>
+		<Frames>
+			<Frame name="$parent_Resizer" inherits="SW_Frame_Resize" parent="SW_UniLogFrame" />
+			<Frame name="$parent_Title" inherits="SW_BarFrame_Title">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="5" y="-4" />
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-5" y="-24" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Frame name="$parent_Close" inherits="SW_RoundButton" hidden="false">
+						<Anchors>
+							<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="-3" y="-3" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnMouseUp>this:GetParent():GetParent():Hide();</OnMouseUp>
+							<OnLoad>SW_RoundButtonRegister(this, {1,0,0,0.9}, "X");
+							table.insert(SW_Registered_BF_TitleButtons, this:GetName());</OnLoad>
+						</Scripts>
+					</Frame>
+					<Button name="SW_UL_F_When" inherits="SW_UL_FilterButton" text="When">
+						<Size>
+							<AbsDimension x="55" y="14" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnClick>SW_UL_Buffer:switchSorting()</OnClick>
+						</Scripts>
+						<NormalTexture name="$parentArrow" file="Interface\Buttons\UI-SortArrow">
+							<Size>
+								<AbsDimension x="9" y="8" />
+							</Size>
+							<Anchors>
+								<Anchor point="LEFT" relativeTo="$parentText" relativePoint="RIGHT">
+									<Offset>
+										<AbsDimension x="3" y="-4" />
+									</Offset>
+								</Anchor>
+							</Anchors>
+							<TexCoords left="0" right="0.5625" top="0" bottom="1.0" />
+						</NormalTexture>
+					</Button>
+					<Button name="SW_UL_F_Source" inherits="SW_UL_FilterButton" text="Source">
+						<Size>
+							<AbsDimension x="75" y="14" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="SW_UL_F_When" relativePoint="TOPRIGHT" />
+						</Anchors>
+						<Scripts>
+							<OnClick>SW_UL_HandleFilterBox(SW_UL_FilterSource);</OnClick>
+						</Scripts>
+					</Button>
+					<EditBox name="SW_UL_FilterSource" inherits="SW_UL_FilterBox" hidden="true">
+						<Size>
+							<AbsDimension x="75" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="BOTTOMLEFT" relativeTo="SW_UL_F_When" relativePoint="TOPRIGHT"></Anchor>
+						</Anchors>
+					</EditBox>
+					<Button name="SW_UL_F_Action" inherits="SW_UL_FilterButton" text=">">
+						<Size>
+							<AbsDimension x="30" y="14" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="SW_UL_F_Source" relativePoint="TOPRIGHT"></Anchor>
+						</Anchors>
+						<Scripts>
+							<OnClick>ToggleDropDownMenu(1, nil, SW_UL_ActionFilterDD, this, 0, 0);</OnClick>
+						</Scripts>
+					</Button>
+					<Button name="SW_UL_F_Target" inherits="SW_UL_FilterButton" text="Target">
+						<Size>
+							<AbsDimension x="75" y="14" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="SW_UL_F_Action" relativePoint="TOPRIGHT"></Anchor>
+						</Anchors>
+						<Scripts>
+							<OnMouseUp>
+								if arg1 == "LeftButton" then
+									SW_UL_HandleFilterBox(SW_UL_FilterTarget);
+								else
+									--ToggleDropDownMenu(1, nil, SW_UL_TargetFilterDD, this, 0, 0);
+								end
+							</OnMouseUp>
+						</Scripts>
+					</Button>
+					<EditBox name="SW_UL_FilterTarget" inherits="SW_UL_FilterBox" hidden="true">
+						<Size>
+							<AbsDimension x="75" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="BOTTOMLEFT" relativeTo="SW_UL_F_Action" relativePoint="TOPRIGHT"></Anchor>
+						</Anchors>
+					</EditBox>
+					<Button name="SW_UL_F_What" inherits="SW_UL_FilterButton" text="Info">
+						<Size>
+							<AbsDimension x="100" y="14" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="SW_UL_F_Target" relativePoint="TOPRIGHT"></Anchor>
+							<Anchor point="RIGHT" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="-50" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnClick>SW_UL_HandleFilterBox(SW_UL_FilterWhat);</OnClick>
+						</Scripts>
+					</Button>
+					<EditBox name="SW_UL_FilterWhat" inherits="SW_UL_FilterBox" hidden="true">
+						<Size>
+							<AbsDimension x="75" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="BOTTOMLEFT" relativeTo="SW_UL_F_Target" relativePoint="TOPRIGHT"></Anchor>
+							<Anchor point="BOTTOMRIGHT" relativeTo="SW_UL_F_What" relativePoint="TOPRIGHT"></Anchor>
+						</Anchors>
+					</EditBox>
+					<CheckButton name="SW_UL_Chk_NarrowData" inherits="UICheckButtonTemplate" hidden="false">
+						<Size>
+							<AbsDimension x="15" y="15" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPRIGHT" relativeTo="$parent_Close" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="-2" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnClick>
+								SW_UL_Settings.NarrowData = not SW_UL_Settings.NarrowData 
+								if SW_UL_Settings.NarrowData then
+									-- refresh the group info, not really needed
+									SW_Timed_Calls.rebuildGR = true;
+								end
+							</OnClick>
+							<OnEnter>
+								GameTooltip:SetOwner(this, "ANCHOR_LEFT");
+								GameTooltip:SetText(SW_UL_L.NarrowData,nil,nil,nil,nil,1);
+							</OnEnter>
+							<OnLeave>
+								GameTooltip:Hide();
+							</OnLeave>
+						</Scripts>
+					</CheckButton>
+				</Frames>
+			</Frame>
+			<EditBox name="SW_UL_CopyBox" letters="50" historyLines="0" autoFocus="true" hidden="true">
+				<Size>
+					<AbsDimension x="100" y="20" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="SW_UL_F_When" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="5" y="0" />
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT" relativeTo="SW_UL_F_What" relativePoint="TOPRIGHT"></Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture name="$parentLeft" file="Interface\Common\Common-Input-Border">
+							<Size>
+								<AbsDimension x="8" y="20" />
+							</Size>
+							<Anchors>
+								<Anchor point="TOPLEFT">
+									<Offset>
+										<AbsDimension x="-5" y="0" />
+									</Offset>
+								</Anchor>
+							</Anchors>
+							<TexCoords left="0" right="0.0625" top="0" bottom="0.625" />
+						</Texture>
+						<Texture name="$parentRight" file="Interface\Common\Common-Input-Border">
+							<Size>
+								<AbsDimension x="8" y="20" />
+							</Size>
+							<Anchors>
+								<Anchor point="RIGHT">
+									<Offset>
+										<AbsDimension x="0" y="0" />
+									</Offset>
+								</Anchor>
+							</Anchors>
+							<TexCoords left="0.9375" right="1.0" top="0" bottom="0.625" />
+						</Texture>
+						<Texture name="$parentMiddle" file="Interface\Common\Common-Input-Border">
+							<Size>
+								<AbsDimension x="10" y="20" />
+							</Size>
+							<Anchors>
+								<Anchor point="LEFT" relativeTo="$parentLeft" relativePoint="RIGHT" />
+								<Anchor point="RIGHT" relativeTo="$parentRight" relativePoint="LEFT" />
+							</Anchors>
+							<TexCoords left="0.0625" right="0.9375" top="0" bottom="0.625" />
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnEnterPressed>
+						this:ClearFocus();
+						this:Hide();
+						if not ChatFrameEditBox:IsVisible() then
+							ChatFrameEditBox:Show();
+						end
+					</OnEnterPressed>
+					<OnEscapePressed>
+						this:ClearFocus();
+						this:Hide();
+					</OnEscapePressed>
+					<OnEditFocusLost>
+						this:HighlightText(0, 0);
+					</OnEditFocusLost>
+					<OnEditFocusGained>
+						this:HighlightText();
+						
+					</OnEditFocusGained>
+					<OnChar>this:ClearFocus(); this:Hide();</OnChar>
+				</Scripts>
+				<FontString inherits="ChatFontNormal" />
+			</EditBox>
+			<Frame name="SW_UL_ActionFilterDD" inherits="UIDropDownMenuTemplate">
+				<Scripts>
+					<OnShow>
+						UIDropDownMenu_Initialize(this, SW_UL_ActionFilterDD_Initialize, "MENU");
+                    </OnShow>
+				</Scripts>
+			</Frame>
+			<Frame name="SW_UL_TargetFilterDD" inherits="UIDropDownMenuTemplate">
+				<Scripts>
+					<OnShow>
+						UIDropDownMenu_Initialize(this, SW_UL_TargetFilterDD_Initialize, "MENU");
+                    </OnShow>
+				</Scripts>
+			</Frame>
+			<Slider name="SW_UL_ScrollSlider" inherits="OptionsSliderTemplate" orientation="VERTICAL">
+				<Size>
+					<AbsDimension x="12" y="150" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-5" y="-1" />
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="-5" y="1" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad></OnLoad>
+					<OnShow>SW_UL_Buffer.updateDisplay = true; </OnShow>
+					<OnValueChanged>SW_UL_Buffer.updateDisplay = true; </OnValueChanged>
+					<OnMouseWheel>
+						
+						this:SetValue(this:GetValue()-arg1);
+						
+						SW_UL_TimerScrollUpdate = 1;
+					</OnMouseWheel>
+				</Scripts>
+			</Slider>
+			<Button name="$parent_Item1" inherits="SW_UL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="8" y="-25" />
+						</Offset>
+					</Anchor>
+					<Anchor point="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<!-- the rest of the item frames are created on the fly -->
+		</Frames>
+	</Frame>
+</Ui>

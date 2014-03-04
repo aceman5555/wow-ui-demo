@@ -1,0 +1,12 @@
+
+Omen3DB = {
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Git - Azuremyst",
+	},
+	["profiles"] = {
+		["Git - Azuremyst"] = {
+			["PositionY"] = 665.7692757269233,
+			["PositionX"] = 832.7308443612102,
+		},
+	},
+}

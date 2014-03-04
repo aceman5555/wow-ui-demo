@@ -1,0 +1,30 @@
+
+CPRDB2 = {
+	["profileKeys"] = {
+		["Evyyn - Azuremyst"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["modules"] = {
+				["Soul Shards"] = {
+				},
+				["Deadly Poison"] = {
+					["textY"] = 371.0000355797863,
+					["textX"] = 620.9000003153395,
+					["graphicsY"] = 347.9250111380794,
+					["graphicsX"] = 476.9250708610639,
+				},
+				["Combo Points"] = {
+					["textY"] = 479.5499871441502,
+					["textX"] = 525.3500440708783,
+					["graphicsY"] = 331.4152715873831,
+					["graphicsX"] = 423.5351335551021,
+				},
+				["Bandits Guile"] = {
+					["graphicsY"] = 408.3749753403923,
+					["graphicsX"] = 610.8250413697062,
+				},
+			},
+		},
+	},
+}

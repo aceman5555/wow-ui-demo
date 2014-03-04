@@ -1,0 +1,95 @@
+Main idea of addon - reducing amount of raid leader work on tracking cooldowns. In this time I know only on addon for tracking CDs - [[http://www.curse.com/addons/wow/track-cooldowns|Track Cooldowns]]. But it shows only CDs. 
+
+This addon's goal - show all **available** cooldowns of raid depending of player's spec. So if u have restor druid, u will see tranquility, that has 3 min cd.
+
+Addon creates container for each group of spells (that u track, so u can choose if u wanna track or not current spell), that u can move, increase width of it, change direction of aligment spell's frames. Method of sorting spells:
+# Casting in current time spell (example - Aura Mastery)
+# Available excellent CD (example - restor druid tranquility).
+# Available good CD (example - balance tranquility).
+# Available bad CD (example - feral's tranquility).
+# Spells on CD.
+# Spells of dead people.
+# Spells of offline people.
+Tracking specified in configuration number of groups.
+
+If you want to help with others localizations or have good idea, how increase quality of addon, you can always contact me through my [[kazmin.oleg@gmail.com|e-mail]]
+
+PS. By deffinition CDs of blood DK and feral druid show's as raid CD type 1, so if your tanks don't have 4 pieces of t13, u can always turn tracking off. CD of prot pal barrier - 3 min, so if your prot pal has 4 pieces, you should remember to subtract 1 minute from CD.
+
+
+==Full spell list:==
+====== Raid cooldown that reduce incoming damage or increase incoming healing.====== 
+ * [[http://www.wowhead.com/spell=31821|Mastery]]
+ * [[http://www.wowhead.com/spell=31821|Aura Mastery]]
+ * [[http://www.wowhead.com/spell=70940|Divine Guardian]]
+ * [[http://www.wowhead.com/spell=97462|Rallying Cry]]
+ * [[http://www.wowhead.com/spell=62618|Power Word: Barrier]]
+ * [[http://www.wowhead.com/spell=98008|Spirit Link Totem]]
+ * [[http://www.wowhead.com/spell=55233|Vampiric Blood]]
+ * [[http://www.wowhead.com/spell=22842|Frenzied Regeneration]]
+ * [[http://www.wowhead.com/spell=51052|Anti-Magic Zone]]
+ * [[http://www.wowhead.com/spell=871|Shield Wall]]
+====== AOE healings.====== 
+ * [[http://www.wowhead.com/spell=64843|Divine Hymn]]
+ * [[http://www.wowhead.com/spell=740|Tranquility]]
+====== CDs that regenerate mana.====== 
+ * [[http://www.wowhead.com/spell=64901|Hymn of Hope]]
+ * [[http://www.wowhead.com/spell=29166|Innervate]]
+ * [[http://www.wowhead.com/spell=16190|Mana Tide Totem]]
+====== Own CDs.====== 
+ * [[http://www.wowhead.com/spell=19263|Deterrence]]
+ * [[http://www.wowhead.com/spell=47585|Dispersion]]
+ * [[http://www.wowhead.com/spell=86150|Guardian of Ancient Kings]]
+ * [[http://www.wowhead.com/spell=498|Divine Protection]]
+ * [[http://www.wowhead.com/spell=31850|Ardent Defender]]
+ * [[http://www.wowhead.com/spell=871|Shield Wall]]
+ * [[http://www.wowhead.com/spell=31224|Cloak of Shadows]]
+ * [[http://www.wowhead.com/spell=45438|Ice Block]]
+ * [[http://www.wowhead.com/spell=87023|Cauterize]]
+ * [[http://www.wowhead.com/spell=642|Divine Shield]]
+ * [[http://www.wowhead.com/spell=12975|Last Stand]]
+ * [[http://www.wowhead.com/spell=22842|Frenzied Regeneration]]
+ * [[http://www.wowhead.com/spell=48792|Icebound Fortitude]]
+ * [[http://www.wowhead.com/spell=48707|Anti-Magic Shell]]
+ * [[http://www.wowhead.com/spell=49028|Dancing Rune Weapon]]
+ * [[http://www.wowhead.com/spell=49222|Bone Shield]]
+ * [[http://www.wowhead.com/spell=61336|Survival Instincts]]
+====== Direct CDs.====== 
+ * [[http://www.wowhead.com/spell=47788|Guardian Spirit]]
+ * [[http://www.wowhead.com/spell=33206|Pain Suppression]]
+ * [[http://www.wowhead.com/spell=6940|Hand of Sacrifice]]
+====== CDs on +damage.====== 
+ * [[http://www.wowhead.com/spell=42650|Army of the Dead]]
+ * [[http://www.wowhead.com/spell=64382|Shattering Throw]]
+ * [[http://www.wowhead.com/spell=2825|Bloodlust]]
+ * [[http://www.wowhead.com/spell=32182|Heroism]]
+ * [[http://www.wowhead.com/spell=80353|Time Warp]]
+ * [[http://www.wowhead.com/spell=90355|Ancient Hysteria]]
+====== Resurrections.====== 
+ * [[http://www.wowhead.com/spell=20484|Rebirth]]
+ * [[http://www.wowhead.com/spell=61999|Raise Ally]]
+ * [[http://www.wowhead.com/spell=20707|Soulstone Resurrection]]
+====== Mix spells that can be usefull for RL but mostly not interesing.====== 
+ * [[http://www.wowhead.com/spell=1044|Hand of Freedom]]
+ * [[http://www.wowhead.com/spell=1022|Hand of Protection]]
+ * [[http://www.wowhead.com/spell=633|Lay on Hands]]
+ * [[http://www.wowhead.com/spell=77764|Stampeding Roar]]
+ * [[http://www.wowhead.com/spell=77761|Stampeding Roar]]
+ * [[http://www.wowhead.com/spell=1850|Dash]]
+ * [[http://www.wowhead.com/spell=5211|Bash]]
+ * [[http://www.wowhead.com/spell=49576|Death Grip]]
+ * [[http://www.wowhead.com/spell=12809|Concussion Blow]]
+ * [[http://www.wowhead.com/spell=46968|Shockwave]]
+ * [[http://www.wowhead.com/spell=2983|Sprint]]
+ * [[http://www.wowhead.com/spell=853|Hammer of Justice]]
+ * [[http://www.wowhead.com/spell=1038|Hand of Salvation]]
+ * [[http://www.wowhead.com/spell=50516|Typhoon]]
+ * [[http://www.wowhead.com/spell=51490|Thunderstorm]]
+ * [[http://www.wowhead.com/spell=6346|Fear Ward]]
+ * [[http://www.wowhead.com/spell=73325|Leap of Faith]]
+ * [[http://www.wowhead.com/spell=82676|Ring of Frost]]
+ * [[http://www.wowhead.com/spell=8143|Tremor Totem]]
+ * [[http://www.wowhead.com/spell=57934|Tricks of the Trade]]
+ * [[http://www.wowhead.com/spell=34477|Misdirection]]
+ * [[http://www.wowhead.com/spell=76577|Smoke Bomb]]
+ * [[http://www.wowhead.com/spell=48020|Demonic Circle: Teleport]]

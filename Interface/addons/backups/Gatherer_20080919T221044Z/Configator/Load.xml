@@ -1,0 +1,5 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+	<Script file="Configator.lua"/>
+	<Include file="SelectBox.xml"/>
+</Ui>
+

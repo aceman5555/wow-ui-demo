@@ -1,0 +1,9 @@
+## Interface: 50400
+## Title: Broker_StatsNow - Melee
+## Version: 2014.01.30
+## Author: WNxSajuukCor
+## Notes: LDB plugin to display your melee stats where you want.
+libs\LibStub.lua
+libs\CallbackHandler-1.0.lua
+libs\LibDataBroker-1.1.lua
+Broker_StatsNow_Melee.lua

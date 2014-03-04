@@ -1,0 +1,9 @@
+
+BossNotesRulesDB = {
+	["global"] = {
+		["databaseVersion"] = 2,
+	},
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Default",
+	},
+}

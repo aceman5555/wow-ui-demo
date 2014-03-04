@@ -1,0 +1,240 @@
+------------------------------------------------------------------------
+r41 | compost | 2012-02-19 09:25:15 +0000 (Sun, 19 Feb 2012) | 3 lines
+Changed paths:
+   A /tags/r40-beta (from /trunk:40)
+
+tag beta
+paladin guardian spell is untested
+hopefully positioning issues are fixed, let me know
+------------------------------------------------------------------------
+r40 | compost | 2012-02-19 09:24:14 +0000 (Sun, 19 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/Constants.lua
+
+added paladin guardian spell (tank edition only)
+------------------------------------------------------------------------
+r39 | compost | 2012-02-19 08:31:09 +0000 (Sun, 19 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/Locales/Locale-enUS.lua
+   M /trunk/RaidBoss.lua
+
+toggle display on/off for diffrent raid types / solo / party / etc.. as requested
+------------------------------------------------------------------------
+r38 | compost | 2012-02-19 07:34:56 +0000 (Sun, 19 Feb 2012) | 2 lines
+Changed paths:
+   M /trunk/RaidBoss.lua
+   M /trunk/RaidBoss.toc
+
+hopefully fixed issues with frame position resetting
+IMPORTANT: this revision will reset some of your configuration options
+------------------------------------------------------------------------
+r36 | compost | 2012-02-17 09:31:01 +0000 (Fri, 17 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/RaidBoss.lua
+
+fixed active bar color
+------------------------------------------------------------------------
+r35 | compost | 2012-02-16 19:06:05 +0000 (Thu, 16 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/RaidBoss.lua
+
+bugfix show only on cooldown option
+------------------------------------------------------------------------
+r34 | compost | 2012-02-16 19:00:20 +0000 (Thu, 16 Feb 2012) | 3 lines
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/Constants.lua
+   M /trunk/Locales/Locale-enUS.lua
+   M /trunk/RaidBoss.lua
+   M /trunk/RaidBoss.toc
+   M /trunk/configboss.lua
+
+added many many configuration options
+importing the shared media library for fonts
+added color picker and dropdown widgets to the configboss lib
+------------------------------------------------------------------------
+r33 | compost | 2012-02-16 14:26:28 +0000 (Thu, 16 Feb 2012) | 3 lines
+Changed paths:
+   M /trunk/Locales/Locale-enUS.lua
+   M /trunk/RaidBoss.lua
+
+added subgroup filtering thx foo2
+fixed active bar font sizing thx anti536
+
+------------------------------------------------------------------------
+r31 | compost | 2012-02-15 22:10:00 +0000 (Wed, 15 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/RaidBoss.lua
+
+bugfix glyph handling
+------------------------------------------------------------------------
+r29 | compost | 2012-02-15 21:40:11 +0000 (Wed, 15 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/RaidBoss.lua
+
+bugfix
+------------------------------------------------------------------------
+r28 | compost | 2012-02-15 21:35:44 +0000 (Wed, 15 Feb 2012) | 3 lines
+Changed paths:
+   M /trunk/Constants.lua
+   M /trunk/RaidBoss.lua
+
+added glyph support kinda
+added lay on hands
+added holy talent to reduce hand of sac cooldown
+------------------------------------------------------------------------
+r27 | compost | 2012-02-15 21:21:56 +0000 (Wed, 15 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/RaidBoss.lua
+
+erm
+------------------------------------------------------------------------
+r26 | compost | 2012-02-15 17:47:23 +0000 (Wed, 15 Feb 2012) | 3 lines
+Changed paths:
+   M /trunk/Constants.lua
+   M /trunk/Locales/Locale-enUS.lua
+   M /trunk/RaidBoss.lua
+   M /trunk/RaidBoss.toc
+   A /trunk/configboss.lua
+
+ - created a library to handle configuration in a time saving manner
+ - added checkboxes to enable/disable any tracked spells. in future choosing spell groups per spell may be an option
+ - revamped the options page
+------------------------------------------------------------------------
+r24 | compost | 2012-02-14 14:16:22 +0000 (Tue, 14 Feb 2012) | 2 lines
+Changed paths:
+   M /trunk/Constants.lua
+   M /trunk/Locales/Locale-enUS.lua
+   M /trunk/RaidBoss.lua
+
+- fixed frame resizing
+- added a new group for combat resurrection, using dummy 10 second timers to show activity. IF you have previously used this addon you may need to manually enable the combat res spell group in the interface options.
+------------------------------------------------------------------------
+r22 | compost | 2012-02-08 07:24:07 +0000 (Wed, 08 Feb 2012) | 2 lines
+Changed paths:
+   M /trunk/Locales/Locale-enUS.lua
+   M /trunk/RaidBoss.lua
+
+added a bunch of configuration controls for:
+ - bar size, font size, string length, etc..
+------------------------------------------------------------------------
+r20 | compost | 2012-02-07 15:54:48 +0000 (Tue, 07 Feb 2012) | 3 lines
+Changed paths:
+   M /trunk/Constants.lua
+   M /trunk/RaidBoss.lua
+
+fixed bug with spell groupings by role
+added role tag to groups
+updated default group set to restrict tank cooldowns to those filling a tank role
+------------------------------------------------------------------------
+r19 | compost | 2012-02-07 15:24:16 +0000 (Tue, 07 Feb 2012) | 2 lines
+Changed paths:
+   M /trunk/Constants.lua
+   M /trunk/RaidBoss.lua
+
+fixed issue with rostering in raid
+added support for placing a single spell in multiple groups
+------------------------------------------------------------------------
+r18 | compost | 2012-02-07 13:51:15 +0000 (Tue, 07 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/RaidBoss.lua
+
+added solo and party support
+------------------------------------------------------------------------
+r16 | compost | 2012-02-07 12:29:49 +0000 (Tue, 07 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/Constants.lua
+
+fixed buggy prot pally spells
+------------------------------------------------------------------------
+r14 | compost | 2012-02-07 11:18:41 +0000 (Tue, 07 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/Constants.lua
+   M /trunk/Locales/Locale-enUS.lua
+
+added a group for tank cooldowns (not tested)
+------------------------------------------------------------------------
+r12 | compost | 2012-02-07 02:51:28 +0000 (Tue, 07 Feb 2012) | 4 lines
+Changed paths:
+   M /trunk/Constants.lua
+   M /trunk/Locales/Locale-enUS.lua
+   M /trunk/RaidBoss.lua
+   M /trunk/RaidBoss.toc
+
+split into multi windows
+time in minutes and seconds
+added mana cooldowns
+option to hide individual windows
+------------------------------------------------------------------------
+r10 | compost | 2012-02-06 21:08:44 +0000 (Mon, 06 Feb 2012) | 2 lines
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/Constants.lua
+   M /trunk/RaidBoss.lua
+
+cleaned up externs
+added guardian spirit, hand of sac and pain supression
+------------------------------------------------------------------------
+r9 | compost | 2012-02-06 20:20:48 +0000 (Mon, 06 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/RaidBoss.toc
+
+fixed toc
+------------------------------------------------------------------------
+r8 | compost | 2012-02-06 20:16:33 +0000 (Mon, 06 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/RaidBoss.toc
+
+fixed externals
+------------------------------------------------------------------------
+r6 | compost | 2012-02-06 20:02:22 +0000 (Mon, 06 Feb 2012) | 1 line
+Changed paths:
+   M /trunk
+
+property change
+------------------------------------------------------------------------
+r5 | compost | 2012-02-06 20:01:15 +0000 (Mon, 06 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/Constants.lua
+   M /trunk/Locales/Locale-enUS.lua
+   M /trunk/RaidBoss.lua
+   M /trunk/RaidBoss.toc
+
+first working beta!
+------------------------------------------------------------------------
+r4 | compost | 2012-02-03 15:49:03 +0000 (Fri, 03 Feb 2012) | 2 lines
+Changed paths:
+   M /trunk/.pkgmeta
+
+fix lib ref
+
+------------------------------------------------------------------------
+r3 | compost | 2012-02-03 15:44:46 +0000 (Fri, 03 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/RaidBoss.toc
+
+abc
+------------------------------------------------------------------------
+r2 | compost | 2012-02-03 15:31:43 +0000 (Fri, 03 Feb 2012) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+   A /trunk/Constants.lua
+   A /trunk/Locales
+   A /trunk/Locales/Locale-enUS.lua
+   A /trunk/Locales/Locales.xml
+   A /trunk/RaidBoss.lua
+   A /trunk/RaidBoss.toc
+
+initial commit, empty files
+------------------------------------------------------------------------
+r1 | svn | 2012-02-03 13:54:26 +0000 (Fri, 03 Feb 2012) | 1 line
+Changed paths:
+   A /branches
+   A /tags
+   A /trunk
+
+raidboss/mainline: Initial Import
+------------------------------------------------------------------------

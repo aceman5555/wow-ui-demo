@@ -1,0 +1,8 @@
+
+GoldSave = {
+	["Git_Azuremyst::Horde"] = {
+		["show"] = true,
+		["name"] = "Git",
+		["gold"] = 100501390,
+	},
+}

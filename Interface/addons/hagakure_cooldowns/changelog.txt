@@ -1,0 +1,168 @@
+0.1.4
+*Strangulate (DK) have now 60s CD
+*Asphyxiate (DK) have now 30s CD
+*Cyclone (feral druids) have now 20s CD
+*Dispersion (druid symbiosis) have now 3m CD
+*Mass Entanglement (druid) have now 30s CD
+*Typhoon (druid) have now 30s CD
+*Nature's Vigil (druid) have now 90s CD
+*Silencing Shot (hunter) have now 24s CD
+*Wyvern Sting (hunter) have now 45s CD
+*Greater Invisibility (mage) have now 90s CD
+*Ice Floes (mage) have now 45s CD
+*Avenging Wrath (paladin) in retri spec now have 2m CD
+*Blind (rogue) have now 2m CD
+*Cloak of Shadows (rogue) have now 60s CD
+*Smoke Bomb (rogue) now a raid CD (-20% dmg for 5s in 8yard radius)
+*Elemental Mastery (shaman) now have 90s CD
+*Spirit Walk (shaman) now have 60s CD
+*Kil'jaeden's Cunning (warlock) is now passive talent
+*New spell (monk) Nimble brew
+*New talent (monk) Ring of Peace
+*Chi wave (monk) now have 15s CD
+*Chi burst (monk) now have 30s CD
+*Charging Ox Wave (monk) now have 30s CD
+*Updating main addon also force update grid module if turned on
+
+0.1.3
+*Grid integration, search new options in expert settings and then in your grid addon
+*Fix CD for prot warrior shield wall
+*Fix CD for disc priest barrier
+*I know problems with with CDs' reset on Lei Shi and Tsulong, will think how to fix it in future
+
+0.1.2.2
+*Update .toc for 5.1
+*Stable release
+
+0.1.2.1
+
+Changes from 5.1 patch
+*Mass dispel from symbiosys CD increase to 60sec (up from 15)
+*Stampeding Shout provided by Symbiosis has been reduced to 5 minutes (down from 10m)
+*Ring of Frost now has a 45 second cooldown (up from 30 sec)
+*The cooldown of Blind has been reduced to 90 seconds (down from 3 min)
+*Avatar's duration has increased to 24 sec (up from 20 sec)
+*The cooldown of Intimidating Shout has increased to 90 sec (up from 60 sec)
+*The duration of Solar Beam has been reduced to 8 seconds (down from 10 sec)
+*Tanks again gains from symbiosys defence abilities (warriors Savage Defense, monks Survival Instincts, dks Might of Ursoc, paladins Barkskin)
+
+Additional changes
+*Reset 5min+ CDs after wipe on raid boss enc
+*Auto scan talents now turned on by defenition
+*Still working on grid integration
+
+0.1.2
+*Fix problem with sorting function in automatic talent scaning system
+*Fix problem with drawing manual spell/talent/symbiosys spell if some group of spells is turned off
+*New auto scan talents system
+*Track list of symbiosys that cathed addon
+*Minimap icon
+*Check symbiosys buffs after staring combat for checking spell casts, that addon didn't catch through combat log (some delay to prevent lagging from redraw addon at combat start [this function delete symbiosys, that added through combat log and add through buffs checking])
+*Lightspring (priest spell) correctly start cd for Lightwell
+*Symbiosys changes 2012-10-18
+*Some fixes in .toc file not to be outdtated addon
+*Unable to track moment of warlocks' ressurect, so return to SPELL_CAST_START trigger (will start CD of spell even if player stopped casting;/)
+*Again enable click through spells' frame if option "Spells' tooltips" is turned off
+*Some modifications in addon files
+
+0.1.1
+*Show CDs even if player is dead
+*Update symiosys for hotfixes October 2.
+
+0.0.15
+*Show profile management in /hcd command
+*Add 90 lvl talents and spells for: shaman and rogue (no talents O_o), druid, deathknight, paladin, warrior, mage, priest, warlock
+*Add symbiosys management
+*Some optimisations in addon, should work much faster
+*Still working on hunter and monk 87+ lvl spells
+
+0.0.14
+*Fixes in localization
+*Add debug mode for configuration spells out of raid
+*Work in groups too
+*Color setting fix
+*Add function to turn on tooltips for spells
+
+0.0.13
+*Localization fixes for monks and druids
+*Add possibility to turn off server's names in CDs
+*New manual spell interface
+*Add interface for fast adding talents for tracking
+*Finaly all telents (without 90 lvl talents) for all classes
+*Possibility to add talents through manual interface
+*Some modifications in manual interface
+
+0.0.12
+*Pandas version incoming
+*Update spell list for shamans
+*Update spell list for priests
+*Update spell list for rogues
+*Update spell list for warriors
+*Update spell list for mages
+*Update spell list for druids
+*Update spell list for warlocks
+*Update spell list for paladins
+*Update spell list for hunters
+*Update spell list for monks
+*Update spell list for deathknights
+
+0.0.11
+*Fix long names again ;/
+
+0.0.10
+*Hide/show function now works correctly
+*Redraw script now available from /hcd command (for possible crashes)
+*Self announce works correctly
+*Add announce CD start
+*Fix long names
+
+0.0.9
+*Now spells from one category are trigger correctly (like Stampeding Roar in bear or cat form)
+*Now all spells! (ok, ok, almoust all, so if you didn't find some, you can always write comment on curse or somewere else)
+*Fix turning debug mod for everyone in last release, now turn on only for my characters.
+*Add buttons turn all on/off in spells groups
+*Fix align "from bottom to top"
+
+0.0.8
+*Now hide function also hide active spell's container
+*Correctly turn on/off active spell's container
+*Fix mistakes in russian localization
+*Fix mistakes in generating options for frame's containers (can nil previous settings)
+*Fix showing CD in active spell's frame, when group of cooldowns is turned off
+*Added more spells (full spell list will be updated later)
+*Now spells in config are grouped by class and have spell popup
+*Cancel drawing spell in active spell's frame by mouse click (to remove spells, that are not interesting or long such as bloodlust or army of DK).
+*Fix problems with saving settings of spell containers
+*Background + bars for spell's containers (need to be turned on!)
+
+0.0.7
+*Fix problems on profile change
+*Change BigWigs announce
+*Add option to turn off names in active spells' frame
+*Add new dialog frame to make individual spell configuration
+*Add spec detection for rest classes (warlock, hunter, rogue)
+
+0.0.6
+*Add config for usual size of spell icon
+*Add announce through DBM/DXE/BigWigs
+*Fix problems with "1:00"
+*Add announce ready spells
+
+0.0.5
+*More exact timer on last 16 seconds (will be available for configure in future)
+*Move another place configuration of frame for casting spells
+*Remove holy shok from spell list (no only in debug mode)
+*Correctly working lock/unlock functions
+*More CDs (that are moslty unusefull ^^)
+*Disable rebirth Shaman - not possible to track without oRA
+
+0.0.4.1
+*Added frame for casting spells
+*Anchor frames now have captions (type of spell group)
+
+0.0.4
+*Added localization enUS.
+
+0.0.3
+*Added configuration of font.
+*Added configuration of colors, that used for painting.

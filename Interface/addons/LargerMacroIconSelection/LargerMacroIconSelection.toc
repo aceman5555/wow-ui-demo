@@ -1,0 +1,15 @@
+## Interface: 40300
+## Title: LargerMacroIconSelection
+## Version: 1.0.2
+## Author: Xinhuan
+## Notes: Shows you a much bigger macro icon selection frame instead of the standard 5x4 one
+## LoadOnDemand: 1
+## LoadWith: Blizzard_MacroUI
+## SavedVariables: LargerMacroIconSelectionDB
+## X-Email: xinhuan AT gmail DOT com
+## X-Curse-Packaged-Version: v1.0.2
+## X-Curse-Project-Name: LargerMacroIconSelection
+## X-Curse-Project-ID: larger-macro-icon-selection
+## X-Curse-Repository-ID: wow/larger-macro-icon-selection/mainline
+
+LargerMacroIconSelection.lua

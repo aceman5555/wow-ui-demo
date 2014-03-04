@@ -1,0 +1,11 @@
+<Bindings>
+	<Binding name="TRINITY2_BARS_TOGGLE_BUTTONLOCK" header="TRINITY2_BARS">
+		TrinityBars2.ButtonLockMinimapToggle()
+	</Binding>
+	<Binding name="TRINITY2_BARS_TOGGLE_KEYBIND" header="TRINITY2_BARS">
+		TrinityBars2.ToggleBindingMode()
+	</Binding>
+	<Binding name="TRINITY2_BARS_TOGGLE_BUTTONEDIT" header="TRINITY2_BARS">
+		TrinityBars2.ToggleButtonEditMode()
+	</Binding>	
+</Bindings>

@@ -1,0 +1,18 @@
+﻿## Interface: 30200
+## Title: GridStatusAFK
+## Notes: Adds AFK status to Grid frames.
+## Notes-zhCN: [Grid] 在 Grid 框体中添加暂离状态提示。
+## Notes-zhTW: [Grid] 在 Grid 框架中添加暫離狀態提示。
+## Author: Halgrimm, Toadkiller
+## Version: 3.2.0.40
+## Grid Author: Pastamancer & Maia
+## Dependencies: Grid
+## X-Website: http://wowace.com/wiki/Grid
+## X-Category: UnitFrame
+## X-GridStatusModule: GridStatusAFK
+## X-Curse-Packaged-Version: 40 release
+## X-Curse-Project-Name: GridStatusAFK
+## X-Curse-Project-ID: gridstatusafk
+## X-Curse-Repository-ID: wow/gridstatusafk/mainline
+
+GridStatusAFK.lua

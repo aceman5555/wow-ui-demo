@@ -1,0 +1,52 @@
+## Interface: 40000
+## Title: Utopia by |cFFFF8080Zek|r
+## Notes: Target Debuff monitor. Stacking aware, giving current and potential debuff status.
+## Author: Zek
+## Version: 1.0.$Revision: 212 $
+## SavedVariables: UtopiaDB
+## X-Category: Raid
+## X-eMail: zeksie@gmail.com
+## X-License: GPL v2 or later
+## X-Donate: PayPal:zeksie@gmail.com
+## OptionalDeps: Ace3, LibSharedMedia-3.0, LibTalentQuery-1.0, LibGroupTalents-1.0, AceGUI-3.0-SharedMediaWidgets, LibBossIDs-1.0
+## X-Curse-Packaged-Version: 4.0 Release 1
+## X-Curse-Project-Name: Utopia
+## X-Curse-Project-ID: utopia
+## X-Curse-Repository-ID: wow/utopia/mainline
+
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\AceTimer-3.0\AceTimer-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceComm-3.0\AceComm-3.0.xml
+Libs\AceHook-3.0\AceHook-3.0.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Libs\AceSerializer-3.0\AceSerializer-3.0.xml
+
+Libs\LibSharedMedia-3.0\lib.xml
+Libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+
+Libs\LibTalentQuery-1.0\LibTalentQuery-1.0.lua
+Libs\LibGroupTalents-1.0\LibGroupTalents-1.0.lua
+libs\LibBossIDs-1.0\LibBossIDs-1.0.lua
+
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+#@end-no-lib-strip@
+
+Locales\Locales.xml
+LibZekFrames-1.0.lua
+
+Utopia.lua
+data.lua
+funcs.lua
+classdata.lua
+
+modules.xml

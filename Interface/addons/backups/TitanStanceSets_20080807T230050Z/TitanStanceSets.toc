@@ -1,0 +1,11 @@
+## Interface: 20100
+## Title: Titan Panel [StanceSets] v2.0.1
+## Notes: Automatically change weapon sets based on stance.
+## Requires: Weapon Quick Swap
+## Dependencies: Titan, WeaponQuickSwap
+## OptionalDeps: 
+## Version: 3.0.6.20100
+## SavedVariables: StanceSets,StanceSetsOptions
+..\Titan\TitanStanceSets\TitanStanceSets.xml
+
+

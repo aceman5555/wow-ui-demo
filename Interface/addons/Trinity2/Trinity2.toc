@@ -1,0 +1,16 @@
+﻿## Interface: 20400
+## Title: Trinity 2.0
+## Author: Maul
+## Version: 20400.1
+## Notes: Function Library and Frame Templates for |cff267EFFTrinityUI|r Addons
+## DefaultState: enabled
+## Dependencies:
+## OptionalDeps:
+## SavedVariables:
+## SavedVariablesPerCharacter: Trinity2SavedState
+
+localization\localization.lua
+
+Bindings.xml
+core.lua
+core.xml

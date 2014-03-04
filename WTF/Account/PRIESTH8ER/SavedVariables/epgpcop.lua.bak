@@ -1,0 +1,12 @@
+
+EpgpCop_DB = {
+	["profileKeys"] = {
+		["Git - Cho'gall"] = "Default",
+	},
+	["char"] = {
+		["Git - Cho'gall"] = {
+			["amount"] = "-25",
+			["reason"] = "Derp",
+		},
+	},
+}

@@ -1,0 +1,9 @@
+## Interface: 50400
+## Title: Vengeance Status
+## Notes: Status Bar showing Vengeance AP/Max. Mouseover for last fight max, average, uptime.
+## Author: Driizt at Bronzebeard(EU)
+## Version: 1.39
+## SavedVariables: VengeanceHistoryDB
+## SavedVariablesPerCharacter: VengeanceStatusDB
+
+core.lua

@@ -1,0 +1,67 @@
+v1.5.5:
+* Deprecate the whole thing
+* alias /bwpb to /bwcb
+
+v1.5.4
+* bump toc to 50100 (wow 5.1.0)
+
+v1.5.3
+* bump toc to 50001 (wow 5.0.4)
+* migrate group-functions to 5.0.4
+
+v1.5.2
+* fix error on raid-join related to DXEs
+* register for addon messages from DBM4 and DXE to make it work again
+
+v1.5.1
+* bump toc to 40200 (mark 4.2 compatible)
+
+v1.5
+* adapt to new DBM-messaging-scheme
+* received bars now include the senders name
+* bump toc to 40100 (mark 4.1 compatible)
+
+v1.4.1
+* bump toc to 40000 (mark 4.0 compatible)
+
+v1.4
+* add support Deus Vox Encounters (DXE) custom bars
+* add support for starting bars again
+* add slash-command to start custom bars on all bossmods (/bwpb)
+
+v1.3.5:
+* adapt to new BigWigs-Bars-API
+* bump toc to 30300
+
+v1.3.4:
+* use icon for the started bar (same as BigWigs - CustomBars)
+
+v1.3.3:
+* remove loading spam
+
+v1.3.2:
+* make plugin compatible with BigWigs-3.0
+* make plugin loadondemand
+
+v1.3.1:
+* make sure PizzaBar only makes valid calls to BigWigs
+    (so it doesn't break BigWigs itself)
+
+v1.3:
+* add support for pull-timers again
+* add support for answering DBM-version queries (turned off by default)
+* add support for starting dbm-pizza-timers
+* make some options
+
+v1.2.1:
+* .toc-fixes, to avoid loading errors when enabling BigWigs
+
+v1.2:
+* make compatible with BigWigs' new Bars2-module
+
+v1.1:
+* make compatible with DeadlyBossMods 4.x
+	previous verions of DBM are not supported anymore
+
+v1.0:
+* rewrite as BigWigs-plugin

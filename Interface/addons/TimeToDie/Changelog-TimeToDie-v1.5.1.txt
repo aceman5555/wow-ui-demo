@@ -1,0 +1,25 @@
+------------------------------------------------------------------------
+r100 | mecdemort | 2012-09-10 14:08:56 +0000 (Mon, 10 Sep 2012) | 1 line
+Changed paths:
+   A /tags/v1.5.1 (from /trunk:99)
+
+Tagging as v1.5.1
+------------------------------------------------------------------------
+r99 | mecdemort | 2012-09-10 14:00:50 +0000 (Mon, 10 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/TimeToDie.lua
+
+Fix ticket 4 - typo in local declaration
+------------------------------------------------------------------------
+r97 | mecdemort | 2012-09-08 21:00:54 +0000 (Sat, 08 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/TimeToDie.toc
+
+Bump toc to 5.0.3
+------------------------------------------------------------------------
+r96 | mecdemort | 2012-04-05 18:49:15 +0000 (Thu, 05 Apr 2012) | 1 line
+Changed paths:
+   M /trunk/TimeToDie.toc
+
+Update addon website
+------------------------------------------------------------------------

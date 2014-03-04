@@ -1,0 +1,13 @@
+## Interface: 50001
+## Title: TipTacExtraTip
+## Notes: Applies TipTac style to all extra tooltip frames (Auctioneer, etc.)
+## Author: Pezzer
+## Version: 1.0
+## Dependencies: TipTac
+## OptionalDeps: Auc-Auctioneer, Informant
+## X-Curse-Packaged-Version: v1.0.1
+## X-Curse-Project-Name: TipTacExtraTip
+## X-Curse-Project-ID: tip-tac-extra-tip
+## X-Curse-Repository-ID: wow/tip-tac-extra-tip/mainline
+
+TipTacExtraTip.lua

@@ -1,0 +1,15 @@
+Version: 1
+Frame: DBMMinimapButton
+FrameLevel: 8
+Anchor: TOPRIGHT
+X: 6
+Y: -107
+W: 32
+H: 32
+Frame: TAMsgFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 165
+Y: -264
+W: 307
+H: 50

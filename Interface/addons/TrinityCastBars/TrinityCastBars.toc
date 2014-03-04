@@ -1,0 +1,15 @@
+﻿## Interface: 20400
+## Title: Trinity Casting Bars 2.0
+## Author: Maul
+## Version: 20400.1
+## Notes:
+## DefaultState: enabled
+## Dependencies: Trinity2
+## OptionalDeps:
+## SavedVariables:
+## SavedVariablesPerCharacter: TrinityCastBarsSavedState
+
+localization\localization.lua
+
+castbars.lua
+castbars.xml

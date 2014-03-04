@@ -1,0 +1,171 @@
+
+Bartender4DB = {
+	["namespaces"] = {
+		["ActionBars"] = {
+			["profiles"] = {
+				["Git - Azuremyst"] = {
+					["actionbars"] = {
+						{
+							["rows"] = 3,
+							["version"] = 3,
+							["position"] = {
+								["x"] = -2.999985590829751,
+								["point"] = "LEFT",
+								["y"] = -71.457482509903,
+							},
+						}, -- [1]
+						{
+							["rows"] = 3,
+							["version"] = 3,
+							["position"] = {
+								["x"] = -2.999985590829751,
+								["point"] = "LEFT",
+								["y"] = 44.62081818642537,
+							},
+						}, -- [2]
+						{
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+								["y"] = 610,
+							},
+							["padding"] = 5,
+						}, -- [3]
+						{
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+								["y"] = 610,
+							},
+							["padding"] = 5,
+						}, -- [4]
+						{
+							["clickthrough"] = true,
+							["version"] = 3,
+							["position"] = {
+								["x"] = -189.6082835437928,
+								["point"] = "CENTER",
+								["y"] = -214.5400606211364,
+							},
+							["padding"] = 0,
+							["visibility"] = {
+								["nocombat"] = true,
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -37.11106792264968,
+								["point"] = "BOTTOM",
+								["scale"] = 0.800000011920929,
+								["y"] = 44.00000196808179,
+							},
+							["padding"] = 0,
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						[10] = {
+						},
+					},
+				},
+			},
+		},
+		["MicroMenu"] = {
+			["profiles"] = {
+				["Git - Azuremyst"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["x"] = 37.5,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+						["y"] = 41.75,
+					},
+				},
+			},
+		},
+		["XPBar"] = {
+		},
+		["BlizzardArt"] = {
+			["profiles"] = {
+				["Git - Azuremyst"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = -512,
+						["point"] = "BOTTOM",
+						["y"] = 47,
+					},
+				},
+			},
+		},
+		["BagBar"] = {
+			["profiles"] = {
+				["Git - Azuremyst"] = {
+					["enabled"] = false,
+					["onebag"] = true,
+					["version"] = 3,
+					["position"] = {
+						["x"] = 463.5,
+						["point"] = "BOTTOM",
+						["y"] = 41.75,
+					},
+				},
+			},
+		},
+		["Vehicle"] = {
+			["profiles"] = {
+				["Git - Azuremyst"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = 53.49979556550397,
+						["point"] = "CENTER",
+						["y"] = 51.50002653395995,
+					},
+				},
+			},
+		},
+		["StanceBar"] = {
+			["profiles"] = {
+				["Git - Azuremyst"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = -3.000002460102238,
+						["point"] = "LEFT",
+						["scale"] = 1,
+						["y"] = -197.1422715782771,
+					},
+				},
+			},
+		},
+		["PetBar"] = {
+			["profiles"] = {
+				["Git - Azuremyst"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = 435.1259605381326,
+						["point"] = "CENTER",
+						["y"] = -248.6869409549456,
+					},
+				},
+			},
+		},
+		["RepBar"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Git - Azuremyst",
+	},
+	["profiles"] = {
+		["Git - Azuremyst"] = {
+			["blizzardVehicle"] = true,
+			["focuscastmodifier"] = false,
+			["outofrange"] = "hotkey",
+		},
+	},
+}

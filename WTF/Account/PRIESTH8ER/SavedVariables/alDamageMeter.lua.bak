@@ -1,0 +1,35 @@
+
+dmconf = {
+	["barheight"] = 14,
+	["maxfights"] = 10,
+	["classcolorbar"] = true,
+	["reportstrings"] = 10,
+	["onlyboss"] = false,
+	["spacing"] = 1,
+	["maxbars"] = 8,
+	["border_color"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+	},
+	["width"] = 165,
+	["font_size"] = 8,
+	["border_size"] = 1,
+	["mergeHealAbsorbs"] = false,
+	["backdrop_color"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+	},
+	["classcolorname"] = false,
+	["hidetitle"] = true,
+	["font_style"] = "OUTLINEMONOCHROME",
+	["barcolor"] = {
+		0.4, -- [1]
+		0.4, -- [2]
+		0.4, -- [3]
+		1, -- [4]
+	},
+}

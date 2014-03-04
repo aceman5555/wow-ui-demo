@@ -1,0 +1,8 @@
+2014-01-22  James D. Callahan III  <jcallahan@curse.com>
+
+[9cc4ffab84d1] [5.4.2-1]
+* Main.lua:
+
+Miscellaneous fixes.
+
+

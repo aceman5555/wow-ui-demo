@@ -1,0 +1,9 @@
+## Interface: 20100
+## Title: Titan Panel [Bag]
+## Notes: Adds bag and free slot information to Titan Panel
+## Author: Adsertor
+## SavedVariables: 
+## OptionalDeps: 
+## Dependencies: Titan
+## Version: 3.0.6.20100
+..\Titan\TitanBag\TitanBag.xml

@@ -1,0 +1,6 @@
+
+GuildBankRepairToggleDB = {
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Default",
+	},
+}

@@ -1,0 +1,10 @@
+﻿## Interface: 50400
+## Title: Combat|cff7fff7fReplay|r - Saved Data
+## Author: Shurshik
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## Dependencies: CombatReplay
+## SavedVariablesPerCharacter: crsaveddata
+CombatReplay_SavedData.lua
+CombatReplay_SavedData.xml
+HSL.lua

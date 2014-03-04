@@ -1,0 +1,6 @@
+
+crOptTrackBoss = true
+crPlayersSizeOnMap = 12
+crPlayerIconPositionShow = true
+crOptTrackLfr = false
+crCenterFrameSizeDef = 700

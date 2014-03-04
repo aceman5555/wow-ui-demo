@@ -1,0 +1,8 @@
+## Interface: 50400
+## Title: Tidy Plates: ClassicPlates Theme
+## Notes: Vanilla-Style Plates.
+## Author: Avernus
+## Dependencies: TidyPlates, TidyPlatesHub
+
+TidyPlates_ClassicPlates.lua
+

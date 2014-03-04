@@ -1,0 +1,18 @@
+
+LoggerHeadDB = {
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["log"] = {
+				["raid"] = {
+					["Icecrown Citadel"] = {
+						[3] = true,
+					},
+				},
+			},
+			["version"] = 3,
+		},
+	},
+}

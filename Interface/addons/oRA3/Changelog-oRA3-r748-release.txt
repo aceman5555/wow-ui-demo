@@ -1,0 +1,43 @@
+------------------------------------------------------------------------
+r748 | funkydude | 2014-02-20 10:51:33 +0000 (Thu, 20 Feb 2014) | 1 line
+Changed paths:
+   A /tags/r748-release (from /trunk:747)
+
+Tagging as r748-release
+------------------------------------------------------------------------
+r747 | MysticalOS | 2014-02-20 02:39:25 +0000 (Thu, 20 Feb 2014) | 1 line
+Changed paths:
+   M /trunk/modules/Invite.lua
+
+Fix invites by whisper
+------------------------------------------------------------------------
+r745 | funkydude | 2014-02-19 08:56:07 +0000 (Wed, 19 Feb 2014) | 1 line
+Changed paths:
+   M /trunk/oRA3.lua
+
+Ambiguate addon comm.
+------------------------------------------------------------------------
+r743 | _yusaku_ | 2014-02-16 18:37:43 +0000 (Sun, 16 Feb 2014) | 1 line
+Changed paths:
+   M /trunk/locales/itIT.lua
+
+fulliy itIT locale translated
+------------------------------------------------------------------------
+r742 | funkydude | 2014-02-05 18:55:55 +0000 (Wed, 05 Feb 2014) | 1 line
+Changed paths:
+   M /trunk/modules/Loot.lua
+
+Loot: Hopefully fix #157, setting loot less aggressively.
+------------------------------------------------------------------------
+r741 | funkydude | 2014-01-30 19:48:59 +0000 (Thu, 30 Jan 2014) | 1 line
+Changed paths:
+   M /trunk/modules/Promote.lua
+
+Promote: Allow 2 letter names to be added to the auto promote list.
+------------------------------------------------------------------------
+r740 | StingerSoft | 2014-01-16 10:37:58 +0000 (Thu, 16 Jan 2014) | 1 line
+Changed paths:
+   M /trunk/locales/ruRU.lua
+
+ruRU update
+------------------------------------------------------------------------

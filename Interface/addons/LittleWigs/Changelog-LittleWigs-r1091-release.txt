@@ -1,0 +1,31 @@
+------------------------------------------------------------------------
+r1091 | funkydude | 2013-09-09 23:43:57 +0000 (Mon, 09 Sep 2013) | 1 line
+Changed paths:
+   A /tags/r1091-release (from /trunk:1090)
+
+Tagging as r1091-release
+------------------------------------------------------------------------
+r1090 | funkydude | 2013-09-09 23:28:43 +0000 (Mon, 09 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/LittleWigs.toc
+
+toc bump
+------------------------------------------------------------------------
+r1089 | funkydude | 2013-09-03 13:17:49 +0000 (Tue, 03 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/TempleOfTheJadeSerpent/Locales/itIT.lua
+
+Remove invalid locale entries.
+------------------------------------------------------------------------
+r1088 | _yusaku_ | 2013-09-01 22:36:03 +0000 (Sun, 01 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/BlackTempleSolo/Locales/itIT.lua
+   M /trunk/LittleWigs.toc
+   M /trunk/MogushanPalace/Locales/itIT.lua
+   M /trunk/ScarletHalls/Locales/itIT.lua
+   M /trunk/ScarletMonastery/Locales/itIT.lua
+   M /trunk/ShadoPanMonastery/Locales/itIT.lua
+   M /trunk/TempleOfTheJadeSerpent/Locales/itIT.lua
+
+itIT locale added
+------------------------------------------------------------------------

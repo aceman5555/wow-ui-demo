@@ -1,0 +1,227 @@
+
+GUPPET_SAVEDDATA = {
+	["Companion"] = {
+		{
+			["Name"] = "Green Wing Macaw",
+			["Slot"] = 1,
+			["Id"] = 10683,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 7387,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Miniwing",
+			["Slot"] = 2,
+			["Id"] = 39181,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 22445,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		{
+			["Name"] = "Onyxian Whelpling",
+			["Slot"] = 3,
+			["Id"] = 69002,
+			["UseSnowball"] = 0,
+			["CreatureID"] = 36607,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [3]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 3,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 3,
+	},
+	["Aquatic"] = {
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 0,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 0,
+	},
+	["Fly"] = {
+		{
+			["Name"] = "Blue Wind Rider",
+			["Slot"] = 1,
+			["Id"] = 32244,
+			["CreatureID"] = 18364,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Bronze Drake Mount",
+			["Slot"] = 2,
+			["Id"] = 59569,
+			["CreatureID"] = 31717,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		{
+			["Name"] = "Swift Purple Wind Rider",
+			["Slot"] = 5,
+			["Id"] = 32297,
+			["CreatureID"] = 18379,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [3]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 3,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 3,
+	},
+	["Multi"] = {
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 0,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 0,
+	},
+	["Ground"] = {
+		{
+			["Name"] = "Brown Skeletal Horse",
+			["Slot"] = 3,
+			["Id"] = 17464,
+			["CreatureID"] = 11155,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Green Skeletal Warhorse",
+			["Slot"] = 4,
+			["Id"] = 17465,
+			["CreatureID"] = 11156,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 2,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 2,
+	},
+	["Unknown"] = {
+		["Total"] = 0,
+	},
+}
+GUPPET_SAVEDLOCATIONS = {
+	["BattleGrounds"] = 40,
+	["Instances"] = 20,
+	["Arenas"] = 30,
+	["Cities"] = 10,
+	["Global World"] = 0,
+}
+GUPPET_OPTIONS = {
+	["Debug"] = false,
+	["PreviewFrameStartPos"] = 0,
+	["Class"] = {
+		["AquaticForm"] = true,
+		["FlyForm"] = true,
+	},
+	["IngameButton"] = {
+		["MountButton"] = "Auto",
+		["xOffset"] = 0,
+		["Icons"] = {
+			["Fly"] = "Interface\\Icons\\Ability_Mount_Drake_Bronze.blp",
+			["Companion"] = "Interface\\Icons\\INV_Box_PetCarrier_01.blp",
+			["Ground"] = "Interface\\Icons\\Ability_Mount_Mammoth_Black.blp",
+			["Auto"] = "Interface\\Icons\\Ability_Mount_Drake_Azure.blp",
+		},
+		["yOffset"] = 0,
+		["Show"] = true,
+		["Alignment"] = "H",
+		["RelativePoint"] = "CENTER",
+		["CompanionButton"] = true,
+		["Lock"] = false,
+		["Scale"] = 1,
+	},
+	["NewVersion"] = 0,
+	["AutoDismount"] = false,
+	["PreviewFrameSpeed"] = 1,
+	["AutoCompanion"] = {
+		["Enabled"] = false,
+		["PetOfTheDay"] = {
+			["Enabled"] = false,
+			["Day"] = 0,
+			["Month"] = 0,
+			["PetId"] = 0,
+			["Year"] = 0,
+		},
+		["Outside"] = true,
+		["BattleGround"] = true,
+		["Party"] = true,
+		["City"] = true,
+		["DismissMounted"] = false,
+		["Resummon"] = 0,
+		["Arena"] = true,
+		["Delay"] = 2,
+		["Raid"] = true,
+	},
+	["MinimapButton"] = {
+		["Show"] = false,
+		["Radius"] = 78,
+		["Position"] = 355,
+		["xOffset"] = 0,
+		["RelativePoint"] = "",
+		["Lock"] = true,
+		["yOffset"] = 0,
+	},
+	["Mode"] = "Expert_",
+}

@@ -1,0 +1,9 @@
+﻿## Interface: 50400
+## Title: Combat|cff7fff7fReplay|r - Logger
+## Author: Shurshik
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## Dependencies: CombatReplay
+## SavedVariablesPerCharacter: crcombatlog
+CombatReplay_Logger.lua
+CombatReplay_Logger.xml

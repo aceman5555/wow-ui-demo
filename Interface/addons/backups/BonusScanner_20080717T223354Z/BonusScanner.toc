@@ -1,0 +1,10 @@
+﻿## Interface: 20400
+## Title: BonusScanner Continued |cff00aa003.4a|r
+## Version: 3.4a
+## Notes: Scans your Equipment for cumulative item bonuses and sums them up.  Updated for 2.0 by jmlsteele. Additional functionality and updated patterns for TBC by Tristanian.
+## Notes-deDE: Durchsucht die Ausrüstung nach Gegenstandboni und zählt diese zusammen.
+## Author: crowley@headshot.de
+## SavedVariables: BonusScannerConfig
+## OptionalDeps: Ace2, TipHookerLib
+## Dependencies: 
+BonusScanner.xml

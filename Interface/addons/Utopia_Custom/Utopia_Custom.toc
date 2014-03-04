@@ -1,0 +1,17 @@
+## Interface: 40000
+## Title: Utopia [|cFF80FF80Custom Icons|r] by |cFFFF8080Zek|r
+## Notes: Definable icons for the new age of debuffing.
+## Author: Zek
+## Version: 1.0.$Revision: 212 $
+## SavedVariables: UtopiaCustomDB
+## LoadOnDemand: 1
+## X-Category: Raid
+## X-eMail: zeksie@gmail.com
+## X-License: GPL v2 or later
+## X-Donate: PayPal:zeksie@gmail.com
+## X-Curse-Packaged-Version: 4.0 Release 1
+## X-Curse-Project-Name: Utopia
+## X-Curse-Project-ID: utopia
+## X-Curse-Repository-ID: wow/utopia/mainline
+
+module.xml

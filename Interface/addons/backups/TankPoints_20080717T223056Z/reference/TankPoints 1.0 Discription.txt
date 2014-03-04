@@ -1,0 +1,169 @@
+A simple benchmark for tanking gear.
+----------------------------------------------------------------------
+Why TankPoints?
+----------------------------------------------------------------------
+TankPoints was created with balance in mind, mainly to help tanks balance maximum health points versus damage reduction, which at sometimes really isn't that simple.
+While maximum health points are eazy and straight forward to get, damage reduction on the other hand is quite complicated, it considers armor, defense, dodge, parry, block, miss and crit reduction.
+
+Should I choose defense gear over stamina gear? Do I want agility for dodge or extra high armor? What if I want them all?
+Choosing the right gear would be much eazier if there were some sort of benchmark that takes into account all those variables and caculates one simple benchmark for us to reference in game, meet TankPoints!
+
+----------------------------------------------------------------------
+How do I use TankPoints?
+----------------------------------------------------------------------
+Installation:
+Its the same as any other addon, just download the zip file, decompress the "TankPoints" folder into "World of Warcraft\Interface\Addons\", overwrite all if needed.
+
+Using TankPoints:
+After you log into WoW, press "c" to open your Character frame, if TankPoints is properly installed you should see your TankPoints displayed above your stats.
+Mouse over to show more detailed information.
+As shown in the screenshot: http://www.curse-gaming.com/modscreens.php?id=3274
+Everytime you change your gear TankPoints will update and show the changes.
+
+Using TankPoints Calculator:
+What if you want see how much TankPoints you would have with enchants or gear that you do not own yet?
+This is where the TankPoints Calculator comes into use.
+Click on your TankPoints to show the Calculator:
+http://www.curse-gaming.com/modscreens.php?id=3275
+
+
+----------------------------------------------------------------------
+How is TankPoints caculated?
+----------------------------------------------------------------------
+For those interested, this is a detailed discription of how TankPoints are calculated, the math behind TankPoints.
+
+ArmorReductionTemp = Armor/((85*PlayerLevel)+400)
+ArmorReduction = ArmorReductionTemp/(ArmorReductionTemp+1)
+CritReduction = (Defense-PlayerLevel*5)*0.04*0.01
+MobCrit = max(0,0.05-CritReduction);
+TotalReduction = 1-[(mobCrit*2+(1-mobCrit-mobMiss-dodge-parry))*(1-ArmorReduction)*stanceModifier]
+
+TankPoints = MaxHealth/(1-TotalReduction)
+
+The physical meaning behind TankPoints is the raw amount of damage you can take without any healing, which takes into account MaxHP, Armor, Defense, Dodge and Parry.
+
+Note: Block is a more complicated variable that depends on mob attack speed and personal skills, thus is not considered in this benchmark.
+
+Resistances:
+SpellReduction% = 75 * min(resistance, PlayerLevel * 5) / (PlayerLevel * 5)
+ResistTankPoints = MaxHealthPoints / (1 - SpellReduction%)
+
+
+----------------------------------------------------------------------
+Reference
+----------------------------------------------------------------------
+-- Stamina --
+* +1 Stamina = +10 max health points(max HP).
+* Taurens get 5% bonus HP from stamina but not from +health enchants.
+
+-- Agility --
+* Increases Armor Class by 2 for every point of AGI. 
+* Increases the chance of a critical hit with melee and ranged attacks. The amount of the increase is dependant on both class and level. For most level 60 character classes, approximately 20 points of AGI will increase your critical hit chance by approximately 1%. Rogues require 29 AGI for an additional 1% critical hit chance, and Hunters require 53 AGI for an additional 1% critical hit chance, but both of these classes also gain attack power from agility and the items available to them typically have much higher amounts of AGI. 
+* Increases the chance to dodge an attack. The amount increased is dependant on both class and level. For most level 60 character classes, approximately 20 points of AGI will increase your chance to dodge by approximately 1%. Rogues only require 14.5 AGI for an additional 1% dodge chance. Hunters require 26.5 AGI for an additional 1% dodge chance, but Hunters typically have a high amount of agility, as well as an Aspect spell that further increases their chance to dodge attacks. 
+
+-- Armor --
+* Warrior protection talent: Toughness only effects armor gained from item, does not effect armor gained from buffs, enchants and armor kits.
+
+-- Defense --
+a brief explanation on how the defense skill works currently in patch 1.6: 
+
+# Increases the chance of being missed by an attack. 
+Each point of defense will increase the chance of being missed by an attack from an even con NPC by .04% 
+
+# Increases the chance to dodge, parry, and block an attack. 
+Each point of defense will increase the chance you will dodge, parry, or block an attack by .04% for each category 
+
+# Decreases the chance of being affected by a critical hit. 
+Each point of defense will decrease the chance of being affected by a critical hit by .04% 
+
+# Decreases the chance of being affected by a Crushing Blow. 
+Each point of defense will decrease the chance of being affected by a Crushing Blow by 2%. The benefit defense will have on a Crushing Blow is limited by your level. In other words, increasing your defense will only reduce the chance of being struck by a crushing blow if your current defense value is below your level¡¦s maximum unbuffed value. 
+
+Second, an explanation on how Crushing Blows works in patch 1.6: 
+
+# A Crushing Blow is an attack made by an NPC on a PC that is 150% of the damage caused by a normal successful attack. 
+Players cannot perform a Crushing Blow 
+
+# Crushing Blows will only occur when the attacker is 3 or more levels above its target. 
+There is a 15% minimum chance of being struck by a Crushing Blow 
+
+With that in mind, there is no reason increasing your defense will inadvertently increase the chance of being struck by a Crushing Blow. Looking at the statistics you provided, I can only say that the results are inconclusive. Some values appear to be off by as much as 3% of what they should be. In addition, all of the Crushing Blow values are far below the rate they should be occurring at. 
+http://forums.worldofwarcraft.com/thread.aspx?FN=wow-bugs&T=58949&P=2
+http://forums.worldofwarcraft.com/thread.aspx?fn=wow-warrior&t=271997&p=1&tmp=1#post271997
+http://forums-en.wow-europe.com/thread.aspx?fn=wow-blizzard-archive-en&t=7&p=1&tmp=1#post7
+
+-- Resistances --
+http://www.worldofwarcraft.com/info/basics/resistances.html
+
+-- Crit hit calculations --
+http://forums-en.wow-europe.com/thread.aspx?fn=wow-blizzard-archive-en&t=15&p=1&tmp=1#post15
+The following are some advanced information on how I derived the current formula.
+First, we need to understand how the server determines hit, crit, miss, parry, dodge and block.
+I used to think the checks should be sequential, and the formula would be multiplication, like
+X = 1 - (1 - mobMiss) * (1 - dodge) * (1 - parry)
+not addition, like
+X = 1 - (1 - mobMiss - dodge - parry)
+but after numeruos in game tests and a Blizzard post on how it really works, it turns out to be addition not multiplication.
+
+Allow me to give an example:
+To keep it simple, mobMiss = 5, mobCrit = 10, dodge = 10, parry = 10, block = 10.
+For every attack the server generates ONE SINGLE roll to see if the attack lands or not, again keeping it simple, lets say the roll is random from 1 to 100.
+If the roll lands between:
+1 to 10 = crit
+11 to 20 = dodge
+21 to 30 = parry
+31 to 40 = block
+41 to 45 = miss
+46 to 100 = hit
+The above example was given by a blizzard poster on the official forums, but I'm not sure if the post still exist or not or already deleted.
+The fact that WoW only uses one roll for every attack is also understandable from a programmers point of view, because it uses the least possible computing power, just imagine how many attacks are generated from all the players and mobs every second, how many random numbers will the server need to generate to fulfill the needs, using more then one random number on every attack will eazily double or even triple the needed computation power required to service the same number of clients.
+
+Now lets look at a few test setups:
+* Test 1 - Crits can not be parried, dodged nor blocked
+A duel wielding warrior(A) attacks a rogue(B)
+20% crits, 20% miss, 60% normal hit (hit + parry + dodge + block)
+1 to 20 = miss
+21 to 80 = normal hit (hit + parry + dodge + block)
+81 to 100 = crit
+
+Now the warrior hits Recklessness, and the rogue hits evasion.
+
+The result is as follows:
+1 to 20 = miss
+21 to 100 = crit
+
+you will only see a miss or a crit, and NOT ONE dodge, with a rogue on evasion with 70% dodge.
+
+* Test 2 - Crits can not be blocked
+A duel wielding warrior(A) attacks a warrior(C)
+
+Now the warrior(A) hits Recklessness, and the warrior(C) uses defensive stance and shield block.
+
+The result is as follows:
+You will not see a crit being blocked.
+And any warrior who pays attention to his combat log knows.
+
+Please test and explain.
+
+* Test 3 - Crit percentage is caculated over ALL attacks, not just the hits.
+Say you look at your attack skill and see 25% critical rate.
+You use Damage Meters or Combats stats to record your criticals, and attack a warrior with 425 defense, 15% block, 10% dodge, 15% parry.
+Because defense lowers the chance of being crit, you will only have 20% crit and miss 10% against the the 425 defense warrior.
+
+The result is as follows:
+After 1000+ swings(this takes a while), you see that your crit % is indeed near 20%, not (20% * 90%(dodge) * 85%(parry) * 90%(miss)) = 13.77%.
+
+* Test 4 - dodge, parry, block and miss are checked on one single roll, NOT sequential.
+Find a level 60 priest with 300 skill in daggers to duel you and auto attack for 1000+ times.
+Compare the observed crit, miss, dodge, parry, and block to the expected rates.
+
+The result is as follows:
+They match, closely.
+
+----------------------------------------------------------------------
+Features:
+----------------------------------------------------------------------
+1. Caculates and displays TankPoints in your Character Panel.
+2. Mouse over your TankPoints and a Tooltip displays your current stance, Armor(Armor Reduction%), Dodge%, Parry%, Block%, Crit Reduction% and Total Reduction% no need to search in the Skill panals again.
+3. Improved Resistance tooltips: Shows Resistances in real %, also shows your resistance TankPoints for every resistance, which takes into account your maxHP and resistance level, useful in choosing resistance gear.
+4. TankPoints Calculator allows you to simulate the effects of future gear or enchants. Is the +5 defense armor kit better then the +100 HP enchant for me? Is this piece of armor in the AH worth buying? Questions like these are really hard to answer because for some ppl +5 armor gives more TankPoints and for others +100 HP gives more TankPoints, you really don't know what is best for you unless you try it out yourself!

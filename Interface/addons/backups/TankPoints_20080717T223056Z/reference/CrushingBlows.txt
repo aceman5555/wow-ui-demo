@@ -1,0 +1,26 @@
+http://evilempireguild.org/guides/crushing.php
+______________________________________________
+
+# A Crushing Blow is an attack made by an NPC on a PC that is 150% of the damage caused by a normal successful attack.
+# Players cannot perform a Crushing Blow
+# Crushing Blows will only occur when the attacker is 3 or more levels above its target.
+# There is a 15% minimum chance of being struck by a Crushing Blow
+
+After submitting testing results showing seemingly strange effects of defense skill on crushing blows, Blizzard officially responded to the results. Block (a Blizzard poster) kindly gave an expanded description of defense that includes how defense works for crushing blows. In summary:
+
+Only mobs 3 or more levels above your level can land crushing blows1. Players never land crushing blows 
+Your chance to take a crushing blow is always checked against 5 times your level (http://forums-en.wow-europe.com/thread.aspx?fn=wow-blizzard-archive-en&t=7&p=1&tmp=1#post7) 
+As such, while the Anticipation talent shows as an increase your natural maximum defense in the skills window, it does not reduce your chance to take a crushing blow 
+There is a minimum 15% chance that you will be hit by a crushing blow by a mob 3 or more levels higher than you 
+For every point of defense you are under 5 times your level, the chance of a crushing blow increases by 2% 
+Defense from gear ONLY affects your chance to receive crushing blows if your defense score is lower than 5 times your level
+(but it always gives all the benefits of increased dodge, parry, block, as well as reduction in chance to be critically hit) 
+Defense skill added by gear does not affect your chance to receive crushing blows past 5 x level - you have the same chance to receive a crushing blow at 500 defense as you do at 300 defense 
+The Shield Block ability breaks the 15% minimum rule. While Shield Block is active you will not take crushing blows. 
+Some examples: 
+A level 60 with 300 defense and no gear with defense on it has a 15% chance of getting a crushing blow from a level 63 mob 
+A level 60 with 300 defense and gear with 200 defense on it has a 15% chance of getting a crushing blow from a level 63 mob 
+A level 55 with 275 defense and no gear with defense on it has a 15% chance of getting a crushing blow from a level 58 mob 
+A level 50 with 249 defense and no gear with defense on it has a 17% chance of getting a crushing blow from a level 53 mob 
+A level 60 with 289 defense and gear with 10 defense on it has a 17% chance of getting a crushing blow from a level 63 mob 
+A level 60 with 280 defense and gear with 120 defense on it has a 15% chance of getting a crushing blow from a level 63 mob 

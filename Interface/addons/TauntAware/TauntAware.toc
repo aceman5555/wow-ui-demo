@@ -1,0 +1,11 @@
+## Interface: 50100
+## Title: Taunt Aware
+## Version: 2013-03-01
+## Notes: Alerts you to Taunts cast in party / raids (configurable)
+## Author: Bill Lafreniere
+## OptionalDeps: BillsUtils
+## SavedVariables: TauntAware_Settings TauntAware_PC
+
+BULoader.lua
+TauntAware.lua
+Config.lua

@@ -1,0 +1,20 @@
+﻿## Interface: 20400
+## Title: Trinity Bars 2.0
+## Author: Maul
+## Version: 20400.7
+## Notes: An unlimited number of highly configurable buttons.
+## DefaultState: enabled
+## Dependencies: Trinity2
+## OptionalDeps:
+## SavedVariables: TrinityBars2Templates,  TrinityBars2MacroMaster
+## SavedVariablesPerCharacter: TrinityBars2SavedState
+
+localization\localization.lua
+
+faq\faq.lua
+
+Bindings.xml
+bars.lua
+bars.xml
+
+skins\buttonSkins.lua

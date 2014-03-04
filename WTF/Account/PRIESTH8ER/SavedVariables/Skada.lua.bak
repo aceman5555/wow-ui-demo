@@ -1,0 +1,21 @@
+
+SkadaDB = {
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["windows"] = {
+				{
+					["point"] = "BOTTOMRIGHT",
+					["background"] = {
+						["height"] = 105.0000020383704,
+					},
+					["x"] = -10.70809235167576,
+					["barwidth"] = 192.7386807005893,
+					["y"] = 228.3539524810869,
+				}, -- [1]
+			},
+		},
+	},
+}

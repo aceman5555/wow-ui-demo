@@ -1,0 +1,11 @@
+tag 1.0.1
+f3dc0c65f66ea9ff289978817bd8eb8d433c14dc
+galedric <g@ledric.me>
+2013-09-11 12:08:20 +0200
+
+Tagging as 1.0.1
+
+
+--------------------
+
+No changelog

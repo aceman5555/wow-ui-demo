@@ -1,0 +1,32 @@
+
+RebirtherDB = {
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["innervateCoord"] = {
+				["y"] = 1153.5,
+				["x"] = 1557.150390625,
+			},
+			["font"] = {
+				["timeSize"] = 9,
+				["filePath"] = "Interface\\Addons\\SharedMedia\\fonts\\DORISPP.ttf",
+				["nameSize"] = 11,
+				["targetSize"] = 8,
+				["file"] = "DorisPP",
+				["titleSize"] = 11,
+			},
+			["sink20Sticky"] = true,
+			["bar"] = {
+				["texturePath"] = "Interface\\Addons\\SharedMedia\\statusbar\\Smooth",
+				["texture"] = "Smooth",
+			},
+			["rebirthCoord"] = {
+				["y"] = 1153.500122070313,
+				["x"] = 1379.400512695313,
+			},
+			["sink20OutputSink"] = "MikSBT",
+		},
+	},
+}

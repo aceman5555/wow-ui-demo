@@ -1,0 +1,15 @@
+
+_NPCScan_AutoAdd = {
+	["NPCWorldIDs"] = {
+		[50349] = 6,
+		[63978] = 6,
+		[7272] = 6,
+		[8130] = 6,
+	},
+	["NPCs"] = {
+		[50349] = "Kang the Soul Thief",
+		[63978] = "Kri'chon",
+		[7272] = "Tsavo'ka",
+		[8130] = "Archiereus of Flame",
+	},
+}

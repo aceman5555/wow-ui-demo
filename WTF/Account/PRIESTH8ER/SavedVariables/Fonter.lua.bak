@@ -1,0 +1,10 @@
+
+FonterDB = {
+	["profileKeys"] = {
+		["Spih - Cho'gall"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

@@ -1,0 +1,17 @@
+
+Postal3DB = {
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Git|Azuremyst|Horde|85|WARRIOR", -- [1]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Git - Azuremyst",
+	},
+	["profiles"] = {
+		["Git - Azuremyst"] = {
+		},
+	},
+}

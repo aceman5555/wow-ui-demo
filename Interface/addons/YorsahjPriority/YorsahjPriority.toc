@@ -1,0 +1,28 @@
+## Interface: 50001
+## Title: YorsahjPriority
+## Notes: Announce which globule to kill during the Yor'sahj the Unsleeping Encounter.
+## Author: Navlevar
+## Version: 1.5
+## SavedVariables: YorsahjPriorityDB
+## OptionalDeps: Ace3
+## X-Curse-Packaged-Version: 1.5
+## X-Curse-Project-Name: YorsahjPriority
+## X-Curse-Project-ID: yorsahjpriority
+## X-Curse-Repository-ID: wow/yorsahjpriority/mainline
+
+
+#@no-lib-strip@
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceAddon-3.0\AceAddon-3.0.xml
+libs\AceEvent-3.0\AceEvent-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+#@end-no-lib-strip@
+
+#Locales
+#
+
+Core.lua
+Config.lua

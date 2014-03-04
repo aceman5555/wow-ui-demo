@@ -1,0 +1,12 @@
+
+TidyPlatesOptions = {
+	["FriendlyAutomation"] = "No Automation",
+	["EnemyAutomation"] = "No Automation",
+	["primary"] = "None",
+	["EnableCastWatcher"] = 1,
+	["autohide"] = 1,
+	["LDB"] = {
+	},
+	["WelcomeShown"] = true,
+	["secondary"] = "None",
+}

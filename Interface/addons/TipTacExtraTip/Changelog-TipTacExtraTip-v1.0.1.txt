@@ -1,0 +1,12 @@
+tag v1.0.1
+c8e257210f7d10115f4a41d5973e1608ff1e8377
+Pezzer <ImNotJimboJones@mac.com>
+2012-09-27 17:57:56 -0400
+
+Tagging as v1.0.1
+
+
+--------------------
+
+Pezzer:
+	- Now only supporting Auctioneer/Informant... pending user requests

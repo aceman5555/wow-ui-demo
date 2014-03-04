@@ -1,0 +1,19 @@
+## Interface: 50300
+## Title: GridStatusMTs
+## Notes: Adds Blizzard, oRA2, oRA3, CT_RA MainTank or Dungeon Finder Tank icon (shield or MT, 1, 2 ... 10) or text (MT or MT1, MT2 ... MT10) status to Grid.
+## Author: kunda
+## Version: 50300-1
+## Dependencies: Grid
+## X-Curse-Packaged-Version: 50300-1
+## X-Curse-Project-Name: GridStatusMTs
+## X-Curse-Project-ID: grid-status-mts
+## X-Curse-Repository-ID: wow/grid-status-mts/mainline
+
+GridStatusMTs-localization-enUS.lua
+GridStatusMTs-localization-deDE.lua
+GridStatusMTs-localization-koKR.lua
+GridStatusMTs-localization-ruRU.lua
+GridStatusMTs-localization-zhCN.lua
+GridStatusMTs-localization-zhTW.lua
+
+GridStatusMTs.lua

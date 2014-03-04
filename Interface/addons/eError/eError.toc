@@ -1,0 +1,9 @@
+## Interface: 40200
+## Title: eError
+## Author: Eurytus
+## Notes: Hide errors.
+## X-Curse-Packaged-Version: 4.2.1
+## X-Curse-Project-Name: eError
+## X-Curse-Project-ID: eerror
+## X-Curse-Repository-ID: wow/eerror/mainline
+eError.lua

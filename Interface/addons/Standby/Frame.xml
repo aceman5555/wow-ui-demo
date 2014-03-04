@@ -1,0 +1,97 @@
+﻿<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Frame.lua" />
+	<Frame name="frmQuestion" parent="UIParent" toplevel="true" movable="true" enableMouse="true">
+		<Size>
+			<AbsDimension x="462" y="184" />
+		</Size>
+		<Anchors>
+			<Anchor point="LEFT">
+				<Offset x="416" y="215" />
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11" />
+			</BackgroundInsets>
+			<TileSize>
+				<AbsValue val="32" />
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val="32" />
+			</EdgeSize>
+		</Backdrop>
+		<Frames>
+			<Button name="btnYes" inherits="UIPanelButtonTemplate" text="Yes">
+				<Size>
+					<AbsDimension x="75" y="23" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="140" y="-133" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+            self:RegisterForClicks("LeftButtonUp");
+          </OnLoad>
+					<OnMouseUp>
+            Stb_YesClick();
+          </OnMouseUp>
+				</Scripts>
+			</Button>
+			<Button name="btnNo" inherits="UIPanelButtonTemplate" text="No">
+				<Size>
+					<AbsDimension x="75" y="23" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="249" y="-133" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+            self:RegisterForClicks("LeftButtonUp");
+          </OnLoad>
+					<OnMouseUp>
+            Stb_NoClick();
+          </OnMouseUp>
+				</Scripts>
+			</Button>
+		</Frames>
+		<Layers>
+			<Layer level="OVERLAY">
+				<FontString name="FontString1" inherits="GameFontNormal" text="Would you like to join the EPGP standby?">
+					<Size>
+						<AbsDimension x="430" y="46" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="20" y="-25" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="20" />
+					</FontHeight>
+				</FontString>
+				<FontString name="FontString2" inherits="GameFontNormal" text="Clicking yes you agree to be raid ready within 5-15 minutes if called out of standby. If you are unable to do this, click no." justifyH="LEFT">
+					<Size>
+						<AbsDimension x="330" y="49" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="74" y="-64" />
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+        Stb_OnLoad();
+      </OnLoad>
+			<OnEvent>
+        Stb_OnEvent();
+      </OnEvent>
+		</Scripts>
+	</Frame>
+</Ui>

@@ -1,0 +1,8 @@
+## Title: Auc:Util:ItemSuggest
+## Interface: 20400
+## OptionalDependencies: Auc-Util-Appraiser Enchantrix BtmScan
+##
+## Version: 5.0.PRE.3164 (BillyGoat)
+## SavedVariables: 
+Auc-Util-ItemSuggest.lua
+Embed.xml

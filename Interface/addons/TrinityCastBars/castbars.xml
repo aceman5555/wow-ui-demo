@@ -1,0 +1,335 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
+
+	<StatusBar name="TrinityCastBarTemplate" drawLayer="BORDER" virtual="true">
+		<Size>
+			<AbsDimension x="195" y="12"/>
+		</Size>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture setAllPoints="true">
+					<Color r="0" g="0" b="0" a="0.5"/>
+				</Texture>
+			</Layer>
+			<Layer level="ARTWORK">
+				<Texture name="$parentIcon" hidden="true">
+					<Size>
+						<AbsDimension x="14" y="14"/>
+					</Size>
+					<Anchors>
+						<Anchor point="RIGHT" relativeTo="$parent" relativePoint="LEFT">
+							<Offset>
+								<AbsDimension x="-5" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<FontString name="$parentTextRight" inherits="GameFontHighlight" justifyH="RIGHT" justifyV="CENTER">
+					<Anchors>
+						<Anchor point="RIGHT">
+							<Offset>
+								<AbsDimension x="-10" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentTextLeft" inherits="GameFontHighlight" justifyH="LEFT" justifyV="CENTER">
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="10" y="0"/>
+							</Offset>
+						</Anchor>
+						<Anchor point="RIGHT" relativeTo="$parentTextRight" relativePoint="LEFT">
+							<Offset>
+								<AbsDimension x="0" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<Texture name="$parentSpark" file="Interface\CastingBar\UI-CastingBar-Spark" alphaMode="ADD">
+					<Size>
+						<AbsDimension x="16" y="32"/>
+					</Size>
+					<Anchors>
+						<Anchor point="CENTER">
+							<Offset>
+								<AbsDimension x="0" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Frame name="$parentBackground">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="-4" y="3"/>
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="4" y="-3"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="12"/>
+					</EdgeSize>
+					<BackgroundInsets>
+						<AbsInset left="2" right="2" top="3" bottom="3"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropColor(0, 0, 0)
+						self:SetBackdropBorderColor(0.8, 0.8, 0.8, 1)
+						self:SetFrameLevel(0)
+					</OnLoad>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentFlash" >
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="-4" y="4"/>
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="4" y="-4"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Backdrop name="$parentBackdrop" bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="15"/>
+					</EdgeSize>
+					<BackgroundInsets>
+						<AbsInset left="2" right="2" top="2" bottom="2"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<Scripts>
+					<OnLoad>
+						self:SetBackdropColor(1, 1, 1, 0.5)
+						self:SetBackdropBorderColor(1, 1, 1)
+						self:SetFrameLevel(3)
+					</OnLoad>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentTimer">
+				<Scripts>
+					<OnLoad>
+						self.castingInfo = {};
+						self:RegisterEvent("UNIT_SPELLCAST_START");
+						self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START");
+						self:RegisterEvent("UNIT_SPELLCAST_STOP");
+						self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_STOP");
+					</OnLoad>
+					<OnEvent>
+						if (arg1) then
+							if ( event == "UNIT_SPELLCAST_START" ) then
+								self.castingInfo[arg1] = {}
+								local _, _, text = UnitCastingInfo(arg1)
+								self.castingInfo[arg1][1] = text
+								self.castingInfo[arg1][2] = "%0.1f"
+							elseif ( event == "UNIT_SPELLCAST_CHANNEL_START" ) then
+								self.castingInfo[arg1] = {}
+								local _, _, text = UnitChannelInfo(arg1)
+								self.castingInfo[arg1][1] = text
+								self.castingInfo[arg1][2] = "%0.1f"
+							end
+						end
+					</OnEvent>
+				</Scripts>
+			</Frame>
+			<StatusBar name="$parentDummy" toplevel="true">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0"/>
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT" relativeTo="$parent" relativePoint="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="0" y="0"/>
+						</Offset>
+					</Anchor>
+
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture setAllPoints="true">
+							<Color r="0" g="0" b="0" a="0.5"/>
+						</Texture>
+					</Layer>
+					<Layer level="ARTWORK">
+						<Texture name="$parentIcon" file="Interface\Icons\Ability_Druid_FlightForm">
+							<Size>
+								<AbsDimension x="14" y="14"/>
+							</Size>
+							<Anchors>
+								<Anchor point="RIGHT" relativeTo="$parent" relativePoint="LEFT">
+									<Offset>
+										<AbsDimension x="-5" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+					<Layer level="OVERLAY">
+						<FontString name="$parentTextLeft" inherits="GameFontHighlight" justifyH="LEFT" justifyV="CENTER" text="Trinity Cast Bar">
+							<Anchors>
+								<Anchor point="LEFT">
+									<Offset>
+										<AbsDimension x="10" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+						<FontString name="$parentTextRight" inherits="GameFontHighlight" justifyH="RIGHT" justifyV="CENTER" text="0.0">
+							<Anchors>
+								<Anchor point="RIGHT">
+									<Offset>
+										<AbsDimension x="-10" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Frame name="$parentBackground">
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset>
+									<AbsDimension x="-5" y="5"/>
+								</Offset>
+							</Anchor>
+							<Anchor point="BOTTOMRIGHT">
+								<Offset>
+									<AbsDimension x="5" y="-5"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="12"/>
+							</EdgeSize>
+							<BackgroundInsets>
+								<AbsInset left="2" right="2" top="3" bottom="3"/>
+							</BackgroundInsets>
+						</Backdrop>
+						<Scripts>
+							<OnLoad>
+								self:SetBackdropColor(0, 0, 0, 0)
+								self:SetBackdropBorderColor(0.8, 0.8, 0.8, 1)
+								self:SetFrameLevel(3)
+							</OnLoad>
+						</Scripts>
+					</Frame>
+				</Frames>
+				<Scripts>
+					<OnLoad>
+						self:SetMinMaxValues(0,1)
+						self:SetValue(1)
+						self:SetFrameLevel(2)
+						getglobal(self:GetName().."Icon"):SetTexCoord(0.08,0.92,0.08,0.92)
+					</OnLoad>
+				</Scripts>
+				<BarTexture file="Interface\TargetingFrame\UI-StatusBar"/>
+				<BarColor r="1.0" g="0.7" b="0.0"/>
+			</StatusBar>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				Trinity2.CastingBarFrame_OnLoad(self, "", true, true)
+			</OnLoad>
+			<OnEvent>
+				self.onEvent(self, event, ...)
+			</OnEvent>
+			<OnUpdate>
+				self.onUpdate(self, elapsed)
+			</OnUpdate>
+		</Scripts>
+		<BarTexture file="Interface\TargetingFrame\UI-StatusBar"/>
+		<BarColor r="1.0" g="0.7" b="0.0"/>
+	</StatusBar>
+
+	<Frame name="TrinityCastBarsOptions" enableMouse="true" movable="true" toplevel="false" hidden="true" parent="Trinity2Options">
+		<Size>
+			<AbsDimension x="502" y="361"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT" relativeTo="Trinity2Options" relativePoint="TOPLEFT">
+				<Offset>
+					<AbsDimension x="12" y="-45"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\TutorialFrame\TutorialFrameBackground" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="16"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="16"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="3" right="5" top="3" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentTitle" inherits="GameFontNormal" nonspacewrap="true" text="">
+					<Anchors>
+						<Anchor point="TOP">
+							<Offset>
+								<AbsDimension x="0" y="-13"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("PLAYER_LOGIN");
+				self:SetFrameLevel(1)
+			</OnLoad>
+			<OnEvent>
+				local index = getn(Trinity2.RegisteredAddons)+1
+				self.index = index
+				Trinity2.RegisteredAddons[index] = { "Trinity Cast Bars", "TrinityCastBarsOptions", nil, nil, "" }
+				--Trinity2.RegisterAddon(index)
+			</OnEvent>
+		</Scripts>
+	</Frame>
+
+	<Frame name="TrinityCastBarsLoader" frameStrata="BACKGROUND" toplevel="false" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("VARIABLES_LOADED")
+				self:RegisterEvent("PLAYER_LOGIN")
+				self:RegisterEvent("PLAYER_ENTERING_WORLD");
+				self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+				self:RegisterEvent("PLAYER_AURAS_CHANGED");
+				self.shown = true;
+				TrinityCastBars.Loader_OnLoad(self);
+			</OnLoad>
+			<OnEvent>
+				TrinityCastBars.Loader_OnEvent(self, event);
+			</OnEvent>
+			<OnUpdate>
+				TrinityCastBars.Loader_OnUpdate(self, arg1);
+			</OnUpdate>
+		</Scripts>
+	</Frame>
+</Ui>

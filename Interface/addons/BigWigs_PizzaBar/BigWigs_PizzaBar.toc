@@ -1,0 +1,22 @@
+## Interface: 50100
+## Title: Big Wigs [|cffeda55fPizzaBar|r]
+## Notes: shows "Pizza"- and "Pull"-Timers created by DeadlyBossMods as BigWigs bars
+## Notes-deDE: zeigt "Pizza"- und "Pull"-Timer die von DeadlyBossMods gestartet wurden, als BigWigs-Balken an
+## Author: profalbert
+## Version: v1.5.5
+## Dependencies: BigWigs
+## X-Website: http://www.wowace.com/
+## X-Category: Raid
+## X-License: GPL v2 or later
+## LoadOnDemand: 1
+## X-BigWigs-LoadOn-CoreEnabled: 1
+## X-Curse-Packaged-Version: v1.5.5
+## X-Curse-Project-Name: BigWigs_PizzaBar
+## X-Curse-Project-ID: big-wigs_pizza-bar
+## X-Curse-Repository-ID: wow/big-wigs_pizza-bar/mainline
+
+#@no-lib-strip@
+Libs\AceSerializer-3.0\AceSerializer-3.0.xml
+#@end-no-lib-strip@
+
+PizzaBar.lua

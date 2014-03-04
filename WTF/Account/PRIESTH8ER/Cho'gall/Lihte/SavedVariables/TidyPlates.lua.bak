@@ -1,0 +1,9 @@
+
+TidyPlatesOptions = {
+	["_EnableMiniButton"] = false,
+	["WelcomeShown"] = true,
+	["FriendlyAutomation"] = "No Automation",
+	["EnemyAutomation"] = "No Automation",
+	["primary"] = "None",
+	["secondary"] = "None",
+}

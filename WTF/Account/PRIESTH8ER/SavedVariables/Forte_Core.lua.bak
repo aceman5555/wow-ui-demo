@@ -1,0 +1,492 @@
+
+FC_Saved = {
+}
+FX_Saved = {
+	["Timers"] = {
+	},
+	["Healthstone"] = {
+		["Gitt"] = 0,
+	},
+	["Exceptions"] = {
+		["Hellfire Channeler"] = 0,
+		["Grand Astromancer Capernian"] = 1,
+		["Lord Sanguinar"] = 1,
+		["Thaladred the Darkener"] = 1,
+		["Fathom-Guard Caribdis"] = 1,
+		["Master Engineer Telonicus"] = 1,
+		["Fathom-Guard Tidalvess"] = 1,
+		["Fathom-Guard Sharkkis"] = 1,
+	},
+	["Update"] = 101311.74,
+	["Profiles"] = {
+		["Active"] = 1,
+		["Characters"] = {
+			["Gitt-Cho'gall"] = 1,
+		},
+		["Links"] = {
+		},
+		["Data"] = {
+			{
+				["name"] = "Gitt-Cho'gall",
+			}, -- [1]
+		},
+		["Instances"] = {
+			{
+				["FrameSnap"] = true,
+				["LinkCloneColor"] = {
+					1, -- [1]
+					0.5, -- [2]
+					0, -- [3]
+					0.1, -- [4]
+					[0] = true,
+				},
+				["OptionsFontLabelColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["FWOptions"] = {
+					["y"] = 320.6399067807215,
+					["x"] = 936.000341527455,
+					["lock"] = false,
+					["scale"] = 1,
+					["alpha"] = 1,
+				},
+				["Splash"] = {
+					["Active"] = 1,
+					["Instance"] = "Splash",
+					["Links"] = {
+					},
+					["Data"] = {
+						{
+							["name"] = "Secondary Splash",
+						}, -- [1]
+					},
+					["Instances"] = {
+						{
+							["SplashGlow"] = true,
+							["SecondSplashMax"] = 4,
+							["x"] = 614.400025329589,
+							["lock"] = false,
+							["Enable"] = false,
+							["y"] = 384.0000304794303,
+							["alpha"] = 0.7,
+							["scale"] = 2,
+						}, -- [1]
+					},
+				},
+				["Font"] = {
+					"Interface\\Addons\\SharedMedia\\fonts\\DORISPP.ttf", -- [1]
+					11, -- [2]
+				},
+				["LoadDelay"] = 1,
+				["OptionsHeight"] = 440,
+				["TimeLeft"] = {
+					">> %s on %s is fading in %s <<", -- [1]
+					[0] = 1,
+				},
+				["Texture"] = "Interface\\AddOns\\Forte_Core\\Textures\\Smooth",
+				["GlobalFrameNames"] = false,
+				["OptionsHeaderTexture"] = "Interface\\AddOns\\Forte_Core\\Textures\\Otravi",
+				["CooldownStrata"] = "MEDIUM",
+				["OptionHeaderColor"] = {
+					0.2, -- [1]
+					0.2, -- [2]
+					0.2, -- [3]
+				},
+				["TimeLeftNoTarg"] = {
+					">> %s is fading in %s <<", -- [1]
+					[0] = 1,
+				},
+				["TimeFormat"] = true,
+				["Chill"] = 0.05,
+				["Output"] = {
+					"MyProChannel", -- [1]
+					[0] = true,
+				},
+				["LinkNoneColor"] = {
+					0.5, -- [1]
+					0, -- [2]
+					1, -- [3]
+					0.1, -- [4]
+					[0] = false,
+				},
+				["CooldownLeft"] = {
+					">> %s is ready in %s <<", -- [1]
+					[0] = 1,
+				},
+				["OutputRaid"] = true,
+				["FrameDistance"] = 0,
+				["RightClickIconOptions"] = true,
+				["AnimationInterval"] = 0.04,
+				["Cooldown"] = {
+					["Active"] = 1,
+					["Instance"] = "Cooldown",
+					["Links"] = {
+					},
+					["Data"] = {
+						{
+							["name"] = "Cooldown Timer",
+						}, -- [1]
+					},
+					["Instances"] = {
+						{
+							["Soulstone"] = {
+								0.64, -- [1]
+								0.21, -- [2]
+								0.9300000000000001, -- [3]
+								[0] = true,
+							},
+							["Enable"] = true,
+							["Loga"] = 0.33,
+							["BgColor"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0.36, -- [4]
+							},
+							["Vertical"] = false,
+							["HideCombat"] = false,
+							["lock"] = false,
+							["IconSize"] = {
+								36, -- [1]
+								[0] = false,
+							},
+							["AlphaMax"] = 1,
+							["Texture"] = "Interface\\AddOns\\Forte_Core\\Textures\\Smooth",
+							["Spell"] = {
+								1, -- [1]
+								0.5, -- [2]
+								0, -- [3]
+								[0] = true,
+							},
+							["Spark"] = {
+								1, -- [1]
+								[0] = true,
+							},
+							["Tags"] = 6,
+							["BuffOther"] = {
+								0.5, -- [1]
+								0.5, -- [2]
+								0.5, -- [3]
+								[0] = false,
+							},
+							["Alpha"] = 1,
+							["Width"] = 450,
+							["DebuffOther"] = {
+								0.5, -- [1]
+								0, -- [2]
+								0, -- [3]
+								[0] = false,
+							},
+							["x"] = 622.0799885690212,
+							["Potion"] = {
+								0, -- [1]
+								1, -- [2]
+								0, -- [3]
+								[0] = true,
+							},
+							["Filter"] = {
+								["Shield Slam"] = {
+									[3] = {
+										-1, -- [1]
+									},
+								},
+								["Revenge"] = {
+									[3] = {
+										-1, -- [1]
+									},
+								},
+								["Recently Bandaged"] = {
+									[2] = {
+										-2, -- [1]
+										1, -- [2]
+										0.65, -- [3]
+										0, -- [4]
+									},
+								},
+							},
+							["GroupOverride"] = true,
+							["y"] = 50.4000024366369,
+							["Hide"] = false,
+							["Detail"] = true,
+							["Enchant"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								[0] = false,
+							},
+							["Swing"] = false,
+							["alpha"] = 1,
+							["Flip"] = false,
+							["scale"] = 1,
+							["IconTime"] = true,
+							["Warn"] = true,
+							["Powerup"] = {
+								0, -- [1]
+								0.75, -- [2]
+								1, -- [3]
+								[0] = true,
+							},
+							["IconTextColor"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								1, -- [4]
+								[0] = false,
+							},
+							["IconFont"] = {
+								"Interface\\Addons\\SharedMedia\\fonts\\DORISPP.ttf", -- [1]
+								11, -- [2]
+								"OUTLINE", -- [3]
+							},
+							["Test"] = false,
+							["Splash"] = true,
+							["ResTimer"] = {
+								1, -- [1]
+								0, -- [2]
+								0, -- [3]
+								[0] = true,
+							},
+							["Item"] = {
+								1, -- [1]
+								1, -- [2]
+								0, -- [3]
+								[0] = true,
+							},
+							["MaxRange"] = {
+								3600, -- [1]
+								[0] = false,
+							},
+							["Pet"] = {
+								1, -- [1]
+								0, -- [2]
+								0.95, -- [3]
+								[0] = true,
+							},
+							["MinRemaining"] = {
+								0, -- [1]
+								[0] = false,
+							},
+							["Ignore"] = true,
+							["BarColor"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								0.2, -- [4]
+							},
+							["MaxRemaining"] = {
+								3600, -- [1]
+								[0] = false,
+							},
+							["Max"] = 120,
+							["TextColor"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								0.2, -- [4]
+							},
+							["Backdrop"] = {
+								"Interface\\AddOns\\Forte_Core\\Textures\\Background", -- [1]
+								"Interface\\AddOns\\Forte_Core\\Textures\\Border", -- [2]
+								false, -- [3]
+								16, -- [4]
+								5, -- [5]
+								3, -- [6]
+							},
+							["CustomTags"] = {
+								"0 1 10 30 60 120 300 600", -- [1]
+								[0] = true,
+							},
+							["Healthstone"] = {
+								0, -- [1]
+								1, -- [2]
+								0.5, -- [3]
+								[0] = true,
+							},
+							["Font"] = {
+								"Interface\\Addons\\SharedMedia\\fonts\\DORISPP.ttf", -- [1]
+								11, -- [2]
+							},
+							["Internal"] = {
+								0, -- [1]
+								0.6, -- [2]
+								0.85, -- [3]
+								[0] = true,
+							},
+							["SplashFactor"] = 4,
+							["Height"] = 30,
+							["Buff"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								[0] = false,
+							},
+							["MinRange"] = {
+								0, -- [1]
+								[0] = false,
+							},
+							["Debuff"] = {
+								1, -- [1]
+								0, -- [2]
+								0, -- [3]
+								[0] = false,
+							},
+						}, -- [1]
+					},
+				},
+				["GlobalLock"] = false,
+				["DiffNoneColor"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					0.2, -- [4]
+					[0] = false,
+				},
+				["LinkBothColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					0.1, -- [4]
+					[0] = true,
+				},
+				["GlobalAlpha"] = 1,
+				["LinkProfileColor"] = {
+					1, -- [1]
+					1, -- [2]
+					0, -- [3]
+					0.1, -- [4]
+					[0] = true,
+				},
+				["DiffProfileColor"] = {
+					1, -- [1]
+					1, -- [2]
+					0, -- [3]
+					0.2, -- [4]
+					[0] = true,
+				},
+				["LinkClone"] = false,
+				["GlobalSpark"] = {
+					0.7, -- [1]
+					[0] = true,
+				},
+				["DiffCloneColor"] = {
+					1, -- [1]
+					0.5, -- [2]
+					0, -- [3]
+					0.2, -- [4]
+					[0] = true,
+				},
+				["ShowStartupText"] = true,
+				["OptionsSubHeaderTexture"] = "Interface\\AddOns\\Forte_Core\\Textures\\Minimalist",
+				["SplashStrata"] = "MEDIUM",
+				["UpdateInterval"] = 0.5,
+				["AnimateScroll"] = false,
+				["SpellGroupTips"] = true,
+				["OptionsModuleColor"] = true,
+				["DiffBothColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					0.2, -- [4]
+					[0] = true,
+				},
+				["Strata"] = "MEDIUM",
+				["LoadExpandSubcats"] = true,
+				["OptionsColums"] = 2,
+				["TimerSpellsTooltip"] = true,
+				["RightClickOptions"] = true,
+				["Tips"] = true,
+				["IgnoreCooldown"] = 2.99,
+				["OptionsFont"] = {
+					"Interface\\AddOns\\Forte_Core\\Fonts\\GOTHIC.TTF", -- [1]
+					11, -- [2]
+				},
+				["ExpandSubcats"] = false,
+				["OptionsHeaderFont"] = {
+					"Interface\\AddOns\\Forte_Core\\Fonts\\GOTHICB.TTF", -- [1]
+					11, -- [2]
+				},
+				["OptionBackgroundColor"] = {
+					0.18, -- [1]
+					0.18, -- [2]
+					0.18, -- [3]
+					0.9, -- [4]
+				},
+				["LinkProfile"] = false,
+				["OptionsBackdrop"] = {
+					"Interface\\AddOns\\Forte_Core\\Textures\\Background", -- [1]
+					"Interface\\AddOns\\Forte_Core\\Textures\\Border", -- [2]
+					false, -- [3]
+					16, -- [4]
+					5, -- [5]
+					5, -- [6]
+				},
+				["FrameSnapDistance"] = 5,
+				["OptionsFontInputColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["GlobalScale"] = 1,
+			}, -- [1]
+		},
+	},
+	["RAID"] = false,
+	["VERSION"] = "v1.980.8",
+	["Cooldowns"] = {
+	},
+	["CATEGORIES"] = {
+		["General Options"] = {
+			["Some Tips"] = {
+				["expand"] = false,
+			},
+		},
+		["Secondary Splash"] = {
+			["Some Tips"] = {
+				["expand"] = true,
+			},
+		},
+		["Cooldown Timer"] = {
+			["Spell Coloring/Filtering"] = {
+				["expand"] = true,
+			},
+			["Basics"] = {
+				["expand"] = true,
+			},
+			["Time Range"] = {
+				["expand"] = true,
+			},
+			["My Cooldowns"] = {
+				["expand"] = true,
+			},
+			["Splash Icons"] = {
+				["expand"] = true,
+			},
+			["Frame Sizing"] = {
+				["expand"] = true,
+			},
+			["Some Tips"] = {
+				["expand"] = true,
+			},
+			["Buffs/Debuffs (on me only)"] = {
+				["expand"] = true,
+			},
+			["Frame Appearance"] = {
+				["expand"] = true,
+			},
+			["Specifics"] = {
+				["expand"] = true,
+			},
+		},
+	},
+	["RaidStatus"] = {
+		["Gitt"] = {
+			0, -- [1]
+			101311.74, -- [2]
+			"WARRIOR", -- [3]
+			"v1.980.8", -- [4]
+		},
+	},
+	["GROUPED"] = false,
+}

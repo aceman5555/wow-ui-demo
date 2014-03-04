@@ -1,0 +1,136 @@
+網頁:
+http://www.wowinterface.com/downloads/fileinfo.php?s=&id=6419
+
+2.0.1版下載:
+http://files.filefront.com/TankPoints_2_0_1zip/;6315493;;/fileinfo.html
+mirror: http://freebsd.nctu.edu.tw/~miyu/pafile/index.php?act=view&id=4
+
+目前顯示方式為整合進原始UI下拉是選單：
+http://img85.imageshack.us/img85/7955/1tankpointslx6.jpg
+http://img132.imageshack.us/img132/8347/2tooltiptankpointsstatts6.jpg
+http://img151.imageshack.us/img151/1683/3tooltipmeleedrstatse8.jpg
+http://img86.imageshack.us/img86/7382/4tooltipblockvaluestatnc0.jpg
+http://img182.imageshack.us/img182/2043/5tooltipspelltpstatng9.jpg
+http://img153.imageshack.us/img153/6536/6tooltipspelldrstatmw9.jpg
+
+選擇TankPoints時會顯示：
+- Melee TankPoints
+- Melee Reduction
+- Block Value - 如果沒有裝備盾會顯示0
+- Spell TankPoints - 穿NR裝會自動顯示NR，也可以自訂顯示什麼
+- Spell Reduction
+
+TankPoints Tooltip：
+這邊會顯示以下的屬性相當於多少TP，以下每一行在ItemValue公式裡都是等值的：
+- 1 Agility = 
+- 1.5 Stamina = 
+- 10 Armor = 
+- 1 Resilience = 
+- 1 Defense Rating = 
+- 1 Dodge Rating = 
+- 1 Parry Rating = 
+- 1 Block Rating = 
+- 1.54 Block Value
+按住ALT的話則會顯示每個屬性每點相當於多少TP：
+- 1 Agility
+- 1 Stamina
+- 1 Armor
+- 1 Resilience
+- 1% Defense
+- 1% Dodge
+- 1% Parry
+- 1% Block
+- 1 Block Value
+
+2.0版公式改變：
+- 考慮Block影響
+- 考慮Crushing Blow影響
+- 考慮Resilience影響
+- 考慮Combat Table：Hit < Crushing < Crit < Block < Parry < Dodge < Miss
+  超過100%的話會正確的依序Cap到100%
+- SpellTP考慮新Talent：Improved Defensive Stance
+- 預設怪物等級為自己等級+3級
+
+Block Value計算：
+- 沒裝備盾時BlockValue永遠為0
+- STR貢獻：blockValueFromStrength = (strength * 0.05) - 1
+- 裝備貢獻：正確的判斷
+  - 盾本身的Block Value
+  - Equip: 增加的Block Value
+  - Set: 增加Block Value
+  - ZG enchant
+- Talent貢獻：支援
+  - Warrior: Shield Mastery 3/3
+  - Paladin: Shield Specialization 3/3
+  - Shaman: Shield Specialization 5/5
+  - 這些Talent不影響STR所貢獻的Block
+- 公式：
+  blockValue = floor(blockValueFromStrength) +
+  floor((blockValueFromItems + blockValueFromShield) * blockValueMod)
+
+Block帶進公式的處理：
+- 為了要有一個可用的標準，定義了怪物的Damage：
+  - local levelMod = TP_Table.mobLevel
+    if ( levelMod > 59 ) then
+        levelMod = levelMod + (4.5 * (levelMod - 59))
+    end
+    mobDamage = levelMod * 65
+- 這個出來是未經Armor與Stance等減免的傷害
+  - 60級是4127
+  - 70級是7767
+- Block是在各種減免之後才扣除Blocked值的，所以
+  - mobDamage = mobDamage * stanceMod * armorReduction
+- 有了這個我們就能計算Block所減免的比例，我稱為blockedMod
+  - blockedMod = blockValue / mobDamage
+  - 如果怪打一下1000，你檔200，那200/1000=20%，你檔了20%，
+    拿parry與dodge來看的話，parry與dodge的這個值都是100%
+  - block% * blockedMod 就是等效的parry%或dodge%，
+    就能帶進TankPoints的公式了
+
+Melee TankPoints公式：
+totalReduction = 1 - ((mobCritChance * (1 + mobCritBonus) * mobCritDamageMod)
+  + (mobCrushChance * 1.5) + (1 - mobCrushChance - mobCritChance
+  - blockChance * blockedMod - parryChance - dodgeChance - mobMissChance))
+  * (1 - armorReduction) * meleeTakenMod
+tankPoints = playerHealth / (1 - totalReduction)
+
+Spell TankPoints公式：
+schoolReduction = 0.75 * (resistance / (mobLevel * 5))
+totalReduction = 1 - ((mobSpellCritChance * (1 + mobSpellCritBonus)
+  * mobSpellCritDamageMod) + (1 - mobSpellCritChance - mobSpellMissChance))
+  * (1 - schoolReduction) * spellTakenMod
+tankPoints = playerHealth / (1 - totalReduction)
+
+其他相關公式：
+armorReductionTemp = armor / ((85 * levelModifier) + 400)
+armorReduction = armorReductionTemp / (armorReductionTemp + 1)
+defenseEffect = (defense - attackerLevel * 5) * 0.04 * 0.01
+blockValueFromStrength = (strength * 0.05) - 1
+blockValue = floor(blockValueFromStrength) + floor((blockValueFromItems
+ + blockValueFromShield) * blockValueMod)
+mobDamage = (levelModifier * 55) * meleeTakenMod * (1 - armorReduction)
+resilienceEffect = ReverseRating(resilience, playerLevel) * 0.01
+mobCritChance = max(0, 0.05 - defenseEffect - resilienceEffect)
+mobCritBonus = 1
+mobMissChance = max(0, 0.05 + defenseEffect)
+mobCrushChance = 0.15 + max(0, (playerLevel * 5 - defense) * 0.02)
+ (if mobLevel is +3)
+mobCritDamageMod = max(0, 1 - resilienceEffect * 2)
+blockedMod = min(1, blockValue / mobDamage)
+mobSpellCritChance = max(0, 0 - resilienceEffect)
+mobSpellCritBonus = 0.5
+mobSpellMissChance = 0
+mobSpellCritDamageMod = max(0, 1 - resilienceEffect * 2)
+
+指令:
+/tp - 顯示指令說明
+/tp mob default - 恢復預設值
+/tp mob level (-20 - +20) - 設定怪跟你的等級差距，預設+3
+/tp mob damage (0 - 99999) - 設定怪的攻擊力(傷害減免前)，預設為公式
+進階設定:
+/tp mob advanced crit (0 - 100) - 設定怪的Crit機率，預設5%
+/tp mob advanced critbonus - 設定怪的CritBonus，預設1
+/tp mob advanced miss (0 - 100) - 設定怪的Miss機率，預設5%
+/tp mob advanced spellcrit (0 - 100) - 設定怪的法術的Crit機率，預設0%
+/tp mob advanced spellcritbonus - 設定怪的法術的CritBonus，預設0.5
+/tp mob advanced spellmiss (0 - 100) - 設定怪的法術的Miss機率，預設0%

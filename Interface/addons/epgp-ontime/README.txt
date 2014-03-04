@@ -1,0 +1,9 @@
+At raid start and at your choice of time during the raid, takes the
+ list of players who signed up for your current scheduled raid and:
+
+/epgp-ontime start 
+	If they're in the raid and accepted/confirmed, gives them bonus EP
+
+/epgp-ontime late
+	If they're not in the raid and accepted/confirmed, dock them EP
+

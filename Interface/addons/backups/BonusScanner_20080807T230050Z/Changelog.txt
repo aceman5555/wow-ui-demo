@@ -1,0 +1,15 @@
+------------------------------------------------
+2.1 jmlsteele 2006.12.21
+-Fixed +healing enchants not displaying properly
+-Re-enabled Feral Attack Power
+-Re-enabled Undead Attack power
+-Thanks to Tristanian for the above fixes
+------------------------------------------------
+2.0 jmlsteele 2006.12.17
+-Updated codebase for TOC 20000
+-Added fix to compensate for enchant colours
+-Added fix for itemlink scanning
+-Changed %s to ratings (hit, crit, dodge, etc...)
+------------------------------------------------
+1.2 Crowley 2006.11.02
+- Link: http://wow.curse-gaming.com/en/files/details/1732/bonusscanner/

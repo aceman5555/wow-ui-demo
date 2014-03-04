@@ -1,0 +1,10 @@
+
+BLCDDB = {
+	["profileKeys"] = {
+		["Git - Cho'gall"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

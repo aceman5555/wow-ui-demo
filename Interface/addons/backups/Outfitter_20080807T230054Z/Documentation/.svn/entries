@@ -1,0 +1,67 @@
+8
+
+dir
+94
+svn://wow.pcsd.com.au/outfitter/Documentation
+svn://wow.pcsd.com.au/outfitter
+
+
+
+2007-07-21T01:10:36.651843Z
+90
+Zanoroy
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fb69afe3-2b31-0410-afa1-a6a6522b6f30
+
+UsersManual.html
+file
+
+
+
+
+2007-07-21T01:19:32.033072Z
+c4f5511793e29d4bd1dbe2fa44783d22
+2007-07-21T01:10:36.651843Z
+90
+Zanoroy
+
+Images
+dir
+
+FutureFeatures.txt
+file
+
+
+
+
+2007-06-13T07:50:04.953125Z
+a4b4fec8c5f476e91b5a4498d98ac916
+2007-06-12T23:20:46.396388Z
+60
+zanoroy
+
+RevisionHistory.txt
+file
+
+
+
+
+2007-05-24T05:37:30.000000Z
+ce36cfeffb89e4fa8c424561df49bb9b
+2007-05-24T01:16:21.052761Z
+2
+zanoroy
+

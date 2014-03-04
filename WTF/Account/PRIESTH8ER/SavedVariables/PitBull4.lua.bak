@@ -1,0 +1,62 @@
+
+PitBull4DB = {
+	["namespaces"] = {
+		["CastBar"] = {
+		},
+		["RaidTargetIcon"] = {
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["RaidRoleIcon"] = {
+		},
+		["CastBarLatency"] = {
+		},
+		["ClassIcon"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Git - Azuremyst"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["class_order"] = {
+				"WARRIOR", -- [1]
+				"DEATHKNIGHT", -- [2]
+				"PALADIN", -- [3]
+				"PRIEST", -- [4]
+				"SHAMAN", -- [5]
+				"DRUID", -- [6]
+				"ROGUE", -- [7]
+				"MAGE", -- [8]
+				"WARLOCK", -- [9]
+				"HUNTER", -- [10]
+			},
+			["units"] = {
+				["targettargettarget"] = {
+				},
+				["focustarget"] = {
+				},
+				["player"] = {
+					["position_x"] = 79.19989377981426,
+					["position_y"] = -184.3200950077427,
+				},
+				["focus"] = {
+				},
+				["target"] = {
+				},
+				["pet"] = {
+				},
+			},
+			["groups"] = {
+				["Party pets"] = {
+					["enabled"] = true,
+					["unit_group"] = "partypet",
+				},
+				["Party"] = {
+					["enabled"] = true,
+				},
+			},
+			["made_groups"] = true,
+		},
+	},
+}

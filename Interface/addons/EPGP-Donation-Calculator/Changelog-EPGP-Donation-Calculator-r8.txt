@@ -1,0 +1,21 @@
+------------------------------------------------------------------------
+r8 | exth | 2011-12-07 22:59:50 +0000 (Wed, 07 Dec 2011) | 1 line
+Changed paths:
+   M /trunk/EPGP-Donation-Calculator.lua
+
+Added support for other AH addons that implement GetAuctionBuyout. (Go go Auctionator!)
+------------------------------------------------------------------------
+r7 | exth | 2011-11-29 21:07:08 +0000 (Tue, 29 Nov 2011) | 2 lines
+Changed paths:
+   M /trunk/EPGP-Donation-Calculator.toc
+
+Updated for 4.3
+
+------------------------------------------------------------------------
+r6 | exth | 2011-06-28 19:14:29 +0000 (Tue, 28 Jun 2011) | 1 line
+Changed paths:
+   M /trunk/EPGP-Donation-Calculator.lua
+   M /trunk/EPGP-Donation-Calculator.toc
+
+Updated for 4.2
+------------------------------------------------------------------------

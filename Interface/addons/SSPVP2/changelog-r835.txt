@@ -1,0 +1,520 @@
+------------------------------------------------------------------------
+r835 | shadowed.wow | 2008-08-02 15:20:49 -0700 (Sat, 02 Aug 2008) | 1 line
+
+* Fixed the "Unknown" text not being listed, which caused an error in line #369 for some people
+------------------------------------------------------------------------
+r816 | shadowed.wow | 2008-07-22 14:56:37 -0700 (Tue, 22 Jul 2008) | 2 lines
+
+* Reverted the config.lua change
+* Cleaned up the time code a little
+------------------------------------------------------------------------
+r808 | shadowed.wow | 2008-07-14 18:39:13 -0700 (Mon, 14 Jul 2008) | 1 line
+
+* Moving GUI is way to evil, soo reverting
+------------------------------------------------------------------------
+r807 | shadowed.wow | 2008-07-14 15:04:01 -0700 (Mon, 14 Jul 2008) | 1 line
+
+* Renamed lib/ to libs/
+------------------------------------------------------------------------
+r806 | shadowed.wow | 2008-07-14 14:57:34 -0700 (Mon, 14 Jul 2008) | 1 line
+
+* SVN is a bitch
+------------------------------------------------------------------------
+r735 | shadowed.wow | 2008-05-30 00:29:04 -0700 (Fri, 30 May 2008) | 2 lines
+
+* Changed raid join/leave blocking to use a message filter instead of a hook
+* Removed most of the minimap showing code, Blizzard seems to have fixed all the bugs except it not hiding so thats all we fix now
+------------------------------------------------------------------------
+r731 | shadowed.wow | 2008-05-26 22:32:44 -0700 (Mon, 26 May 2008) | 4 lines
+
+* Fixed a bug where the modified arena info panels would continue to show even after you left a team
+* Fixed the NaN check for the modified info panel, also added the check in for season win percent
+* Fixed portExpiration not being nilled for our modified queue window
+* Cleaned up the point diff check for AV
+------------------------------------------------------------------------
+r728 | shadowed.wow | 2008-05-22 20:52:02 -0700 (Thu, 22 May 2008) | 3 lines
+
+* Fixed positioning of the x vs y widget in the arena ui, will no longer resize randomly
+* Fixed timer reseting in EoTS, if the flag is dropped and returned to base the held timer will correctly reset
+* Fixed custom queue window showing Skirmish Arena all the time even if it's rated
+------------------------------------------------------------------------
+r716 | shadowed.wow | 2008-05-16 18:17:57 -0700 (Fri, 16 May 2008) | 1 line
+
+* Fixed matching of stuff, I'll update the WoWI version once someone notices it's broken
+------------------------------------------------------------------------
+r715 | shadowed.wow | 2008-05-16 18:07:36 -0700 (Fri, 16 May 2008) | 1 line
+
+* Fixed an error with capture index related to the fact that meta data is now stored in the return from SecondsToTime
+------------------------------------------------------------------------
+r711 | shadowed.wow | 2008-05-15 14:51:24 -0700 (Thu, 15 May 2008) | 6 lines
+
+* Added a quick UI for doing point/rating/rating change conversions in SSPVP, it's under /arena ui
+* Fixed the conversion checks, it'll correctly account for NaN's now
+* Fixed the bug game check, no rating change will result in no conversion info given
+* Fixed capture bar moving, will no longer trigger an error at line #75 if you leave them alonged, won't jump after you position them now either
+* Fixed position jumping in the overlay when using the grow up option
+* Fixed match text when using the custom entry window, will show "Rated Arena" or "Skirmish Arena" instead of "Eastern Kingdoms"
+------------------------------------------------------------------------
+r633 | shadowed.wow | 2008-03-27 15:10:40 -0700 (Thu, 27 Mar 2008) | 1 line
+
+* SSPVP should actually work now, Blizzard decided to be a pain in the ass and change things.
+------------------------------------------------------------------------
+r626 | shadowed.wow | 2008-03-18 14:54:42 -0700 (Tue, 18 Mar 2008) | 2 lines
+
+* Removed our mark of honor killing code, because it's now done by default as of 2.4 (Or so Blizzard says)
+* Added a bugged arena check, if either team has an old rating of 0 we just print "Bugged game"
+------------------------------------------------------------------------
+r612 | shadowed.wow | 2008-03-03 13:59:28 -0800 (Mon, 03 Mar 2008) | 1 line
+
+* Updated AceAddon-3.0, AceConsole-3.0, AceDB-3.0, AceTimer-3.0, CallbackHandler-1.0, HousingAuthority
+------------------------------------------------------------------------
+r595 | shadowed.wow | 2008-02-28 14:55:15 -0800 (Thu, 28 Feb 2008) | 1 line
+
+* TOC bump to 20400
+------------------------------------------------------------------------
+r592 | shadowed.wow | 2008-02-28 13:05:27 -0800 (Thu, 28 Feb 2008) | 7 lines
+
+* THIS IS NOW A 2.4 ONLY VERSION, BLAH BLAH BLAH
+* Fixed soulstone option not working and showing blank text
+* Fixed win detection not using GetBattlefieldWinner() as they actually fixed it (4 months later)
+* Fixed server parsing code having issues with servers with dashes in the name
+* All positioning code now uses GetEffectiveScale() for frames, may need to reposition things
+* You now hold SHIFT down to disable auto queuing 
+* Removed avsync.lua code, as you can now join AV while grouped. If they restrict it to only 5 people, it's possible it'll come back as a way to coordinate queuing between groups
+------------------------------------------------------------------------
+r567 | shadowed.wow | 2008-02-11 11:47:08 -0800 (Mon, 11 Feb 2008) | 1 line
+
+* Fixed CancelAllTimers typo
+------------------------------------------------------------------------
+r566 | shadowed.wow | 2008-02-10 10:34:30 -0800 (Sun, 10 Feb 2008) | 1 line
+
+* All positions should now be saved so that changing ui scale doesn't reset positioning
+------------------------------------------------------------------------
+r553 | shadowed.wow | 2008-02-06 21:10:53 -0800 (Wed, 06 Feb 2008) | 1 line
+
+* Players cached list of arena teams are now refreshed before showing personal rating, to help prevent inaccurate personal ratings being given
+------------------------------------------------------------------------
+r537 | shadowed.wow | 2008-02-03 15:33:38 -0800 (Sun, 03 Feb 2008) | 2 lines
+
+* Updated to use Ace3 trunk now
+
+------------------------------------------------------------------------
+r529 | shadowed.wow | 2008-01-28 12:34:33 -0800 (Mon, 28 Jan 2008) | 1 line
+
+* Trying to see if this fixes taint issues
+------------------------------------------------------------------------
+r525 | shadowed.wow | 2008-01-26 23:17:40 -0800 (Sat, 26 Jan 2008) | 1 line
+
+* Added capture bar moving back in, shouldn't cause taint issues hopefully with the 2.3.3 changes
+------------------------------------------------------------------------
+r513 | shadowed.wow | 2008-01-19 12:10:37 -0800 (Sat, 19 Jan 2008) | 3 lines
+
+* Updated OptionHouse
+* Tweaked positioning around a bit to be consistent for the arena display
+* Instead of just showing "Join Disabled" or "Join Suspended" we show "<map>: <time left> (Disabled/Suspend"
+------------------------------------------------------------------------
+r505 | shadowed.wow | 2008-01-13 01:19:12 -0800 (Sun, 13 Jan 2008) | 1 line
+
+* More arena info modifications, we now show season/week win percentage, also changed positioning of attendance for season/week to be aligned to the right of the frame instead of appended to your games played this week/personal rating
+------------------------------------------------------------------------
+r502 | shadowed.wow | 2008-01-12 13:28:23 -0800 (Sat, 12 Jan 2008) | 2 lines
+
+* Updated AceDB-3.0 and HousingAuthority
+* Hopefully fixed a bunch of errors that flag.lua was triggering when joining WSG
+------------------------------------------------------------------------
+r497 | shadowed.wow | 2008-01-10 22:37:23 -0800 (Thu, 10 Jan 2008) | 3 lines
+
+* Fixed a logic error with attempting to hide buttons in combat, instead of hiding when out of combat and scheduling to hide when in combat. Should fix carrier names not hiding when afking out in combat
+* Fixed a typo in the German localization
+* Added a nil check to priorities to prevent a rare error
+------------------------------------------------------------------------
+r494 | shadowed.wow | 2008-01-07 10:10:42 -0800 (Mon, 07 Jan 2008) | 1 line
+
+* Fixed higher priority message showing up, even if auto join is disabled
+------------------------------------------------------------------------
+r491 | shadowed.wow | 2008-01-05 23:40:46 -0800 (Sat, 05 Jan 2008) | 1 line
+
+* Removed usage of a handler in CancelTimer, we simply repress it if it's a non existent one
+------------------------------------------------------------------------
+r486 | shadowed.wow | 2008-01-04 00:21:31 -0800 (Fri, 04 Jan 2008) | 1 line
+
+* We no longer register RAID_ROSTER_UPDATE while inside any battlefield to prevent it from being filled up with data from people in the match, once we leave a battlefield we clear out the player status table as well
+------------------------------------------------------------------------
+r484 | shadowed.wow | 2008-01-03 14:50:11 -0800 (Thu, 03 Jan 2008) | 2 lines
+
+* Updated AceDB-3.0, AceTimer-3.0, HousingAuthority and OptionHouse
+* Fixed CancelTimer not passing the silent flag (Damn you whoever changed this)
+------------------------------------------------------------------------
+r476 | shadowed.wow | 2008-01-02 11:31:45 -0800 (Wed, 02 Jan 2008) | 1 line
+
+* Fixed string.format argument #2 nil error in flag.lua, also added checks so we won't attempt to do any checks if carrier names are nil
+------------------------------------------------------------------------
+r475 | shadowed.wow | 2008-01-02 11:08:05 -0800 (Wed, 02 Jan 2008) | 1 line
+
+* Fixed CancelAllTimers error in flag.lua
+------------------------------------------------------------------------
+r473 | shadowed.wow | 2007-12-31 13:41:59 -0800 (Mon, 31 Dec 2007) | 7 lines
+
+* Fixed flag carrier bindings not working
+* Fixed scoreboard display issue for servers with a dash in their name
+* Typo fixed
+* Changed health and party timers to just use an OnUpdate instead of AceTimer-3.0
+* Updated deDE localization
+* Auto Leave/Auto Join is now Leaving and Joining to be a bit more accurate
+
+------------------------------------------------------------------------
+r472 | shadowed.wow | 2007-12-28 14:53:40 -0800 (Fri, 28 Dec 2007) | 3 lines
+
+* Should have fixed the issues with flag carriers not hiding if you afk out while in combat
+* Cleaned up coloring, instead of servers and level being colored white, they'll be colored the actual players factions, and only their names will colored by class
+* Added an immeditiate score request, and then we get new data every 15 seconds instead of waiting 15 seconds for first batch of data
+------------------------------------------------------------------------
+r471 | shadowed.wow | 2007-12-26 16:46:16 -0800 (Wed, 26 Dec 2007) | 8 lines
+
+* Fixed match.lua using the localized faction, NOT the unlocalized one
+* Fixed battlefield minimap not being reshown if you toggle it off of show in battlefield/always while inside a battleground
+* Fixed not checking points for EoTS in delaying auto leave, since Blizzard apparently doesn't give a damn and is never going to fix GetBattlefieldWinner()
+* Fixed disabling auto join when window is hidden not checking our custom one when it's being used
+* Fixed flag carrier bugs, should no longer be getting index nil errors randomly
+* Fixed flag carrier targetting, instead of saying targetting X, will specifically say cannot target them due to combat lockdown if it changes
+* Auto leave is "instant" now if you set delay to <= 0, instead of being whenever the next timer update is scheduled
+
+------------------------------------------------------------------------
+r470 | shadowed.wow | 2007-12-26 13:52:39 -0800 (Wed, 26 Dec 2007) | 1 line
+
+* Localization is suppose to use metatables
+------------------------------------------------------------------------
+r469 | shadowed.wow | 2007-12-26 11:18:17 -0800 (Wed, 26 Dec 2007) | 1 line
+
+* German localization updated, should be completed now
+------------------------------------------------------------------------
+r468 | shadowed.wow | 2007-12-25 10:47:53 -0800 (Tue, 25 Dec 2007) | 2 lines
+
+* Fixed index #226 error in flag.lua
+* Fixed multiple screenshots being taken in one game
+------------------------------------------------------------------------
+r467 | shadowed.wow | 2007-12-24 10:25:07 -0800 (Mon, 24 Dec 2007) | 3 lines
+
+* Fixed usage of OnEnable not being updated to OnInitialize
+* Added positioning for when we first join WSG or EoTS, this should solve the issues with text overlapping the pvp objectives icons and such
+* 
+------------------------------------------------------------------------
+r466 | shadowed.wow | 2007-12-23 15:56:20 -0800 (Sun, 23 Dec 2007) | 1 line
+
+* Fixed captian messages using invalid faction
+------------------------------------------------------------------------
+r465 | shadowed.wow | 2007-12-23 15:24:41 -0800 (Sun, 23 Dec 2007) | 2 lines
+
+* Updated zhCN localization.zhCN.lua
+* If we don't find any events registered to a chat frame, will default to DEFAULT_CHAT_FRAME instead
+------------------------------------------------------------------------
+r463 | shadowed.wow | 2007-12-22 19:50:16 -0800 (Sat, 22 Dec 2007) | 2 lines
+
+* Added the short hand time back in for overlay, allows you to format it as "HH:MM:SS" instead of "X Minutes, X Seconds"
+* Added battlefield entry window options, will show time left to join before it expires along with an option to never reshow the frame like it currently does now
+------------------------------------------------------------------------
+r462 | shadowed.wow | 2007-12-22 11:27:30 -0800 (Sat, 22 Dec 2007) | 1 line
+
+* Fixed arena attendance for the week not working, was showing numbers >100% if you didn't play every game the team played that week
+------------------------------------------------------------------------
+r461 | shadowed.wow | 2007-12-22 00:15:40 -0800 (Sat, 22 Dec 2007) | 3 lines
+
+* Fixed ready check not working
+* Fixed syncing being off by a second (3 second sync = 2, 1, queue instead of 3, 2, 1, queue)
+* Fixed total player stats
+------------------------------------------------------------------------
+r460 | shadowed.wow | 2007-12-21 21:26:54 -0800 (Fri, 21 Dec 2007) | 7 lines
+
+* Fixed mine category not being removed when leaving AV
+* AV Sync GUI is actually useful now
+* Shows name colored by class, status (ready/not ready/afk/offline), queue status (queued all, queued #, active #, confirm #) along with version used
+* New status data is polled every 10 seconds, window and ping data is polled every 60 seconds incase someone goes offline or joins the raid late
+* Alerts when a new version if available (Someones version is higher then yours)
+* Everything is sortable just click the headers
+* You can start a sync queue, ready check or drop the queues through the GUI as well
+------------------------------------------------------------------------
+r458 | shadowed.wow | 2007-12-21 01:15:45 -0800 (Fri, 21 Dec 2007) | 6 lines
+
+* Fixed error when changing AV options while inside AV
+* Fixed a captureTime error in av.lua when trying to ALT + Click a random area in the overlay
+* Fixed enable capture timers not working in AV options
+* Added more checks to flag.lua to prevent index nil errors
+* Added GUI for AV queuing, type /av status to pop it up, it needs a lot more work but it's a start for seeing how many have window open and such, it'll automatically check window status every 10 seconds and check pings every 60
+* All capture types of messages not follow BG_SYSTEM_ALLIANCE and BG_SYSTEM_HORDE instead of going to ChatFrame1
+------------------------------------------------------------------------
+r457 | shadowed.wow | 2007-12-19 15:14:06 -0800 (Wed, 19 Dec 2007) | 3 lines
+
+* Fixed "$Revision: ###$" showing up in OptionHouse
+* Added /av join #, only works for people using r457
+* You can disable the force join option by going to /oh -> SSPVP2 -> Alterac Valley -> Sync Queue group however it is enabled by default
+------------------------------------------------------------------------
+r456 | shadowed.wow | 2007-12-19 14:35:09 -0800 (Wed, 19 Dec 2007) | 3 lines
+
+* Fixed /av ready not showing up, also will fix errors when doing /av if you have Mumble
+* Updated all libraries
+* Updated localization.zhCN.lua
+------------------------------------------------------------------------
+r455 | shadowed.wow | 2007-12-19 14:33:07 -0800 (Wed, 19 Dec 2007) | 4 lines
+
+* Fixed /av ready not working (/av window works, but it's suppose to be /av ready)
+* Fixed /av attend showing a percentage above 100%, not a bug per say mostly just display
+* Fixed DisableModule in flag.lua not unregistering OOC updates and possibly leading to flag carriers not being removed
+
+------------------------------------------------------------------------
+r451 | shadowed.wow | 2007-12-17 14:34:30 -0800 (Mon, 17 Dec 2007) | 3 lines
+
+* Added zhCN localization
+* Added party target scanning for flags
+* Fixed match info not making sure we actually have points before doing calculations
+------------------------------------------------------------------------
+r448 | shadowed.wow | 2007-12-16 10:10:48 -0800 (Sun, 16 Dec 2007) | 2 lines
+
+* Fixed Right Click + Drag not resetting things with anchors
+* Removed our checks for bases before doing calculations, it seems to have issues with not being correct in AB/EoTS
+------------------------------------------------------------------------
+r447 | shadowed.wow | 2007-12-15 18:50:07 -0800 (Sat, 15 Dec 2007) | 1 line
+
+* Cleaned up the players arena score, you can now see week + season stats, along with your personal rating for each time
+------------------------------------------------------------------------
+r446 | shadowed.wow | 2007-12-14 00:05:19 -0800 (Fri, 14 Dec 2007) | 10 lines
+
+* AV syncing has gotten an overhaul
+* Anyone who uses SSPVP2 can now take advantage of the more advance features including dropping queues, status of everyone elses queues and ready checks based on battlemaster window being open
+* You can see how many people are confirmation for a specific battleground instance, how many are in a specific battleground instance along with how many are queued.
+* Backwords compatible with other SSPVP and SSPVP2 users before this revision, but they can't take advantage of anything beyond auto queuing
+* Includes compatabiility for queuing/dropping with StinkyQueue and any other variation of it (LightQueue and so on)
+* Personal rating display when arena ends works now, it'll only show up if your personal rating is different from your teams rating
+* Added /arena and /av information in /sspvp so people actually can find out they exist
+* Fixed /arena change not showing the correct numbers
+* Removed the burn code as it's unneeded
+
+------------------------------------------------------------------------
+r445 | shadowed.wow | 2007-12-12 18:34:12 -0800 (Wed, 12 Dec 2007) | 6 lines
+
+* Updated HousingAuthority
+* Added option to squeeze honor out of a battlefield if it has nodes that give honor when they burn (Just AV right now), disabled by default, needs more testing
+* Fixed the arena formula should correctly work now and calculate points for winning/losing
+* Fixed personal rating, should also show up correctly now using the new calculations
+* Fixed option to show personal rating changes not showing up
+* Added /arena attend back since it'll work correctly now as well
+------------------------------------------------------------------------
+r441 | shadowed.wow | 2007-12-12 14:47:47 -0800 (Wed, 12 Dec 2007) | 1 line
+
+* Fixed macro text option not showing up for Warsong Gulch flag carrier targeting
+------------------------------------------------------------------------
+r440 | shadowed.wow | 2007-12-12 14:46:19 -0800 (Wed, 12 Dec 2007) | 4 lines
+
+* Fixed modules using OnEnable instead of OnInitialize (Damn Nev)
+* Fixed flag.lua and score.lua using the same namespace, your flag configurations will be reset however
+* Players team will be shown first on rating change when arenas ends
+* Removed /arena change for now, need to tweak the foruma more
+------------------------------------------------------------------------
+r439 | shadowed.wow | 2007-12-12 01:35:00 -0800 (Wed, 12 Dec 2007) | 1 line
+
+* Updated AceDB-3.0
+------------------------------------------------------------------------
+r436 | shadowed.wow | 2007-12-10 17:23:28 -0800 (Mon, 10 Dec 2007) | 2 lines
+
+* Cleaned up our season fix, won't change return results of a function now
+* Addded /arena change <winner> <loser> to see how many points are gained/lost if the <winner>'s rating beats the <loser>'s rating
+------------------------------------------------------------------------
+r435 | shadowed.wow | 2007-12-10 13:08:58 -0800 (Mon, 10 Dec 2007) | 3 lines
+
+* APPARENTLY you're suppose to use a variable before you nil it out, who'd of thought? (Fixed line #498 error in SSPVP.lua due to window being hidden when auto joining)
+* Cleaned up the ScreenshotTaken() code, not doing 3 concats + a string format, doing a single format now
+
+------------------------------------------------------------------------
+r431 | shadowed.wow | 2007-12-08 15:48:35 -0800 (Sat, 08 Dec 2007) | 2 lines
+
+* Added a fix so personal rating shows up inside battlefields, will remove this once 2.4.0 is live.
+* Added disabling auto leave if another battlefield is ready to join
+------------------------------------------------------------------------
+r430 | shadowed.wow | 2007-12-07 00:36:31 -0800 (Fri, 07 Dec 2007) | 1 line
+
+* Added option to show personal rating gain/lost, only shows up if you gained or lost more points then the amount your team changed by, will clean it up later to show up in the same line as the actual rating change
+------------------------------------------------------------------------
+r427 | shadowed.wow | 2007-12-06 15:49:15 -0800 (Thu, 06 Dec 2007) | 3 lines
+
+* Fixed line #424 error in flag.lua
+* Fixed match info calculation bug for EoTS when you capture a flag
+* Added /arena attend <player played> <team played> for calculating games needed to reach 30%
+------------------------------------------------------------------------
+r426 | shadowed.wow | 2007-12-06 00:18:53 -0800 (Thu, 06 Dec 2007) | 3 lines
+
+* Added option to disable auto release inside specific battlegrounds, can find the option under each battlegrounds category
+* Fixed a bug with using the localized version of UnitFactionGroup causing an index nil error in flag.lua
+
+------------------------------------------------------------------------
+r421 | shadowed.wow | 2007-12-05 00:46:45 -0800 (Wed, 05 Dec 2007) | 1 line
+
+* Fixed error when viewing the Alterac Valley category in configuration
+------------------------------------------------------------------------
+r420 | shadowed.wow | 2007-12-03 12:36:49 -0800 (Mon, 03 Dec 2007) | 2 lines
+
+* Fixed a (rare) whisper bug inside battlegrounds where if you tried to whisper someone right into joining you'd get an error about line #114 in battlefield.lua
+* Fixed Snowfall capture timer being off, it's suppose to be 5 minutes, 4 seconds for the first claim then 4 minutes, 4 seconds for everything after
+------------------------------------------------------------------------
+r419 | shadowed.wow | 2007-12-03 10:21:14 -0800 (Mon, 03 Dec 2007) | 1 line
+
+* Added LibStub to library list to fix an issue with all the libraries complaining about LibStub not existing
+------------------------------------------------------------------------
+r418 | shadowed.wow | 2007-12-02 23:03:29 -0800 (Sun, 02 Dec 2007) | 1 line
+
+* Fixed ScheduleRepeatingTimer error
+------------------------------------------------------------------------
+r416 | shadowed.wow | 2007-12-02 12:26:29 -0800 (Sun, 02 Dec 2007) | 3 lines
+
+* Updated  CallbackHandler, AceEvent-3.0, AceDB-3.0, AceTimer-3.0, AceAddon-3.0 libraries to resolve some issues
+* Fixed #288 error in SSPVP.lua and #410something error in av.lua
+
+------------------------------------------------------------------------
+r413 | shadowed.wow | 2007-12-02 00:20:43 -0800 (Sun, 02 Dec 2007) | 7 lines
+
+* Added an override for auto queue, you can hold down ALT while talking to a battlemaster to auto queue even while grouped (auto queue while solo has to be on still)
+* Added reset of carrier name in the UIObject when it's hidden
+* Added leader check to auto selection on arena battlemaster, won't actually try to auto choose if you can't queue
+* When we don't auto join a battlefield due to the entry window being hidden, will give you a message similar to 
+* Fixed an error when the screenshot option is enabled and the screenshotFormat is tga
+* Improved the moving anchors so we use a single function to create them now
+* Cleaned up the ScreenshotTaken() code, will only change the format extension we show it was saved as if it actually differs (for example, jpeg screenshotFormat is actually saved as jpg)
+------------------------------------------------------------------------
+r411 | shadowed.wow | 2007-12-01 12:04:37 -0800 (Sat, 01 Dec 2007) | 3 lines
+
+* Added German localization, thanks Narvinye on Die Argustwacht (EU)
+* Fixed a rare bug about faction being nil in flag.lua
+* Fixed MSBT support, won't cause errors regarding comparing a nil with a number
+------------------------------------------------------------------------
+r410 | shadowed.wow | 2007-11-30 19:47:40 -0800 (Fri, 30 Nov 2007) | 2 lines
+
+* Forgot to mention in last commit
+* Moving is back, currently you can move the PvP objectives frame and the scoreboard, can be unlocked through the "General" category
+------------------------------------------------------------------------
+r409 | shadowed.wow | 2007-11-30 17:15:03 -0800 (Fri, 30 Nov 2007) | 2 lines
+
+* Added option to disable clicking in the overlay completely for those who want to be able to interact with the 3D world through the overlay
+* Fixed Alterac Valley not being included in the call to arms list for pausing auto leave
+------------------------------------------------------------------------
+r407 | shadowed.wow | 2007-11-30 01:45:58 -0800 (Fri, 30 Nov 2007) | 7 lines
+
+* Fixed a leaked global
+* Fixed flag carrier color not being updated if it goes from carrier -> carrier instead of carrier -> hide -> carrier
+* Fixed carriers being positioned incorrectly inside Warsong Gulch
+* Added UPDATE_BATTLEFIELD_SCORE check to flag classes, so if someone grabs the flag that we don't have data for, next score update it'll fix it
+* Added /sspvp ui back will open up the OptionHouse configuration at the SSPVP2 list
+* Added grow up option to overlay configuration, default is to grow down
+
+------------------------------------------------------------------------
+r406 | shadowed.wow | 2007-11-29 15:40:08 -0800 (Thu, 29 Nov 2007) | 1 line
+
+* If you have the Call to Arms daily quest and a battleground ends, we won't auto leave until it completes if you win. This is mostly for people who have auto leave set to 0 causing you to sometimes leave before getting credit in a win.
+------------------------------------------------------------------------
+r404 | shadowed.wow | 2007-11-28 20:05:50 -0800 (Wed, 28 Nov 2007) | 2 lines
+
+* Added SSPVP:Reload() to prevent an error when modifying configuration
+* Added checks to also listen for "SSAV" prefix for AV queuing to support older versions of SSPVP
+------------------------------------------------------------------------
+r403 | shadowed.wow | 2007-11-28 17:42:41 -0800 (Wed, 28 Nov 2007) | 1 line
+
+* Changed /arena to do /arena points, Points -> Rating conversion and /arena rating, Rating -> Points conversion, other way was too confusing
+------------------------------------------------------------------------
+r401 | shadowed.wow | 2007-11-28 16:08:06 -0800 (Wed, 28 Nov 2007) | 7 lines
+
+* This version should be pretty much beta with everything working well enough to test, so TEST IT!
+* Fixed points from captures so it actually works now
+* Added options to set specific macro text to run on click for carriers
+* Increased party scan to 1 second instead of every 0.50 seconds
+* Increased health time out to 10 seconds, and it makes sure we can't get data from them anymore before reseting
+* Removed table recycling for inspection/player info, it's not something thats used often and it seems to be messing up when inspecting people
+
+------------------------------------------------------------------------
+r395 | shadowed.wow | 2007-11-26 21:29:35 -0800 (Mon, 26 Nov 2007) | 15 lines
+
+* Most of this needs more testing still, but it should mostly be the final implementation
+* Configuration is now in, it's under SSPVP2 in OH
+* Flag carrier module colors people name by class, shows health when available for both enemies and friendly carriers through UNIT_HEALTH and party target scanning, removes it if no updates for 5 seconds
+* Fixed configuration bugs in flag.lua and made it so it uses different ones depending on wsg or eots
+* Fixed SSPVP:GetFactionColor() not doing a string.lowwer
+* Fixed SSPVP:RegisterOOCUpdate() not working
+* Fixed match info not forcing a recheck when a flag is captured in eots
+* Fixed announce default being "tfalse" not "false"
+* Added held time and time taken to capture a flag for eots and wsg
+* Added SSOverlay:Reload for config changes
+* Added EoTS module for cleaning up pvp objectives and showing points gained from captures in CT's
+* Added code to fix Blizzards implementation of auto showing minimaps in battlegrounds, because theirs doesn't work very well
+* Added quick checks to all modules so OnEnable won't be called more then once a season
+* Renamed battleground.lua -> battlefield.lua
+* Changed <1 minute to <1 Min in queue overlay.lua
+------------------------------------------------------------------------
+r394 | shadowed.wow | 2007-11-25 23:45:33 -0800 (Sun, 25 Nov 2007) | 6 lines
+
+* With these, SSPVP2 should mostly be implemented minus the UI, need AV holiday to end so I can test up everything
+* Bindings should be implemented for flag carriers
+* Added flag carrier tracking for WSG and EoTS
+* Added sound playing when queues ready 
+* Fixed server info not checking if their is more then 0 of a class before showing it
+* Removed match info calculations from ab.lua, split off to match.lua as a generic way to do both AB and EoTS match calculations (Speaking of which, EoTS calculations are in)
+------------------------------------------------------------------------
+r393 | shadowed.wow | 2007-11-24 23:28:27 -0800 (Sat, 24 Nov 2007) | 11 lines
+
+* Added /sspvp suspend, will disable auto join and auto leave for 5 minutes, or until you log off. Can remove the suspension early by doing it again
+* Added config variable for disabling timers in AB0
+* Added match info for AB, final score for both factions, time left and bases to win
+* Added blocking of marks of honor creation
+* Added queue overlay
+* Cleaned up auto join code for detecting priority
+* Fixed modules not being disabled when switching battlefields
+* Changed priority of text so it's shown above everything else
+* Fixed overlay not nilling out seconds/lastUpdate
+* Fixed overlay flowing (for real this time)
+* Fixed wording for AV syncing, will just send the sync if the count down is 0 seconds, also will correctly send the sync message to party or raid depending on how many people are there
+------------------------------------------------------------------------
+r390 | shadowed.wow | 2007-11-24 14:20:22 -0800 (Sat, 24 Nov 2007) | 2 lines
+
+* Removed sync.lua, won't likely be adding syncing of timers back because it's useless 99% of the time, and just adds more code thats a pain in general
+* Added module in for doing AV sync queuing, no longer will plug into the overlay as the time before queue is pretty low, slash command is /av
+------------------------------------------------------------------------
+r389 | shadowed.wow | 2007-11-23 22:41:46 -0800 (Fri, 23 Nov 2007) | 2 lines
+
+* Added support for showing reinforcements lost through towers/captains in CT (MSBT support untested)
+* Overlay resize bug should be fixed now, was an unrelated issue to increasing padding
+------------------------------------------------------------------------
+r388 | shadowed.wow | 2007-11-23 11:05:24 -0800 (Fri, 23 Nov 2007) | 8 lines
+
+* Fixed AB timers not removing when leaving AB
+* Click action for AB actually works
+* AV module implemented, should fully work with interval alerts, speed up at <=2 minutes left and capture timers, and reinforcement gain through mines
+* Fixed an overlay bug where the resize code would allow things to overflow if it's a small change
+* Implemented the faction break down to the Alliance/Horde score buttons
+* Removed shifting of name in score, it's ugly since it's so close
+* Fixed SSPVP:ParseNode doing a string.lower
+
+------------------------------------------------------------------------
+r387 | shadowed.wow | 2007-11-21 22:55:05 -0800 (Wed, 21 Nov 2007) | 5 lines
+
+* Base Arathi Basin support is in, just does timers currently
+* Implemented all the arena features, inspect/player points, (L) next to name, float game played and /arena for conversion
+* Added all the reformat/battleground things like auto appending server, blocking raid leave/join, timer to start, auto release
+* Added all the score modifications, coloring names, hiding class icon and enemy/friendly levels (Alliance/Horde break down not in yet)
+* Overlays should fully work now, changed so instead of just clicking the overlay to active the OnClick you now have to hold a modifier key down to prevent accidental clicks
+------------------------------------------------------------------------
+r384 | shadowed.wow | 2007-11-20 15:17:08 -0800 (Tue, 20 Nov 2007) | 7 lines
+
+* No configuration yet, have to modify defaults
+* Auto joining/leaving should work well including priorities and screenshots on leave
+* Class icon hiding will now shift the names over so you no longer have the blank area where the icon was
+* Score features should be implemented including class coloring and showing levels of people
+* Screenshot name is outputed when a screenshots taken now
+* Inspection/player modifying is implemented, including /arena for doing point -> rating and rating -> point conversion
+
+------------------------------------------------------------------------
+r383 | shadowed.wow | 2007-11-18 23:41:36 -0800 (Sun, 18 Nov 2007) | 3 lines
+
+* Initial import, SSPVP2
+* Recode of SSPVP to take advantage of Ace3 (However, not as awesome of a name as Dongle)
+* No, this doesn't work yet
+------------------------------------------------------------------------
+r382 | shadowed.wow | 2007-11-16 23:13:29 -0800 (Fri, 16 Nov 2007) | 2 lines
+
+* SSPVP, Beta
+* Branching it off so I can work on trimming and recoding everything without breaking the main version
+------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+
+FreeUIGlobalConfig = {
+	["Cho'gall"] = {
+		["class"] = {
+			["Git"] = "WARRIOR",
+		},
+		["gold"] = {
+			["Git"] = 3481592357,
+		},
+	},
+}

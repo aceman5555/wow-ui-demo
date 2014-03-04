@@ -1,0 +1,13 @@
+## Interface: 40300
+## Title: Ten Ton Hammer Collector
+## Author: J.C. Smith
+## Version: 1.0
+## Notes: Uploads Game Data to TenTonHammer.com
+## eMail: jcsmith@tentonhammer.com
+## URL: http://www.tentonhammer.com
+## X-eMail: jcsmith@tentonhammer.com
+## X-Website: http://www.tentonhammer.com
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: TTHSET,TTHE
+TenTonHammer.lua

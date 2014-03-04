@@ -1,0 +1,39 @@
+
+DiminishingReturnsDB = {
+	["namespaces"] = {
+		["Blizzard"] = {
+			["profiles"] = {
+				["Gitt - Cho'gall"] = {
+					["target"] = {
+					},
+					["party"] = {
+					},
+					["focus"] = {
+					},
+				},
+			},
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["Nameplates"] = {
+		},
+		["ShadowedUnitFrames"] = {
+		},
+		["PitBull4"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Gitt - Cho'gall",
+	},
+	["profiles"] = {
+		["Gitt - Cho'gall"] = {
+			["pveMode"] = true,
+			["categories"] = {
+				["taunt"] = true,
+				["ctrlstun"] = true,
+				["rndstun"] = true,
+			},
+			["bigTimer"] = true,
+		},
+	},
+}

@@ -1,0 +1,82 @@
+------------------------------------------------------------------------
+r674 | oscarucb | 2014-02-25 22:01:13 +0000 (Tue, 25 Feb 2014) | 1 line
+Changed paths:
+   A /tags/5.9.0 (from /trunk:673)
+
+Tagging as 5.9.0
+------------------------------------------------------------------------
+r672 | oscarucb | 2014-02-24 08:46:48 +0000 (Mon, 24 Feb 2014) | 2 lines
+Changed paths:
+   M /trunk/Core.lua
+
+fix auto-invite/auto-accept again, for 5.4.7 wsp change
+
+------------------------------------------------------------------------
+r670 | oscarucb | 2014-02-23 00:28:34 +0000 (Sun, 23 Feb 2014) | 4 lines
+Changed paths:
+   M /trunk/Config.lua
+   M /trunk/Core.lua
+
+improvements to utility announcements
+add an option to control expiration announcements
+improve conciseness/grammar of several announcements
+
+------------------------------------------------------------------------
+r668 | oscarucb | 2014-02-22 04:17:57 +0000 (Sat, 22 Feb 2014) | 2 lines
+Changed paths:
+   M /trunk/Buffs.lua
+   M /trunk/Core.lua
+
+factor item checking code and fix it for 5.4.7 comms change
+
+------------------------------------------------------------------------
+r666 | oscarucb | 2014-02-09 12:43:40 +0000 (Sun, 09 Feb 2014) | 3 lines
+Changed paths:
+   M /trunk/Core.lua
+
+ticket 394: fix some bit-rot with auto-invite/auto-accept features
+should now work correctly with all cases, including connected realms
+
+------------------------------------------------------------------------
+r665 | oscarucb | 2014-02-08 09:21:58 +0000 (Sat, 08 Feb 2014) | 3 lines
+Changed paths:
+   M /trunk/Buffs.lua
+
+make Symbiosis check more robust
+there are live bugs that can cancel only half of the symbiosis buff, so catch and report that situation
+
+------------------------------------------------------------------------
+r664 | oscarucb | 2014-02-01 02:39:56 +0000 (Sat, 01 Feb 2014) | 2 lines
+Changed paths:
+   M /trunk/Core.lua
+
+fix buff button number truncation with some fonts
+
+------------------------------------------------------------------------
+r663 | oscarucb | 2014-01-26 09:19:57 +0000 (Sun, 26 Jan 2014) | 3 lines
+Changed paths:
+   M /trunk/Buffs.lua
+   M /trunk/Core.lua
+
+show bad hunter aspect name in tooltip
+remove some dead code
+
+------------------------------------------------------------------------
+r662 | oscarucb | 2014-01-25 00:50:27 +0000 (Sat, 25 Jan 2014) | 2 lines
+Changed paths:
+   M /trunk/Buffs.lua
+   M /trunk/Core.lua
+
+tweak food tooltip
+
+------------------------------------------------------------------------
+r661 | oscarucb | 2014-01-23 04:06:58 +0000 (Thu, 23 Jan 2014) | 3 lines
+Changed paths:
+   M /trunk/Buffs.lua
+   M /trunk/Config.lua
+   M /trunk/Core.lua
+
+ticket 392: new option to treat eating players as Well Fed
+improvments to well fed and slacking food tooltips
+
+------------------------------------------------------------------------

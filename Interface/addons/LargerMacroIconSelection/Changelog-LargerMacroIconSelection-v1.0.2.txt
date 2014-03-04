@@ -1,0 +1,26 @@
+------------------------------------------------------------------------
+r39 | xinhuan | 2011-12-03 18:29:11 +0000 (Sat, 03 Dec 2011) | 1 line
+Changed paths:
+   A /tags/v1.0.2 (from /trunk:38)
+
+Tag release v1.0.2.
+------------------------------------------------------------------------
+r38 | xinhuan | 2011-12-03 18:26:49 +0000 (Sat, 03 Dec 2011) | 1 line
+Changed paths:
+   M /trunk/LargerMacroIconSelection.lua
+   M /trunk/LargerMacroIconSelection.toc
+
+Update TOC to 40300, version to v1.0.2
+------------------------------------------------------------------------
+r37 | xinhuan | 2011-12-03 18:24:49 +0000 (Sat, 03 Dec 2011) | 1 line
+Changed paths:
+   M /trunk/LargerMacroIconSelection.lua
+
+Fix another error caused by trying to print nothing when changing the eidth/height settings.
+------------------------------------------------------------------------
+r36 | xinhuan | 2011-12-03 18:22:11 +0000 (Sat, 03 Dec 2011) | 1 line
+Changed paths:
+   M /trunk/LargerMacroIconSelection.lua
+
+Fix errors caused by patch 4.3 (fix contributed by JudFromHud).
+------------------------------------------------------------------------

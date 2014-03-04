@@ -1,0 +1,15 @@
+------------------------------------------------------------------------
+r69 | greltok | 2013-11-26 08:33:48 +0000 (Tue, 26 Nov 2013) | 1 line
+Changed paths:
+   A /tags/1.7 (from /trunk:68)
+
+Tagging as 1.7
+------------------------------------------------------------------------
+r68 | greltok | 2013-11-26 08:31:38 +0000 (Tue, 26 Nov 2013) | 1 line
+Changed paths:
+   M /trunk/GridStatusRole.lua
+   M /trunk/GridStatusRole.toc
+   M /trunk/GridStatusRoleLocale-enUS.lua
+
+Now uses assigned roles while talent info is unknown.
+------------------------------------------------------------------------

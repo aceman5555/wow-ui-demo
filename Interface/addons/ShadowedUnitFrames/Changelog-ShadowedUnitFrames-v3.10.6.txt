@@ -1,0 +1,13 @@
+tag v3.10.6
+ceb20254aabf023673ed0b711660386f0b271475
+Shadowed <shadowed.wow@gmail.com>
+2014-02-22 18:11:03 -0800
+
+Tagging as release v3.10.6
+
+
+--------------------
+
+Shadowed:
+	- removed debug code for boss frames
+	- always force a child update no matter state

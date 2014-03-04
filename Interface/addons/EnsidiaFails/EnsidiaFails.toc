@@ -1,0 +1,35 @@
+﻿## Interface: 50400
+## Title: EnsidiaFails
+## Title-zhTW: EnsidiaFails 失誤報告
+## Title-zhCN: EnsidiaFails 失误报告
+## Version: 328
+## Notes: Reports in raid chat whenever a raid member "fails."  /EnsidiaFails to configure.
+## Notes-zhTW: 每當團隊成員"失誤"時，在團隊頻道報告。 /EnsidiaFails 開啟選項。
+## Notes-zhCN: 每当团队成员"失误"时，在团队频道报告。 /EnsidiaFails 开启选项。
+## Author: Caleb
+## X-Category: Raid
+## SavedVariables: EnsidiaFailsDB, EnsidiaFails_FailCount, EnsidiaFails_OFailCount
+## OptionalDeps: Ace3, LibFail-MoP
+## LoadManagers: AddonLoader
+## X-LoadOn-Instance: true
+## X-LoadOn-Slash: /EnsidiaFails, /ef
+## X-Curse-Packaged-Version: 5.4-RELEASE-LFr64
+## X-Curse-Project-Name: EnsidiaFails
+## X-Curse-Project-ID: ensidiafails
+## X-Curse-Repository-ID: wow/ensidiafails/mainline
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+EnsidiaFails-enUS.lua
+EnsidiaFails-deDE.lua
+EnsidiaFails-frFR.lua
+EnsidiaFails-koKR.lua
+EnsidiaFails-ruRU.lua
+EnsidiaFails-ptBR.lua
+EnsidiaFails-zhTW.lua
+EnsidiaFails-zhCN.lua
+EnsidiaFails-esES.lua
+EnsidiaFails-itIT.lua
+EnsidiaFails.lua

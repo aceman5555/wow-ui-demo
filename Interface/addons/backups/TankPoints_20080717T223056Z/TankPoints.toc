@@ -1,0 +1,77 @@
+﻿## Interface: 20100
+## Title: TankPoints |cff7fff7f -Ace2-|r
+## Notes: Calculates and shows your TankPoints in the PaperDall Frame.
+## Notes-zhTW: 計算並顯示你的TankPoints
+## Notes-esES: Calcula y muestra tus Puntos de Tanque en la ventana de personaje
+## Author: Whitetooth@Cenarius (hotdogee@bahamut.twbbs.org)
+## SavedVariables: TankPointsDB
+## OptionalDeps: Ace2, Deformat, GratuityLib, StatLogicLib, TipHookerLib, UTF8, Waterfall-1.0
+## X-Embeds: Ace2, Deformat, GratuityLib, StatLogicLib, TipHookerLib, UTF8, Waterfall-1.0
+## X-Category: Interface Enhancements
+## X-RelSite-WoWI: 6419
+## X-RelSite-Curse: 992
+## X-License: GPL v2
+## X-Encoding: UTF-8
+
+#####################
+# Non-Ace Libraries #
+#####################
+UTF8\utf8data.lua
+UTF8\utf8.lua
+
+#################
+# Ace Libraries #
+#################
+libs\AceLibrary\AceLibrary.lua
+# AceLocale: AceLibrary
+libs\AceLocale-2.2\AceLocale-2.2.lua
+# Deformat: AceLibrary
+libs\Deformat-2.0\Deformat-2.0.lua
+# TipHooker: AceLibrary
+libs\TipHooker-1.0\TipHooker-1.0.lua
+# AceOO: AceLibrary
+libs\AceOO-2.0\AceOO-2.0.lua
+# Gratuity: AceLibrary, Deformat-2.0 (optional)
+libs\Gratuity-2.0\Gratuity-2.0.lua
+# Babble-Spell: AceLibrary, AceLocale-2.2
+libs\Babble-Spell-2.2\Babble-Spell-2.2.lua
+# AceConsole: AceLibrary, AceOO
+libs\AceConsole-2.0\AceConsole-2.0.lua
+# AceEvent: AceLibrary, AceOO
+libs\AceEvent-2.0\AceEvent-2.0.lua
+# AceDebug: AceLibrary, AceOO
+libs\AceDebug-2.0\AceDebug-2.0.lua
+# AceDB: AceLibrary, AceOO, AceEvent
+libs\AceDB-2.0\AceDB-2.0.lua
+# AceAddon: AceLibrary, AceOO, AceEvent, AceConsole (optional)
+libs\AceAddon-2.0\AceAddon-2.0.lua
+# StatLogic: AceLibrary, AceLocale-2.2, Babble-Spell-2.2
+libs\StatLogic-1.0\StatLogic-1.0.lua
+# Waterfall: AceLibrary, AceOO
+libs\Waterfall-1.0\Waterfall-1.0.lua
+
+######################
+# Localization Files #
+######################
+TankPoints-Locale-enUS.lua
+TankPoints-Locale-zhTW.lua
+TankPoints-Locale-deDE.lua
+TankPoints-Locale-frFR.lua
+TankPoints-Locale-koKR.lua   
+TankPoints-Locale-esES.lua
+
+########
+# Core #
+########
+TankPoints.lua
+
+##############
+# Calculator #
+##############
+TankPointsCalculator.lua
+TankPointsCalculator.xml
+
+############
+# Tooltips #
+############
+TankPointsTooltips.lua

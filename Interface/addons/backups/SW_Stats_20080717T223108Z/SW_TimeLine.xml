@@ -1,0 +1,912 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+	<Frame name="SW_TL_Item" virtual="true">
+		<Size>
+			<AbsDimension x="150" y="20" />
+		</Size>
+		<Scripts>
+			<OnEnter>getglobal(this:GetName().."_Highlight"):Show();</OnEnter>
+			<OnLeave>getglobal(this:GetName().."_Highlight"):Hide();</OnLeave>
+			<OnMouseUp>
+				SW_DataCollection:setSelected(this.segmentID);
+				SW_TL_ScrollUpdate(); 
+				
+			</OnMouseUp>
+		</Scripts>
+		<Backdrop bgFile="Interface\AddOns\SW_Stats\images\back" tile="true">
+			<TileSize>
+				<AbsValue val="16" />
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="1" right="1" top="1" bottom="1" />
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="BORDER">
+				<FontString name="$parent_Text" inherits="SW_FontBar" wraponspaces="false" justifyH="LEFT" text="entry">
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="45" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture name="$parent_Highlight" file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD"
+					hidden="true">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="1" y="-1" />
+							</Offset>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT">
+							<Offset>
+								<AbsDimension x="-1" y="1" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="ARTWORK">
+				<Texture name="$parent_Selected" hidden="true">
+					<Color r="8.0" g="0" b="0" a="0.4" />
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="1" y="-1" />
+							</Offset>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT">
+							<Offset>
+								<AbsDimension x="-1" y="1" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Frame name="$parent_Delete" inherits="SW_RoundButton" hidden="false">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="2" y="-2" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnMouseUp>SW_TL_ScrollUpdate(); SW_TL_Delete(this:GetParent().segmentID);</OnMouseUp>
+					<OnLoad>SW_RoundButtonRegister(this, {1,0,0,0.9}, "X");</OnLoad>
+					<OnEnter>
+						getglobal(this:GetParent():GetName().."_Highlight"):Show();
+						this.HighlightF:Show();
+						this.NormalF:Hide();
+					</OnEnter>
+					<OnLeave>
+						getglobal(this:GetParent():GetName().."_Highlight"):Hide();
+						this.HighlightF:Hide();
+						this.NormalF:Show();
+					</OnLeave>
+				</Scripts>
+			</Frame>
+			<Frame name="$parent_Rename" inherits="SW_RoundButton" hidden="false">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Delete" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="3" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>SW_RoundButtonRegister(this, {1,0,0,0.9}, "R");</OnLoad>
+					<OnMouseUp>
+						if this:GetParent().InEdit then
+							SW_TL_ScrollUpdate(true);
+						else
+							SW_TL_ScrollUpdate();
+							this:GetParent().InEdit = true;
+							getglobal(this:GetParent():GetName().."_Text"):Hide();
+							local eb = getglobal(this:GetParent():GetName().."_EditBox");
+							local tmpData = SW_DataCollection.data[this:GetParent().segmentID];
+							if tmpData then
+								eb:SetText(tmpData.Name);
+							end
+							eb:Show();
+						end
+					</OnMouseUp>
+					<OnEnter>
+						getglobal(this:GetParent():GetName().."_Highlight"):Show();
+						this.HighlightF:Show();
+						this.NormalF:Hide();
+					</OnEnter>
+					<OnLeave>
+						getglobal(this:GetParent():GetName().."_Highlight"):Hide();
+						this.HighlightF:Hide();
+						this.NormalF:Show();
+					</OnLeave>
+				</Scripts>
+			</Frame>
+			<EditBox name="$parent_EditBox" letters="30" hidden="true">
+				<Size>
+					<AbsDimension x="100" y="10"></AbsDimension>
+				</Size>
+				<Anchors>
+					<Anchor point="LEFT">
+						<Offset>
+							<AbsDimension x="45" y="0" />
+						</Offset>
+					</Anchor>
+					<Anchor point="RIGHT">
+						<Offset>
+							<AbsDimension x="-20" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture>
+							<Color r="0.3" g="0.3" b="0.3" />
+							<Anchors>
+								<Anchor point="TOPLEFT" />
+								<Anchor point="BOTTOMRIGHT" />
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnEnterPressed>
+						SW_TL_ScrollUpdate(true);
+					</OnEnterPressed>
+					<OnEscapePressed>
+						this:Hide();
+						getglobal(this:GetParent():GetName().."_Text"):Show();
+					</OnEscapePressed>
+				</Scripts>
+				<FontString inherits="GameFontNormalSmall">
+					<FontHeight>
+						<AbsValue val="10" />
+					</FontHeight>
+				</FontString>
+			</EditBox>
+		</Frames>
+	</Frame>
+	<Frame name="SW_TargetSel_Item" virtual="true">
+		<Size>
+			<AbsDimension x="150" y="20" />
+		</Size>
+		<Scripts>
+			<OnEnter>getglobal(this:GetName().."_Highlight"):Show();</OnEnter>
+			<OnLeave>getglobal(this:GetName().."_Highlight"):Hide();</OnLeave>
+			<OnMouseUp>
+				
+				
+			</OnMouseUp>
+		</Scripts>
+		<Backdrop bgFile="Interface\AddOns\SW_Stats\images\back" tile="true">
+			<TileSize>
+				<AbsValue val="16" />
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="1" right="1" top="1" bottom="1" />
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="BORDER">
+				<FontString name="$parent_Text" inherits="SW_FontBar" wraponspaces="false" justifyH="LEFT" text="entry">
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="45" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture name="$parent_Highlight" file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD"
+					hidden="true">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="1" y="-1" />
+							</Offset>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT">
+							<Offset>
+								<AbsDimension x="-1" y="1" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="ARTWORK">
+				<Texture name="$parent_Selected" hidden="true">
+					<Color r="8.0" g="0" b="0" a="0.4" />
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="1" y="-1" />
+							</Offset>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT">
+							<Offset>
+								<AbsDimension x="-1" y="1" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Frame name="$parent_Select" inherits="SW_RoundButton" hidden="false">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="2" y="-2" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnMouseUp>
+						local se;
+						if SW_Settings.BarFrames then
+							se = SW_Settings.BarFrames.SW_BarFrame1
+						end
+						if not (se and se.Selected) then
+							return;
+						end
+						if SW_Settings.InfoSettings and SW_Settings.InfoSettings[se.Selected] then
+							SW_Settings.InfoSettings[se.Selected].TV = getglobal(this:GetParent():GetName().."_Text"):GetText();
+							-- update the text
+							if SW_BarSettingsFrameV2:IsVisible() then
+								SW_BarSettingsFrameV2:Hide();
+								SW_BarSettingsFrameV2:Show();
+							end
+						end
+					</OnMouseUp>
+					<OnLoad>SW_RoundButtonRegister(this, {1,0,0,0.9}, ">>");</OnLoad>
+					<OnEnter>
+						getglobal(this:GetParent():GetName().."_Highlight"):Show();
+						this.HighlightF:Show();
+						this.NormalF:Hide();
+					</OnEnter>
+					<OnLeave>
+						getglobal(this:GetParent():GetName().."_Highlight"):Hide();
+						this.HighlightF:Hide();
+						this.NormalF:Show();
+					</OnLeave>
+				</Scripts>
+			</Frame>
+			
+		</Frames>
+	</Frame>
+	<Frame name="SW_TimeLine" inherits="SW_Frame" enableMouse="true" movable="true" 
+		frameStrata="LOW" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				this:SetBackdropBorderColor(SW_COLOR_ACT["r"],SW_COLOR_ACT["g"],SW_COLOR_ACT["b"],1);
+			</OnLoad>
+			<OnHide></OnHide>
+			<OnShow>SW_TL_ScrollUpdate();</OnShow>
+		</Scripts>
+		<Size>
+			<AbsDimension x="380" y="330" />
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER" />
+		</Anchors>
+		<Frames>
+			<!-- <Frame name="$parent_Resizer" inherits="SW_Frame_Resize" parent="SW_TimeLine" /> -->
+			<Frame name="$parent_Title" inherits="SW_BarFrame_Title">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="5" y="-4" />
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-5" y="-24" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Frame name="$parent_Close" inherits="SW_RoundButton" hidden="false">
+						<Anchors>
+							<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="-3" y="-3" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnMouseUp>this:GetParent():GetParent():Hide();</OnMouseUp>
+							<OnLoad>SW_RoundButtonRegister(this, {1,0,0,0.9}, "X");
+							table.insert(SW_Registered_BF_TitleButtons, this:GetName());</OnLoad>
+						</Scripts>
+					</Frame>
+				</Frames>
+			</Frame>
+			<CheckButton name="SW_Chk_TL_SafeMode" inherits="SW_OptChk_TT" hidden="false">
+				<Size>
+					<AbsDimension x="20" y="20" />
+				</Size>
+				<Scripts>
+					<OnShow>
+						if SW_Settings["TL_SafeMode"] then
+							this:SetChecked(true);
+						else
+							this:SetChecked(false);
+						end
+					</OnShow>
+					<OnClick>
+						if this:GetChecked() then
+							SW_Settings["TL_SafeMode"] = true;
+						else
+							SW_Settings["TL_SafeMode"] = false;
+						end
+					</OnClick>
+				</Scripts>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="5" y="-30" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="SW_Chk_TL_SingleSelect" inherits="SW_OptChk_TT" hidden="false">
+				<Size>
+					<AbsDimension x="20" y="20" />
+				</Size>
+				<Scripts>
+					<OnShow>
+						if SW_Settings.TL_SingleSelect then
+							this:SetChecked(true);
+						else
+							this:SetChecked(false);
+						end
+					</OnShow>
+					<OnClick>
+						if this:GetChecked() then
+							SW_Settings.TL_SingleSelect = true;
+						else
+							SW_Settings.TL_SingleSelect = false;
+							SW_DataCollection:clearSelected();
+						end
+					</OnClick>
+				</Scripts>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="100" y="-30" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<Button name="SW_TL_ReloadUI" inherits="GameMenuButtonTemplate">
+				<Size>
+					<AbsDimension x="80" y="20" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-10" y="-30" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						ReloadUI();
+					</OnClick>
+					<OnEnter>
+						GameTooltip:SetOwner(this, "ANCHOR_LEFT");
+						GameTooltip:SetText(SW_GS_Tooltips["SW_TL_ReloadUI"],nil,nil,nil,nil,1);
+					
+					</OnEnter>
+					<OnLeave>
+						GameTooltip:Hide();
+					</OnLeave>
+				</Scripts>
+			</Button>
+			<Button name="SW_TL_Nuke" inherits="GameMenuButtonTemplate">
+				<Size>
+					<AbsDimension x="80" y="20" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativePoint="TOPLEFT" relativeTo="SW_TL_ReloadUI">
+						<Offset>
+							<AbsDimension x="-5" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>StaticPopup_Show("SW_TL_Nuke");</OnClick>
+				</Scripts>
+			</Button>
+			<CheckButton name="SW_Chk_TL_AutoZone" inherits="SW_OptChk_TT" hidden="false">
+				<Size>
+					<AbsDimension x="20" y="20" />
+				</Size>
+				<Scripts>
+					<OnShow>
+						if SW_Settings.SW_TL_AutoZone then
+							this:SetChecked(true);
+						else
+							this:SetChecked(false);
+						end
+					</OnShow>
+					<OnClick>
+						if this:GetChecked() then
+							SW_Settings.SW_TL_AutoZone = true;
+						else
+							SW_Settings.SW_TL_AutoZone = false;
+						end
+					</OnClick>
+				</Scripts>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="5" y="-50" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="SW_Chk_TL_AutoDelete" inherits="SW_OptChk_TT" hidden="false">
+				<Size>
+					<AbsDimension x="20" y="20" />
+				</Size>
+				<Scripts>
+					<OnShow>
+						if SW_Settings.SW_TL_AutoDelete then
+							this:SetChecked(true);
+						else
+							this:SetChecked(false);
+						end
+					</OnShow>
+					<OnClick>
+						if this:GetChecked() then
+							SW_Settings.SW_TL_AutoDelete = true;
+							SW_DataCollection:autoDelete(SW_TL_AUTO_THRESH);
+						else
+							SW_Settings.SW_TL_AutoDelete = false;
+						end
+					</OnClick>
+				</Scripts>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="SW_Chk_TL_SingleSelect">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<ScrollFrame name="SW_TL_Selector" inherits="FauxScrollFrameTemplate">
+				<Size>
+					<AbsDimension x="160" y="200" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-80" />
+						</Offset>
+					</Anchor>
+					<Anchor point="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-30" y="-30" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnVerticalScroll>FauxScrollFrame_OnVerticalScroll(20, SW_TL_ScrollUpdate);</OnVerticalScroll>
+					<OnShow>SW_TL_ScrollUpdate()</OnShow>
+				</Scripts>
+			</ScrollFrame>
+			<Button name="$parent_Item1" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="SW_TL_Selector" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="8" y="0" />
+						</Offset>
+					</Anchor>
+					<Anchor point="TOPRIGHT" relativeTo="SW_TL_Selector" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item2" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item1" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item1" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item3" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item2" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item2" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item4" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item3" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item3" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item5" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item4" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item4" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item6" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item5" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item5" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			
+			<Button name="$parent_Item7" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item6" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item6" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item8" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item7" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item7" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item9" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item8" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item8" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item10" inherits="SW_TL_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item9" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item9" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			
+			<Button name="SW_TL_Select" inherits="GameMenuButtonTemplate">
+				<Size>
+					<AbsDimension x="80" y="20" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="SW_TL_Selector">
+						<Offset>
+							<AbsDimension x="20" y="-5" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						SW_DataCollection:useSelected();
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="SW_TL_Merge" inherits="GameMenuButtonTemplate">
+				<Size>
+					<AbsDimension x="80" y="20" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativePoint="TOPLEFT" relativeTo="SW_TL_Select">
+						<Offset>
+							<AbsDimension x="-5" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						if SW_Settings["TL_SafeMode"] then
+							StaticPopup_Show("SW_TL_Merge");
+						else
+							SW_DataCollection:mergeSelected();
+						end
+					</OnClick>
+				</Scripts>
+			</Button>
+			
+		</Frames>
+	</Frame>
+		<!-- 2.0.3 New target selector for analysis-->
+	<Frame name="SW_TargetSelector" inherits="SW_Frame" enableMouse="true" movable="true" 
+		frameStrata="LOW" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				this:SetBackdropBorderColor(SW_COLOR_ACT["r"],SW_COLOR_ACT["g"],SW_COLOR_ACT["b"],1);
+				this.nameBuffer = {};
+				this.chkPerRow = 4;
+				
+				this.UpdateList = function (self)
+					local ds = SW_DataCollection:getDS();
+					local index = 0;
+					local tmpName;
+					local sFilter = getglobal(SW_Settings.NameSelectFilter).SW_Filter;
+					local filterTxt = string.lower(SW_TargetFilterBox:GetText());
+					local tmpMeta;
+					for k,v in pairs(ds) do
+						tmpName = SW_StrTable:getStr(k);
+						tmpMeta = SW_DataCollection.meta[k];
+						if tmpName then
+							if sFilter == "ALL" 
+									or (tmpMeta and (
+									(sFilter == "EVERGROUP" and tmpMeta.everGroup) or 
+									(tmpMeta.type and tmpMeta.type == sFilter))) then
+								if #filterTxt == 0 or string.find(string.lower(tmpName), filterTxt) then
+									index = index + 1;
+									self.nameBuffer[index] = tmpName;
+								end
+							
+							end
+						end
+					end
+					SW_setn(self.nameBuffer, index);
+					table.sort(self.nameBuffer);
+					SW_TargetSelect_ScrollUpdate();
+				end
+			</OnLoad>
+			<OnHide></OnHide>
+			<OnShow>
+				this:UpdateList();
+			</OnShow>
+		</Scripts>
+		<Size>
+			<AbsDimension x="380" y="330" />
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER" />
+		</Anchors>
+		<Frames>
+			<!-- <Frame name="$parent_Resizer" inherits="SW_Frame_Resize" parent="SW_TargetSelector" /> -->
+			<Frame name="$parent_Title" inherits="SW_BarFrame_Title">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="5" y="-4" />
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-5" y="-24" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Frame name="$parent_Close" inherits="SW_RoundButton" hidden="false">
+						<Anchors>
+							<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="-3" y="-3" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnMouseUp>this:GetParent():GetParent():Hide();</OnMouseUp>
+							<OnLoad>SW_RoundButtonRegister(this, {1,0,0,0.9}, "X");
+							table.insert(SW_Registered_BF_TitleButtons, this:GetName());</OnLoad>
+						</Scripts>
+					</Frame>
+				</Frames>
+			</Frame>
+			<CheckButton name="SW_Chk_NS_All" inherits="SW_Chk_Template">
+				<Scripts>
+					<OnLoad>
+						this.swoX = 5;
+						this.swoY = -25;
+						SW_ChkRegister(this, "", true, "NameSelectFilter");
+						this.SW_Filter = "ALL";
+					</OnLoad>
+					<OnClick>
+						SW_ChkClick(this);
+						SW_TargetSelector:UpdateList();
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="SW_Chk_NS_PC" inherits="SW_Chk_Template">
+				<Scripts>
+					<OnLoad>
+						SW_ChkRegister(this, "", false, "NameSelectFilter");
+						this.SW_Filter = "PC";
+					</OnLoad>
+					<OnClick>
+						SW_ChkClick(this);
+						SW_TargetSelector:UpdateList();
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="SW_Chk_NS_NPC" inherits="SW_Chk_Template">
+				<Scripts>
+					<OnLoad>
+						SW_ChkRegister(this, "", false, "NameSelectFilter");
+						this.SW_Filter = "NPC";
+					</OnLoad>
+					<OnClick>
+						SW_ChkClick(this);
+						SW_TargetSelector:UpdateList();
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="SW_Chk_NS_EVERGROUP" inherits="SW_Chk_Template">
+				<Scripts>
+					<OnLoad>
+						SW_ChkRegister(this, "", false, "NameSelectFilter");
+						this.SW_Filter = "EVERGROUP";
+					</OnLoad>
+					<OnClick>
+						SW_ChkClick(this);
+						SW_TargetSelector:UpdateList();
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<!-- Ripped from ATSW edit box - i liked it :)-->
+			<EditBox name="SW_TargetFilterBox" letters="50" historyLines="0" autoFocus="false">
+				<Size>
+					<AbsDimension x="190" y="20"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="15" y="-50"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture name="$parentLeft" file="Interface\Common\Common-Input-Border">
+							<Size>
+								<AbsDimension x="8" y="20"/>
+							</Size>
+							<Anchors>
+								<Anchor point="TOPLEFT">
+									<Offset>
+										<AbsDimension x="-5" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+							<TexCoords left="0" right="0.0625" top="0" bottom="0.625"/>
+						</Texture>
+						<Texture name="$parentRight" file="Interface\Common\Common-Input-Border">
+							<Size>
+								<AbsDimension x="8" y="20"/>
+							</Size>
+							<Anchors>
+								<Anchor point="RIGHT">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+							<TexCoords left="0.9375" right="1.0" top="0" bottom="0.625"/>
+						</Texture>
+						<Texture name="$parentMiddle" file="Interface\Common\Common-Input-Border">
+							<Size>
+								<AbsDimension x="10" y="20"/>
+							</Size>
+							<Anchors>
+								<Anchor point="LEFT" relativeTo="$parentLeft" relativePoint="RIGHT"/>
+								<Anchor point="RIGHT" relativeTo="$parentRight" relativePoint="LEFT"/>
+							</Anchors>
+							<TexCoords left="0.0625" right="0.9375" top="0" bottom="0.625"/>
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnEnterPressed>
+						this:ClearFocus();
+					</OnEnterPressed>
+					<OnEscapePressed>
+						this:ClearFocus();
+					</OnEscapePressed>
+					<OnTextChanged>
+						SW_TargetSelector:UpdateList();
+					</OnTextChanged> 
+					<OnEditFocusLost>
+						this:HighlightText(0, 0);
+					</OnEditFocusLost>
+					<OnEditFocusGained>
+						this:HighlightText();
+					</OnEditFocusGained>
+				</Scripts>
+				<FontString inherits="ChatFontNormal"/>
+			</EditBox>
+			<ScrollFrame name="SW_Target_SelectorScroll" inherits="FauxScrollFrameTemplate">
+				<Size>
+					<AbsDimension x="160" y="200" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-80" />
+						</Offset>
+					</Anchor>
+					<Anchor point="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-30" y="-30" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnVerticalScroll>FauxScrollFrame_OnVerticalScroll(20, SW_TargetSelect_ScrollUpdate);</OnVerticalScroll>
+					<OnShow></OnShow>
+				</Scripts>
+			</ScrollFrame>
+			<Button name="$parent_Item1" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="SW_Target_SelectorScroll" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="8" y="0" />
+						</Offset>
+					</Anchor>
+					<Anchor point="TOPRIGHT" relativeTo="SW_Target_SelectorScroll" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item2" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item1" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item1" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item3" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item2" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item2" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item4" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item3" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item3" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item5" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item4" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item4" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item6" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item5" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item5" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			
+			<Button name="$parent_Item7" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item6" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item6" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item8" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item7" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item7" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item9" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item8" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item8" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+			<Button name="$parent_Item10" inherits="SW_TargetSel_Item">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_Item9" relativePoint="BOTTOMLEFT" />
+					<Anchor point="TOPRIGHT" relativeTo="$parent_Item9" relativePoint="BOTTOMRIGHT" />
+				</Anchors>
+			</Button>
+		</Frames>
+	</Frame>
+</Ui>

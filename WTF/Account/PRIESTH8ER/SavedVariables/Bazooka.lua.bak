@@ -1,0 +1,86 @@
+
+BazookaDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Git - Cho'gall"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["plugins"] = {
+				["launcher"] = {
+					["RaidBuffStatus"] = {
+						["pos"] = 2,
+					},
+					["Raven"] = {
+						["pos"] = 11,
+					},
+					["RangeDisplay"] = {
+						["pos"] = 3,
+					},
+					["BigWigs"] = {
+						["pos"] = 7,
+					},
+					["PhoenixStyle"] = {
+						["pos"] = 4,
+					},
+					["Grid"] = {
+						["pos"] = 5,
+					},
+					["AskMrRobot"] = {
+						["pos"] = 6,
+					},
+					["Swatter"] = {
+						["pos"] = 12,
+					},
+					["Omen"] = {
+						["pos"] = 10,
+					},
+					["BagnonLauncher"] = {
+						["pos"] = 9,
+					},
+					["Bartender4"] = {
+						["pos"] = 8,
+					},
+				},
+				["data source"] = {
+					["Skada"] = {
+						["pos"] = 1,
+					},
+					["epgp"] = {
+						["pos"] = 9,
+					},
+					["BossNotes"] = {
+						["pos"] = 5,
+					},
+					["LoggerHead"] = {
+						["pos"] = 4,
+					},
+					["Record Kills"] = {
+						["pos"] = 8,
+					},
+					["TimeToDie"] = {
+						["pos"] = 6,
+					},
+					["WeakAuras"] = {
+						["pos"] = 7,
+					},
+					["hagakure_cooldowns"] = {
+						["pos"] = 3,
+					},
+					["CombatTime"] = {
+						["pos"] = 2,
+					},
+				},
+			},
+			["bars"] = {
+				{
+					["pos"] = 1,
+					["bgInset"] = 4,
+				}, -- [1]
+			},
+		},
+	},
+}

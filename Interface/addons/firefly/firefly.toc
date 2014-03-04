@@ -1,0 +1,6 @@
+## Interface: 20100
+## Title: Firefly/Serenity Quoter
+## Notes: Original concept by Anavar of 'The Drive-By'
+## Version: 1.5
+## Author: Treestump
+firefly.xml

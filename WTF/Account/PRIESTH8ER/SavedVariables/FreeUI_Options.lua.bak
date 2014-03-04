@@ -1,0 +1,8 @@
+
+FreeUIOptionsGlobal = {
+	["Cho'gall"] = {
+		["Git"] = false,
+	},
+}
+FreeUIOptions = {
+}

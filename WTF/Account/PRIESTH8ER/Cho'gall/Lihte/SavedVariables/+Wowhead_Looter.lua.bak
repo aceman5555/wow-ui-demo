@@ -1,0 +1,19 @@
+
+wlScans = {
+	["pets"] = {
+		["CRITTER"] = "69452,69677,69541",
+		["MOUNT"] = "",
+	},
+	["timePlayedTotal"] = 609,
+	["timePlayedWhen"] = 1339353495189,
+	["titles"] = "",
+	["timePlayerTotal"] = 0,
+	["recipes"] = {
+	},
+	["quests"] = {
+		[14138] = true,
+	},
+	["skills"] = "",
+}
+wlSetting = {
+}

@@ -1,0 +1,73 @@
+
+GCDDB = {
+	["namespaces"] = {
+		["Cast"] = {
+			["profiles"] = {
+				["Git - Cho'gall"] = {
+					["radius"] = 52,
+					["version"] = 1,
+				},
+			},
+		},
+		["Swing"] = {
+			["profiles"] = {
+				["Git - Cho'gall"] = {
+					["thickness"] = 15,
+					["radius"] = 10,
+					["version"] = 1,
+				},
+			},
+		},
+		["GCD"] = {
+			["profiles"] = {
+				["Git - Cho'gall"] = {
+					["radius"] = 16,
+					["version"] = 1,
+					["backgroundColor"] = {
+						["a"] = 0.477563738822937,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["barColor"] = {
+						["a"] = 0.8044868409633637,
+					},
+					["sparkColor"] = {
+						["b"] = 0.996078431372549,
+						["r"] = 0.9803921568627451,
+					},
+				},
+			},
+		},
+		["Cooldowns"] = {
+			["profiles"] = {
+				["Git - Cho'gall"] = {
+					["version"] = 1,
+				},
+			},
+		},
+		["Ring"] = {
+			["profiles"] = {
+				["Git - Cho'gall"] = {
+					["version"] = 1,
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Git - Cho'gall"] = "Git - Cho'gall",
+	},
+	["profiles"] = {
+		["Git - Cho'gall"] = {
+			["modules"] = {
+				["ring"] = false,
+			},
+			["version"] = 1,
+			["position"] = {
+				["y"] = 302.0798645019531,
+				["x"] = 715.3599243164063,
+			},
+			["attachToMouse"] = false,
+		},
+	},
+}

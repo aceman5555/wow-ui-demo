@@ -1,0 +1,6 @@
+## Title: EPGP Standby
+## Version: 1.0
+## Author: Git of Ascension
+## Interface: 30100
+
+Frame.xml

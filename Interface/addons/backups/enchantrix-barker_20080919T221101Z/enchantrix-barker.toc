@@ -1,0 +1,25 @@
+## Title: EnchantrixBarker
+## Notes: Print Enchant price lists to chat [5.0.PRE.3262] This AddOn is licenced under the GNU GPL, see GPL.txt for details.
+##
+## Interface: 20400
+## Dependencies: EnhTooltip, Stubby
+## OptionalDeps: Khaos, Enchantrix, !nLog, DebugLib, Babylonian
+## SavedVariables: EnchantrixBarkerConfig
+##
+## Version: 5.0.PRE.3262 (BillyGoat)
+## Revision: $Id: enchantrix-barker.toc 2952 2008-03-25 03:29:55Z MentalPower $
+## URL: http://enchantrix.org
+##
+BarkerManifest.lua
+
+BarkerObjects.lua
+
+Libs\Load.xml
+BarkerStrings.lua
+BarkerLocale.lua
+
+BarkerSettings.lua
+BarkerUtil.lua
+
+EnchantrixBarker.lua
+EnchantrixBarker.xml

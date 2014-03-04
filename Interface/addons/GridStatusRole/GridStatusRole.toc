@@ -1,0 +1,24 @@
+## Interface: 50400
+## Title: GridStatusRole
+## Notes: Adds role status to Grid.
+## Author: Greltok
+## Version: 1.7
+## Grid Author: Pastamancer & Maia
+## X-Website: http://wowace.com/wiki/Grid
+## X-Category: UnitFrame
+## X-Embeds: LibGroupInSpecT-1.0
+## X-GridStatusModule: GridStatusRole
+## Dependencies: Grid
+## OptionalDeps: LibGroupInSpecT-1.0
+## X-Curse-Packaged-Version: 1.7
+## X-Curse-Project-Name: GridStatusRole
+## X-Curse-Project-ID: gridstatusrole
+## X-Curse-Repository-ID: wow/gridstatusrole/mainline
+
+#@no-lib-strip@
+libs\LibGroupInSpecT-1.0\LibGroupInSpecT-1.0.lua
+#@end-no-lib-strip@
+
+GridStatusRoleLocale-koKR.lua
+GridStatusRoleLocale-ruRU.lua
+GridStatusRole.lua

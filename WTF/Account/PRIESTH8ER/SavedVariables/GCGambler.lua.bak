@@ -1,0 +1,13 @@
+
+GCGambler = {
+	["hightie"] = {
+	},
+	["stats"] = {
+	},
+	["active"] = 1,
+	["lastroll"] = 100,
+	["lowtie"] = {
+	},
+	["strings"] = {
+	},
+}

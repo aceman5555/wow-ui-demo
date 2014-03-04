@@ -1,0 +1,18 @@
+﻿## Interface: 50400
+## Title: Titan Panel [Guild]
+##Title-esES: Titan Panel [Hermandad]
+## Notes: A simple guild list for the Titan Panel AddOn.
+##Notes-esES: Una lista de la hermandad para el Titan Panel.
+## Author: chicogrande (jluzier@gmail.com), port to 2.4 and further development by SeGeDel
+## Author: kernighan (kernighan@gmail.com), 4.3 development and beyond
+## SavedVariables:
+## SavedVariablesPerCharacter: TitanGuildVar 
+## OptionalDeps:
+## Dependencies: Titan
+## Version: 5.4.0.0
+## X-Date: 2013-09-11
+## X-Curse-Packaged-Version: 5.4.0.0
+## X-Curse-Project-Name: Titan Panel [Guild]
+## X-Curse-Project-ID: titan-panel-guild
+## X-Curse-Repository-ID: wow/titan-panel-guild/mainline
+TitanGuild.xml

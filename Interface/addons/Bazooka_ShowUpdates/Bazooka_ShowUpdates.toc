@@ -1,0 +1,11 @@
+## Interface: 40000
+## Title: Bazooka ShowUpdates
+## Notes: Adds a feature to Bazooka so that any icon/text changes are highlighted
+## Author: Ternobeus
+## Version: 1.0.0
+## Dependencies: Bazooka, Bazooka_Options
+## X-Curse-Packaged-Version: v1.0.0
+## X-Curse-Project-Name: Bazooka_ShowUpdates
+## X-Curse-Project-ID: bazooka_toast
+## X-Curse-Repository-ID: wow/bazooka_toast/mainline
+Bazooka_ShowUpdates.lua

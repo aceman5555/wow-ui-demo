@@ -1,0 +1,85 @@
+
+BigWigs3DB = {
+	["namespaces"] = {
+		["BigWigs_Plugins_Colors"] = {
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Plugins_Bars"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BigWigsEmphasizeAnchor_y"] = 248.0762053925646,
+					["BigWigsAnchor_width"] = 200.0000762939453,
+					["BigWigsAnchor_y"] = 247.359779627328,
+					["emphasizeGrowup"] = true,
+					["texture"] = "Smooth",
+					["BigWigsAnchor_x"] = 97.76004664301763,
+					["BigWigsEmphasizeAnchor_width"] = 215.2500305175781,
+					["BigWigsEmphasizeAnchor_x"] = 245.9665374709693,
+					["font"] = "DorisPP",
+				},
+			},
+		},
+		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "DorisPP",
+				},
+			},
+		},
+		["BigWigs_Plugins_Sounds"] = {
+			["profiles"] = {
+				["Default"] = {
+					["Long"] = {
+					},
+					["Warning"] = {
+					},
+					["Info"] = {
+					},
+					["Alarm"] = {
+					},
+					["Alert"] = {
+					},
+				},
+			},
+		},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BWEmphasizeMessageAnchor_x"] = 554.9264329089274,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 608.0465489091002,
+					["BWEmphasizeMessageAnchor_y"] = 611.2763144619094,
+					["BWMessageAnchor_y"] = 745.1200614702684,
+					["BWMessageAnchor_x"] = 549.4399095940607,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 587.276275935852,
+					["font"] = "DorisPP",
+					["fontSize"] = 20,
+				},
+			},
+		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["fontSize"] = 20,
+					["font"] = "DorisPP",
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Gitt - Cho'gall"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+BigWigs3IconDB = {
+	["hide"] = true,
+}
+BigWigsStatisticsDB = {
+}

@@ -1,0 +1,32 @@
+## Interface: 50400
+## Title: Lib: Fail-MoP
+## Notes: Fires events whenever a raid member "fails".
+## Version: 64
+## Author: Caleb
+## X-Curse-Packaged-Version: r64
+## X-Curse-Project-Name: LibFail-MoP
+## X-Curse-Project-ID: libfail-mop
+## X-Curse-Repository-ID: wow/libfail-mop/mainline
+
+## OptionalDeps: Ace3, LibStub, CallBackHandler-1.0, LibLocalizedEJBosses-1.0, LibGroupInSpecT-1.0
+## X-Embeds: LibStub, CallBackHandler-1.0, LibLocalizedEJBosses-1.0, LibGroupInSpecT-1.0
+## X-Category: Library
+
+## LoadOnDemand: 1
+
+## X-Credits: authors of LibFail-2.0
+
+locales\LibFail-MoP-ruRU.lua
+locales\LibFail-MoP-frFR.lua
+locales\LibFail-MoP-deDE.lua
+locales\LibFail-MoP-koKR.lua
+locales\LibFail-MoP-esES.lua
+locales\LibFail-MoP-zhTW.lua
+locales\LibFail-MoP-zhCN.lua
+locales\LibFail-MoP-itIT.lua
+locales\LibFail-MoP-ptBR.lua
+
+embeds.xml
+
+lib.xml
+

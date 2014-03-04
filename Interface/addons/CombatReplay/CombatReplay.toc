@@ -1,0 +1,28 @@
+﻿## Interface: 50400
+## Title: Combat|cff7fff7fReplay|r
+## Author: Shurshik
+## Notes: /replay - to open replays
+## Notes-ruRU: /повтор - для открытия настроек
+## URL: http://phoenixstyle.com
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: crOptTrackBoss,crPlayersSizeOnMap,crPlayerIconPositionShow,crOptTrackLfr,crCenterFrameSizeDef,crOptCombatSave,crRaidRangeCheckValue,crShowPlayersHpDynamic
+Localization\localization-enEN.lua
+Localization\localization-ruRU.lua
+Localization\localization-deDE.lua
+Localization\localization-frFR.lua
+Localization\localization-esES.lua
+Localization\localization-esMX.lua
+Localization\localization-koKR.lua
+Localization\localization-zhTW.lua
+Localization\localization-zhCN.lua
+Localization\localization-ptBR.lua
+Localization\localization-itIT.lua
+CombatReplay.lua
+CombatReplay.xml
+UI.lua
+BindData.lua
+Calculation.lua
+Data_raids.lua
+Options.lua
+Tools.lua

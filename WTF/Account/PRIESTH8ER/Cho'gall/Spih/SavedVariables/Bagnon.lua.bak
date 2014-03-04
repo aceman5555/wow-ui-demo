@@ -1,0 +1,14 @@
+
+BagnonFrameSettings = {
+	["frames"] = {
+		["inventory"] = {
+			["x"] = -0.0001220703125,
+		},
+		["voidstorage"] = {
+			["point"] = "TOPLEFT",
+			["y"] = -386.7692260742188,
+			["x"] = 39.99999618530273,
+		},
+	},
+	["version"] = "4.3.24",
+}

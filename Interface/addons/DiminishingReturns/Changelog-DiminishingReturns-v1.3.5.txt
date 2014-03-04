@@ -1,0 +1,16 @@
+tag v1.3.5
+e514e514fbf2f0f742519b0ebc2ef8fb59b9f54f
+Adirelle <adirelle@gmail.com>
+2013-10-20 09:59:27 +0200
+
+Use the latest DRData-1.0.
+
+
+--------------------
+
+Adirelle:
+	- TOC bump.
+	- Reworked the configuration panel to allow to select the icon to use for each DR category.
+	- Slightly refactored the configuration panel internals.
+	- Do not use hardcoded default icons anymore.
+	Pick one from the spells listed in each DR category.

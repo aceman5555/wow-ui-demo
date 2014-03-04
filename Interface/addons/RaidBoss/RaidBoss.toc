@@ -1,0 +1,33 @@
+## Interface: 40300
+## Title: RaidBoss
+## Version: 0.1
+## X-Date: January 2012
+## Author: Jack Langman
+## eMail: youknowjack@gmail.com
+## URL: N/A
+## Notes: Track important raid cooldowns
+## OptionalDeps: LibStub, CallbackHandler-1.0, LibCandyBar-3.0, AceLocale-3.0, LibTalentQuery-1.0, LibGroupTalents-1.0
+## SavedVariables: RaidBossDBase
+## SavedVariablesPerCharacter: RaidBossDBasePC
+## X-Curse-Packaged-Version: r40-beta
+## X-Curse-Project-Name: RaidBoss
+## X-Curse-Project-ID: raidboss
+## X-Curse-Repository-ID: wow/raidboss/mainline
+
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\LibCandyBar-3.0\lib.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Libs\LibTalentQuery-1.0\LibTalentQuery-1.0.lua
+Libs\LibGroupTalents-1.0\LibGroupTalents-1.0.lua
+Libs\LibSharedMedia-3.0\lib.xml
+#@end-no-lib-strip@
+
+Locales\Locales.xml
+
+configboss.lua
+Constants.lua
+RaidBoss.lua
+
+

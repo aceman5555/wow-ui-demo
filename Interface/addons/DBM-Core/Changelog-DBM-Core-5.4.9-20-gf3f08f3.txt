@@ -1,0 +1,21 @@
+subversion:
+	- ebmor via svn r11078: deDE update
+	- Omega via svn r11077: Done correctly this time
+	- Omega via svn r11076: #Fix siegecrafter charge warnings not working for tank strats that never reset their stats (they cap at 10 then only fire SPELL_AURA_REFRESH)
+	- Omega via svn r11075: ##Fix DBM auto responding to whispers from people fighting same boss (missed a spot that needed ambiguate) #Fixed an issue with norushen pre pull timer from starting on some wipes. #Fixed an issue where 2 of the 4 prisons were missing warnings on sha of pride.
+	- Omega via svn r11074: Fix Ricochet icon
+	- Omega via svn r11073: move falling ash pre warning (cause 17 seconds before is not useful Fix a bug that could cuase multiple berserk timers/warnings on spoils
+	- Omega via svn r11072: Fix terrible logic in will of empower that made combo warnings/arrows NEVER work. (self.vb.comboMob was set to nil, and then never changed to anything else because setting to variable to anything OTHER than nil, required it first to not be nil. Completely busted logic.) Not to mention regression in targeting logic, i wish i had notice this when it was busted weeks ago.
+	- Omega via svn r11071: Ignore bad spaces that may case spellId to be nil
+	- Omega via svn r11070: Support disabling player regen specifically (ie Yorsahj and zonozz)
+	- Omega via svn r11069: remove useless unused shakeframe code
+	- Omega via svn r11068: upvalues cleanup and additions.
+	- Omega via svn r11067: Naming convention change, this should appear in same place as rest of dbm addons in addon control panel
+	- Omega via svn r11066: raise antispam on galakras, i got some bad syncs from someone tonight
+	- Omega via svn r11065: Make sure latest alpha is newer than release
+	- Omega via svn r11064: incriment
+	- Omega via svn r11063: Small tweak
+	- Omega via svn r11061: fix norushen too
+	- Omega via svn r11060: Also, oops, probably not cpu efficient to Ambiguate ALL messages.
+	- Omega via svn r11059: fix sync lua error
+	- tandanu via svn r11058: increment version number for alpha builds

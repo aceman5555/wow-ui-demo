@@ -1,0 +1,40 @@
+
+AucAdvancedConfig = {
+	["users.Azuremyst.Git"] = "Default",
+	["profile.Default"] = {
+		["stat"] = {
+			["sales"] = {
+				["ignoredsigs"] = {
+				},
+			},
+		},
+		["util"] = {
+			["automagic"] = {
+				["uierrormsg"] = 1,
+			},
+			["pricelevel"] = {
+			},
+		},
+	},
+	["version"] = 1,
+}
+AucAdvancedData = {
+	["AserArbitrageRealms"] = {
+		["Azuremyst"] = "Git",
+	},
+	["Stats"] = {
+	},
+	["UtilSearchUiData"] = {
+		["Global"] = {
+			["configator.left"] = 495.2308044433594,
+			["configator.top"] = 840.769287109375,
+		},
+		["Current"] = {
+			["snatch.itemsList"] = {
+			},
+		},
+		["Version"] = 1,
+		["SavedSearches"] = {
+		},
+	},
+}

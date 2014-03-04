@@ -1,0 +1,11 @@
+
+SellJunkDB = {
+	["char"] = {
+		["Evyyn - Azuremyst"] = {
+			["auto"] = true,
+		},
+	},
+	["profileKeys"] = {
+		["Evyyn - Azuremyst"] = "Evyyn - Azuremyst",
+	},
+}

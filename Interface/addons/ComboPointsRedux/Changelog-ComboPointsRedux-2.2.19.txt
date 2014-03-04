@@ -1,0 +1,19 @@
+------------------------------------------------------------------------
+r333 | starinnia | 2013-11-27 14:38:44 +0000 (Wed, 27 Nov 2013) | 1 line
+Changed paths:
+   A /tags/2.2.19 (from /trunk:332)
+
+Tagging as release 2.2.19
+------------------------------------------------------------------------
+r332 | starinnia | 2013-11-27 14:36:16 +0000 (Wed, 27 Nov 2013) | 1 line
+Changed paths:
+   M /trunk/Modules/BoneShield.lua
+
+Fix Bone Shield nil error (Ticket #39)
+------------------------------------------------------------------------
+r330 | starinnia | 2013-11-05 00:52:36 +0000 (Tue, 05 Nov 2013) | 1 line
+Changed paths:
+   M /trunk/Modules/BoneShield.lua
+
+-Fix Ticket #38 regarding Bone Shield charges over 6.  The graphical display will still max out at 6, but should no longer break
+------------------------------------------------------------------------

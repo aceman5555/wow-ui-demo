@@ -1,0 +1,27 @@
+http://forums.wow-europe.com/thread.html?topicId=83678537&postId=834711892&sid=1
+________________________________________________________________________________
+
+Those are definitely inaccurate. 
+
+Here are the current rage generation formulae (note: these are slightly different than the ones which are on the current public test realms). 
+
+The notable changes include an update to offhand rage generation (previously it was not being normalized correctly), and an improvement to rage generation from crits (essentially, crits now generate double the rage the hit would have ordinarily caused). The later change should help ensure that certain specs (ie: sword specialization) don't become clearly superior to crit-enhancing specializations like Axe/Polearm. 
+
+For Dealing Damage: 
+Main Hand Normal Hits: Factor=2.5 
+Main Hand Crits: Factor=5.0 
+Off Hand Normal Hits: Factor=1.25 
+Off Hand Crits: Factor=2.5 
+
+Rage Conversion Value (note: this number is derived from other values within the game such as a mob's hit points and a warrior's expected damage value against that mob): 
+
+Rage Conversion at level 60: 230.6 
+Rage Conversion at level 70: 274.7 
+
+Expansion Rage Gained from dealing damage = ((Damage Dealt) / (Rage Conversion at Your Level) * 7.5 + (Weapon Speed * Factor))/2 
+
+Pre-Expansion Rage Gained from dealing damage = (Damage Dealt) / (Rage Conversion at Your Level) * 7.5 
+
+
+For Taking Damage (both pre and post expansion): 
+Rage Gained = (Damage Taken) / (Rage Conversion at Your Level) * 2.5 
