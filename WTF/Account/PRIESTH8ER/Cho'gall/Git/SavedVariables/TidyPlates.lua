@@ -1,10 +1,10 @@
 
 TidyPlatesOptions = {
-	["_EnableMiniButton"] = false,
-	["EnableCastWatcher"] = 1,
 	["FriendlyAutomation"] = "No Automation",
+	["WelcomeShown"] = true,
+	["_EnableMiniButton"] = false,
 	["EnemyAutomation"] = "No Automation",
 	["primary"] = "Threat Plates",
-	["WelcomeShown"] = true,
+	["EnableCastWatcher"] = 1,
 	["secondary"] = "Threat Plates",
 }

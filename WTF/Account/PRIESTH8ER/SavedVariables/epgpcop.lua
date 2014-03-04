@@ -7,8 +7,8 @@ EpgpCop_DB = {
 	},
 	["char"] = {
 		["Git - Cho'gall"] = {
-			["amount"] = "12",
 			["reason"] = "Derp",
+			["amount"] = "12",
 		},
 	},
 }

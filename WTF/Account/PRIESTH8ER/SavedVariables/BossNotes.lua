@@ -1,5 +1,11 @@
 
 BossNotesDB = {
+	["global"] = {
+		["databaseVersion"] = 2,
+		["minimap"] = {
+			["hide"] = true,
+		},
+	},
 	["profileKeys"] = {
 		["Gitt - Cho'gall"] = "Default",
 		["Giit - Cho'gall"] = "Default",
@@ -7,11 +13,5 @@ BossNotesDB = {
 		["Spih - Cho'gall"] = "Default",
 		["Gimm - Cho'gall"] = "Default",
 		["Worgit - Moon Guard"] = "Default",
-	},
-	["global"] = {
-		["databaseVersion"] = 2,
-		["minimap"] = {
-			["hide"] = true,
-		},
 	},
 }

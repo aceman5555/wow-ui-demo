@@ -30,9 +30,4 @@ psautoinvraiddiffsave = {
 	4, -- [1]
 	4, -- [2]
 }
-pstimerafterrelog = {
-	9563.937, -- [1]
-	"Break", -- [2]
-	720, -- [3]
-	"02/27/2014", -- [4]
-}
+pstimerafterrelog = nil

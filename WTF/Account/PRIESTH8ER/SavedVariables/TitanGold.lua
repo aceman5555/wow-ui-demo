@@ -30,34 +30,34 @@ GoldSave = {
 		["name"] = "Giitt",
 		["gold"] = 0,
 	},
-	["Cowbeary_Azuremyst::Horde"] = {
+	["Gyit_Area 52::Horde"] = {
 		["show"] = true,
-		["name"] = "Cowbeary",
-		["gold"] = 35475547,
+		["name"] = "Gyit",
+		["gold"] = 0,
 	},
 	["Spih_Cho'gall::Horde"] = {
 		["show"] = true,
 		["name"] = "Spih",
 		["gold"] = 71693384,
 	},
-	["Git_Cho'gall::Horde"] = {
+	["Evyyn_Azuremyst::Horde"] = {
 		["show"] = true,
-		["name"] = "Git",
-		["gold"] = 6778209557,
+		["name"] = "Evyyn",
+		["gold"] = 6382653,
 	},
 	["Worgit_Moon Guard::Alliance"] = {
 		["show"] = true,
 		["name"] = "Worgit",
 		["gold"] = 0,
 	},
-	["Evyyn_Azuremyst::Horde"] = {
+	["Git_Cho'gall::Horde"] = {
 		["show"] = true,
-		["name"] = "Evyyn",
-		["gold"] = 6382653,
+		["name"] = "Git",
+		["gold"] = 6778209557,
 	},
-	["Gyit_Area 52::Horde"] = {
+	["Cowbeary_Azuremyst::Horde"] = {
 		["show"] = true,
-		["name"] = "Gyit",
-		["gold"] = 0,
+		["name"] = "Cowbeary",
+		["gold"] = 35475547,
 	},
 }

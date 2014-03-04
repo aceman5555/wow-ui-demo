@@ -12,7 +12,7 @@ RKDatabase = {
 	["profiles"] = {
 		["Default"] = {
 			["firstLoad"] = false,
-			["prevDiffShown"] = 6,
+			["diffShown"] = 6,
 			["recordTimes"] = {
 				["Mogu'shan Vaults"] = {
 					["Gara'jal the Spiritbinder"] = {
@@ -21,17 +21,17 @@ RKDatabase = {
 					["The Spirit Kings"] = {
 						[6] = 238,
 					},
+					["The Stone Guard"] = {
+						[6] = 88,
+					},
 					["Feng the Accursed"] = {
 						[6] = 142,
-					},
-					["Will of the Emperor"] = {
-						[6] = 289,
 					},
 					["Elegon"] = {
 						[6] = 170,
 					},
-					["The Stone Guard"] = {
-						[6] = 88,
+					["Will of the Emperor"] = {
+						[6] = 289,
 					},
 				},
 				["Heart of Fear"] = {
@@ -41,8 +41,8 @@ RKDatabase = {
 					["Amber-Shaper Un'sok"] = {
 						[6] = 229,
 					},
-					["Grand Empress Shek'zeer"] = {
-						[6] = 200,
+					["Garalon"] = {
+						[6] = 175,
 					},
 					["Wind Lord Mel'jarak"] = {
 						[6] = 101,
@@ -50,8 +50,8 @@ RKDatabase = {
 					["Imperial Vizier Zor'lok"] = {
 						[6] = 199,
 					},
-					["Garalon"] = {
-						[6] = 175,
+					["Grand Empress Shek'zeer"] = {
+						[6] = 200,
 					},
 				},
 				["Terrace of Endless Spring"] = {
@@ -73,12 +73,12 @@ RKDatabase = {
 						[4] = 523,
 						[6] = 532,
 					},
-					["Siegecrafter Blackfuse"] = {
-						[4] = 196,
-						[6] = 423,
-					},
 					["Garrosh Hellscream"] = {
 						[4] = 295,
+					},
+					["Iron Juggernaut"] = {
+						[4] = 278,
+						[6] = 275,
 					},
 					["Sha of Pride"] = {
 						[6] = 332,
@@ -90,38 +90,38 @@ RKDatabase = {
 						[4] = 275,
 						[7] = 497,
 					},
+					["Thok the Bloodthirsty"] = {
+						[4] = 271,
+						[6] = 433,
+					},
 					["Kor'kron Dark Shaman"] = {
 						[4] = 255,
 						[6] = 352,
-					},
-					["Paragons of the Klaxxi"] = {
-						[4] = 324,
-						[6] = 635,
 					},
 					["Malkorok"] = {
 						[4] = 190,
 						[6] = 271,
 					},
-					["Spoils of Pandaria"] = {
-						[4] = 333,
-						[6] = 450,
+					["General Nazgrim"] = {
+						[4] = 243,
+						[6] = 336,
 					},
 					["Immerseus"] = {
 						[14] = 330,
 						[6] = 266,
 						[4] = 273,
 					},
-					["General Nazgrim"] = {
-						[4] = 243,
-						[6] = 336,
+					["Spoils of Pandaria"] = {
+						[4] = 333,
+						[6] = 450,
 					},
-					["Thok the Bloodthirsty"] = {
-						[4] = 271,
-						[6] = 433,
+					["Paragons of the Klaxxi"] = {
+						[4] = 324,
+						[6] = 635,
 					},
-					["Iron Juggernaut"] = {
-						[4] = 278,
-						[6] = 275,
+					["Siegecrafter Blackfuse"] = {
+						[4] = 196,
+						[6] = 423,
 					},
 					["The Fallen Protectors"] = {
 						[14] = 310,
@@ -140,15 +140,15 @@ RKDatabase = {
 					["Durumu the Forgotten"] = {
 						[6] = 417,
 					},
-					["Jin'rokh the Breaker"] = {
-						[6] = 194,
+					["Ji-Kun"] = {
+						[6] = 323,
 					},
 					["Dark Animus"] = {
 						[4] = 128,
 						[6] = 348,
 					},
-					["Horridon"] = {
-						[6] = 584,
+					["Council of Elders"] = {
+						[6] = 385,
 					},
 					["Megaera"] = {
 						[6] = 409,
@@ -159,18 +159,18 @@ RKDatabase = {
 					["Lei Shen"] = {
 						[4] = 363,
 					},
+					["Horridon"] = {
+						[6] = 584,
+					},
 					["Primordius"] = {
 						[6] = 369,
 					},
-					["Council of Elders"] = {
-						[6] = 385,
-					},
-					["Ji-Kun"] = {
-						[6] = 323,
+					["Jin'rokh the Breaker"] = {
+						[6] = 194,
 					},
 				},
 			},
-			["diffShown"] = 6,
+			["prevDiffShown"] = 6,
 		},
 	},
 }

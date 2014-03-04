@@ -4,8 +4,8 @@ TauntAware_Settings = {
 	["MF"] = true,
 	["MFScale"] = 100,
 	["FadeDelay"] = 8,
-	["FontSize"] = 9,
 	["ScanDelay"] = 30,
+	["FontSize"] = 9,
 }
 TauntAware_PC = {
 	["Cho'gall"] = {

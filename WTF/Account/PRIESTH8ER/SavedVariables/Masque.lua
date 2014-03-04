@@ -33,7 +33,7 @@ MasqueDB = {
 				["Bartender4_1"] = {
 					["SkinID"] = "Zoomed",
 				},
-				["Masque"] = {
+				["Bartender4_6"] = {
 					["SkinID"] = "Zoomed",
 				},
 				["Bartender4_PetBar"] = {
@@ -42,8 +42,9 @@ MasqueDB = {
 				["Bartender4_3"] = {
 					["SkinID"] = "Zoomed",
 				},
-				["Bartender4_7"] = {
+				["Raven_Debuffs2"] = {
 					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
 				},
 				["Bartender4_2"] = {
 					["SkinID"] = "Zoomed",
@@ -52,11 +53,10 @@ MasqueDB = {
 					["SkinID"] = "Zoomed",
 					["Inherit"] = false,
 				},
-				["Raven_Debuffs2"] = {
+				["Bartender4_7"] = {
 					["SkinID"] = "Zoomed",
-					["Inherit"] = false,
 				},
-				["Bartender4_6"] = {
+				["Masque"] = {
 					["SkinID"] = "Zoomed",
 				},
 			},

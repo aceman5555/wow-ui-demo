@@ -3,9 +3,9 @@ BagnonGlobalSettings = {
 	["allowDisableBags"] = true,
 	["autoDisplayEvents"] = {
 		["inventory"] = {
-			["player"] = true,
-			["trade"] = true,
 			["ah"] = true,
+			["trade"] = true,
+			["player"] = true,
 			["craft"] = true,
 		},
 	},

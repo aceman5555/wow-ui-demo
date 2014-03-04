@@ -10,8 +10,9 @@ GuildBankRepairToggleDB = {
 		["Giit - Azuremyst"] = "Default",
 	},
 	["char"] = {
-		["Git - Cho'gall"] = {
+		["Gitt - Cho'gall"] = {
 			["logout"] = true,
+			["announce"] = false,
 			["ranks"] = {
 				true, -- [1]
 				true, -- [2]
@@ -23,9 +24,8 @@ GuildBankRepairToggleDB = {
 				true, -- [8]
 			},
 		},
-		["Gitt - Cho'gall"] = {
+		["Git - Cho'gall"] = {
 			["logout"] = true,
-			["announce"] = false,
 			["ranks"] = {
 				true, -- [1]
 				true, -- [2]
