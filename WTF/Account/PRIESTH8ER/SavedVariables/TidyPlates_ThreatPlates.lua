@@ -106,27 +106,27 @@ ThreatPlatesDB = {
 				"Retribution", -- [3]
 			},
 		},
-		["Git - Azuremyst"] = {
+		["Gilt - Azuremyst"] = {
 			["spec"] = {
 				["secondary"] = true,
 			},
 			["welcome"] = true,
 			["specInfo"] = {
 				{
-					8, -- [1]
-					2, -- [2]
-					31, -- [3]
+					nil, -- [1]
+					35, -- [2]
+					6, -- [3]
 				}, -- [1]
 				{
-					4, -- [1]
-					3, -- [2]
-					34, -- [3]
+					nil, -- [1]
+					35, -- [2]
+					6, -- [3]
 				}, -- [2]
 			},
 			["specName"] = {
-				"Arms", -- [1]
-				"Fury", -- [2]
-				"Protection", -- [3]
+				"Balance", -- [1]
+				"Feral Combat", -- [2]
+				"Restoration", -- [3]
 			},
 		},
 		["Giitt - Silvermoon"] = {
@@ -199,27 +199,17 @@ ThreatPlatesDB = {
 				"Protection", -- [3]
 			},
 		},
-		["Gilt - Azuremyst"] = {
-			["spec"] = {
-				["secondary"] = true,
-			},
+		["Git - Cho'gall"] = {
 			["welcome"] = true,
 			["specInfo"] = {
 				{
-					nil, -- [1]
-					35, -- [2]
-					6, -- [3]
+					["name"] = "Protection",
+					["role"] = "TANK",
 				}, -- [1]
 				{
-					nil, -- [1]
-					35, -- [2]
-					6, -- [3]
+					["name"] = "Fury",
+					["role"] = "DAMAGER",
 				}, -- [2]
-			},
-			["specName"] = {
-				"Balance", -- [1]
-				"Feral Combat", -- [2]
-				"Restoration", -- [3]
 			},
 		},
 		["Spih - Cho'gall"] = {
@@ -269,17 +259,27 @@ ThreatPlatesDB = {
 				"Destruction", -- [3]
 			},
 		},
-		["Git - Cho'gall"] = {
+		["Git - Azuremyst"] = {
+			["spec"] = {
+				["secondary"] = true,
+			},
 			["welcome"] = true,
 			["specInfo"] = {
 				{
-					["name"] = "Protection",
-					["role"] = "TANK",
+					8, -- [1]
+					2, -- [2]
+					31, -- [3]
 				}, -- [1]
 				{
-					["name"] = "Fury",
-					["role"] = "DAMAGER",
+					4, -- [1]
+					3, -- [2]
+					34, -- [3]
 				}, -- [2]
+			},
+			["specName"] = {
+				"Arms", -- [1]
+				"Fury", -- [2]
+				"Protection", -- [3]
 			},
 		},
 		["Worgit - Moon Guard"] = {
@@ -301,13 +301,13 @@ ThreatPlatesDB = {
 		["Gimm - Cho'gall"] = "Default",
 		["Ghit - Azuremyst"] = "Default",
 		["Giit - Azuremyst"] = "Default",
-		["Git - Azuremyst"] = "Default",
+		["Gilt - Azuremyst"] = "Default",
 		["Giitt - Silvermoon"] = "Default",
 		["Giitt - Feathermoon"] = "Default",
-		["Gilt - Azuremyst"] = "Default",
+		["Git - Cho'gall"] = "Default",
 		["Spih - Cho'gall"] = "Spih",
 		["Lihte - Cho'gall"] = "Default",
-		["Git - Cho'gall"] = "Default",
+		["Git - Azuremyst"] = "Default",
 		["Worgit - Moon Guard"] = "Default",
 	},
 	["global"] = {
@@ -336,6 +336,14 @@ ThreatPlatesDB = {
 				[34] = {
 				},
 				[48] = {
+				},
+				[38] = {
+				},
+				[40] = {
+				},
+				[42] = {
+				},
+				[49] = {
 				},
 				["list"] = {
 					"Shadow Fiend", -- [1]
@@ -388,14 +396,6 @@ ThreatPlatesDB = {
 					"", -- [48]
 					"", -- [49]
 					"", -- [50]
-				},
-				[40] = {
-				},
-				[42] = {
-				},
-				[49] = {
-				},
-				[38] = {
 				},
 			},
 			["settings"] = {
@@ -668,14 +668,6 @@ ThreatPlatesDB = {
 				},
 				[48] = {
 				},
-				[38] = {
-				},
-				[40] = {
-				},
-				[42] = {
-				},
-				[49] = {
-				},
 				["list"] = {
 					"Shadow Fiend", -- [1]
 					"Spirit Wolf", -- [2]
@@ -727,6 +719,14 @@ ThreatPlatesDB = {
 					"", -- [48]
 					"", -- [49]
 					"", -- [50]
+				},
+				[40] = {
+				},
+				[42] = {
+				},
+				[49] = {
+				},
+				[38] = {
 				},
 			},
 			["settings"] = {

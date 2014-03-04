@@ -230,7 +230,7 @@ RaidBuffStatus: enabled
 RaidCooldowns: disabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled
-Recount: disabled
+Recount: enabled
 RecountGuessedAbsorbs: disabled
 SatrinaBuffFrame: disabled
 SBFOptions: disabled

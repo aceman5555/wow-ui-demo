@@ -31,12 +31,12 @@ RangeDisplayDB3 = {
 		["Giit - Cho'gall"] = "Giit tank",
 		["Gimm - Cho'gall"] = "Default",
 		["Burk - Azuremyst"] = "Burk",
-		["Git - Cho'gall"] = "Default",
 		["Git - Azuremyst"] = "Default",
-		["Spih - Cho'gall"] = "Spih - DPS",
-		["Lihte - Cho'gall"] = "Default",
-		["Giitt - Feathermoon"] = "Default",
 		["Greny - Azuremyst"] = "Default",
+		["Giitt - Feathermoon"] = "Default",
+		["Lihte - Cho'gall"] = "Default",
+		["Spih - Cho'gall"] = "Spih - DPS",
+		["Git - Cho'gall"] = "Default",
 	},
 	["profiles"] = {
 		["Burk"] = {
@@ -86,11 +86,11 @@ RangeDisplayDB3 = {
 				["mouseover"] = {
 					["mouseAnchor"] = false,
 					["y"] = -277.7848615289282,
-					["x"] = -65.98388042609814,
-					["point"] = "RIGHT",
-					["font"] = "SCT Emblem",
-					["enabled"] = false,
 					["relPoint"] = "RIGHT",
+					["point"] = "RIGHT",
+					["x"] = -65.98388042609814,
+					["enabled"] = false,
+					["font"] = "SCT Emblem",
 				},
 				["arena5"] = {
 				},

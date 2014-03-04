@@ -525,7 +525,7 @@ CliqueDB3 = {
 				["FocusFrame"] = true,
 				["CompactRaidFrame2DispelDebuff2"] = true,
 				["CompactRaidFrame12Buff2"] = true,
-				["CompactRaidFrame7Debuff3"] = true,
+				["CompactRaidFrame4DispelDebuff1"] = true,
 				["CompactRaidFrame3Buff2"] = true,
 				["CompactRaidFrame3DispelDebuff2"] = true,
 				["CompactRaidFrame6DispelDebuff2"] = true,
@@ -569,7 +569,7 @@ CliqueDB3 = {
 				["CompactRaidFrame7DispelDebuff3"] = true,
 				["CompactRaidFrame4"] = true,
 				["PitBull4_Frames_focus"] = true,
-				["CompactRaidFrame4DispelDebuff1"] = true,
+				["CompactRaidFrame7Debuff3"] = true,
 				["CompactRaidFrame2Buff2"] = true,
 				["CompactRaidFrame10DispelDebuff3"] = true,
 				["CompactRaidFrame5Debuff1"] = true,
@@ -984,19 +984,19 @@ CliqueDB3 = {
 				["CompactPartyFrameMember4Buff3"] = true,
 				["Boss1TargetFrame"] = true,
 				["CompactPartyFrameMember3Debuff1"] = true,
-				["CompactPartyFrameMember3DispelDebuff1"] = true,
 				["CompactPartyFrameMember2DispelDebuff1"] = true,
+				["CompactPartyFrameMember1DispelDebuff1"] = true,
 				["CompactPartyFrameMember1"] = true,
 				["CompactPartyFrameMember1Debuff1"] = true,
 				["CompactPartyFramePet3"] = true,
-				["CompactPartyFrameMember5DispelDebuff1"] = true,
+				["CompactPartyFrameMember3DispelDebuff1"] = true,
 				["CompactPartyFrameMember4"] = true,
-				["CompactPartyFrameMember1DispelDebuff1"] = true,
+				["CompactPartyFrameMember4DispelDebuff1"] = true,
 				["CompactPartyFrameMember4DispelDebuff2"] = true,
 				["CompactPartyFrameMember1Buff2"] = true,
 				["PitBull4_Frames_target"] = true,
 				["CompactPartyFrameMember4Debuff1"] = true,
-				["CompactPartyFrameMember4DispelDebuff1"] = true,
+				["CompactPartyFrameMember5DispelDebuff1"] = true,
 				["CompactPartyFramePet2"] = true,
 				["CompactPartyFrameMember5Buff1"] = true,
 				["CompactPartyFrameMember3"] = true,
@@ -1013,18 +1013,18 @@ CliqueDB3 = {
 		["Giit - Cho'gall"] = "Giit - Cho'gall",
 		["Gitt - Cho'gall"] = "Gitt - Cho'gall",
 		["Gimm - Cho'gall"] = "Gimm - Cho'gall",
-		["Git - Azuremyst"] = "Git - Azuremyst",
+		["Gilt - Azuremyst"] = "Gilt - Azuremyst",
 		["Gyit - Area 52"] = "Gyit - Area 52",
-		["Ezyn - Azuremyst"] = "Ezyn - Azuremyst",
+		["Spih - Cho'gall"] = "Spih - Cho'gall",
 		["Ghit - Azuremyst"] = "Ghit - Azuremyst",
 		["Giit - Azuremyst"] = "Giit - Azuremyst",
 		["Evyyn - Azuremyst"] = "Evyyn - Azuremyst",
 		["Giitt - Silvermoon"] = "Giitt - Silvermoon",
 		["Cowbeary - Azuremyst"] = "Cowbeary - Azuremyst",
-		["Gilt - Azuremyst"] = "Gilt - Azuremyst",
-		["Spih - Cho'gall"] = "Spih - Cho'gall",
-		["Giitt - Feathermoon"] = "Giitt - Feathermoon",
 		["Git - Cho'gall"] = "Gitt - Cho'gall",
+		["Giitt - Feathermoon"] = "Giitt - Feathermoon",
+		["Ezyn - Azuremyst"] = "Ezyn - Azuremyst",
+		["Git - Azuremyst"] = "Git - Azuremyst",
 		["Worgit - Moon Guard"] = "Worgit - Moon Guard",
 	},
 	["profiles"] = {
@@ -1131,13 +1131,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Git - Azuremyst"] = {
+		["Gilt - Azuremyst"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -1149,41 +1149,14 @@ CliqueDB3 = {
 					},
 				}, -- [2]
 				{
-					["spell"] = "Intervene",
+					["spell"] = "Rebirth",
 					["key"] = "BUTTON2",
 					["sets"] = {
 						["default"] = true,
 					},
-					["icon"] = "Interface\\Icons\\Ability_Warrior_VictoryRush",
+					["icon"] = "Interface\\Icons\\Spell_Nature_Reincarnation",
 					["type"] = "spell",
 				}, -- [3]
-				{
-					["spell"] = "Vigilance",
-					["key"] = "BUTTON3",
-					["sets"] = {
-						["default"] = true,
-					},
-					["icon"] = "Interface\\Icons\\Ability_Warrior_Vigilance",
-					["type"] = "spell",
-				}, -- [4]
-				{
-					["spell"] = "Intervene",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-					["icon"] = "Interface\\Icons\\Ability_Warrior_VictoryRush",
-					["type"] = "spell",
-				}, -- [5]
-				{
-					["spell"] = "Intervene",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-					["icon"] = "Interface\\Icons\\Ability_Warrior_VictoryRush",
-					["type"] = "spell",
-				}, -- [6]
 			},
 		},
 		["Gyit - Area 52"] = {
@@ -1205,7 +1178,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Ezyn - Azuremyst"] = {
+		["Spih - Cho'gall"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -1319,72 +1292,6 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Gilt - Azuremyst"] = {
-			["bindings"] = {
-				{
-					["sets"] = {
-						["default"] = true,
-					},
-					["type"] = "target",
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-				{
-					["spell"] = "Rebirth",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-					["icon"] = "Interface\\Icons\\Spell_Nature_Reincarnation",
-					["type"] = "spell",
-				}, -- [3]
-			},
-		},
-		["Spih - Cho'gall"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Giitt - Feathermoon"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
 		["Git - Cho'gall"] = {
 			["bindings"] = {
 				{
@@ -1420,6 +1327,99 @@ CliqueDB3 = {
 					["icon"] = "Interface\\Icons\\Ability_Warrior_VictoryRush",
 					["type"] = "spell",
 				}, -- [4]
+			},
+		},
+		["Giitt - Feathermoon"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Ezyn - Azuremyst"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Git - Azuremyst"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+				{
+					["spell"] = "Intervene",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+					["icon"] = "Interface\\Icons\\Ability_Warrior_VictoryRush",
+					["type"] = "spell",
+				}, -- [3]
+				{
+					["spell"] = "Vigilance",
+					["key"] = "BUTTON3",
+					["sets"] = {
+						["default"] = true,
+					},
+					["icon"] = "Interface\\Icons\\Ability_Warrior_Vigilance",
+					["type"] = "spell",
+				}, -- [4]
+				{
+					["spell"] = "Intervene",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+					["icon"] = "Interface\\Icons\\Ability_Warrior_VictoryRush",
+					["type"] = "spell",
+				}, -- [5]
+				{
+					["spell"] = "Intervene",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+					["icon"] = "Interface\\Icons\\Ability_Warrior_VictoryRush",
+					["type"] = "spell",
+				}, -- [6]
 			},
 		},
 		["Worgit - Moon Guard"] = {

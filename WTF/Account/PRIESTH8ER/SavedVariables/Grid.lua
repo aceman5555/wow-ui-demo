@@ -43,15 +43,15 @@ GridDB = {
 		},
 		["GridMBFrame"] = {
 			["profiles"] = {
-				["Default"] = {
-					["side"] = "Bottom",
-					["size"] = 0.1,
-				},
 				["Gitt Tank"] = {
 					["side"] = "Bottom",
 					["size"] = 0.1,
 				},
 				["Gimm"] = {
+					["side"] = "Bottom",
+					["size"] = 0.1,
+				},
+				["Default"] = {
 					["side"] = "Bottom",
 					["size"] = 0.1,
 				},
@@ -1427,7 +1427,7 @@ GridDB = {
 						},
 					},
 				},
-				["Ezyn Tank"] = {
+				["Giit - Tank"] = {
 					["colors"] = {
 						["DEATHKNIGHT"] = {
 							["b"] = 0.23,
@@ -1439,10 +1439,10 @@ GridDB = {
 							["g"] = 0.61,
 							["r"] = 0.78,
 						},
-						["SHAMAN"] = {
-							["b"] = 0.87,
-							["g"] = 0.44,
-							["r"] = 0,
+						["PALADIN"] = {
+							["b"] = 0.73,
+							["g"] = 0.55,
+							["r"] = 0.96,
 						},
 						["MAGE"] = {
 							["b"] = 0.94,
@@ -1459,25 +1459,30 @@ GridDB = {
 							["g"] = 0.51,
 							["r"] = 0.58,
 						},
-						["HUNTER"] = {
-							["b"] = 0.45,
-							["g"] = 0.83,
-							["r"] = 0.67,
+						["ROGUE"] = {
+							["b"] = 0.41,
+							["g"] = 0.96,
+							["r"] = 1,
+						},
+						["SHAMAN"] = {
+							["b"] = 0.87,
+							["g"] = 0.44,
+							["r"] = 0,
 						},
 						["DRUID"] = {
 							["b"] = 0.04,
 							["g"] = 0.49,
 							["r"] = 1,
 						},
-						["PALADIN"] = {
-							["b"] = 0.73,
-							["g"] = 0.55,
-							["r"] = 0.96,
+						["MONK"] = {
+							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0.59,
 						},
-						["ROGUE"] = {
-							["b"] = 0.41,
-							["g"] = 0.96,
-							["r"] = 1,
+						["HUNTER"] = {
+							["b"] = 0.45,
+							["g"] = 0.83,
+							["r"] = 0.67,
 						},
 					},
 				},
@@ -1594,7 +1599,7 @@ GridDB = {
 						},
 					},
 				},
-				["Giit - Tank"] = {
+				["Ezyn Tank"] = {
 					["colors"] = {
 						["DEATHKNIGHT"] = {
 							["b"] = 0.23,
@@ -1606,10 +1611,10 @@ GridDB = {
 							["g"] = 0.61,
 							["r"] = 0.78,
 						},
-						["PALADIN"] = {
-							["b"] = 0.73,
-							["g"] = 0.55,
-							["r"] = 0.96,
+						["SHAMAN"] = {
+							["b"] = 0.87,
+							["g"] = 0.44,
+							["r"] = 0,
 						},
 						["MAGE"] = {
 							["b"] = 0.94,
@@ -1626,30 +1631,25 @@ GridDB = {
 							["g"] = 0.51,
 							["r"] = 0.58,
 						},
-						["ROGUE"] = {
-							["b"] = 0.41,
-							["g"] = 0.96,
-							["r"] = 1,
-						},
-						["SHAMAN"] = {
-							["b"] = 0.87,
-							["g"] = 0.44,
-							["r"] = 0,
+						["HUNTER"] = {
+							["b"] = 0.45,
+							["g"] = 0.83,
+							["r"] = 0.67,
 						},
 						["DRUID"] = {
 							["b"] = 0.04,
 							["g"] = 0.49,
 							["r"] = 1,
 						},
-						["MONK"] = {
-							["r"] = 0,
-							["g"] = 1,
-							["b"] = 0.59,
+						["PALADIN"] = {
+							["b"] = 0.73,
+							["g"] = 0.55,
+							["r"] = 0.96,
 						},
-						["HUNTER"] = {
-							["b"] = 0.45,
-							["g"] = 0.83,
-							["r"] = 0.67,
+						["ROGUE"] = {
+							["b"] = 0.41,
+							["g"] = 0.96,
+							["r"] = 1,
 						},
 					},
 				},
@@ -2234,43 +2234,44 @@ GridDB = {
 					["buff_Renew"] = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_Renew",
 					},
-					["buff_Riptide"] = {
-						["icon"] = "Interface\\Icons\\spell_nature_riptide",
+					["debuff_FuryofCho'gall"] = {
+						["text"] = "Fury of Cho'gall",
+						["desc"] = "Debuff: Fury of Cho'gall",
 					},
 					["debuff_LightningRod"] = {
 						["text"] = "Lightning Rod",
 						["desc"] = "Debuff: Lightning Rod",
 					},
-					["debuff_FuryofCho'gall"] = {
-						["text"] = "Fury of Cho'gall",
-						["desc"] = "Debuff: Fury of Cho'gall",
+					["debuff_TwilightMeteorite"] = {
+						["text"] = "Twilight Meteorite",
+						["desc"] = "Debuff: Twilight Meteorite",
 					},
 					["buff_PowerWord:Shield"] = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
-					},
-					["debuff_SquallLine"] = {
-						["text"] = "Squall Line",
-						["desc"] = "Debuff: Squall Line",
 					},
 					["debuff_Corrumption:Absolute"] = {
 						["text"] = "Corrumption: Absolute",
 						["desc"] = "Debuff: Corrumption: Absolute",
 					},
-					["debuff_EngulfingMagic"] = {
-						["text"] = "Engulfing Magic",
-						["desc"] = "Debuff: Engulfing Magic",
+					["debuff_SquallLine"] = {
+						["text"] = "Squall Line",
+						["desc"] = "Debuff: Squall Line",
 					},
 					["debuff_Mortality"] = {
 						["text"] = "Mortality",
 						["desc"] = "Debuff: Mortality",
 					},
+					["debuff_EngulfingMagic"] = {
+						["text"] = "Engulfing Magic",
+						["desc"] = "Debuff: Engulfing Magic",
+					},
 					["debuff_LightningCharge"] = {
 						["text"] = "Lightning Charge",
 						["desc"] = "Debuff: Lightning Charge",
 					},
-					["debuff_Corruption:Accelerated"] = {
-						["text"] = "Corruption: Accelerated",
-						["desc"] = "Debuff: Corruption: Accelerated",
+					["debuff_Break"] = {
+						["text"] = "Break",
+						["desc"] = "Debuff: Break",
 					},
 					["debuff_disease"] = {
 						["priority"] = 99,
@@ -2278,33 +2279,33 @@ GridDB = {
 					["buff_Rejuvenation"] = {
 						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
 					},
-					["debuff_Conversion"] = {
-						["text"] = "Conversion",
-						["desc"] = "Debuff: Conversion",
-					},
-					["debuff_Tracking"] = {
-						["text"] = "Tracking",
-						["desc"] = "Debuff: Tracking",
-					},
 					["debuff_CrepuscularVeil"] = {
 						["priority"] = 99,
 						["text"] = "Crepuscular Veil",
 						["desc"] = "Debuff: Crepuscular Veil",
 					},
-					["debuff_Break"] = {
-						["text"] = "Break",
-						["desc"] = "Debuff: Break",
-					},
-					["buff_EarthShield"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_SkinofEarth",
-					},
-					["buff_Regrowth"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_ResistNature",
+					["debuff_Corruption:Accelerated"] = {
+						["text"] = "Corruption: Accelerated",
+						["desc"] = "Debuff: Corruption: Accelerated",
 					},
 					["debuff_ConsumingFlames"] = {
 						["duration"] = true,
 						["text"] = "Consuming Flames",
 						["desc"] = "Debuff: Consuming Flames",
+					},
+					["debuff_Tracking"] = {
+						["text"] = "Tracking",
+						["desc"] = "Debuff: Tracking",
+					},
+					["debuff_Conversion"] = {
+						["text"] = "Conversion",
+						["desc"] = "Debuff: Conversion",
+					},
+					["buff_Regrowth"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_ResistNature",
+					},
+					["buff_EarthShield"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_SkinofEarth",
 					},
 					["debuff_Corruption:Sickness"] = {
 						["text"] = "Corruption: Sickness",
@@ -2318,9 +2319,8 @@ GridDB = {
 					["buff_Lifebloom"] = {
 						["icon"] = "Interface\\Icons\\INV_Misc_Herb_Felblossom",
 					},
-					["debuff_TwilightMeteorite"] = {
-						["text"] = "Twilight Meteorite",
-						["desc"] = "Debuff: Twilight Meteorite",
+					["buff_Riptide"] = {
+						["icon"] = "Interface\\Icons\\spell_nature_riptide",
 					},
 				},
 				["Cowbearytank"] = {
@@ -2481,12 +2481,12 @@ GridDB = {
 					["buff_Grace"] = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
 					},
-					["buff_Rejuvenation"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
-					},
 					["debuff_BurningOrb"] = {
 						["text"] = "Burning Orb",
 						["desc"] = "Debuff: Burning Orb",
+					},
+					["buff_Rejuvenation"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
 					},
 					["debuff_Frostflake"] = {
 						["text"] = "Frostflake",
@@ -2563,24 +2563,24 @@ GridDB = {
 						["debuff"] = "Gushing Wound",
 						["desc"] = "Debuff: Gushing Wound",
 					},
-					["debuff_LightningRod"] = {
-						["text"] = "LR",
-						["debuff"] = "Lightning Rod",
-						["desc"] = "Debuff: Lightning Rod",
+					["buff_PowerWord:Shield"] = {
+						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
+						["priority"] = 91,
 					},
-					["debuff_Corrumption:Absolute"] = {
-						["text"] = "CA",
-						["debuff"] = "Corrumption: Absolute",
-						["desc"] = "Debuff: Corrumption: Absolute",
+					["debuff_SquallLine"] = {
+						["text"] = "SL",
+						["debuff"] = "Squall Line",
+						["desc"] = "Debuff: Squall Line",
 					},
 					["debuff_TwilightMeteorite"] = {
 						["text"] = "TM",
 						["debuff"] = "Twilight Meteorite",
 						["desc"] = "Debuff: Twilight Meteorite",
 					},
-					["buff_PowerWord:Shield"] = {
-						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
-						["priority"] = 91,
+					["debuff_LightningRod"] = {
+						["text"] = "LR",
+						["debuff"] = "Lightning Rod",
+						["desc"] = "Debuff: Lightning Rod",
 					},
 					["buff_VitalSpark"] = {
 						["buff"] = "Vital Spark",
@@ -2598,40 +2598,15 @@ GridDB = {
 						["debuff"] = "Blazing Heat",
 						["desc"] = "Debuff: Blazing Heat",
 					},
-					["debuff_SquallLine"] = {
-						["text"] = "SL",
-						["debuff"] = "Squall Line",
-						["desc"] = "Debuff: Squall Line",
+					["debuff_Corrumption:Absolute"] = {
+						["text"] = "CA",
+						["debuff"] = "Corrumption: Absolute",
+						["desc"] = "Debuff: Corrumption: Absolute",
 					},
 					["debuff_VoodooDoll"] = {
 						["text"] = "VD",
 						["debuff"] = "Voodoo Doll",
 						["desc"] = "Debuff: Voodoo Doll",
-					},
-					["debuff_Conversion"] = {
-						["text"] = "Con",
-						["debuff"] = "Conversion",
-						["desc"] = "Debuff: Conversion",
-					},
-					["debuff_Break"] = {
-						["text"] = "Bre",
-						["debuff"] = "Break",
-						["desc"] = "Debuff: Break",
-					},
-					["debuff_Waterlogged"] = {
-						["text"] = "Wat",
-						["debuff"] = "Waterlogged",
-						["desc"] = "Debuff: Waterlogged",
-					},
-					["debuff_Tormented"] = {
-						["text"] = "Tor",
-						["debuff"] = "Tormented",
-						["desc"] = "Debuff: Tormented",
-					},
-					["debuff_ScaryFog"] = {
-						["text"] = "SF",
-						["debuff"] = "Scary Fog",
-						["desc"] = "Debuff: Scary Fog",
 					},
 					["debuff_ConsumingFlames"] = {
 						["debuff"] = "Consuming Flames",
@@ -2644,10 +2619,34 @@ GridDB = {
 						["debuff"] = "Tracking",
 						["desc"] = "Debuff: Tracking",
 					},
-					["debuff_Torment"] = {
+					["debuff_FlashFreeze"] = {
+						["debuff"] = "Flash Freeze",
+						["duration"] = true,
+						["text"] = "FF",
+						["desc"] = "Debuff: Flash Freeze",
+					},
+					["debuff_Tormented"] = {
 						["text"] = "Tor",
-						["debuff"] = "Torment",
-						["desc"] = "Debuff: Torment",
+						["debuff"] = "Tormented",
+						["desc"] = "Debuff: Tormented",
+					},
+					["debuff_ScaryFog"] = {
+						["text"] = "SF",
+						["debuff"] = "Scary Fog",
+						["desc"] = "Debuff: Scary Fog",
+					},
+					["buff_EarthShield"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_SkinofEarth",
+					},
+					["debuff_Break"] = {
+						["text"] = "Bre",
+						["debuff"] = "Break",
+						["desc"] = "Debuff: Break",
+					},
+					["debuff_Waterlogged"] = {
+						["text"] = "Wat",
+						["debuff"] = "Waterlogged",
+						["desc"] = "Debuff: Waterlogged",
 					},
 					["debuff_Pestered!"] = {
 						["text"] = "Pes",
@@ -2685,11 +2684,10 @@ GridDB = {
 						["debuff"] = "Caustic Slime",
 						["desc"] = "Debuff: Caustic Slime",
 					},
-					["debuff_FlashFreeze"] = {
-						["debuff"] = "Flash Freeze",
-						["duration"] = true,
-						["text"] = "FF",
-						["desc"] = "Debuff: Flash Freeze",
+					["debuff_Torment"] = {
+						["text"] = "Tor",
+						["debuff"] = "Torment",
+						["desc"] = "Debuff: Torment",
 					},
 					["debuff_JaggedTear"] = {
 						["text"] = "JT",
@@ -2737,25 +2735,21 @@ GridDB = {
 						["debuff"] = "Shrapnel",
 						["desc"] = "Debuff: Shrapnel",
 					},
-					["debuff_FuryofCho'gall"] = {
-						["text"] = "FoC",
-						["debuff"] = "Fury of Cho'gall",
-						["desc"] = "Debuff: Fury of Cho'gall",
+					["buff_Riptide"] = {
+						["icon"] = "Interface\\Icons\\spell_nature_riptide",
 					},
-					["debuff_DisruptingShadows"] = {
-						["text"] = "DS",
-						["debuff"] = "Disrupting Shadows",
-						["desc"] = "Debuff: Disrupting Shadows",
-					},
-					["debuff_LightningCharge"] = {
-						["text"] = "LC",
-						["debuff"] = "Lightning Charge",
-						["desc"] = "Debuff: Lightning Charge",
+					["buff_BeaconofLight"] = {
+						["icon"] = "Interface\\Icons\\Ability_Paladin_BeaconofLight",
 					},
 					["debuff_AmberPrison"] = {
 						["text"] = "AP",
 						["debuff"] = "Amber Prison",
 						["desc"] = "Debuff: Amber Prison",
+					},
+					["debuff_LightningCharge"] = {
+						["text"] = "LC",
+						["debuff"] = "Lightning Charge",
+						["desc"] = "Debuff: Lightning Charge",
 					},
 					["debuff_Frostflake"] = {
 						["text"] = "Fro",
@@ -2775,14 +2769,18 @@ GridDB = {
 					["buff_LifeCocoon"] = {
 						["icon"] = "Interface\\Icons\\ability_monk_chicocoon",
 					},
-					["buff_BeaconofLight"] = {
-						["icon"] = "Interface\\Icons\\Ability_Paladin_BeaconofLight",
+					["debuff_DisruptingShadows"] = {
+						["text"] = "DS",
+						["debuff"] = "Disrupting Shadows",
+						["desc"] = "Debuff: Disrupting Shadows",
 					},
 					["buff_Rejuvenation"] = {
 						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
 					},
-					["buff_Riptide"] = {
-						["icon"] = "Interface\\Icons\\spell_nature_riptide",
+					["debuff_FuryofCho'gall"] = {
+						["text"] = "FoC",
+						["debuff"] = "Fury of Cho'gall",
+						["desc"] = "Debuff: Fury of Cho'gall",
 					},
 					["buff_Grace"] = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
@@ -2812,8 +2810,10 @@ GridDB = {
 						["icon"] = "Interface\\Icons\\ability_shaman_fortifyingwaters",
 						["desc"] = "Buff: Cleansing Waters",
 					},
-					["buff_EarthShield"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_SkinofEarth",
+					["debuff_Conversion"] = {
+						["text"] = "Con",
+						["debuff"] = "Conversion",
+						["desc"] = "Debuff: Conversion",
 					},
 					["debuff_Mortality"] = {
 						["text"] = "Mor",
@@ -2872,35 +2872,36 @@ GridDB = {
 					["buff_Renew"] = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_Renew",
 					},
-					["debuff_TwilightMeteorite"] = {
-						["desc"] = "Debuff: Twilight Meteorite",
-						["text"] = "Twilight Meteorite",
-					},
 					["buff_Riptide"] = {
 						["icon"] = "Interface\\Icons\\spell_nature_riptide",
 					},
-					["debuff_EngulfingMagic"] = {
-						["desc"] = "Debuff: Engulfing Magic",
-						["text"] = "Engulfing Magic",
-					},
-					["debuff_FuryofCho'gall"] = {
-						["desc"] = "Debuff: Fury of Cho'gall",
-						["text"] = "Fury of Cho'gall",
-					},
-					["debuff_LightningRod"] = {
-						["desc"] = "Debuff: Lightning Rod",
-						["text"] = "Lightning Rod",
+					["debuff_TwilightMeteorite"] = {
+						["desc"] = "Debuff: Twilight Meteorite",
+						["text"] = "Twilight Meteorite",
 					},
 					["debuff_Mortality"] = {
 						["desc"] = "Debuff: Mortality",
 						["text"] = "Mortality",
 					},
-					["buff_EarthShield"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_SkinofEarth",
+					["debuff_FuryofCho'gall"] = {
+						["desc"] = "Debuff: Fury of Cho'gall",
+						["text"] = "Fury of Cho'gall",
 					},
-					["debuff_Break"] = {
-						["desc"] = "Debuff: Break",
-						["text"] = "Break",
+					["buff_PowerWord:Shield"] = {
+						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
+					},
+					["debuff_SquallLine"] = {
+						["desc"] = "Debuff: Squall Line",
+						["text"] = "Squall Line",
+					},
+					["debuff_CrepuscularVeil"] = {
+						["priority"] = 99,
+						["text"] = "Crepuscular Veil",
+						["desc"] = "Debuff: Crepuscular Veil",
+					},
+					["debuff_Tracking"] = {
+						["desc"] = "Debuff: Tracking",
+						["text"] = "Tracking",
 					},
 					["debuff_Corrumption:Absolute"] = {
 						["desc"] = "Debuff: Corrumption: Absolute",
@@ -2910,10 +2911,9 @@ GridDB = {
 						["desc"] = "Debuff: Lightning Charge",
 						["text"] = "Lightning Charge",
 					},
-					["debuff_CrepuscularVeil"] = {
-						["priority"] = 99,
-						["text"] = "Crepuscular Veil",
-						["desc"] = "Debuff: Crepuscular Veil",
+					["debuff_Conversion"] = {
+						["desc"] = "Debuff: Conversion",
+						["text"] = "Conversion",
 					},
 					["debuff_disease"] = {
 						["priority"] = 99,
@@ -2921,39 +2921,39 @@ GridDB = {
 					["buff_Rejuvenation"] = {
 						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
 					},
-					["debuff_Corruption:Accelerated"] = {
-						["desc"] = "Debuff: Corruption: Accelerated",
-						["text"] = "Corruption: Accelerated",
+					["debuff_Break"] = {
+						["desc"] = "Debuff: Break",
+						["text"] = "Break",
 					},
 					["buff_Grace"] = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
-					},
-					["debuff_Conversion"] = {
-						["desc"] = "Debuff: Conversion",
-						["text"] = "Conversion",
-					},
-					["debuff_Tracking"] = {
-						["desc"] = "Debuff: Tracking",
-						["text"] = "Tracking",
 					},
 					["debuff_ConsumingFlames"] = {
 						["duration"] = true,
 						["text"] = "Consuming Flames",
 						["desc"] = "Debuff: Consuming Flames",
 					},
+					["debuff_Corruption:Accelerated"] = {
+						["desc"] = "Debuff: Corruption: Accelerated",
+						["text"] = "Corruption: Accelerated",
+					},
+					["buff_EarthShield"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_SkinofEarth",
+					},
 					["buff_Regrowth"] = {
 						["icon"] = "Interface\\Icons\\Spell_Nature_ResistNature",
 					},
-					["debuff_SquallLine"] = {
-						["desc"] = "Debuff: Squall Line",
-						["text"] = "Squall Line",
+					["debuff_EngulfingMagic"] = {
+						["desc"] = "Debuff: Engulfing Magic",
+						["text"] = "Engulfing Magic",
 					},
 					["debuff_Corruption:Sickness"] = {
 						["desc"] = "Debuff: Corruption: Sickness",
 						["text"] = "Corruption: Sickness",
 					},
-					["buff_PowerWord:Shield"] = {
-						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
+					["debuff_LightningRod"] = {
+						["desc"] = "Debuff: Lightning Rod",
+						["text"] = "Lightning Rod",
 					},
 					["buff_Lifebloom"] = {
 						["icon"] = "Interface\\Icons\\INV_Misc_Herb_Felblossom",
@@ -3051,10 +3051,9 @@ GridDB = {
 						["desc"] = "Debuff: Caustic Slime",
 						["text"] = "Caustic Slime",
 					},
-					["debuff_FlashFreeze"] = {
-						["duration"] = true,
-						["text"] = "Flash Freeze",
-						["desc"] = "Debuff: Flash Freeze",
+					["debuff_Torment"] = {
+						["desc"] = "Debuff: Torment",
+						["text"] = "Torment",
 					},
 					["buff_VitalFlame"] = {
 						["text"] = "Vital Flame",
@@ -3127,12 +3126,12 @@ GridDB = {
 						["desc"] = "Debuff: Lightning Charge",
 						["text"] = "Lightning Charge",
 					},
+					["buff_Rejuvenation"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
+					},
 					["debuff_BurningOrb"] = {
 						["desc"] = "Debuff: Burning Orb",
 						["text"] = "Burning Orb",
-					},
-					["buff_Rejuvenation"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
 					},
 					["buff_Grace"] = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
@@ -3169,9 +3168,10 @@ GridDB = {
 						["desc"] = "Debuff: Waterlogged",
 						["text"] = "Waterlogged",
 					},
-					["debuff_Torment"] = {
-						["desc"] = "Debuff: Torment",
-						["text"] = "Torment",
+					["debuff_FlashFreeze"] = {
+						["duration"] = true,
+						["text"] = "Flash Freeze",
+						["desc"] = "Debuff: Flash Freeze",
 					},
 				},
 				["Gilt Heals"] = {
@@ -3346,10 +3346,11 @@ GridDB = {
 						["text"] = "CA",
 						["debuff"] = "Corrumption: Absolute",
 					},
-					["debuff_Conversion"] = {
-						["desc"] = "Debuff: Conversion",
-						["text"] = "Con",
-						["debuff"] = "Conversion",
+					["debuff_ConsumingFlames"] = {
+						["duration"] = true,
+						["text"] = "CF",
+						["desc"] = "Debuff: Consuming Flames",
+						["debuff"] = "Consuming Flames",
 					},
 					["debuff_Tracking"] = {
 						["desc"] = "Debuff: Tracking",
@@ -3368,10 +3369,10 @@ GridDB = {
 						["buff"] = "Vital Flame",
 						["text"] = "VF",
 					},
-					["debuff_Waterlogged"] = {
-						["desc"] = "Debuff: Waterlogged",
-						["text"] = "Wat",
-						["debuff"] = "Waterlogged",
+					["debuff_Torment"] = {
+						["desc"] = "Debuff: Torment",
+						["text"] = "Tor",
+						["debuff"] = "Torment",
 					},
 					["debuff_GravityCrush"] = {
 						["desc"] = "Debuff: Gravity Crush",
@@ -3514,42 +3515,43 @@ GridDB = {
 						["desc"] = "Debuff: Flash Freeze",
 						["debuff"] = "Flash Freeze",
 					},
-					["debuff_JaggedTear"] = {
-						["desc"] = "Debuff: Jagged Tear",
-						["text"] = "JT",
-						["debuff"] = "Jagged Tear",
+					["debuff_FullyMutated"] = {
+						["priority"] = 99,
+						["desc"] = "Debuff: Fully Mutated",
+						["text"] = "FM",
+						["debuff"] = "Fully Mutated",
 					},
 					["debuff_SquallLine"] = {
 						["desc"] = "Debuff: Squall Line",
 						["text"] = "SL",
 						["debuff"] = "Squall Line",
 					},
-					["debuff_DisruptingShadows"] = {
-						["desc"] = "Debuff: Disrupting Shadows",
-						["text"] = "DS",
-						["debuff"] = "Disrupting Shadows",
-					},
-					["debuff_EngulfingMagic"] = {
-						["desc"] = "Debuff: Engulfing Magic",
-						["text"] = "EM",
-						["debuff"] = "Engulfing Magic",
-					},
 					["buff_BeaconofLight"] = {
 						["icon"] = "Interface\\Icons\\Ability_Paladin_BeaconofLight",
-					},
-					["buff_PowerWord:Shield"] = {
-						["priority"] = 91,
-						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
 					},
 					["debuff_Frostflake"] = {
 						["desc"] = "Debuff: Frostflake",
 						["text"] = "Fro",
 						["debuff"] = "Frostflake",
 					},
-					["debuff_LightningCharge"] = {
-						["desc"] = "Debuff: Lightning Charge",
-						["text"] = "LC",
-						["debuff"] = "Lightning Charge",
+					["debuff_DisruptingShadows"] = {
+						["desc"] = "Debuff: Disrupting Shadows",
+						["text"] = "DS",
+						["debuff"] = "Disrupting Shadows",
+					},
+					["buff_PowerWord:Shield"] = {
+						["priority"] = 91,
+						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
+					},
+					["debuff_EngulfingMagic"] = {
+						["desc"] = "Debuff: Engulfing Magic",
+						["text"] = "EM",
+						["debuff"] = "Engulfing Magic",
+					},
+					["debuff_AmberPrison"] = {
+						["desc"] = "Debuff: Amber Prison",
+						["text"] = "AP",
+						["debuff"] = "Amber Prison",
 					},
 					["debuff_Fixate"] = {
 						["desc"] = "Debuff: Fixate",
@@ -3561,19 +3563,20 @@ GridDB = {
 						["text"] = "VD",
 						["debuff"] = "Voodoo Doll",
 					},
-					["debuff_CorruptedEssence"] = {
-						["priority"] = 99,
-						["desc"] = "Debuff: Corrupted Essence",
-						["text"] = "CE",
-						["debuff"] = "Corrupted Essence",
+					["debuff_JaggedTear"] = {
+						["desc"] = "Debuff: Jagged Tear",
+						["text"] = "JT",
+						["debuff"] = "Jagged Tear",
 					},
-					["debuff_Torment"] = {
-						["desc"] = "Debuff: Torment",
-						["text"] = "Tor",
-						["debuff"] = "Torment",
+					["debuff_Waterlogged"] = {
+						["desc"] = "Debuff: Waterlogged",
+						["text"] = "Wat",
+						["debuff"] = "Waterlogged",
 					},
-					["buff_Grace"] = {
-						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
+					["debuff_Obnoxious"] = {
+						["desc"] = "Debuff: Obnoxious",
+						["text"] = "Obn",
+						["debuff"] = "Obnoxious",
 					},
 					["debuff_CrepuscularVeil"] = {
 						["priority"] = 99,
@@ -3584,30 +3587,27 @@ GridDB = {
 					["buff_Riptide"] = {
 						["icon"] = "Interface\\Icons\\spell_nature_riptide",
 					},
-					["debuff_ConsumingFlames"] = {
-						["duration"] = true,
-						["text"] = "CF",
-						["desc"] = "Debuff: Consuming Flames",
-						["debuff"] = "Consuming Flames",
+					["debuff_Conversion"] = {
+						["desc"] = "Debuff: Conversion",
+						["text"] = "Con",
+						["debuff"] = "Conversion",
 					},
 					["buff_Regrowth"] = {
 						["icon"] = "Interface\\Icons\\Spell_Nature_ResistNature",
 					},
-					["debuff_Obnoxious"] = {
-						["desc"] = "Debuff: Obnoxious",
-						["text"] = "Obn",
-						["debuff"] = "Obnoxious",
+					["buff_Grace"] = {
+						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
 					},
-					["debuff_FullyMutated"] = {
+					["debuff_CorruptedEssence"] = {
 						["priority"] = 99,
-						["desc"] = "Debuff: Fully Mutated",
-						["text"] = "FM",
-						["debuff"] = "Fully Mutated",
+						["desc"] = "Debuff: Corrupted Essence",
+						["text"] = "CE",
+						["debuff"] = "Corrupted Essence",
 					},
-					["debuff_AmberPrison"] = {
-						["desc"] = "Debuff: Amber Prison",
-						["text"] = "AP",
-						["debuff"] = "Amber Prison",
+					["debuff_LightningCharge"] = {
+						["desc"] = "Debuff: Lightning Charge",
+						["text"] = "LC",
+						["debuff"] = "Lightning Charge",
 					},
 					["debuff_Pestered!"] = {
 						["desc"] = "Debuff: Pestered!",
@@ -3616,220 +3616,6 @@ GridDB = {
 					},
 					["buff_Rejuvenation"] = {
 						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
-					},
-				},
-				["Giit - Tank"] = {
-					["debuff_SwirlingWinds"] = {
-						["color"] = {
-							["r"] = 0.5019607843137255,
-							["g"] = 0,
-							["b"] = 0.06666666666666667,
-						},
-						["text"] = "Swirling Winds",
-						["desc"] = "Debuff: Swirling Winds",
-					},
-					["debuff_DebilitatingBeam"] = {
-						["desc"] = "Debuff: Debilitating Beam",
-						["text"] = "Debilitating Beam",
-					},
-					["debuff_ExplosiveCinders"] = {
-						["desc"] = "Debuff: Explosive Cinders",
-						["text"] = "Explosive Cinders",
-					},
-					["debuff_ParasiticInfection"] = {
-						["desc"] = "Debuff: Parasitic Infection",
-						["text"] = "Parasitic Infection",
-					},
-					["debuff_GushingWound"] = {
-						["desc"] = "Debuff: Gushing Wound",
-						["text"] = "Gushing Wound",
-					},
-					["debuff_TwilightMeteorite"] = {
-						["desc"] = "Debuff: Twilight Meteorite",
-						["text"] = "Twilight Meteorite",
-					},
-					["debuff_LightningRod"] = {
-						["desc"] = "Debuff: Lightning Rod",
-						["text"] = "Lightning Rod",
-					},
-					["buff_VitalSpark"] = {
-						["buff"] = "Vital Spark",
-						["text"] = "VS",
-						["icon"] = "Interface\\Icons\\INV_Elemental_Mote_Fire01",
-						["desc"] = "Buff: Vital Spark",
-					},
-					["debuff_Fixate"] = {
-						["desc"] = "Debuff: Fixate",
-						["text"] = "Fixate",
-					},
-					["debuff_BlazingHeat"] = {
-						["desc"] = "Debuff: Blazing Heat",
-						["text"] = "Blazing Heat",
-					},
-					["debuff_SquallLine"] = {
-						["desc"] = "Debuff: Squall Line",
-						["text"] = "Squall Line",
-					},
-					["debuff_Shrapnel"] = {
-						["desc"] = "Debuff: Shrapnel",
-						["text"] = "Shrapnel",
-					},
-					["debuff_Conversion"] = {
-						["desc"] = "Debuff: Conversion",
-						["text"] = "Conversion",
-					},
-					["debuff_Break"] = {
-						["desc"] = "Debuff: Break",
-						["text"] = "Break",
-					},
-					["buff_EarthShield"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_SkinofEarth",
-					},
-					["debuff_Corruption:Sickness"] = {
-						["desc"] = "Debuff: Corruption: Sickness",
-						["text"] = "Corruption: Sickness",
-					},
-					["buff_WingsofFlame"] = {
-						["buff"] = "Wings of Flame",
-						["text"] = "WoF",
-						["icon"] = "INTERFACE\\ICONS\\inv_shoulder_leather_firelandsdruid_d_01",
-						["desc"] = "Buff: Wings of Flame",
-					},
-					["buff_Lifebloom"] = {
-						["icon"] = "Interface\\Icons\\INV_Misc_Herb_Felblossom",
-					},
-					["debuff_Tormented"] = {
-						["desc"] = "Debuff: Tormented",
-						["text"] = "Tormented",
-					},
-					["debuff_CausticSlime"] = {
-						["desc"] = "Debuff: Caustic Slime",
-						["text"] = "Caustic Slime",
-					},
-					["debuff_Torment"] = {
-						["desc"] = "Debuff: Torment",
-						["text"] = "Torment",
-					},
-					["debuff_Mortality"] = {
-						["desc"] = "Debuff: Mortality",
-						["text"] = "Mortality",
-					},
-					["debuff_JaggedTear"] = {
-						["desc"] = "Debuff: Jagged Tear",
-						["text"] = "Jagged Tear",
-					},
-					["debuff_GravityCrush"] = {
-						["desc"] = "Debuff: Gravity Crush",
-						["text"] = "Gravity Crush",
-					},
-					["debuff_BitingChill"] = {
-						["duration"] = true,
-						["text"] = "Biting Chill",
-						["desc"] = "Debuff: Biting Chill",
-					},
-					["buff_PowerWord:Shield"] = {
-						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
-						["priority"] = 91,
-					},
-					["buff_Renew"] = {
-						["icon"] = "Interface\\Icons\\Spell_Holy_Renew",
-					},
-					["debuff_ConsumingFlames"] = {
-						["duration"] = true,
-						["text"] = "Consuming Flames",
-						["desc"] = "Debuff: Consuming Flames",
-					},
-					["debuff_Tracking"] = {
-						["desc"] = "Debuff: Tracking",
-						["text"] = "Tracking",
-					},
-					["debuff_DisruptingShadows"] = {
-						["desc"] = "Debuff: Disrupting Shadows",
-						["text"] = "Disrupting Shadows",
-					},
-					["buff_Riptide"] = {
-						["icon"] = "Interface\\Icons\\spell_nature_riptide",
-					},
-					["buff_BeaconofLight"] = {
-						["icon"] = "Interface\\Icons\\Ability_Paladin_BeaconofLight",
-					},
-					["debuff_FuryofCho'gall"] = {
-						["desc"] = "Debuff: Fury of Cho'gall",
-						["text"] = "Fury of Cho'gall",
-					},
-					["debuff_Corruption:Accelerated"] = {
-						["desc"] = "Debuff: Corruption: Accelerated",
-						["text"] = "Corruption: Accelerated",
-					},
-					["debuff_Frostflake"] = {
-						["desc"] = "Debuff: Frostflake",
-						["text"] = "Frostflake",
-					},
-					["debuff_EngulfingMagic"] = {
-						["desc"] = "Debuff: Engulfing Magic",
-						["text"] = "Engulfing Magic",
-					},
-					["debuff_Fixated"] = {
-						["desc"] = "Debuff: Fixated",
-						["text"] = "Fixated",
-					},
-					["buff_Grace"] = {
-						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
-					},
-					["debuff_BurningOrb"] = {
-						["desc"] = "Debuff: Burning Orb",
-						["text"] = "Burning Orb",
-					},
-					["buff_Rejuvenation"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
-					},
-					["debuff_LightningCharge"] = {
-						["desc"] = "Debuff: Lightning Charge",
-						["text"] = "Lightning Charge",
-					},
-					["debuff_Obnoxious"] = {
-						["desc"] = "Debuff: Obnoxious",
-						["text"] = "Obnoxious",
-					},
-					["debuff_CrepuscularVeil"] = {
-						["priority"] = 99,
-						["text"] = "Crepuscular Veil",
-						["desc"] = "Debuff: Crepuscular Veil",
-					},
-					["debuff_Pestered!"] = {
-						["desc"] = "Debuff: Pestered!",
-						["text"] = "Pestered!",
-					},
-					["debuff_Ignite"] = {
-						["desc"] = "Debuff: Ignite",
-						["text"] = "Ignite",
-					},
-					["buff_Regrowth"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_ResistNature",
-					},
-					["buff_VitalFlame"] = {
-						["buff"] = "Vital Flame",
-						["text"] = "VF",
-						["icon"] = "Interface\\Icons\\INV_Elemental_Primal_Fire",
-						["desc"] = "Buff: Vital Flame",
-					},
-					["debuff_FlashFreeze"] = {
-						["duration"] = true,
-						["text"] = "Flash Freeze",
-						["desc"] = "Debuff: Flash Freeze",
-					},
-					["debuff_Waterlogged"] = {
-						["desc"] = "Debuff: Waterlogged",
-						["text"] = "Waterlogged",
-					},
-					["debuff_RecentlyMassResurrected"] = {
-						["enable"] = false,
-						["text"] = "Recently Mass Resurrected",
-						["desc"] = "Debuff: Recently Mass Resurrected",
-					},
-					["debuff_Corrumption:Absolute"] = {
-						["desc"] = "Debuff: Corrumption: Absolute",
-						["text"] = "Corrumption: Absolute",
 					},
 				},
 				["Ezyn Tank"] = {
@@ -3996,12 +3782,12 @@ GridDB = {
 						["desc"] = "Debuff: Fixated",
 						["text"] = "Fixated",
 					},
+					["buff_Rejuvenation"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
+					},
 					["debuff_BurningOrb"] = {
 						["desc"] = "Debuff: Burning Orb",
 						["text"] = "Burning Orb",
-					},
-					["buff_Rejuvenation"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
 					},
 					["buff_Grace"] = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
@@ -4041,6 +3827,220 @@ GridDB = {
 					["debuff_SquallLine"] = {
 						["desc"] = "Debuff: Squall Line",
 						["text"] = "Squall Line",
+					},
+				},
+				["Giit - Tank"] = {
+					["debuff_SwirlingWinds"] = {
+						["color"] = {
+							["r"] = 0.5019607843137255,
+							["g"] = 0,
+							["b"] = 0.06666666666666667,
+						},
+						["text"] = "Swirling Winds",
+						["desc"] = "Debuff: Swirling Winds",
+					},
+					["debuff_DebilitatingBeam"] = {
+						["desc"] = "Debuff: Debilitating Beam",
+						["text"] = "Debilitating Beam",
+					},
+					["debuff_ExplosiveCinders"] = {
+						["desc"] = "Debuff: Explosive Cinders",
+						["text"] = "Explosive Cinders",
+					},
+					["debuff_ParasiticInfection"] = {
+						["desc"] = "Debuff: Parasitic Infection",
+						["text"] = "Parasitic Infection",
+					},
+					["debuff_GushingWound"] = {
+						["desc"] = "Debuff: Gushing Wound",
+						["text"] = "Gushing Wound",
+					},
+					["debuff_TwilightMeteorite"] = {
+						["desc"] = "Debuff: Twilight Meteorite",
+						["text"] = "Twilight Meteorite",
+					},
+					["debuff_LightningRod"] = {
+						["desc"] = "Debuff: Lightning Rod",
+						["text"] = "Lightning Rod",
+					},
+					["buff_VitalSpark"] = {
+						["buff"] = "Vital Spark",
+						["text"] = "VS",
+						["icon"] = "Interface\\Icons\\INV_Elemental_Mote_Fire01",
+						["desc"] = "Buff: Vital Spark",
+					},
+					["debuff_Fixate"] = {
+						["desc"] = "Debuff: Fixate",
+						["text"] = "Fixate",
+					},
+					["debuff_BlazingHeat"] = {
+						["desc"] = "Debuff: Blazing Heat",
+						["text"] = "Blazing Heat",
+					},
+					["debuff_SquallLine"] = {
+						["desc"] = "Debuff: Squall Line",
+						["text"] = "Squall Line",
+					},
+					["debuff_Shrapnel"] = {
+						["desc"] = "Debuff: Shrapnel",
+						["text"] = "Shrapnel",
+					},
+					["debuff_Conversion"] = {
+						["desc"] = "Debuff: Conversion",
+						["text"] = "Conversion",
+					},
+					["debuff_Break"] = {
+						["desc"] = "Debuff: Break",
+						["text"] = "Break",
+					},
+					["buff_EarthShield"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_SkinofEarth",
+					},
+					["debuff_Corruption:Sickness"] = {
+						["desc"] = "Debuff: Corruption: Sickness",
+						["text"] = "Corruption: Sickness",
+					},
+					["buff_WingsofFlame"] = {
+						["buff"] = "Wings of Flame",
+						["text"] = "WoF",
+						["icon"] = "INTERFACE\\ICONS\\inv_shoulder_leather_firelandsdruid_d_01",
+						["desc"] = "Buff: Wings of Flame",
+					},
+					["buff_Lifebloom"] = {
+						["icon"] = "Interface\\Icons\\INV_Misc_Herb_Felblossom",
+					},
+					["debuff_Tormented"] = {
+						["desc"] = "Debuff: Tormented",
+						["text"] = "Tormented",
+					},
+					["debuff_CausticSlime"] = {
+						["desc"] = "Debuff: Caustic Slime",
+						["text"] = "Caustic Slime",
+					},
+					["debuff_Torment"] = {
+						["desc"] = "Debuff: Torment",
+						["text"] = "Torment",
+					},
+					["debuff_Mortality"] = {
+						["desc"] = "Debuff: Mortality",
+						["text"] = "Mortality",
+					},
+					["debuff_JaggedTear"] = {
+						["desc"] = "Debuff: Jagged Tear",
+						["text"] = "Jagged Tear",
+					},
+					["debuff_GravityCrush"] = {
+						["desc"] = "Debuff: Gravity Crush",
+						["text"] = "Gravity Crush",
+					},
+					["debuff_BitingChill"] = {
+						["duration"] = true,
+						["text"] = "Biting Chill",
+						["desc"] = "Debuff: Biting Chill",
+					},
+					["buff_PowerWord:Shield"] = {
+						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
+						["priority"] = 91,
+					},
+					["buff_Renew"] = {
+						["icon"] = "Interface\\Icons\\Spell_Holy_Renew",
+					},
+					["debuff_ConsumingFlames"] = {
+						["duration"] = true,
+						["text"] = "Consuming Flames",
+						["desc"] = "Debuff: Consuming Flames",
+					},
+					["debuff_Tracking"] = {
+						["desc"] = "Debuff: Tracking",
+						["text"] = "Tracking",
+					},
+					["debuff_DisruptingShadows"] = {
+						["desc"] = "Debuff: Disrupting Shadows",
+						["text"] = "Disrupting Shadows",
+					},
+					["buff_Riptide"] = {
+						["icon"] = "Interface\\Icons\\spell_nature_riptide",
+					},
+					["buff_BeaconofLight"] = {
+						["icon"] = "Interface\\Icons\\Ability_Paladin_BeaconofLight",
+					},
+					["debuff_FuryofCho'gall"] = {
+						["desc"] = "Debuff: Fury of Cho'gall",
+						["text"] = "Fury of Cho'gall",
+					},
+					["debuff_Corruption:Accelerated"] = {
+						["desc"] = "Debuff: Corruption: Accelerated",
+						["text"] = "Corruption: Accelerated",
+					},
+					["debuff_Frostflake"] = {
+						["desc"] = "Debuff: Frostflake",
+						["text"] = "Frostflake",
+					},
+					["debuff_EngulfingMagic"] = {
+						["desc"] = "Debuff: Engulfing Magic",
+						["text"] = "Engulfing Magic",
+					},
+					["debuff_Fixated"] = {
+						["desc"] = "Debuff: Fixated",
+						["text"] = "Fixated",
+					},
+					["buff_Grace"] = {
+						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
+					},
+					["buff_Rejuvenation"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
+					},
+					["debuff_BurningOrb"] = {
+						["desc"] = "Debuff: Burning Orb",
+						["text"] = "Burning Orb",
+					},
+					["debuff_LightningCharge"] = {
+						["desc"] = "Debuff: Lightning Charge",
+						["text"] = "Lightning Charge",
+					},
+					["debuff_Obnoxious"] = {
+						["desc"] = "Debuff: Obnoxious",
+						["text"] = "Obnoxious",
+					},
+					["debuff_CrepuscularVeil"] = {
+						["priority"] = 99,
+						["text"] = "Crepuscular Veil",
+						["desc"] = "Debuff: Crepuscular Veil",
+					},
+					["debuff_Pestered!"] = {
+						["desc"] = "Debuff: Pestered!",
+						["text"] = "Pestered!",
+					},
+					["debuff_Ignite"] = {
+						["desc"] = "Debuff: Ignite",
+						["text"] = "Ignite",
+					},
+					["buff_Regrowth"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_ResistNature",
+					},
+					["buff_VitalFlame"] = {
+						["buff"] = "Vital Flame",
+						["text"] = "VF",
+						["icon"] = "Interface\\Icons\\INV_Elemental_Primal_Fire",
+						["desc"] = "Buff: Vital Flame",
+					},
+					["debuff_FlashFreeze"] = {
+						["duration"] = true,
+						["text"] = "Flash Freeze",
+						["desc"] = "Debuff: Flash Freeze",
+					},
+					["debuff_Waterlogged"] = {
+						["desc"] = "Debuff: Waterlogged",
+						["text"] = "Waterlogged",
+					},
+					["debuff_RecentlyMassResurrected"] = {
+						["enable"] = false,
+						["text"] = "Recently Mass Resurrected",
+						["desc"] = "Debuff: Recently Mass Resurrected",
+					},
+					["debuff_Corrumption:Absolute"] = {
+						["desc"] = "Debuff: Corrumption: Absolute",
+						["text"] = "Corrumption: Absolute",
 					},
 				},
 				["Gimm"] = {
@@ -4122,21 +4122,21 @@ GridDB = {
 						["debuff"] = "Tracking",
 						["desc"] = "Debuff: Tracking",
 					},
-					["debuff_Torment"] = {
-						["text"] = "Tor",
-						["debuff"] = "Torment",
-						["desc"] = "Debuff: Torment",
-					},
-					["buff_VitalFlame"] = {
-						["buff"] = "Vital Flame",
-						["text"] = "VF",
-						["icon"] = "Interface\\Icons\\INV_Elemental_Primal_Fire",
-						["desc"] = "Buff: Vital Flame",
-					},
 					["debuff_Waterlogged"] = {
 						["text"] = "Wat",
 						["debuff"] = "Waterlogged",
 						["desc"] = "Debuff: Waterlogged",
+					},
+					["debuff_Tormented"] = {
+						["text"] = "Tor",
+						["debuff"] = "Tormented",
+						["desc"] = "Debuff: Tormented",
+					},
+					["debuff_FlashFreeze"] = {
+						["debuff"] = "Flash Freeze",
+						["duration"] = true,
+						["text"] = "FF",
+						["desc"] = "Debuff: Flash Freeze",
 					},
 					["debuff_Corruption:Sickness"] = {
 						["text"] = "CS",
@@ -4152,21 +4152,21 @@ GridDB = {
 					["buff_Lifebloom"] = {
 						["icon"] = "Interface\\Icons\\INV_Misc_Herb_Felblossom",
 					},
-					["debuff_Tormented"] = {
-						["text"] = "Tor",
-						["debuff"] = "Tormented",
-						["desc"] = "Debuff: Tormented",
+					["buff_VitalFlame"] = {
+						["buff"] = "Vital Flame",
+						["text"] = "VF",
+						["icon"] = "Interface\\Icons\\INV_Elemental_Primal_Fire",
+						["desc"] = "Buff: Vital Flame",
 					},
 					["debuff_CausticSlime"] = {
 						["text"] = "CS",
 						["debuff"] = "Caustic Slime",
 						["desc"] = "Debuff: Caustic Slime",
 					},
-					["debuff_FlashFreeze"] = {
-						["debuff"] = "Flash Freeze",
-						["duration"] = true,
-						["text"] = "FF",
-						["desc"] = "Debuff: Flash Freeze",
+					["debuff_Torment"] = {
+						["text"] = "Tor",
+						["debuff"] = "Torment",
+						["desc"] = "Debuff: Torment",
 					},
 					["debuff_Conversion"] = {
 						["text"] = "Con",
@@ -4221,20 +4221,20 @@ GridDB = {
 					["buff_Grace"] = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_HopeAndGrace",
 					},
-					["debuff_EngulfingMagic"] = {
-						["text"] = "EM",
-						["debuff"] = "Engulfing Magic",
-						["desc"] = "Debuff: Engulfing Magic",
+					["debuff_Frostflake"] = {
+						["text"] = "Fro",
+						["debuff"] = "Frostflake",
+						["desc"] = "Debuff: Frostflake",
 					},
 					["debuff_BurningOrb"] = {
 						["text"] = "BO",
 						["debuff"] = "Burning Orb",
 						["desc"] = "Debuff: Burning Orb",
 					},
-					["debuff_Frostflake"] = {
-						["text"] = "Fro",
-						["debuff"] = "Frostflake",
-						["desc"] = "Debuff: Frostflake",
+					["debuff_EngulfingMagic"] = {
+						["text"] = "EM",
+						["debuff"] = "Engulfing Magic",
+						["desc"] = "Debuff: Engulfing Magic",
 					},
 					["debuff_Fixated"] = {
 						["text"] = "Fix",
@@ -4386,10 +4386,9 @@ GridDB = {
 						["text"] = "Tracking",
 						["desc"] = "Debuff: Tracking",
 					},
-					["debuff_FlashFreeze"] = {
-						["duration"] = true,
-						["text"] = "Flash Freeze",
-						["desc"] = "Debuff: Flash Freeze",
+					["debuff_Torment"] = {
+						["text"] = "Torment",
+						["desc"] = "Debuff: Torment",
 					},
 					["debuff_Corruption:Sickness"] = {
 						["text"] = "Corruption: Sickness",
@@ -4412,9 +4411,10 @@ GridDB = {
 						["text"] = "Caustic Slime",
 						["desc"] = "Debuff: Caustic Slime",
 					},
-					["debuff_Torment"] = {
-						["text"] = "Torment",
-						["desc"] = "Debuff: Torment",
+					["debuff_FlashFreeze"] = {
+						["duration"] = true,
+						["text"] = "Flash Freeze",
+						["desc"] = "Debuff: Flash Freeze",
 					},
 					["debuff_Break"] = {
 						["text"] = "Break",
@@ -4443,15 +4443,15 @@ GridDB = {
 						["text"] = "Mortality",
 						["desc"] = "Debuff: Mortality",
 					},
-					["buff_Riptide"] = {
-						["icon"] = "Interface\\Icons\\spell_nature_riptide",
+					["debuff_FuryofCho'gall"] = {
+						["text"] = "Fury of Cho'gall",
+						["desc"] = "Debuff: Fury of Cho'gall",
 					},
 					["buff_BeaconofLight"] = {
 						["icon"] = "Interface\\Icons\\Ability_Paladin_BeaconofLight",
 					},
-					["debuff_FuryofCho'gall"] = {
-						["text"] = "Fury of Cho'gall",
-						["desc"] = "Debuff: Fury of Cho'gall",
+					["buff_Riptide"] = {
+						["icon"] = "Interface\\Icons\\spell_nature_riptide",
 					},
 					["debuff_DisruptingShadows"] = {
 						["text"] = "Disrupting Shadows",
@@ -4481,12 +4481,12 @@ GridDB = {
 						["text"] = "Obnoxious",
 						["desc"] = "Debuff: Obnoxious",
 					},
+					["buff_Rejuvenation"] = {
+						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
+					},
 					["debuff_BurningOrb"] = {
 						["text"] = "Burning Orb",
 						["desc"] = "Debuff: Burning Orb",
-					},
-					["buff_Rejuvenation"] = {
-						["icon"] = "Interface\\Icons\\Spell_Nature_Rejuvenation",
 					},
 					["debuff_Fixated"] = {
 						["text"] = "Fixated",
@@ -4618,9 +4618,9 @@ GridDB = {
 							["Divine Renewal"] = 138669,
 							["Dust Cloud"] = 140103,
 							["Arcanital's Barrier"] = 140661,
-							["Fixate"] = 140547,
 							["Recuperate"] = 140435,
 							["Serrated Slash"] = 87395,
+							["Fixate"] = 140547,
 							["Curse of Babbling Tongues"] = 140496,
 							["Bubbling Brew"] = 140393,
 							["Lightning Pole"] = 139185,
@@ -4652,15 +4652,15 @@ GridDB = {
 							["Lacerate"] = 76807,
 							["Lightning Surge"] = 75992,
 							["Emberstrike"] = 76165,
-							["Squeeze"] = 76026,
+							["Magma Splash"] = 76170,
 							["Water Bolt"] = 76535,
-							["Fungal Spores"] = 80564,
+							["Curse of Fatigue"] = 76094,
 							["Bubble Shield"] = 84507,
 							["Tidal Surge"] = 76133,
 							["Poisoned Spear"] = 76516,
-							["Curse of Fatigue"] = 76094,
+							["Fungal Spores"] = 80564,
 							["Enslave"] = 76207,
-							["Magma Splash"] = 76170,
+							["Squeeze"] = 76026,
 						},
 						["Scholomance"] = {
 							["Skin Like Wax"] = 114479,
@@ -4698,24 +4698,24 @@ GridDB = {
 							["Infected Wound"] = 76512,
 							["Mortal Strike"] = 13737,
 							["Divine Aegis"] = 47753,
-							["Crepuscular Veil"] = 76189,
 							["Little Big Flame Breath"] = 76665,
 							["Gouge"] = 76582,
-							["Frostbomb"] = 76682,
+							["Crepuscular Veil"] = 76189,
+							["Lava Drool"] = 76628,
 							["Grievous Whirl"] = 76524,
 							["Force Blast"] = 76522,
 							["Inflict Pain"] = 76497,
 							["Wounding Strike"] = 75571,
 							["Bludgeoning Strike"] = 76716,
-							["Bore"] = 76688,
-							["Shadow Prison"] = 76686,
-							["Magma Spit"] = 76031,
 							["Shackles"] = 76484,
+							["Bore"] = 76688,
+							["Magma Spit"] = 76031,
+							["Shadow Prison"] = 76686,
 							["Gravity Strike"] = 76561,
 							["Blast Wave"] = 76473,
 							["Frost Nova"] = 76509,
 							["Sunder Armor"] = 76622,
-							["Lava Drool"] = 76628,
+							["Frostbomb"] = 76682,
 							["Frostbolt"] = 76508,
 						},
 						["Shado-Pan Monastery"] = {
@@ -4801,13 +4801,13 @@ GridDB = {
 							["Dancing Steel"] = 120032,
 							["Breath of Fear"] = 119414,
 							["River's Song"] = 116660,
-							["Stone Bulwark"] = 114893,
-							["Purified"] = 117235,
 							["Touch of Sha"] = 117519,
+							["Purified"] = 117235,
+							["Serpent's Swiftness"] = 128433,
 							["Cleansing Waters"] = 117283,
 							["Penetrating Bolt"] = 119086,
 							["Embrace of the Shale Spider"] = 90363,
-							["Serpent's Swiftness"] = 128433,
+							["Stone Bulwark"] = 114893,
 							["Enveloping Darkness"] = 125760,
 							["Dread Shadows"] = 122768,
 							["Spirit Beast Blessing"] = 127830,
@@ -4843,12 +4843,12 @@ GridDB = {
 							["Dust Storm"] = 81508,
 							["Spinning Slash"] = 81569,
 							["Crystal Barrage"] = 86881,
-							["Beat Down"] = 80221,
-							["Curse of Blood"] = 79345,
 							["Dampening Wave"] = 82415,
+							["Fracture"] = 81711,
+							["Beat Down"] = 80221,
 							["Crystal Shards"] = 80913,
 							["Ignite"] = 80151,
-							["Fracture"] = 81711,
+							["Curse of Blood"] = 79345,
 							["Elementium Spike Shield"] = 78859,
 							["Soothing Mist"] = 125950,
 							["Fear"] = 81442,
@@ -5012,8 +5012,8 @@ GridDB = {
 							["Blackout Drunk"] = 106857,
 							["Furious Howl"] = 24604,
 							["Jade Spirit"] = 104993,
-							["Carbonation"] = 116170,
 							["Explosive Brew"] = 114291,
+							["Carbonation"] = 116170,
 							["Healing Stream Totem"] = 119523,
 							["Fearless Roar"] = 126373,
 							["Brew Bolt"] = 114548,
@@ -5052,8 +5052,8 @@ GridDB = {
 							["Soothing Mist"] = 125950,
 							["Sik'thik Strike"] = 119354,
 							["Roar of Courage"] = 93435,
-							["Detonate"] = 119703,
 							["Malleable Resin"] = 121421,
+							["Detonate"] = 119703,
 							["Burning Pitch"] = 122259,
 							["Crystallized Pitch"] = 122246,
 							["Sap Puddle"] = 120593,
@@ -5307,13 +5307,13 @@ GridDB = {
 							["River's Song"] = 116660,
 							["Stormlash Totem"] = 120676,
 							["Roar of Courage"] = 93435,
-							["Battering Headbutt"] = 130772,
+							["Viscous Fluid"] = 107122,
 							["Tempus Repit"] = 137590,
 							["Fortitude"] = 137593,
 							["Fixate"] = 111723,
 							["Jade Spirit"] = 104993,
 							["Healing Stream Totem"] = 119523,
-							["Viscous Fluid"] = 107122,
+							["Battering Headbutt"] = 130772,
 							["Sabotage"] = 107119,
 						},
 						["A Brewing Storm"] = {
@@ -5323,9 +5323,9 @@ GridDB = {
 							["Jade Spirit"] = 104993,
 							["Venom Cloud"] = 142561,
 							["Earth Shattering"] = 122144,
-							["Viletongue Sting"] = 127280,
-							["Dancing Steel"] = 120032,
 							["Tempus Repit"] = 137590,
+							["Dancing Steel"] = 120032,
+							["Viletongue Sting"] = 127280,
 						},
 						["Mogu Island Progression Events"] = {
 							["Colossus"] = 116631,
@@ -5340,8 +5340,8 @@ GridDB = {
 							["Dark Bite"] = 138956,
 							["Lightning Storm"] = 140560,
 							["Curse of Babbling Tongues"] = 140496,
-							["Arcanital's Barrier"] = 140661,
 							["Shadow Crash"] = 139353,
+							["Arcanital's Barrier"] = 140661,
 							["Recuperate"] = 140435,
 							["Fixate"] = 140547,
 							["Shadow Burst"] = 139375,
@@ -5469,12 +5469,12 @@ GridDB = {
 							["Cackling Howl"] = 128432,
 							["Fright"] = 123036,
 							["Soothing Mist"] = 125950,
-							["Waterspout"] = 120519,
+							["Overwhelming Fear"] = 125758,
 							["Terrifying Roar"] = 90309,
 							["Fading Light"] = 129378,
 							["Soul Link"] = 108446,
 							["Nightmares"] = 122777,
-							["Overwhelming Fear"] = 125758,
+							["Waterspout"] = 120519,
 							["Naked and Afraid"] = 120669,
 							["Sunbeam"] = 122789,
 							["Power Word: Barrier"] = 81782,
@@ -5482,33 +5482,33 @@ GridDB = {
 							["Scary Fog"] = 123705,
 							["Grounding Totem"] = 89523,
 							["Colossus"] = 116631,
-							["Defiled Ground"] = 118091,
+							["Spray"] = 123121,
 							["Furious Howl"] = 24604,
 							["Light of the Ancient Kings"] = 86678,
 							["Roar of Courage"] = 93435,
 							["Dancing Steel"] = 120032,
-							["Sha Globe"] = 129189,
-							["Surface Trot"] = 126311,
 							["Enveloping Darkness"] = 125760,
-							["Lightning Prison"] = 111850,
+							["Surface Trot"] = 126311,
+							["Sha Globe"] = 129189,
+							["Parasitic Clutch"] = 125652,
 							["Bathed in Light"] = 122858,
 							["Penetrating Bolt"] = 119086,
 							["Dread Spray"] = 119983,
 							["Shadow Breath"] = 122752,
 							["Champion of the Light"] = 120268,
 							["Cleansing Waters"] = 117283,
-							["Stone Bulwark"] = 114893,
-							["River's Song"] = 116660,
 							["Touch of Sha"] = 117519,
+							["River's Song"] = 116660,
+							["Stone Bulwark"] = 114893,
 							["Purified"] = 117235,
-							["Serpent's Swiftness"] = 128433,
 							["Huddle in Terror"] = 120629,
+							["Serpent's Swiftness"] = 128433,
 							["Breath of Fear"] = 119414,
 							["Embrace of the Shale Spider"] = 90363,
-							["Parasitic Clutch"] = 125652,
+							["Lightning Prison"] = 111850,
 							["Dread Shadows"] = 122768,
 							["Fortitude"] = 137593,
-							["Spray"] = 123121,
+							["Defiled Ground"] = 118091,
 							["Corrupted Essence"] = 118191,
 							["Healing Stream Totem"] = 119523,
 							["Seek the Light"] = 120388,
@@ -5527,7 +5527,7 @@ GridDB = {
 							["Staggering Shot"] = 113642,
 							["Holy Fire"] = 128232,
 							["Stormlash Totem"] = 120676,
-							["Beatdown"] = 114184,
+							["Shield Breaker"] = 125507,
 							["Jolt"] = 114000,
 							["Greater Dragon's Breath"] = 113653,
 							["Tempus Repit"] = 137590,
@@ -5536,15 +5536,15 @@ GridDB = {
 							["Bloody Mess"] = 114056,
 							["Bleeding Wound"] = 113855,
 							["River's Song"] = 116660,
-							["Shield Breaker"] = 125507,
+							["Beatdown"] = 114184,
 						},
 						["Proving Grounds"] = {
 							["Xuen's Presence: Mark of the Wild"] = 144053,
 							["River's Song"] = 116660,
 							["Powerful Slam"] = 144401,
 							["Chomp"] = 144113,
-							["Xuen's Presence: Swiftblade's Cunning"] = 144046,
 							["Fan of Bananas"] = 144398,
+							["Xuen's Presence: Swiftblade's Cunning"] = 144046,
 							["Xuen's Presence: Power Word: Fortitude"] = 144051,
 							["Xuen's Presence: Arcane Brilliance"] = 144042,
 							["Lava Burns"] = 144383,
@@ -5659,13 +5659,13 @@ GridDB = {
 							["Rushing Winds"] = 137654,
 							["Stormcloud"] = 139900,
 							["Windburn"] = 140208,
-							["Serpent's Swiftness"] = 128433,
 							["Murderous Strike"] = 138333,
+							["Stone Bulwark"] = 114893,
 							["Dancing Steel"] = 120032,
 							["Ancestral Vigor"] = 105284,
-							["Choking Sands"] = 138742,
-							["Bloody Dancing Steel"] = 142530,
 							["Dire Fixation"] = 140946,
+							["Bloody Dancing Steel"] = 142530,
+							["Frozen Blood"] = 137664,
 							["Overcharge"] = 136326,
 							["Matter Swap"] = 138609,
 							["Arctic Freeze"] = 139843,
@@ -5718,10 +5718,10 @@ GridDB = {
 							["Suppression"] = 140179,
 							["Ignite Flesh"] = 137731,
 							["Fan of Flames"] = 137408,
-							["Frozen Blood"] = 137664,
+							["Choking Sands"] = 138742,
 							["Static Wound"] = 138349,
 							["Furious Howl"] = 24604,
-							["Stone Bulwark"] = 114893,
+							["Serpent's Swiftness"] = 128433,
 							["Kick Shell"] = 134030,
 							["Fungi Spores"] = 140620,
 							["Wounding Strike"] = 140049,
@@ -5750,18 +5750,18 @@ GridDB = {
 							["Sap Residue"] = 119941,
 							["Tempest"] = 119875,
 							["River's Song"] = 116660,
-							["Serpent's Swiftness"] = 128433,
 							["Stone Bulwark"] = 114893,
 							["Crystallized Pitch"] = 122246,
+							["Sik'thik Strike"] = 119354,
 							["Energizing Spores"] = 135678,
 							["Residue"] = 120938,
-							["Sap Puddle"] = 120593,
+							["Malleable Resin"] = 121421,
 							["Burning Pitch"] = 122259,
 							["Blade Dance"] = 124253,
 							["Fortitude"] = 137593,
+							["Sap Puddle"] = 120593,
 							["Detonate"] = 119703,
-							["Malleable Resin"] = 121421,
-							["Sik'thik Strike"] = 119354,
+							["Serpent's Swiftness"] = 128433,
 							["Roar of Courage"] = 93435,
 							["Soothing Mist"] = 125950,
 						},
@@ -5870,8 +5870,8 @@ GridDB = {
 							["Blackout Drunk"] = 106857,
 							["Brew Explosion"] = 106648,
 							["Fortitude"] = 137593,
-							["Carbonation"] = 116170,
 							["Explosive Brew"] = 114291,
+							["Carbonation"] = 116170,
 							["Healing Stream Totem"] = 119523,
 							["River's Song"] = 116660,
 							["Fearless Roar"] = 126373,
@@ -6013,19 +6013,19 @@ GridDB = {
 							["River's Song"] = 116660,
 							["Divine Aegis"] = 47753,
 							["Purified"] = 146022,
-							["Still Water"] = 126309,
+							["Red Manitd"] = 143620,
 							["Purified Residue"] = 143524,
 							["Expelled Corruption"] = 144480,
 							["Red Sword"] = 143605,
-							["Red Manitd"] = 143620,
-							["Forbidden Magic"] = 145230,
-							["Fortitude"] = 137593,
+							["Still Water"] = 126309,
 							["Bottomless Pit"] = 146703,
+							["Fortitude"] = 137593,
+							["Forbidden Magic"] = 145230,
 							["Disarmed"] = 142896,
 							["Adrenaline Bomb"] = 147877,
-							["Magistrike"] = 145563,
-							["Lacerating Bite"] = 148136,
 							["Cripple"] = 11443,
+							["Lacerating Bite"] = 148136,
+							["Magistrike"] = 145563,
 							["Sha Sear"] = 143423,
 							["Sonic Projection"] = 143768,
 							["Panic"] = 143766,
@@ -6036,13 +6036,13 @@ GridDB = {
 							["Power Word: Barrier"] = 81782,
 							["Crushing Fear"] = 147324,
 							["Keg Toss"] = 146217,
-							["Realm of Y'Shaarj"] = 144954,
+							["Silversage Incense"] = 127769,
 							["Desecrated"] = 144762,
-							["Efflorescence"] = 81262,
-							["Dancing Steel"] = 120032,
+							["Grapple"] = 148033,
+							["Spirit Beast Blessing"] = 127830,
 							["Blue Drum"] = 143612,
-							["Scorched Earth"] = 146228,
 							["Terrifying Roar"] = 90309,
+							["Scorched Earth"] = 146228,
 							["Blue Mantid"] = 143622,
 							["Deteriorate"] = 145999,
 							["Froststorm Strike"] = 144215,
@@ -6051,19 +6051,19 @@ GridDB = {
 							["Soul Link"] = 108446,
 							["Mesmerize"] = 142671,
 							["Mark of Arrogance"] = 144351,
-							["Harmony"] = 128182,
-							["Mass Paralysis"] = 146289,
+							["Sprint"] = 146387,
+							["Bombard"] = 148310,
 							["Sonic Pulse"] = 143240,
 							["Threatening Shout"] = 78710,
-							["Corrupted Touch"] = 149207,
-							["Hunter's Mark"] = 143882,
-							["Sprint"] = 146387,
-							["Colossus"] = 116631,
 							["Furious Howl"] = 24604,
+							["Hunter's Mark"] = 143882,
+							["Harmony"] = 128182,
+							["Colossus"] = 116631,
+							["Corrupted Touch"] = 149207,
 							["Corruption Kick"] = 143010,
-							["Fire Pit"] = 148718,
-							["Encapsulated Pheromones"] = 145747,
 							["Wild Growth"] = 48438,
+							["Frostbolt"] = 59638,
+							["Fire Pit"] = 148718,
 							["Cutter Laser Target"] = 146325,
 							["Psychic Terror"] = 113792,
 							["Lesser Purified Residue"] = 147155,
@@ -6071,7 +6071,7 @@ GridDB = {
 							["Eerie Fog"] = 142945,
 							["Unstable Defense Systems"] = 145685,
 							["Hope"] = 149004,
-							["Hunger"] = 143358,
+							["Empowered Gripping Despair"] = 145195,
 							["Empowered Touch of Y'Shaarj"] = 145171,
 							["Green Bomb"] = 143618,
 							["Resistance Totem"] = 145730,
@@ -6126,31 +6126,31 @@ GridDB = {
 							["Test of Confidence"] = 144851,
 							["Test of Reliance"] = 144850,
 							["Rage of the Empress"] = 145813,
-							["Icy Blood"] = 143800,
+							["Electrostatic Charge"] = 143385,
 							["Purple Bomb"] = 143616,
 							["Displaced Energy"] = 142913,
 							["Stone Bulwark"] = 114893,
-							["Weakened Armor"] = 113746,
+							["Thunder Clap"] = 147683,
 							["Faulty Mutation"] = 148589,
 							["Exposed Veins"] = 142931,
-							["Aim"] = 142948,
+							["Red Bomb"] = 143615,
 							["Shattered Armor"] = 148510,
-							["Electrostatic Charge"] = 143385,
-							["Chilled to the Bone"] = 144216,
+							["Icy Blood"] = 143800,
+							["Yellow Staff"] = 143631,
 							["Swirl"] = 143413,
 							["Reaping Whirlwind"] = 147642,
-							["Blue Bomb"] = 143617,
+							["Resonating Amber"] = 146452,
 							["Y'Shaarj Touched"] = 147553,
 							["Serpent's Swiftness"] = 128433,
 							["Green Drum"] = 143613,
-							["Earth Shield"] = 145560,
-							["Red Bomb"] = 143615,
-							["Lesser Sha Residue"] = 147083,
+							["Animated Strike"] = 145523,
+							["Aim"] = 142948,
+							["Infusion"] = 147882,
 							["Gusting Bomb"] = 145715,
 							["Mortal Strike"] = 15708,
 							["Poison-Tipped Blades"] = 146902,
 							["Apothecary: Volatile Poultice"] = 142598,
-							["Resonating Amber"] = 146452,
+							["Scorching Breath"] = 143767,
 							["Gift of the Titans"] = 144359,
 							["Sha Splash"] = 143297,
 							["Acid Breath"] = 143780,
@@ -6162,16 +6162,16 @@ GridDB = {
 							["Residue"] = 145790,
 							["Earthbind"] = 3600,
 							["Debilitation"] = 147383,
-							["Scorching Breath"] = 143767,
-							["Infusion"] = 147882,
+							["Blue Bomb"] = 143617,
+							["Lesser Sha Residue"] = 147083,
 							["Iron Prison"] = 144330,
 							["Genetic Alteration"] = 143279,
 							["Ignite Armor"] = 144467,
-							["Explosive Tar"] = 144498,
+							["Chilled to the Bone"] = 144216,
 							["Blue Sword"] = 143607,
-							["Animated Strike"] = 145523,
-							["Thunder Clap"] = 147683,
-							["Yellow Staff"] = 143631,
+							["Earth Shield"] = 145560,
+							["Weakened Armor"] = 113746,
+							["Explosive Tar"] = 144498,
 							["Caustic Amber"] = 143735,
 							["Torment"] = 142983,
 							["Drillstorm"] = 146479,
@@ -6194,22 +6194,22 @@ GridDB = {
 							["Purple Staff"] = 143628,
 							["Poison Blast"] = 146606,
 							["Shredding Blast"] = 148576,
-							["Empowered Gripping Despair"] = 145195,
+							["Hunger"] = 143358,
 							["Green Staff"] = 143630,
-							["Frostbolt"] = 59638,
+							["Encapsulated Pheromones"] = 145747,
 							["Red Drum"] = 143610,
 							["Static Charge"] = 118905,
-							["Bombard"] = 148310,
+							["Mass Paralysis"] = 146289,
 							["Tail Lash"] = 143428,
 							["Banishment"] = 145215,
 							["Touch of Y'Shaarj"] = 145065,
-							["Spirit Beast Blessing"] = 127830,
-							["Grapple"] = 148033,
-							["Silversage Incense"] = 127769,
+							["Dancing Steel"] = 120032,
+							["Efflorescence"] = 81262,
+							["Realm of Y'Shaarj"] = 144954,
 							["Sha Corruption"] = 143579,
 							["Obliterating Strike"] = 146537,
-							["Despair"] = 145725,
 							["Caustic Blood"] = 142315,
+							["Despair"] = 145725,
 							["Weakened Resolve"] = 147207,
 							["Green Sword"] = 143608,
 							["Fixate"] = 143292,
@@ -6234,8 +6234,8 @@ GridDB = {
 							["Shattered Resolve"] = 110125,
 							["Sha Residue"] = 106653,
 							["Lorewalkers' Alacrity"] = 122714,
-							["Shadows of Doubt"] = 110099,
 							["Serrated Slash"] = 128051,
+							["Shadows of Doubt"] = 110099,
 							["Jade Serpent Strike"] = 106841,
 							["Blessing of the Waterspeaker"] = 121483,
 							["Songbird Serenade"] = 114826,
@@ -6304,6 +6304,15 @@ GridDB = {
 		["GridStatusResurrect"] = {
 		},
 		["GridStatusTarget"] = {
+		},
+		["GridCooldownText"] = {
+			["profiles"] = {
+				["Git"] = {
+					["FontSize"] = 10,
+					["Alpha"] = 1,
+					["Font"] = "Arial Narrow",
+				},
+			},
 		},
 		["GridStatusHots"] = {
 			["profiles"] = {
@@ -6576,16 +6585,16 @@ GridDB = {
 							["g"] = 1,
 							["b"] = 0,
 						},
-						["text"] = "Hots: My Grace Stack",
-						["enable"] = false,
 						["priority"] = 90,
-						["range"] = false,
 						["color"] = {
 							["a"] = 1,
 							["r"] = 1,
 							["g"] = 0,
 							["b"] = 0,
 						},
+						["text"] = "Hots: My Grace Stack",
+						["range"] = false,
+						["enable"] = false,
 					},
 					["alert_lifebl"] = {
 						["threshold2"] = 4,
@@ -6606,8 +6615,8 @@ GridDB = {
 						},
 						["totshow"] = true,
 						["decshow"] = true,
-						["priority"] = 99,
 						["threshold3"] = 2,
+						["priority"] = 99,
 						["color"] = {
 							["a"] = 1,
 							["r"] = 0,
@@ -6715,8 +6724,8 @@ GridDB = {
 						},
 						["totshow"] = true,
 						["decshow"] = true,
-						["priority"] = 99,
 						["threshold3"] = 2,
+						["priority"] = 99,
 						["color"] = {
 							["a"] = 1,
 							["r"] = 1,
@@ -6767,8 +6776,8 @@ GridDB = {
 							["g"] = 0,
 							["b"] = 0,
 						},
-						["priority"] = 91,
 						["threshold3"] = 5,
+						["priority"] = 91,
 						["color"] = {
 							["a"] = 1,
 							["r"] = 0,
@@ -6916,15 +6925,6 @@ GridDB = {
 		},
 		["GridStatusVoiceComm"] = {
 		},
-		["GridCooldownText"] = {
-			["profiles"] = {
-				["Git"] = {
-					["FontSize"] = 10,
-					["Alpha"] = 1,
-					["Font"] = "Arial Narrow",
-				},
-			},
-		},
 		["GridStatusReadyCheck"] = {
 		},
 		["GridLayout"] = {
@@ -6933,14 +6933,14 @@ GridDB = {
 					["hideTab"] = true,
 					["anchorRel"] = "BOTTOM",
 					["PosY"] = 190.8609442321722,
-					["BackgroundR"] = 0.1019607843137255,
-					["PosX"] = 6.267154845195364,
-					["layout"] = "By Group 5",
 					["BackgroundB"] = 0.1019607843137255,
+					["Spacing"] = 0,
+					["layout"] = "By Group 5",
+					["BackgroundR"] = 0.1019607843137255,
 					["ScaleSize"] = 1.3,
 					["FrameLock"] = true,
 					["BackgroundA"] = 0,
-					["Spacing"] = 0,
+					["PosX"] = 6.267154845195364,
 					["borderTexture"] = "None",
 					["anchor"] = "BOTTOM",
 					["Padding"] = 0,
@@ -6952,10 +6952,10 @@ GridDB = {
 					["anchorRel"] = "TOPLEFT",
 					["BorderB"] = 0.2470588235294118,
 					["layouts"] = {
-						["raid"] = "By Group 25",
 						["arena"] = "By Group 25",
-						["solo"] = "By Group 25",
 						["party"] = "By Group 25",
+						["solo"] = "By Group 25",
+						["raid"] = "By Group 25",
 					},
 					["BackgroundR"] = 0.3294117647058824,
 					["FrameLock"] = true,
@@ -6975,13 +6975,13 @@ GridDB = {
 					["hideTab"] = true,
 					["groupAnchor"] = "BOTTOMLEFT",
 					["PosY"] = 191,
-					["BackgroundB"] = 0.1019607843137255,
-					["layout"] = "By Group 5",
 					["BackgroundR"] = 0.1019607843137255,
-					["Spacing"] = 0,
+					["layout"] = "By Group 5",
+					["BackgroundB"] = 0.1019607843137255,
+					["borderTexture"] = "None",
 					["FrameLock"] = true,
 					["BackgroundA"] = 0,
-					["borderTexture"] = "None",
+					["Spacing"] = 0,
 					["PosX"] = 6,
 					["anchor"] = "BOTTOM",
 					["Padding"] = 0,
@@ -6993,10 +6993,10 @@ GridDB = {
 					["anchorRel"] = "TOPLEFT",
 					["PosY"] = -54,
 					["layouts"] = {
-						["arena"] = "By Group 25",
 						["party"] = "By Group 25",
-						["solo"] = "By Group 25",
 						["raid"] = "By Group 25",
+						["solo"] = "By Group 25",
+						["arena"] = "By Group 25",
 					},
 					["layout"] = "By Group 25",
 					["FrameLock"] = true,
@@ -7052,74 +7052,15 @@ GridDB = {
 					["BackgroundR"] = 0.3294117647058824,
 					["PosX"] = 1.321482815405007,
 				},
-				["Ezyn Tank"] = {
-					["hideTab"] = true,
-					["anchorRel"] = "TOPLEFT",
-					["BorderB"] = 0.2470588235294118,
-					["layouts"] = {
-						["arena"] = "By Group 25",
-						["party"] = "By Group 25",
-						["solo"] = "By Group 25",
-						["raid"] = "By Group 25",
-					},
-					["BackgroundR"] = 0.3294117647058824,
-					["FrameLock"] = true,
-					["BorderA"] = 0,
-					["BorderR"] = 0.2470588235294118,
-					["Spacing"] = 3,
-					["BackgroundG"] = 0.3294117647058824,
-					["PosY"] = -54.71838178200414,
-					["layout"] = "By Group 25",
-					["BackgroundA"] = 0,
-					["BorderG"] = 0.2470588235294118,
-					["Padding"] = 0,
-					["PosX"] = 19.08148419007944,
-					["BackgroundB"] = 0.3294117647058824,
-				},
-				["Default"] = {
-					["hideTab"] = true,
-					["layouts"] = {
-						["party"] = "By Group 25",
-						["solo"] = "None",
-						["arena"] = "By Group 25",
-						["bg"] = "By Group 25",
-						["raid"] = "By Group 25",
-					},
-					["PosX"] = 543,
-					["backgroundColor"] = {
-						["a"] = 0.3700000047683716,
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 0,
-					},
-					["PosY"] = -587,
-					["layout"] = "By Group 25",
-					["anchorRel"] = "TOPLEFT",
-					["borderColor"] = {
-						["a"] = 0.6891018748283386,
-						["b"] = 0.03529411764705882,
-						["g"] = 0,
-						["r"] = 0.9686274509803922,
-					},
-					["Padding"] = 0,
-					["borderTexture"] = "None",
-					["Spacing"] = 1,
-				},
-				["Gilt - Azuremyst"] = {
-					["anchorRel"] = "TOPLEFT",
-					["layout"] = "By Group 5",
-					["PosY"] = -400.0000057929283,
-					["PosX"] = 500.0000208539714,
-				},
 				["Giit - Tank"] = {
 					["hideTab"] = true,
 					["anchorRel"] = "TOPLEFT",
 					["BorderB"] = 0.2470588235294118,
 					["layouts"] = {
-						["arena"] = "By Group 25",
 						["party"] = "By Group 25",
-						["solo"] = "By Group 25",
 						["raid"] = "By Group 25",
+						["solo"] = "By Group 25",
+						["arena"] = "By Group 25",
 					},
 					["BackgroundR"] = 0.3294117647058824,
 					["FrameLock"] = true,
@@ -7135,15 +7076,74 @@ GridDB = {
 					["PosX"] = 19,
 					["BackgroundB"] = 0.3294117647058824,
 				},
+				["Default"] = {
+					["hideTab"] = true,
+					["layouts"] = {
+						["party"] = "By Group 25",
+						["solo"] = "None",
+						["arena"] = "By Group 25",
+						["bg"] = "By Group 25",
+						["raid"] = "By Group 25",
+					},
+					["borderTexture"] = "None",
+					["backgroundColor"] = {
+						["a"] = 0.3700000047683716,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["PosY"] = -587,
+					["layout"] = "By Group 25",
+					["anchorRel"] = "TOPLEFT",
+					["Spacing"] = 1,
+					["Padding"] = 0,
+					["PosX"] = 543,
+					["borderColor"] = {
+						["a"] = 0.6891018748283386,
+						["b"] = 0.03529411764705882,
+						["g"] = 0,
+						["r"] = 0.9686274509803922,
+					},
+				},
+				["Gilt - Azuremyst"] = {
+					["anchorRel"] = "TOPLEFT",
+					["layout"] = "By Group 5",
+					["PosY"] = -400.0000057929283,
+					["PosX"] = 500.0000208539714,
+				},
+				["Ezyn Tank"] = {
+					["hideTab"] = true,
+					["anchorRel"] = "TOPLEFT",
+					["BorderB"] = 0.2470588235294118,
+					["layouts"] = {
+						["party"] = "By Group 25",
+						["raid"] = "By Group 25",
+						["solo"] = "By Group 25",
+						["arena"] = "By Group 25",
+					},
+					["BackgroundR"] = 0.3294117647058824,
+					["FrameLock"] = true,
+					["BorderA"] = 0,
+					["BorderR"] = 0.2470588235294118,
+					["Spacing"] = 3,
+					["BackgroundG"] = 0.3294117647058824,
+					["PosY"] = -54.71838178200414,
+					["layout"] = "By Group 25",
+					["BackgroundA"] = 0,
+					["BorderG"] = 0.2470588235294118,
+					["Padding"] = 0,
+					["PosX"] = 19.08148419007944,
+					["BackgroundB"] = 0.3294117647058824,
+				},
 				["Gimm"] = {
 					["hideTab"] = true,
 					["anchorRel"] = "TOPLEFT",
 					["PosY"] = -54,
 					["layouts"] = {
-						["arena"] = "By Group 25",
 						["party"] = "By Group 25",
-						["solo"] = "By Group 25",
 						["raid"] = "By Group 25",
+						["solo"] = "By Group 25",
+						["arena"] = "By Group 25",
 					},
 					["layout"] = "By Group 25",
 					["FrameLock"] = true,
@@ -7170,26 +7170,26 @@ GridDB = {
 					["BackgroundG"] = 0.1019607843137255,
 					["groupAnchor"] = "BOTTOMLEFT",
 					["layout"] = "By Group 5",
-					["BackgroundB"] = 0.1019607843137255,
+					["BackgroundR"] = 0.1019607843137255,
 					["ScaleSize"] = 1.3,
 					["FrameLock"] = true,
 					["BackgroundA"] = 0,
 					["borderTexture"] = "None",
-					["Spacing"] = 0,
+					["PosX"] = 6.747175678151393,
 					["anchor"] = "BOTTOM",
 					["Padding"] = 0,
-					["PosX"] = 6.747175678151393,
-					["BackgroundR"] = 0.1019607843137255,
+					["Spacing"] = 0,
+					["BackgroundB"] = 0.1019607843137255,
 				},
 				["Gilt Tank"] = {
 					["hideTab"] = true,
 					["anchorRel"] = "TOPLEFT",
 					["BorderB"] = 0.2470588235294118,
 					["layouts"] = {
-						["party"] = "By Group 25",
 						["raid"] = "By Group 25",
-						["solo"] = "By Group 25",
 						["arena"] = "By Group 25",
+						["solo"] = "By Group 25",
+						["party"] = "By Group 25",
 					},
 					["BackgroundR"] = 0.3294117647058824,
 					["FrameLock"] = true,
@@ -7269,8 +7269,8 @@ GridDB = {
 						["ids"] = {
 						},
 						["name"] = "Vital Spark",
-						["onlyTheirs"] = false,
 						["allMissing"] = false,
+						["onlyTheirs"] = false,
 						["enable"] = true,
 						["ignorePets"] = false,
 						["debuffTypes"] = {
@@ -7377,10 +7377,13 @@ GridDB = {
 							["player_target"] = false,
 							["alert_raidicons_player"] = true,
 							["alert_raidicons_playertarget"] = false,
-							["alert_lowMana"] = false,
 							["alert_lowHealth"] = false,
+							["alert_lowMana"] = false,
 						},
 						["iconBLcornerleft"] = {
+						},
+						["iconTLcornerleft"] = {
+							["buff_Lifebloom"] = true,
 						},
 						["icon"] = {
 							["debuff_CausticSlime"] = true,
@@ -7402,15 +7405,6 @@ GridDB = {
 							["debuff_CrepuscularVeil"] = true,
 							["debuff_Waterlogged"] = true,
 						},
-						["corner3"] = {
-							["debuff_curse"] = false,
-							["debuff_poison"] = false,
-							["debuff_SwirlingWinds"] = false,
-							["debuff_disease"] = false,
-							["buff_Rejuvenation"] = false,
-							["buff_Regrowth"] = false,
-							["debuff_magic"] = false,
-						},
 						["iconBRcornerleft"] = {
 						},
 						["corner2"] = {
@@ -7422,8 +7416,14 @@ GridDB = {
 						},
 						["iconBLcornerright"] = {
 						},
-						["iconTLcornerleft"] = {
-							["buff_Lifebloom"] = true,
+						["corner3"] = {
+							["debuff_curse"] = false,
+							["debuff_poison"] = false,
+							["debuff_SwirlingWinds"] = false,
+							["debuff_disease"] = false,
+							["buff_Rejuvenation"] = false,
+							["buff_Regrowth"] = false,
+							["debuff_magic"] = false,
 						},
 						["iconTRcornerleft"] = {
 							["buff_Rejuvenation"] = false,
@@ -7573,10 +7573,19 @@ GridDB = {
 							["player_target"] = false,
 							["alert_raidicons_player"] = true,
 							["alert_raidicons_playertarget"] = false,
-							["alert_lowMana"] = false,
 							["alert_lowHealth"] = false,
+							["alert_lowMana"] = false,
 						},
 						["iconBLcornerleft"] = {
+						},
+						["corner3"] = {
+							["debuff_curse"] = false,
+							["debuff_poison"] = false,
+							["debuff_SwirlingWinds"] = false,
+							["dispel_disease"] = false,
+							["buff_Rejuvenation"] = false,
+							["buff_Regrowth"] = false,
+							["debuff_magic"] = false,
 						},
 						["icon"] = {
 							["debuff_CausticSlime"] = true,
@@ -7598,9 +7607,6 @@ GridDB = {
 							["debuff_Mortality"] = true,
 							["debuff_Conversion"] = true,
 						},
-						["iconTLcornerleft"] = {
-							["buff_Lifebloom"] = true,
-						},
 						["iconBLcornerright"] = {
 							["buff_WildGrowth"] = true,
 						},
@@ -7613,14 +7619,8 @@ GridDB = {
 						},
 						["iconBRcornerleft"] = {
 						},
-						["corner3"] = {
-							["debuff_curse"] = false,
-							["debuff_poison"] = false,
-							["debuff_SwirlingWinds"] = false,
-							["dispel_disease"] = false,
-							["buff_Rejuvenation"] = false,
-							["buff_Regrowth"] = false,
-							["debuff_magic"] = false,
+						["iconTLcornerleft"] = {
+							["buff_Lifebloom"] = true,
 						},
 						["iconTRcornerleft"] = {
 							["buff_Rejuvenation"] = false,
@@ -7867,33 +7867,10 @@ GridDB = {
 							["player_target"] = false,
 							["alert_raidicons_player"] = true,
 							["alert_raidicons_playertarget"] = false,
-							["alert_lowHealth"] = false,
 							["alert_lowMana"] = false,
+							["alert_lowHealth"] = false,
 						},
 						["iconBLcornerleft"] = {
-						},
-						["corner3"] = {
-							["debuff_curse"] = false,
-							["debuff_poison"] = false,
-							["debuff_SwirlingWinds"] = false,
-							["debuff_disease"] = false,
-							["buff_Rejuvenation"] = false,
-							["buff_Regrowth"] = false,
-							["debuff_magic"] = false,
-						},
-						["iconTLcornerleft"] = {
-							["buff_Lifebloom"] = true,
-						},
-						["iconBLcornerright"] = {
-						},
-						["iconBRcornerleft"] = {
-						},
-						["iconTRcornerright"] = {
-							["buff_Rejuvenation"] = true,
-							["buff_Regrowth"] = false,
-						},
-						["corner2"] = {
-							["alert_lowMana"] = true,
 						},
 						["icon"] = {
 							["debuff_CausticSlime"] = true,
@@ -7914,6 +7891,29 @@ GridDB = {
 							["debuff_Mortality"] = true,
 							["debuff_EngulfingMagic"] = true,
 							["debuff_Break"] = true,
+						},
+						["corner3"] = {
+							["debuff_curse"] = false,
+							["debuff_poison"] = false,
+							["debuff_SwirlingWinds"] = false,
+							["debuff_disease"] = false,
+							["buff_Rejuvenation"] = false,
+							["buff_Regrowth"] = false,
+							["debuff_magic"] = false,
+						},
+						["iconBLcornerright"] = {
+						},
+						["iconBRcornerleft"] = {
+						},
+						["iconTRcornerright"] = {
+							["buff_Rejuvenation"] = true,
+							["buff_Regrowth"] = false,
+						},
+						["corner2"] = {
+							["alert_lowMana"] = true,
+						},
+						["iconTLcornerleft"] = {
+							["buff_Lifebloom"] = true,
 						},
 						["iconTRcornerleft"] = {
 							["buff_Rejuvenation"] = false,
@@ -7978,31 +7978,31 @@ GridDB = {
 						["icon"] = {
 							["debuff_Torment"] = true,
 							["debuff_JaggedTear"] = true,
-							["debuff_poison"] = false,
-							["debuff_Faith"] = true,
-							["debuff_ExplosiveCinders"] = true,
-							["alert_RaidDebuff"] = true,
+							["debuff_VoodooDoll"] = true,
 							["debuff_GushingWound"] = true,
+							["debuff_RecentlyMassResurrected"] = true,
+							["alert_RaidDebuff"] = true,
+							["debuff_Faith"] = true,
 							["debuff_magic"] = false,
 							["debuff_DisruptingShadows"] = true,
-							["debuff_FullyMutated"] = true,
+							["debuff_Tormented"] = true,
 							["debuff_Fixate"] = true,
 							["debuff_BlazingHeat"] = true,
 							["debuff_Frostflake"] = true,
+							["debuff_poison"] = false,
 							["debuff_AmberPrison"] = true,
-							["debuff_Fixated"] = true,
 							["debuff_disease"] = false,
 							["debuff_BurningOrb"] = true,
-							["debuff_Shrapnel"] = true,
-							["debuff_ScaryFog"] = true,
-							["buff_VitalFlame"] = true,
-							["debuff_Ignite"] = true,
-							["debuff_VoodooDoll"] = true,
-							["debuff_Scorched"] = true,
 							["debuff_CorruptedEssence"] = true,
+							["debuff_ScaryFog"] = true,
+							["debuff_Shrapnel"] = true,
+							["debuff_Ignite"] = true,
+							["debuff_Fixated"] = true,
+							["debuff_Scorched"] = true,
+							["debuff_FullyMutated"] = true,
 							["buff_WingsofFlame"] = true,
-							["debuff_RecentlyMassResurrected"] = true,
-							["debuff_Tormented"] = true,
+							["debuff_ExplosiveCinders"] = true,
+							["buff_VitalFlame"] = true,
 						},
 						["manabar"] = {
 							["unit_mana"] = true,
@@ -8503,12 +8503,12 @@ GridDB = {
 		["Gitt - Cho'gall"] = "Gitt Tank",
 		["Giit - Cho'gall"] = "Gilt Heals",
 		["Burk - Azuremyst"] = "Burk -Heals",
-		["Spih - Cho'gall"] = "Spih - Heals",
-		["Git - Azuremyst"] = "Git",
 		["Giitt - Feathermoon"] = "Default",
+		["Git - Cho'gall"] = "Default",
+		["Spih - Cho'gall"] = "Spih - Heals",
 		["Lihte - Cho'gall"] = "Default",
 		["Gimm - Cho'gall"] = "Gimm",
-		["Git - Cho'gall"] = "Default",
+		["Git - Azuremyst"] = "Git",
 	},
 	["profiles"] = {
 		["Custom - Heals"] = {
@@ -8517,9 +8517,9 @@ GridDB = {
 			},
 		},
 		["Cowbearytank"] = {
+			["showIcon"] = false,
 			["hidden"] = true,
 			["showText"] = false,
-			["showIcon"] = false,
 			["minimap"] = {
 				["hide"] = true,
 			},
@@ -8530,9 +8530,9 @@ GridDB = {
 			},
 		},
 		["Gitt Tank"] = {
+			["showIcon"] = false,
 			["hidden"] = true,
 			["showText"] = false,
-			["showIcon"] = false,
 			["minimap"] = {
 				["hide"] = true,
 			},
@@ -8543,25 +8543,25 @@ GridDB = {
 			},
 		},
 		["Git"] = {
+			["showIcon"] = false,
 			["hidden"] = true,
 			["showText"] = false,
-			["showIcon"] = false,
 			["minimap"] = {
 				["hide"] = true,
 			},
 		},
-		["Ezyn Tank"] = {
-			["showText"] = false,
-			["hidden"] = true,
+		["Giit - Tank"] = {
 			["showIcon"] = false,
+			["hidden"] = true,
+			["showText"] = false,
 			["minimap"] = {
 				["hide"] = true,
 			},
 		},
 		["Default"] = {
+			["hidden"] = true,
 			["showText"] = false,
 			["showIcon"] = false,
-			["hidden"] = true,
 			["minimap"] = {
 				["hide"] = true,
 			},
@@ -8570,18 +8570,18 @@ GridDB = {
 			["minimap"] = {
 			},
 		},
-		["Giit - Tank"] = {
-			["hidden"] = true,
-			["showText"] = false,
+		["Ezyn Tank"] = {
 			["showIcon"] = false,
+			["showText"] = false,
+			["hidden"] = true,
 			["minimap"] = {
 				["hide"] = true,
 			},
 		},
 		["Gimm"] = {
+			["hidden"] = true,
 			["showIcon"] = false,
 			["showText"] = false,
-			["hidden"] = true,
 			["minimap"] = {
 				["hide"] = true,
 			},
@@ -8592,9 +8592,9 @@ GridDB = {
 			},
 		},
 		["Gilt Tank"] = {
+			["hidden"] = true,
 			["showText"] = false,
 			["showIcon"] = false,
-			["hidden"] = true,
 			["minimap"] = {
 				["hide"] = true,
 			},

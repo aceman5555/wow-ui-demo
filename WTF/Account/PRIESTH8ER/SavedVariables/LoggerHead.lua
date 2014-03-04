@@ -5,16 +5,16 @@ LoggerHeadDB = {
 		["Giit - Cho'gall"] = "Default",
 		["Gimm - Cho'gall"] = "Default",
 		["Gyit - Area 52"] = "Default",
-		["Spih - Cho'gall"] = "Default",
+		["Ezyn - Azuremyst"] = "Default",
 		["Ghit - Azuremyst"] = "Default",
 		["Giit - Azuremyst"] = "Default",
 		["Evyyn - Azuremyst"] = "Default",
 		["Giitt - Silvermoon"] = "Default",
-		["Ezyn - Azuremyst"] = "Default",
-		["Git - Azuremyst"] = "Default",
 		["Giitt - Feathermoon"] = "Default",
-		["Git - Cho'gall"] = "Default",
 		["Gilt - Azuremyst"] = "Default",
+		["Spih - Cho'gall"] = "Default",
+		["Git - Azuremyst"] = "Default",
+		["Git - Cho'gall"] = "Default",
 		["Worgit - Moon Guard"] = "Default",
 	},
 	["profiles"] = {
@@ -59,12 +59,13 @@ LoggerHeadDB = {
 					["Shadowfang Keep"] = {
 						[2] = false,
 					},
-					["Blackrock Caverns"] = {
-						false, -- [1]
-						false, -- [2]
-					},
-					["Zul'Aman"] = {
+					["Zul'Gurub"] = {
 						[2] = false,
+					},
+					["Shado-Pan Monastery"] = {
+						false, -- [1]
+						true, -- [2]
+						[8] = false,
 					},
 					["Temple of the Jade Serpent"] = {
 						false, -- [1]
@@ -104,13 +105,12 @@ LoggerHeadDB = {
 					["Blackrock Depths"] = {
 						false, -- [1]
 					},
-					["Zul'Gurub"] = {
-						[2] = false,
-					},
-					["Shado-Pan Monastery"] = {
+					["Blackrock Caverns"] = {
 						false, -- [1]
-						true, -- [2]
-						[8] = false,
+						false, -- [2]
+					},
+					["Zul'Aman"] = {
+						[2] = false,
 					},
 				},
 				["scenario"] = {
@@ -258,14 +258,14 @@ LoggerHeadDB = {
 					},
 				},
 				["none"] = {
-					["Pandaria"] = {
-						[0] = false,
-					},
 					["Kalimdor"] = {
 						[0] = false,
 					},
 					["Tol Barad"] = {
 						true, -- [1]
+					},
+					["Pandaria"] = {
+						[0] = false,
 					},
 				},
 			},

@@ -103,7 +103,12 @@ BigWigs3DB = {
 					["posx"] = 938.2405259036896,
 					["group2"] = {
 					},
-					["balls"] = 515,
+					["redkillcount"] = {
+						3, -- [1]
+						2, -- [2]
+						3, -- [3]
+						2, -- [4]
+					},
 					["groupFilter"] = true,
 					["group1"] = {
 						"Caix", -- [1]
@@ -130,22 +135,17 @@ BigWigs3DB = {
 						"Nab", -- [22]
 						"Xiaozhii", -- [23]
 					},
-					["redkillcount"] = {
-						3, -- [1]
-						2, -- [2]
-						3, -- [3]
-						2, -- [4]
-					},
+					["balls"] = 515,
+					["posy"] = 515.6799884736538,
+					["width"] = 245.0001525878906,
+					["lock"] = true,
+					["height"] = 444.4998474121094,
+					["group2icon"] = 3,
+					["group1icon"] = 1,
 					["roster"] = {
 						"Gawdric", -- [1]
 						"Git", -- [2]
 					},
-					["width"] = 245.0001525878906,
-					["group1icon"] = 1,
-					["height"] = 444.4998474121094,
-					["group2icon"] = 3,
-					["lock"] = true,
-					["posy"] = 515.6799884736538,
 				},
 			},
 		},
@@ -166,10 +166,10 @@ BigWigs3DB = {
 		["BigWigs_Bosses_Durumu the Forgotten"] = {
 			["profiles"] = {
 				["Default"] = {
-					["custom_off_ray_controllers"] = true,
 					[-6891] = 643,
-					[-6889] = 515,
 					["Lingering Gaze"] = 707,
+					[-6889] = 515,
+					["custom_off_ray_controllers"] = true,
 				},
 			},
 		},
@@ -218,9 +218,9 @@ BigWigs3DB = {
 					["BigWigsEmphasizeAnchor_x"] = 254.1267521323243,
 					["emphasizeGrowup"] = true,
 					["BigWigsAnchor_x"] = 2.240057170389804,
-					["font"] = "DorisPP",
-					["BigWigsEmphasizeAnchor_width"] = 259.4997863769531,
 					["texture"] = "Minimalist",
+					["BigWigsEmphasizeAnchor_width"] = 259.4997863769531,
+					["font"] = "DorisPP",
 					["fill"] = true,
 				},
 			},
@@ -313,29 +313,29 @@ BigWigs3DB = {
 					["Pain Suppression"] = 0,
 					["Skull Banner"] = 0,
 					["Fortifying Brew"] = 0,
-					["Hand of Sacrifice"] = 0,
+					["Innervate"] = 0,
 					["Power Word: Barrier"] = 0,
 					["Stormlash Totem"] = 0,
-					["Vampiric Blood"] = 0,
+					["Hand of Sacrifice"] = 0,
 					["Ironbark"] = 0,
 					["Icebound Fortitude"] = 0,
 					["Guardian Spirit"] = 0,
 					["Zen Meditation"] = 0,
 					["Spirit Link Totem"] = 0,
 					["Smoke Bomb"] = 0,
-					["Divine Protection"] = 0,
+					["Devotion Aura"] = 0,
 					["Shattering Throw"] = 0,
 					["Last Stand"] = 0,
 					["Demoralizing Shout"] = 0,
 					["Rallying Cry"] = 0,
 					["rebirth"] = 0,
-					["Barkskin"] = 0,
-					["Demoralizing Banner"] = 0,
 					["Bloodlust"] = 0,
-					["Devotion Aura"] = 0,
+					["Demoralizing Banner"] = 0,
+					["Barkskin"] = 0,
+					["Divine Protection"] = 0,
 					["Vigilance"] = 0,
 					["Survival Instincts"] = 0,
-					["Innervate"] = 0,
+					["Vampiric Blood"] = 0,
 					["Ardent Defender"] = 0,
 					["Guardian of Ancient Kings"] = 0,
 				},
@@ -419,16 +419,6 @@ BigWigsStatisticsDB = {
 				["best"] = 237.8810000000003,
 			},
 		},
-		[682] = {
-			["10h"] = {
-				["best"] = 132.2970000000205,
-				["kills"] = 1,
-			},
-			["25h"] = {
-				["best"] = 109.4629999999997,
-				["kills"] = 1,
-			},
-		},
 		[689] = {
 			["10h"] = {
 				["best"] = 258.1689999999944,
@@ -436,6 +426,16 @@ BigWigsStatisticsDB = {
 			},
 			["25h"] = {
 				["best"] = 141.547,
+				["kills"] = 1,
+			},
+		},
+		[682] = {
+			["10h"] = {
+				["best"] = 132.2970000000205,
+				["kills"] = 1,
+			},
+			["25h"] = {
+				["best"] = 109.4629999999997,
 				["kills"] = 1,
 			},
 		},
@@ -536,15 +536,11 @@ BigWigsStatisticsDB = {
 				["wipes"] = 2,
 			},
 		},
-		[816] = {
+		[831] = {
 			["25h"] = {
-				["kills"] = 8,
-				["best"] = 328.5079999999998,
-				["wipes"] = 3,
-			},
-			["lfr"] = {
-				["best"] = 404.165,
-				["kills"] = 1,
+				["kills"] = 2,
+				["wipes"] = 46,
+				["best"] = 450.335000000001,
 			},
 		},
 		[825] = {
@@ -572,11 +568,15 @@ BigWigsStatisticsDB = {
 				["kills"] = 3,
 			},
 		},
-		[831] = {
+		[816] = {
 			["25h"] = {
-				["kills"] = 2,
-				["wipes"] = 46,
-				["best"] = 450.335000000001,
+				["kills"] = 8,
+				["best"] = 328.5079999999998,
+				["wipes"] = 3,
+			},
+			["lfr"] = {
+				["best"] = 404.165,
+				["kills"] = 1,
 			},
 		},
 		[817] = {
@@ -791,15 +791,15 @@ BigWigsStatisticsDB = {
 				["kills"] = 1,
 			},
 		},
-		[741] = {
-			["25h"] = {
-				["best"] = 101.3590000000004,
-				["kills"] = 1,
-			},
-		},
 		[713] = {
 			["25h"] = {
 				["best"] = 175.485999999999,
+				["kills"] = 1,
+			},
+		},
+		[741] = {
+			["25h"] = {
+				["best"] = 101.3590000000004,
 				["kills"] = 1,
 			},
 		},

@@ -24,14 +24,14 @@ RKDatabase = {
 					["The Stone Guard"] = {
 						[6] = 88,
 					},
-					["Feng the Accursed"] = {
-						[6] = 142,
+					["Will of the Emperor"] = {
+						[6] = 289,
 					},
 					["Elegon"] = {
 						[6] = 170,
 					},
-					["Will of the Emperor"] = {
-						[6] = 289,
+					["Feng the Accursed"] = {
+						[6] = 142,
 					},
 				},
 				["Heart of Fear"] = {
@@ -73,12 +73,12 @@ RKDatabase = {
 						[4] = 523,
 						[6] = 532,
 					},
+					["Siegecrafter Blackfuse"] = {
+						[4] = 196,
+						[6] = 423,
+					},
 					["Garrosh Hellscream"] = {
 						[4] = 295,
-					},
-					["Iron Juggernaut"] = {
-						[4] = 278,
-						[6] = 275,
 					},
 					["Sha of Pride"] = {
 						[6] = 332,
@@ -90,13 +90,13 @@ RKDatabase = {
 						[4] = 275,
 						[7] = 497,
 					},
-					["Thok the Bloodthirsty"] = {
-						[4] = 271,
-						[6] = 433,
-					},
 					["Kor'kron Dark Shaman"] = {
 						[4] = 255,
 						[6] = 352,
+					},
+					["Paragons of the Klaxxi"] = {
+						[4] = 324,
+						[6] = 635,
 					},
 					["Malkorok"] = {
 						[4] = 190,
@@ -115,13 +115,13 @@ RKDatabase = {
 						[4] = 333,
 						[6] = 450,
 					},
-					["Paragons of the Klaxxi"] = {
-						[4] = 324,
-						[6] = 635,
+					["Thok the Bloodthirsty"] = {
+						[4] = 271,
+						[6] = 433,
 					},
-					["Siegecrafter Blackfuse"] = {
-						[4] = 196,
-						[6] = 423,
+					["Iron Juggernaut"] = {
+						[4] = 278,
+						[6] = 275,
 					},
 					["The Fallen Protectors"] = {
 						[14] = 310,
@@ -159,11 +159,11 @@ RKDatabase = {
 					["Lei Shen"] = {
 						[4] = 363,
 					},
-					["Horridon"] = {
-						[6] = 584,
-					},
 					["Primordius"] = {
 						[6] = 369,
+					},
+					["Horridon"] = {
+						[6] = 584,
 					},
 					["Jin'rokh the Breaker"] = {
 						[6] = 194,
